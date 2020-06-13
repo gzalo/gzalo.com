@@ -4,6 +4,7 @@
 	
 	echo addBoxBeg('Calculadora de código de colores de resistencias');
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript"> 
 // 
 function f(r){

@@ -61,7 +61,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/w3.css" >
 		<link href='https://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">		
@@ -156,25 +155,9 @@
 		<a href="http://youtube.com/gzaloprgm" class="w3-hover-text-white w3-padding-small"><i class="fa fa-youtube"></i></a>
 		<a href="https://github.com/gzalo" class="w3-hover-text-white w3-padding-small"><i class="fa fa-github"></i></a></p>
 	</footer>
-		
-		
-    
-	
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.0.1/instantclick.min.js" type="text/javascript"></script>-->
 	
     <script>
-		/*var loadDeferredStyles = function() {
-			var addStylesNode = document.getElementById("deferred-styles");
-			var replacement = document.createElement("div");
-			replacement.innerHTML = addStylesNode.textContent;
-			document.body.appendChild(replacement)
-			addStylesNode.parentElement.removeChild(addStylesNode);
-		};
-		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-		  webkitRequestAnimationFrame || msRequestAnimationFrame;
-		if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-		else window.addEventListener('load', loadDeferredStyles);*/
-	  
+	
 	function open_search(elmnt) {
 		var a = document.getElementById("in_busqueda");
 
@@ -187,37 +170,14 @@
 			elmnt.innerHTML = "<i class='fa fa-search'></i>";    
 		}
 	}
-	
 
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-11919886-4', 'auto');
-		  ga('send', 'pageview');
-		  
-		 /*InstantClick.on('change', function() {
-			ga('send', 'pageview', location.pathname + location.search);
-			console.log(location.pathname + location.search);
-		});*/
-		
-
-
-
-		/*InstantClick.on('change',function(){
-
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		   console.log(d.getElementById(id));
-		   if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=33921751433";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		});*/
-		
-	  //InstantClick.init(/*'mousedown'*/);
-</script>
+	  ga('create', 'UA-11919886-4', 'auto');
+	  ga('send', 'pageview');
+	</script>
 </body>
 </html>
