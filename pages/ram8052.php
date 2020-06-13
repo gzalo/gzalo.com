@@ -1,0 +1,138 @@
+<?php
+	$descripcionPagina = 'Cómo conectar y usar una memoria externa (multiplexado de datos y dirección). Circuito esquemático e impreso disponible.';
+	$tituloPagina = 'Conectar una memoria RAM externa a un 8051/8052';
+	
+	echo addBoxBeg('Memorias RAM externas en MCS51 (8051/8052)');
+?>
+<p>Este artículo sirve también para todos los derivados (AT89C52, AT89S52, AT89S8253, entre otros...)</p>
+<p>Al leer de una posición de memoria externa (movx a, @dptr), el 8052 hace lo siguiente:	
+	<ol>
+		<li>Pone en P0 la parte baja de la dirección (DPL)</li>
+		<li>Hace un pulso en la terminal 30 (ALE)</li>
+		<li>Pone en P2 la parte alta de la dirección (DPH)</li>
+		<li>Hace un pulso en P3_7 (RD)</li>
+		<li>Lee de P0 el dato, lo guarda en el acumulador</li>
+	</ol>
+</p>
+<p>Al escribir a una posición de memoria externa (movx @dptr, a), el 8052 hace algo similar:	
+	<ol>
+		<li>Pone en P0 la parte baja de la dirección (DPL)</li>
+		<li>Hace un pulso en la terminal 30 (ALE)</li>
+		<li>Pone en P2 la parte alta de la dirección</li>
+		<li>Pone en P0 lo que hay en el acumulador</li>
+		<li>Hace un pulso en P3_6 (WR)</li>
+	</ol>
+</p>
+<p>Como P0 se usa tanto como bus de datos como parte baja del bus de direcciones (este método se llama multiplexado de bus de datos y dirección), es necesario agregar un latch de 8 valores, para guardar la parte baja de la dirección.</p>
+<p>El circuito por lo tanto queda así:</p>
+<img src="/images/8052ram.png" style="width:100%;max-width:700px;"/>
+<p>Como la memoria es de acceso aleatorio, no importa si conectamos una terminal del bus de dirección a cualquier terminal de address, siempre que estén todas conectadas funcionará, lo único que cambiará será el espacio físico de la memoria.</p>
+<p>Por lo tanto, es posible hacer el circuito impreso en una capa y con pocos saltos, de la siguiente manera:</p>
+<img src="/images/8052ram_lyt.png" style="width:100%;max-width:300px;"/>
+<p><a href="/downloads/8052ram.zip" data-no-instant>Descargar circuito impreso editable en Proteus</a></p>
+
+<h2>Limpiando un buffer en memoria externa (forma optimizada)</h2>
+<p>Suponiendo que se tiene un buffer de 1024 bytes, en la dirección externa 0, en un 8052 corriendo a 24MHz</p>
+<p>La forma más facil que a uno le viene a la mente para borrar ese buffer sería usar cuatro loops, cada uno limpiaría 256 bytes:</p>
+
+<pre><code>
+    mov dptr, #0  ;Donde empieza el buffer
+    mov a, #0xAA  ;Valor con que se lo quiere llenar
+
+    mov r0, #0
+lp1:movx @dptr, a
+    inc dptr
+    djnz r0, lp1
+
+    mov r0, #0
+lp2:movx @dptr, a
+    inc dptr
+    djnz r0, lp2
+
+    mov r0, #0
+lp3:movx @dptr, a
+    inc dptr
+    djnz r0, lp3
+
+    mov r0, #0
+lp4:movx @dptr, a
+    inc dptr
+    djnz r0, lp4
+</code></pre>
+<p>Esta solución tarda 3076,5 uS (medido con el simulador de Keil uVision).</p> 
+<p>Para algunas aplicaciones críticas es demasiado tiempo... por eso necesitamos optmizarlo.</p>
+<p>La primera optimización que se puede hacer es sacar los 4 loops y reemplazarlos por uno solo: </p>
+<pre><code>
+    mov    dptr, #0
+    mov a, #0xAA
+
+    mov r0, #0
+lp1:movx @dptr, a
+    inc    dptr
+    movx @dptr, a
+    inc    dptr
+    movx @dptr, a
+    inc    dptr
+    movx @dptr, a
+    inc    dptr
+    djnz r0, lp1
+</code></pre>
+<p>Esto, además de reducir el tamaño en código aumenta la velocidad de ejecución, que pasó a 2307uS, una mejora del 30%.</p>
+
+<p>Es posible reducirlo más todavía, haciendo uso de una instrucción no tan usada, movx @r0, a, que hace lo mismo que dptr pero solo con un registro de 8 bits, usando P2 como la parte alta de DPTR</p>
+
+<pre><code>
+	mov a, #0xAA
+	mov r0, #0
+lp1:
+	mov p2, #0
+	movx @r0, a
+	inc p2
+	movx @r0, a
+	inc p2
+	movx @r0, a
+	inc p2
+	movx @r0, a
+	djnz r0, lp1
+</code></pre>
+
+<p>Ahora tarda unicamente 1922 uS.</p>
+
+<p>Desentrelazando el loop (es decir, reduciendo la frecuencia entre djnz agregando más lineas que afecten datos) es posible llegar a 1858uS (x2) o 1826 (x4).</p>
+
+<p>Esta forma logra hacer 1603uS! Casi la mitad que el primer método!</p>
+<pre><code>
+    mov a, #0xAA
+    mov r0, #0
+    mov p2, #0
+lp1:
+    movx @r0, a  ;P2 = 0
+    inc p2
+
+    movx @r0, a  ;P2 = 1
+    inc p2
+
+    movx @r0, a  ;P2 = 2
+    inc p2
+
+    movx @r0, a  ;P2 = 3
+    dec r0
+
+    movx @r0, a  ;P2 = 3
+    dec p2
+
+    movx @r0, a  ;P2 = 2
+    dec p2
+
+    movx @r0, a  ;P2 = 1
+    dec p2
+
+    movx @r0, a  ;P2 = 0
+
+    djnz r0, lp1
+	</code></pre>
+
+<p>Para analizar el rendimiento absoluto, es posible ver que los movx tardan 1uS, y los inc 0.5uS, se podría decir que para que sea 100% óptimo tendría que tardar 1536uS para borrar el buffer... Teniendo en cuenta que este método tarda 1603uS, es 93% eficiente, bastante bien para un par de optimizaciones relativamente sencillas</p>
+<p>La idea de optimizar es encontrar el balance entre uso de memoria extra (tanto de código como de datos) y la complejidad del algoritmo.</p>
+
+<?php echo addBoxEnd();?>

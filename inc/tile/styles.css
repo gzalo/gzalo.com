@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	background:#ddd;
+}
+#fps{
+	float:right;
+	margin-right:5px;
+	margin-top:5px;
+}
