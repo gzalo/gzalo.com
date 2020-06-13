@@ -43,18 +43,3 @@
 	</div>
 
 </div>
-
-<div class="w3-card-2 w3-margin-top w3-white">
-
-	<header class="w3-container color_headers">
-	  <h3>Follow me on Facebook!</h3>
-	</header>
-
-	<div class="w3-container">
-	 <div class="fb-page" data-href="https://www.facebook.com/gzalocom" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/gzalocom"><a href="https://www.facebook.com/gzalocom">Gzalo.com - Electronics, software development &amp; other stuff</a></blockquote></div>
-	</div>
-	
-
-	</div>
-
-</div>

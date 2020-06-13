@@ -64,7 +64,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/w3.css" >
 		<link href='https://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>		
-		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">		
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -157,19 +157,13 @@
 		<a href="https://github.com/gzalo" class="w3-hover-text-white w3-padding-small"><i class="fa fa-github"></i></a></p>
 	</footer>
 		
-	<noscript id="deferred-styles">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">		
-    </noscript>
+		
+    
 	
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.0.1/instantclick.min.js" type="text/javascript"></script>-->
-	<script>
-	delete FB;
-    $.getScript("//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.6&appId=33921751433",function(){
-        FB.init({ appId: '33921751433', status: true, cookie: true, xfbml: true });
-    });
-	</script>
-    <script data-no-instant>
-		var loadDeferredStyles = function() {
+	
+    <script>
+		/*var loadDeferredStyles = function() {
 			var addStylesNode = document.getElementById("deferred-styles");
 			var replacement = document.createElement("div");
 			replacement.innerHTML = addStylesNode.textContent;
@@ -179,7 +173,7 @@
 		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
 		  webkitRequestAnimationFrame || msRequestAnimationFrame;
 		if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-		else window.addEventListener('load', loadDeferredStyles);
+		else window.addEventListener('load', loadDeferredStyles);*/
 	  
 	function open_search(elmnt) {
 		var a = document.getElementById("in_busqueda");
