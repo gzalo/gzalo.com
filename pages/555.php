@@ -143,7 +143,7 @@ document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
 		let monostableInputs = document.querySelectorAll("#monoestable input")
 		for (let i = 0; i < monostableInputs.length; i++) 
-			monostableInputs[i].addEventListener("keyup", computemonoestable);
+			monostableInputs[i].addEventListener("input", computemonoestable);
 		
 		let monostableSelects = document.querySelectorAll("#monoestable select");
 		for (let i = 0; i < monostableSelects.length; i++) 
@@ -153,7 +153,7 @@ document.onreadystatechange = function () {
 
 		let astableInputs = document.querySelectorAll("#astable input")
 		for (let i = 0; i < astableInputs.length; i++) 
-			astableInputs[i].addEventListener("keyup", computeastable);
+			astableInputs[i].addEventListener("input", computeastable);
 
 		let astableSelects = document.querySelectorAll("#astable select");
 		for (let i = 0; i < astableSelects.length; i++) 

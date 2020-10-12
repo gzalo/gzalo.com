@@ -3,7 +3,6 @@
 	$tituloPagina = 'Calculadora de overflow de timer';
 	echo addBoxBeg('Calculadora de overflow de timer');
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 // 
 function roundNumber(num, dec) {
@@ -50,26 +49,33 @@ function calc(t){
 }
 
 function compute(){
-	var c = parse($("#cristal").val(), $("#cristalScale").val());
+	var c = parse(document.querySelector("#cristal").value, document.querySelector("#cristalScale").value);
 	
-	$("#ciclo").val(calc(1/c) + "segundos");
+	document.querySelector("#ciclo").value = calc(1/c) + "segundos";
 	
-	var prescaler = $("#prescaler").val();
+	var prescaler = document.querySelector("#prescaler").value;
 	
-	$("#tickTimer").val(calc(prescaler/c) + "segundos");
+	document.querySelector("#tickTimer").value = calc(prescaler/c) + "segundos";
 	
-	var reload = $("#reload").val();
+	var reload = document.querySelector("#reload").value;
 	
-	$("#rH").val(parseInt(reload / 256) + " " + reload % 256);
+	document.querySelector("#rH").value = parseInt(reload / 256) + " " + reload % 256;
 	
-	$("#timeover").val(calc((65535-reload)*prescaler/c) + "segundos");
+	document.querySelector("#timeover").value = calc((65535-reload)*prescaler/c) + "segundos";
 	
-	$("#freqover").val(calc(1/((65535-reload)*prescaler/c)) + " Hertz");
+	document.querySelector("#freqover").value = calc(1/((65535-reload)*prescaler/c)) + " Hertz";
 }
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
-		$("input").keyup(compute);
-		$("select").change(compute);
+		let inputs = document.querySelectorAll("input");
+		for (let i = 0; i < inputs.length; i++) {
+			inputs[i].addEventListener("input", compute);
+		}
+
+		let selects = document.querySelectorAll("select");
+		for (let i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", compute);
+		}
 		compute();	
 	}
 }

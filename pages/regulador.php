@@ -4,7 +4,6 @@
 	
 	echo addBoxBeg('Calculador de regulador de tensión y corriente');
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 // 
 function roundNumber(num, dec) {
@@ -28,71 +27,86 @@ function parse(val, scale){
 }
 
 function compute_v(){
-	var r1 = parse($("#r1_v").val(), $("#r1Scale_v").val());
-	var r2 = parse($("#r2_v").val(), $("#r2Scale_v").val());
+	var r1 = parse(document.querySelector("#r1_v").value, document.querySelector("#r1Scale_v").value);
+	var r2 = parse(document.querySelector("#r2_v").value, document.querySelector("#r2Scale_v").value);
 
 	var vreg=0;
-	if($("#regulador_v").val() == "LM317"){
+	if(document.querySelector("#regulador_v").value == "LM317"){
 		vreg = 1.25;
-	}else if($("#regulador_v").val() == "7805"){
+	}else if(document.querySelector("#regulador_v").value == "7805"){
 		vreg = 5;
-	}else if($("#regulador_v").val() == "7808"){
+	}else if(document.querySelector("#regulador_v").value == "7808"){
 		vreg = 8;
-	}else if($("#regulador_v").val() == "7812"){
+	}else if(document.querySelector("#regulador_v").value == "7812"){
 		vreg = 12;
-	}else if($("#regulador_v").val() == "7824"){
+	}else if(document.querySelector("#regulador_v").value == "7824"){
 		vreg = 24;
 	}
 	
 	var vout = vreg*(1+r2/r1);
 
-	$("#vout_v").val(roundNumber(vout,3) + " volts");
+	document.querySelector("#vout_v").value = roundNumber(vout,3) + " volts";
 	
 	if(vout<1){
-		$("#vout_v").val(roundNumber(vout*1000,3) + " milivolts");
+		document.querySelector("#vout_v").value = roundNumber(vout*1000,3) + " milivolts";
 	}
 }
 
 function compute_i(){
-	var r = parse($("#r_i").val(), $("#rScale_i").val());
+	var r = parse(document.querySelector("#r_i").value, document.querySelector("#rScale_i").value);
 
 	var vreg=0;
-	if($("#regulador_i").val() == "LM317"){
+	if(document.querySelector("#regulador_i").value == "LM317"){
 		vreg = 1.25;
-	}else if($("#regulador_i").val() == "7805"){
+	}else if(document.querySelector("#regulador_i").value == "7805"){
 		vreg = 5;
-	}else if($("#regulador_i").val() == "7808"){
+	}else if(document.querySelector("#regulador_i").value == "7808"){
 		vreg = 8;
-	}else if($("#regulador_i").val() == "7812"){
+	}else if(document.querySelector("#regulador_i").value == "7812"){
 		vreg = 12;
-	}else if($("#regulador_i").val() == "7824"){
+	}else if(document.querySelector("#regulador_i").value == "7824"){
 		vreg = 24;
 	}
 	
 	var iout = vreg/r;
 
-	$("#iout_i").val(roundNumber(iout,3) + " amperes");
+	document.querySelector("#iout_i").value = roundNumber(iout,3) + " amperes";
 	
 	if(iout<1){
-		$("#iout_i").val(roundNumber(iout*1000,3) + " milliamperes");
+		document.querySelector("#iout_i").value = roundNumber(iout*1000,3) + " milliamperes";
 	}
 	
 	var pout = vreg*iout;
 
-	$("#pout_i").val(roundNumber(pout,3) + " watts");
+	document.querySelector("#pout_i").value = roundNumber(pout,3) + " watts";
 	
 	if(pout<1){
-		$("#pout_i").val(roundNumber(pout*1000,3) + " milliwatts");
+		document.querySelector("#pout_i").value = roundNumber(pout*1000,3) + " milliwatts";
 	}	
 	
 }
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
-		$("#reguladorf_v input").keyup(compute_v);
-		$("#reguladorf_v select").change(compute_v);
+		let inputs_v = document.querySelectorAll("#reguladorf_v input");
+		for (let i = 0; i < inputs_v.length; i++) {
+			inputs_v[i].addEventListener("input", compute_v);
+		}
+
+		let selects_v = document.querySelectorAll("#reguladorf_v select");
+		for (let i = 0; i < selects_v.length; i++) {
+			selects_v[i].addEventListener("change", compute_v);
+		}
 		compute_v();	
-		$("#reguladorf_i input").keyup(compute_i);
-		$("#reguladorf_i select").change(compute_i);
+
+		let inputs_i = document.querySelectorAll("#reguladorf_i input");
+		for (let i = 0; i < inputs_i.length; i++) {
+			inputs_i[i].addEventListener("input", compute_i);
+		}
+
+		let selects_i = document.querySelectorAll("#reguladorf_i select");
+		for (let i = 0; i < selects_i.length; i++) {
+			selects_i[i].addEventListener("change", compute_i);
+		}
 		compute_i();	
 	}
 }

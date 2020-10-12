@@ -4,7 +4,6 @@
 	$lang = 'en';	
 	echo addBoxBeg('LED resistor calculator');
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 // 
 function Round3Dec(InputVal)
@@ -67,34 +66,41 @@ function NextHigherStandardResistor(Resistor_Ohms)
 }
 
 function compute(){	
-	if($("#iled").val() == 0) return;
+	if(document.querySelector("#iled").value == 0) return;
 	
-	var rfinal = ($("#vfuente").val() - $("#vled").val() ) / ($("#iled").val()/1000);
+	var rfinal = (document.querySelector("#vfuente").value - document.querySelector("#vled").value ) / (document.querySelector("#iled").value/1000);
 	var cerca = NextHigherStandardResistor(rfinal);
-	var pfinal = ($("#vfuente").val() - $("#vled").val() ) * ($("#iled").val()/1000);
+	var pfinal = (document.querySelector("#vfuente").value - document.querySelector("#vled").value ) * (document.querySelector("#iled").value/1000);
 	
 	if(rfinal < 1000)
-		$("#r").val(Round3Dec(rfinal)+" Ohms");
+		document.querySelector("#r").value = Round3Dec(rfinal)+" Ohms";
 	else if(rfinal < 1000000)
-		$("#r").val(Round3Dec(rfinal/1000)+" Kilohms");
+		document.querySelector("#r").value = Round3Dec(rfinal/1000)+" Kilohms";
 	else
-		$("#r").val(Round3Dec(rfinal/1000000)+" Megaohms");
+		document.querySelector("#r").value = Round3Dec(rfinal/1000000)+" Megaohms";
 	
-	$("#rCom").val(cerca);
+	document.querySelector("#rCom").value = cerca;
 	
 	if(pfinal > 1)
-		$("#p").val(Round3Dec(pfinal)+" Watts");
+		document.querySelector("#p").value = Round3Dec(pfinal)+" Watts";
 	else if(pfinal > 0.001)
-		$("#p").val(Round3Dec(pfinal*1000)+" Miliwatts");
+		document.querySelector("#p").value = Round3Dec(pfinal*1000)+" Miliwatts";
 	else
-		$("#p").val(Round3Dec(pfinal*1000000)+" Microwatts");
+		document.querySelector("#p").value = Round3Dec(pfinal*1000000)+" Microwatts";
 	
 }
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
-	$("input").keyup(compute);
-	$("select").change(compute);
-	compute();	
+		let inputs = document.querySelectorAll("input");
+		for (let i = 0; i < inputs.length; i++) {
+			inputs[i].addEventListener("input", compute);
+		}
+
+		let selects = document.querySelectorAll("select");
+		for (let i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", compute);
+		}
+		compute();	
 	}
 };
 // 

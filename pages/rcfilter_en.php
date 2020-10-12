@@ -4,7 +4,6 @@
 	$lang = 'en';	
 	echo addBoxBeg('RC filter calculator');
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 //
 function roundNumber(num, dec) {
@@ -28,28 +27,35 @@ function parse(val, scale){
 }
 
 function compute(){
-	var c = parse($("#c").val(), $("#cScale").val());
-	var r = parse($("#r").val(), $("#rScale").val());
+	var c = parse(document.querySelector("#c").value, document.querySelector("#cScale").value);
+	var r = parse(document.querySelector("#r").value, document.querySelector("#rScale").value);
 
 	var t = 1/(2*Math.PI*r*c);
 
-	$("#f").val(roundNumber(t,3) + " Hertz");
+	document.querySelector("#f").value = roundNumber(t,3) + " Hertz";
 	
 	if(t>=1000){
-		$("#f").val(roundNumber(t/1000,3) + " Kilohertz");
+		document.querySelector("#f").value = roundNumber(t/1000,3) + " Kilohertz";
 	}
 	if(t>=1000000){
-		$("#f").val(roundNumber(t/1000000,3) + " Megahertz");
+		document.querySelector("#f").value = roundNumber(t/1000000,3) + " Megahertz";
 	}
 	if(t>=1000000000){
-		$("#f").val(roundNumber(t/1000000000,3) + " Gigahertz");
+		document.querySelector("#f").value = roundNumber(t/1000000000,3) + " Gigahertz";
 	}
 	
 }
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
-		$("input").keyup(compute);
-		$("select").change(compute);
+		let inputs = document.querySelectorAll("input");
+		for (let i = 0; i < inputs.length; i++) {
+			inputs[i].addEventListener("input", compute);
+		}
+
+		let selects = document.querySelectorAll("select");
+		for (let i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", compute);
+		}
 		compute();	
 	}
 }

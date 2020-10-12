@@ -4,7 +4,6 @@
 	$lang = 'en';	
 	echo addBoxBeg('Resistive divider calculator');
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 //
 
@@ -27,25 +26,32 @@ function parse(val, scale){
 	return l;
 }
 function compute(){
-	var r1 = parse($("#r1").val(), $("#r1Scale").val());
-	var r2 = parse($("#r2").val(), $("#r2Scale").val());
+	var r1 = parse(document.querySelector("#r1").value, document.querySelector("#r1Scale").value);
+	var r2 = parse(document.querySelector("#r2").value, document.querySelector("#r2Scale").value);
 	
 	if((r2+r1) == 0) return false;
 	
-	var t = (r2 / ( r2 + r1) ) *  $("#vin").val();
+	var t = (r2 / ( r2 + r1) ) *  document.querySelector("#vin").value;
 		
-	$("#vout").val(roundNumber(t,3) + " volts");
+	document.querySelector("#vout").value = roundNumber(t,3) + " volts";
 	
 	if(t<1){
-		$("#vout").val(roundNumber(t*1000,3) + " milivolts");
+		document.querySelector("#vout").value = roundNumber(t*1000,3) + " milivolts";
 	}
 	
 	return false;
 }
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
-		$("input").keyup(compute);
-		$("select").change(compute);
+		let inputs = document.querySelectorAll("input");
+		for (let i = 0; i < inputs.length; i++) {
+			inputs[i].addEventListener("input", compute);
+		}
+
+		let selects = document.querySelectorAll("select");
+		for (let i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", compute);
+		}
 		compute();	
 	}
 }
