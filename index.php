@@ -148,9 +148,9 @@
 	
 	
 	<footer class="color_footer w3-padding-16 w3-center w3-margin-top">
-		<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="w3-hover-text-blue"><i class="fa fa-creative-commons"></i></a> 2006-2019 - Gzalo.com by Gonzalo Ávila Alterach</p>
+		<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="w3-hover-text-blue"><i class="fa fa-creative-commons"></i></a> 2006-2020 - Gzalo.com by Gonzalo Ávila Alterach</p>
 		<p class="w3-xlarge w3-text-blue"><a href="mailto:gonzaloavilaalterach@gmail.com" class="w3-hover-text-white w3-padding-small"><i class="fa fa-envelope"></i></a>
-		<a href="http://www.facebook.com/gzaloprgmcomar" class="w3-hover-text-white w3-padding-small"><i class="fa fa-facebook-official"></i></a>
+		<a href="http://www.facebook.com/gzalocom" class="w3-hover-text-white w3-padding-small"><i class="fa fa-facebook-official"></i></a>
 		<a href="https://www.linkedin.com/in/gonzalo-ávila-alterach-21a63626" class="w3-hover-text-white w3-padding-small"><i class="fa fa-linkedin"></i></a>
 		<a href="http://youtube.com/gzaloprgm" class="w3-hover-text-white w3-padding-small"><i class="fa fa-youtube"></i></a>
 		<a href="https://github.com/gzalo" class="w3-hover-text-white w3-padding-small"><i class="fa fa-github"></i></a></p>
