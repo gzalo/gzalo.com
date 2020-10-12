@@ -81,7 +81,7 @@
         <header class="w3-display-container">
 
 			<div class="w3-container w3-display-middle w3-center">
-            <h1 class="w3-jumbo color_header_h">Gzalo<span class="w3-xlarge">.com</span></h1>
+            <h1 class="w3-jumbo color_header_h">Gzalo</h1>
             <h2 class="w3-large w3-hide-medium w3-hide-small color_header_h"><?php echo $slogan;?></h2>
 			</div>
 		</header>
