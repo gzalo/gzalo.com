@@ -62,6 +62,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/w3.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/extra.css" >
 		<link href='https://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">		
 		<!--[if lt IE 9]>
@@ -81,7 +82,7 @@
         <header class="w3-display-container">
 
 			<div class="w3-container w3-display-middle w3-center">
-            <h1 class="w3-jumbo color_header_h">Gzalo</h1>
+            <h1 class="w3-jumbo color_header_h"><a href="/<?php if($lang == 'en') echo 'index_en'; ?>" style="color:black;">Gzalo</a></h1>
             <h2 class="w3-large w3-hide-medium w3-hide-small color_header_h"><?php echo $slogan;?></h2>
 			</div>
 		</header>
@@ -148,7 +149,7 @@
 	
 	
 	<footer class="color_footer w3-padding-16 w3-center w3-margin-top">
-		<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="w3-hover-text-blue"><i class="fa fa-creative-commons"></i></a> 2006-2020 - Gzalo.com by Gonzalo Ávila Alterach</p>
+		<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="w3-hover-text-blue"><i class="fa fa-creative-commons"></i></a> 2006-2021 - Gzalo.com by Gonzalo Ávila Alterach</p>
 		<p class="w3-xlarge w3-text-blue"><a href="mailto:gonzaloavilaalterach@gmail.com" class="w3-hover-text-white w3-padding-small"><i class="fa fa-envelope"></i></a>
 		<a href="http://www.facebook.com/gzalocom" class="w3-hover-text-white w3-padding-small"><i class="fa fa-facebook-official"></i></a>
 		<a href="https://www.linkedin.com/in/gonzalo-ávila-alterach-21a63626" class="w3-hover-text-white w3-padding-small"><i class="fa fa-linkedin"></i></a>
