@@ -23,7 +23,7 @@
 		<p class="w3-center">
 		<span class="w3-xlarge" ><a href="mailto:gonzaloavilaalterach@gmail.com" class="w3-text-grey w3-padding-small"><i class="fa fa-envelope"></i></a>
 			<a href="http://www.facebook.com/gzalocom" class="w3-text-indigo w3-padding-small"><i class="fa fa-facebook-official"></i></a>
-			<a href="https://www.linkedin.com/in/gonzalo-ávila-alterach-21a63626" class="w3-text-indigo w3-padding-small"><i class="fa fa-linkedin"></i></a>
+			<a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/" class="w3-text-indigo w3-padding-small"><i class="fa fa-linkedin"></i></a>
 			<a href="http://youtube.com/gzaloprgm" class="w3-text-red w3-padding-small"><i class="fa fa-youtube"></i></a>
 			<a href="https://github.com/gzalo" class="w3-text-black w3-padding-small"><i class="fa fa-github"></i></a></span>
 		</p>
