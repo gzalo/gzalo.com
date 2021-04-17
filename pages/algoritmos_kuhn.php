@@ -18,7 +18,7 @@ struct persona{
 };</code></pre>
 <p>hay que escribir un procedimiento <code>void enganchar(persona *padres, persona **hijos);</code> que cambiase la lista de padres de tal manera que la lista quedara de la siguiente forma: A &rarr; 1er hijo de A &rarr; 2do hijo de A &rarr; B &rarr; 1er hijo de B &rarr; C &rarr; NULL</p>
 <p>Es decir, que estén los padres ordenados según el mismo orden que la lista original, pero que entre ellos estén todos los hijos correctos.</p>
-<p><img src="/extras/algo/algo1_1.png" alt="Final 4 julio 2013 - Ejercicio 1" style="width:100%;max-width:600px"/></p>
+<p><img src="/images/algo1_1.png" alt="Final 4 julio 2013 - Ejercicio 1" style="width:100%;max-width:600px"/></p>
 <hr/>
 <p>Dadas las siguientes estructuras:</p>
 <pre><code>struct alumno{
@@ -34,23 +34,23 @@ struct materia{
 </code></pre>
 <p>Hay un vector de materias. La última materia tiene un NULL en el campo prim.</p>
 <p>Escribir un procedimiento <code>void enganchar(materia *materias, alumno **primer2);</code> que <i>enganche</i> a los alumnos que tienen nota 2, poniendo el primero de ellos en la variable primer2, de tal forma que recorriendo por sig2 pases por todos ellos.</p>
-<p><img src="/extras/algo/algo1_2.png" alt="Final 4 julio 2013 - Ejercicio 2" style="width:100%;max-width:600px"/></p>
+<p><img src="/images/algo1_2.png" alt="Final 4 julio 2013 - Ejercicio 2" style="width:100%;max-width:600px"/></p>
 
 <h2>Final 8 de julio de 2013</h2>
-<p>Dada una matriz cuadrada imprimir las celdas recorriendo en forma de "reloj de arena": <br/><img src="/extras/algo/reloj.png" alt="Reloj" style="width:100%;max-width:200px;"/></p>
+<p>Dada una matriz cuadrada imprimir las celdas recorriendo en forma de "reloj de arena": <br/><img src="/images/reloj.png" alt="Reloj" style="width:100%;max-width:200px;"/></p>
 <p>Variantes: matriz de ancho par/impar, misma forma de recorrer pero rotada 90º.</p>
 <hr/>
-<p>Dado un vector de listas, ordenarlas según longitud (cantidad de elementos en la lista):<br/><img src="/extras/algo/ejlunes.png" alt="Ejercicio final lunes 8" style="width:100%;max-width:400px"/></p>
+<p>Dado un vector de listas, ordenarlas según longitud (cantidad de elementos en la lista):<br/><img src="/images/ejlunes.png" alt="Ejercicio final lunes 8" style="width:100%;max-width:400px"/></p>
 <p>Variantes: sin usar/usando un vector auxiliar para guardar la longitud de cada lista.</p>
 <hr>
-<p><img src="/extras/algo/diagonales.png" alt="Final" style="width:100%;max-width:600px"/></p>
+<p><img src="/images/diagonales.png" alt="Final" style="width:100%;max-width:600px"/></p>
 <p>Dado un vector de listas como se ve en la figura (cuadrado), se pide enganchar la <strong>Diagonal principal</strong> y <strong>secundaria</strong>, descartando esos nodos del vector original y además si hay un nodo compartido (si la longitud es impar), no agregarlo a la diagonal secundaria.</p>
 <h2>Extras de otros finales</h2>
 <ul>
 <li>Ordenamiento de vector de enteros por selección/burbujeo de manera recursiva.</li>
 <li>Un archivo tiene muchos enteros, cada uno en una línea. Obtener los 100 valores máximos de ellos, leyendo el archivo 1 sola vez y sin guardarlo todo en memoria. Variantes: cadenas de texto en lugar de enteros</li>
 <li>Recorrer una matriz (tanto cuadrada como rectangular) en forma de caracol, tanto de forma iterativa como recursiva.</li>
-<li>Enganchar un vector de listas de tal manera que al recorrerla haga forma de Z o X: <img src="/extras/algo/caracoles.png" alt="Caracoles y Z de zorro" style="width:200px;"/> (cada cuadrado representa un nodo, están enganchados horizontalmente)</li>
+<li>Enganchar un vector de listas de tal manera que al recorrerla haga forma de Z o X: <img src="/images/caracoles.png" alt="Caracoles y Z de zorro" style="width:200px;"/> (cada cuadrado representa un nodo, están enganchados horizontalmente)</li>
 <li>Enganchar un vector de listas de manera de recorrerlo por <i>columnas</i>, es decir: primer nodo de primera lista &rarr; primer nodo de segunda lista &rarr; ... &rarr; segundo nodo de primera lista &rarr; ...</li>
 <li>Dada una matriz de enteros, escribir una función que diga en qué celda (qué fila y columna) es máxima la suma de los valores de las celdas vecinas. Variantes: conectividad4/8 (incluyendo y no incluyendo vecinos en diagonal), warpeado (la matriz es un toroide/dona, los vecinos se repiten horizontal y verticalmente)</li>
 </ul>
