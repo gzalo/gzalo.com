@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/tp_labodemicros/"]
+---
 'Control domótico via infrarrojo y PC (2014)','Panel de control domótico para controlar luces de distintas habitaciones, permitiendo al usuario el cambio de intensidad a través de tres interfaces. Realizado para la materia "Laboratorio de microcontroladores".','/thumbs/controldomotico.png','/tp_labodemicros/');
 
 	$descripcionPagina = 'Trabajo práctico para la materia -Laboratorio de microcontroladores- (Profesores: Pucci, Ratto)';

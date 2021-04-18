@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/hbridge_en/"]
 ---
 addProjectBox('DC motor control with H bridge', 'Different ways to control DC motors.','/thumbs/puenteh.png','/hbridge_en/');
 

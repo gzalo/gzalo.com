@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/tpg_intro/"]
+---
 'LED matrix with inclination sensors (2013)','This project is based in a 8x8 bicolor LED matrix, controlled by a PC via the parallel port. We also included two homemade orientation sensors, allowing the detection of the matrix angle.','/thumbs/ledmatrixintro.png','/tpg_intro_en/');
 
 	$descripcionPagina = 'Trabajo práctico para la materia Introducción al a Ingeniería Electrónica (Profesores: Ricardo Veiga, Ariel Lutenberg, Pablo Marino, Ricardo Iuzzolino)';

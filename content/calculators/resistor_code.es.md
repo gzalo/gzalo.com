@@ -1,39 +1,13 @@
-	$descripcionPagina = 'Dados los colores de una resistencia, calcula cuánto es su valor y tolerancia.';
-	$tituloPagina = 'Calculadora de código de colores de resistencias';
-<script type="text/javascript"> 
-// 
-function f(r){
-	if(r > 1000000) return (r/1000000) + " Megaohms"
-	if(r > 1000) return (r/1000) + " Kilohms"
-	return r;
-}
+---
+title: "Calculadora de código de colores de resistencias"
+summary: "Dados los colores de una resistencia, calcula cuánto es su valor y tolerancia."
+thumbnail: "/thumbs/resistor_code.png"
+aliases: ["/codigo_resistencias/"]
+---
 
-function compute(){
-    var r1 = parseInt(document.querySelector("input[name='band01']:checked").value);
-	var r2 = parseInt(document.querySelector("input[name='band02']:checked").value);
-	var r3 = parseInt(document.querySelector("input[name='band03']:checked").value);
-	var r4 = parseInt(document.querySelector("input[name='band04']:checked").value);
-	document.querySelector("#r").value = f((r1+r2)*r3);
-	document.querySelector("#t").value = r4 + " %";
-}
-document.onreadystatechange = function () {
-	if (document.readyState == "complete") {
-		let inputs = document.querySelectorAll("input");
-		for (let i = 0; i < inputs.length; i++) {
-			inputs[i].addEventListener("input", compute);
-			inputs[i].addEventListener("change", compute);
-		}
+Dados los colores de una resistencia, esta página calcula cuánto es su valor y tolerancia.
 
-		let selects = document.querySelectorAll("select");
-		for (let i = 0; i < selects.length; i++) {
-			selects[i].addEventListener("change", compute);
-		}
-		compute();	
-	}
-}
-// 
-</script>
-<p>Dados los colores de una resistencia, esta página calcula cuánto es su valor y tolerancia.</p>
+{{< rawhtml >}}
 <form action="" id="ccForm">
 <table cellpadding="10" id="colorCode"><tr>
 <td>
@@ -85,3 +59,5 @@ document.onreadystatechange = function () {
 <p>R: <input id="r" disabled="disabled" class="w3-input w3-border"/></p>
 <p>Tolerancia: <input id="t" disabled="disabled" class="w3-input w3-border"/></p>
 </form>
+<script src="/inc/calculators/resistor_code.js"></script>
+{{< /rawhtml >}}

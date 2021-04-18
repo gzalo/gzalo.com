@@ -2,32 +2,32 @@
 <div class="w3-card-2 w3-white">
 
 	<header class="w3-container w3-margin-top color_headers">
-	  <h2>Últimas novedades</h2>
+	  <h2>{{i18n "latest_news"}}</h2>
 	</header>
 
 	<div class="w3-container">
 		<ul class="w3-ul w3-hoverable">
-		<li>Agregado proyecto: <a href="https://github.com/gzalo/bla">Biblioteca liviana para Reconocimiento de Habla en español</a>.</li>
-		<li>Actualizado diseño.</li>
-		<li>Agregado nuevo proyecto: <a href="https://casa.gzalo.com/habla/">reconocedor de habla usando HTK</a> (temporalmente desactivado).</li>
+		{{ range first 5 .Site.RegularPages}}
+			<li>
+				<a href="{{.Permalink}}">{{.Title}}</a>
+			</li>
+		{{ end }}
 		</ul>
 	</div>
 
 </div>
 
 <div class="w3-card-2 w3-margin-top w3-hide-medium w3-hide-small w3-white">
-
 	<header class="w3-container color_headers">
-	  <h2>Último video subido</h2>
+		<h2>{{i18n "latest_video"}}</h2>
 	</header>
 
 	<div class="w3-container w3-center">
-	  <div id="ytplayer"></div>
+		<div id="ytplayer"></div>
 	</div>
-
 </div>
 
-<script>
+<script type="text/javascript">
 	var tag = document.createElement('script');
 	tag.src = "https://www.youtube.com/iframe_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -52,9 +52,5 @@
 		event.target.playVideo();
 		event.target.mute();
 	}
-	
 </script>
-
-
-
 {{ end }}

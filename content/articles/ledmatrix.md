@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/ledmatrix/"]
 ---
 addProjectBox('Matrices de LEDs, formas de manejo', 'Cómo controlar una matriz de LEDs desde un microcontrolador.','/thumbs/ledmatrix.png','/ledmatrix/');
 

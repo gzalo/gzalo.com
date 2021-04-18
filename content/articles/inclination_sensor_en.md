@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/inclination_sensor_en/"]
 ---
 addProjectBox('Homemade inclination sensors', 'How to build small sensors with two states, that can sense the rotation of a board in two axes.','/thumbs/sensores_inclinacion.png','/inclination_sensor_en/');
 $tituloPagina = 'Homemade inclination sensors';

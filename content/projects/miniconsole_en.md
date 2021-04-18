@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/miniconsole_en/"]
+---
 'Mini game console with LED matrix (2009)', 'Simple 8x8 game console based in an 8052 microcontroller, developed in C.','/thumbs/miniconsola_.png','/miniconsole_en/');
 	$tituloPagina = 'Mini game console with LED matrix (8x8)';
 <p>As a final project for the subject "Electrónica Digital II" (2009, Professor: José Salama) we had to do a project using the 8052 microcontroller. I had some 8x8 LED matrices laying around, so I decided to make a mini game console. Using the Proteus simulator, I could design the circuit, program it and test it without needing a physical prototype. First I started using assembler, but it got too complex (specially the game logic section), so I decided to rewrite it using C, compiling with SDCC (free and open source compiler for various embedded platforms). </p>

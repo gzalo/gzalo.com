@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/i2c_en/"]
 ---
 addProjectBox('Introduction to I2C protocol, reading and writing in 24LC memories', 'Very useful memories, typically used to store configuration data or to keep logs with sensor data.','/thumbs/i2c.png','/i2c_en/');
 

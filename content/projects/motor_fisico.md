@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/motor_fisico/"]
+---
 'Pequeño motor físico (2010)','Basado en el paper "Advanced Character Physics" de Jakobsen. Desarrollado con HTML5 and Javascript based, solamente soporta círculos.','/thumbs/fisica.png','/motor_fisico/');
 
 	$descripcionPagina = 'Simple motor fisico basado en el paper Advanced Character Physics de Jakobsen.';

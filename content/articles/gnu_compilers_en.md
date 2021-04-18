@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/gnu_compilers_en/"]
 ---
 
 addProjectBox('Compiling programs with GNU compilers', 'How to use the free GNU compilers to build projects.','/thumbs/compiladores_gnu.png','/gnu_compilers_en/');

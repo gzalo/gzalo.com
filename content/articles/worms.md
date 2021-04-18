@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/worms/"]
 ---
 addProjectBox('Clon de Worms con SDL y OpenGL', 'Un clon sencillo del juego Worms, usando las bibliotecas mencionadas. Soporta varios jugadores en el mismo teclado.','/thumbs/worms.png','/worms/');
 

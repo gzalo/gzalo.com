@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/i2c/"]
 ---
 addProjectBox('Introducción al protocolo I2C, lectura y escritura en memorias 24LC', 'Muy útiles, por ejemplo para guardar datos de configuración o mantener un registro de sensores.','/thumbs/i2c.png','/i2c/');
 

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/ircam_en/"]
 ---
 addProjectBox('Video camera modification to see IR light', 'How to modify an ordinary video camera to increase the spectrum of the light it can see, allowing the visualization of near-infrarred.','/thumbs/ircam.png','/ircam_en/');
 $tituloPagina = 'Video camera modification to see IR light';

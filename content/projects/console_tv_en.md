@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/console_tv_en/"]
+---
 'Mini game console with TV out (2012)','Sample application that generates NTSC signals (black and white) which can be viewed in any standard definition TV. Based in a 8052 microcontroller.','/thumbs/consolatetris.png','/console_tv_en/');
 
 	$tituloPagina = 'Mini game console with TV out';

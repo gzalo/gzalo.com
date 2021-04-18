@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/teclado4x4/"]
 ---
 addProjectBox('Teclados de matriz, interfaz con microcontroladores', 'Formas fáciles para routear tact switches en formas de matriz.','/thumbs/teclado4x4.png','/teclado4x4/');
 

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/gsm_en/"]
 ---
 
 $tituloPagina = 'Using a cellphone or GSM/GPRS modem with a microcontroller';

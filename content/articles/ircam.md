@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["ircam/"]
 ---
 addProjectBox('Modificación de cámara de video para ver luz infrarroja', 'Cómo modificar una cámara de video estándar para agrandar el espectro de luz que puede observar, permitiendo ver parte del infrarrojo cercano.','/thumbs/ircam.png','/ircam/');
 

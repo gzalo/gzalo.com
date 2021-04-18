@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/tp_labodemicros_en/"]
+---
 'Domotic control via IR and PC (2014)','A domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces. This group project was done with Juan Ignacio Troisi and Martin Menendez, for the university subject "Laboratorio de microcontroladores".','/thumbs/controldomotico.png','/tp_labodemicros_en/');
 
 	echo addBoxBeg('Domotic control via PC and infrared');

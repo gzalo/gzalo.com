@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/rulemanes/"]
 ---
 
 addProjectBox('Tamaños de rulemanes', 'Tabla con tamaños de diversos rulemanes que se consiguen localmente, muy útil a la hora de hacer un proyecto mecánico.','/thumbs/rulemanes.png','/rulemanes/');

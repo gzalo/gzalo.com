@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/tile_engine_en/"]
 ---
 addProjectBox('Simple tile engine using HTML5 and Canvas', 'Very simple tile engine done in HTML5, originally made for an online block-based game.','/thumbs/motor_tiles.png','/tile_engine_en/');
 

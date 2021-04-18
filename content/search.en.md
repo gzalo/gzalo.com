@@ -1,4 +1,6 @@
-Hola
+---
+title: "Search"
+---
 
 {{< rawhtml >}}
 <script>

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/worms_en/"]
 ---
 addProjectBox('Worms clone using SDL y OpenGL', 'A simple clone of the game called Worms, using that libraries. Can be played by multiple players, using the same keyboard.','/thumbs/worms.png','/worms_en/');
 $descripcionPagina = 'Small Worms clone (cancelled, released under ZLib)';

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/rs232ttl_en/"]
 ---
 addProjectBox('Usage of MAX232 for RS232-TTL level shifting', 'A simple circuit used in almost every circuit that needs a connection with a PC.','/thumbs/rs232ttl.png','/rs232ttl_en/');
 

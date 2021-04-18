@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/electroestimulador/"]
+---
 $descripcionPagina = 'Electroestimulador Muscular controlado por microcontrolador';
 $tituloPagina = 'Electroestimulador Muscular';
 	

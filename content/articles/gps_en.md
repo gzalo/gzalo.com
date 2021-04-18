@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/gps_en/"]
 ---
 addProjectBox('Using GPS modules with microcontrollers', 'How to get the position from a GPS module, by parsing the NMEA strings.','/thumbs/gps.png','/gps_en/');
 

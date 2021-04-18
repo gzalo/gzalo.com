@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/gsm/"]
 ---
 addProjectBox('Utilización de un celular o modem GSM/GPRS con microcontroladores', 'Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador.','/thumbs/gsm.png','/gsm/');
 

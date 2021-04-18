@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/pld/"]
 ---
 addProjectBox('Introducción a PLD (dispositivos lógicos programables)', 'Resumen de aplicaciones y programación de PLA, PAL, GAL y PLD.','/thumbs/pld.png','/pld/');
 

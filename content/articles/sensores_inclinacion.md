@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/sensores_inclinacion/"]
 ---
 
 addProjectBox('Sensores de inclinación caseros', 'Cómo construir un pequeño sensor de dos estados para sensar la orientación en el espacio de una placa.','/thumbs/sensores_inclinacion.png','/sensores_inclinacion/');

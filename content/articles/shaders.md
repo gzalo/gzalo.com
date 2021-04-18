@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/shaders/"]
 ---
 
 addProjectBox('Introducción a Shaders GLSL', 'Una pequeño artículo para personas que deseen entrar en el mundo de la programación de shaders gráficos.','/thumbs/shaders.png','/shaders/');

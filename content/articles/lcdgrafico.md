@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/lcdgrafico/"]
 ---
 addProjectBox('LCDs gráficos basados en KS0108', 'Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S.','/thumbs/lcdgrafico.png','/lcdgrafico/');
 

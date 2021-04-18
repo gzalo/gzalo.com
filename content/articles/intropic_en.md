@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/intropic_en/"]
 ---
 addProjectBox('Introduction to PIC microcontrollers', 'Small introductory article about 8 bit microcontrollers, focusing on Microchip PIC16 family','/thumbs/pic.png','/intropic_en/');
 

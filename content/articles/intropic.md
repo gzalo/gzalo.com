@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/intropic/"]
 ---
 addProjectBox('Introducción a microcontroladores PIC', 'Pequeño resumen introductorio sobre microcontroladores de 8 bit, en particular de la familia Microchip PIC16','/thumbs/pic.png','/intropic/');
 

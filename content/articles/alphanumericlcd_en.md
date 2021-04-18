@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/alphanumericlcd_en/"]
 ---
 
 addProjectBox('Alphanumeric LCDs based on HD44780', 'How to control an Alphanumeric LCD using a microcontroller. Includes commands and schematics.','/thumbs/lcdalfanumerico.png','/alphanumericlcd_en/');

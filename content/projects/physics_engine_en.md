@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/physics_engine_en/"]
+---
 'Small physics engine (2010)','Based on the "Advanced Character Physics" paper by Jakobsen. HTML5 and Javascript based, supports only circles.','/thumbs/fisica.png','/physics_engine_en/');
 
 	$descripcionPagina = 'Physics engine based on Jakobsens Advanced Character Physics.';

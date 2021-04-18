@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/graphicallcd_en/"]
 ---
 addProjectBox('Graphical LCDs based on KS0108', 'How to control a Graphic LCD with a resolution of 128x64 (or 192x64) based in KS0108, using a microcontroller and two 8 bit I/O ports.','/thumbs/lcdgrafico.png','/graphicallcd_en/');
 

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/keyboard4x4_en/"]
 ---
 addProjectBox('Matrix keyboards, microcontroller interface', 'Easy tips to route multiple tact switches disposed in a matrix configuration.','/thumbs/teclado4x4.png','/keyboard4x4_en/');
 

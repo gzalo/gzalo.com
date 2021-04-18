@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/puenteh/"]
 ---
 addProjectBox('Control de motores de continua con puente H', 'Distintas formas de controlar motores de CC.','/thumbs/puenteh.png','/puenteh/');
 

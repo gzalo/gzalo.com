@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/rs232ttl/"]
 ---
 addProjectBox('Uso del MAX232 para conversiones RS232-TTL', 'Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora.','/thumbs/rs232ttl.png','/rs232ttl/');
 

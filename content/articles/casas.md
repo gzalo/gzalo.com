@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/casas/"]
 ---
 
 addProjectBox('Casas de electrónica de CABA', 'Lista de varias casas de electrónica de Buenos Aires, junto a una pequeña descripción de cada una.','/thumbs/casas.png','/casas/');

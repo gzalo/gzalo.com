@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/electrostimulator_en/"]
+---
 	$descripcionPagina = 'Muscular electrostimulator controlled by a microcontroller';
 	$tituloPagina = 'Muscular electrostimulator';
 <p><img src="/images/electro4.jpg" alt="electrostimulator" style="width:100%;max-width:160px;"/></p>

@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/ram8052_en/"]
 ---
 addProjectBox('External RAM memories in MCS51 architecture (8051/8052)', 'How to connect and use an external memory, using data and address multiplexing.','/thumbs/ram8052.png','/ram8052_en/');
 

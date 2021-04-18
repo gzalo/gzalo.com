@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/electronica_tcg_en/"]
+---
 'Card game - Electrónica (2010)','SDL based multiplayer game done as a final project for an assignature.','/thumbs/electronica-tcg.png','/electronica_tcg_en/');
 
 	$descripcionPagina = 'Small game I did with Lucas Tavolaro as a Final project for highschool.';

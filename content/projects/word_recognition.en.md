@@ -1,1 +1,6 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+---
 'Speech recognition using HTK (2016)','Distributed finite-grammar speech recognition based on the HTK toolkit. Developed as a final project for an university class. Uses JSRecorder and Web Audio API to capture microphone audio from the computer.','/thumbs/habla.png','https://casa.gzalo.com/habla');

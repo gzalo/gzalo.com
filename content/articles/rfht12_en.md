@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/rfht12_en/"]
 ---
 addProjectBox('Four channel RF remote control, using HT12D/E', 'How to remote control loads via an RF link, using cheap modules and ICs.','/thumbs/rfht12.png','/rfht12_en/');
 

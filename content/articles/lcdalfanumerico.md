@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/lcdalfanumerico/"]
 ---
 addProjectBox('LCDs alfanuméricos basados en HD44780', 'Cómo controlar un LCD alfanumérico "Inteligente" desde un microcontrolador. Incluye Comandos y esquemáticos.','/thumbs/lcdalfanumerico.png','/lcdalfanumerico/');
 

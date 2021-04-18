@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/sdl_en/"]
 ---
 addProjectBox('Introduction to SDL, making a pixel font editor', 'Small tutorial to learn the basics of SDL, using C++.','/thumbs/sdl.png','/sdl_en/');
 

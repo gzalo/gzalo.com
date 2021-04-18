@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/ledmatrix_en/"]
 ---
 addProjectBox('LED Matrix, methods to control', 'How to control a LED matrix with a microcontroller.','/thumbs/ledmatrix.png','/ledmatrix_en/');
 	

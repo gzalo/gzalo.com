@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/miniconsola/"]
+---
 'Mini consola de juegos con matriz de LEDs (2009)', 'Consola con resolución 8x8, basada en un microcontrolador 8052 microcontroller, desarrollo en C.','/thumbs/miniconsola_.png','/miniconsola/');
 	$descripcionPagina = 'Pequeño proyecto electrónico que hice en el 2009 para la materia Electrónica Digital II, usando el microcontrolador AT89S52.';
 	$tituloPagina = 'Mini consola de juegos con matriz de LEDs (de 8x8)';

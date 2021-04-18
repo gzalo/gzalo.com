@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/software_en/"]
 ---
 
 addProjectBox('List of software commonly used in electronics', 'Analysis of some electronic programs I used or use daily.','/thumbs/software.png','/software_en/');

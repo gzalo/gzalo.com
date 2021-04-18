@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/gps/"]
 ---
 addProjectBox('Utilización de módulos GPS con microcontroladores', 'Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía.','/thumbs/gps.png','/gps/');
 

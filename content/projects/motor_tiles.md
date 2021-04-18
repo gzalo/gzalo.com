@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/motor_tiles/"]
+---
 addProjectBox('Motor simple de tiles usando HTML5 y Canvas', 'Motor muy simple hecho en HTML5, originalmente pensado para un juego online basado en bloques.','/thumbs/motor_tiles.png','/motor_tiles/');
 
 	$descripcionPagina = 'Prueba para un juego de plataformas, sin usar Flash.';

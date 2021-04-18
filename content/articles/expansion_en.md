@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/expansion_en/"]
 ---
 
 addProjectBox('Input/output port expansion', 'How to add more digital inputs or outputs to a microcontroller, using shift registers.','/thumbs/expandir.png','/expansion_en/');

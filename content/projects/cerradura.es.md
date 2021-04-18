@@ -1,6 +1,11 @@
-'Cerradura de combinación digital (2012)','Digital logic based that implements a combination lock similar to those used in hotel rooms.','/thumbs/cerradura.png','/cerradura/');
+---
+title: "Cerradura de combinación digital"
+summary: "Lógica digital que implementa una cerradura de combinación similar a la usada en hoteles."
+thumbnail: "/thumbs/cerradura.png"
+aliases: ["/cerradura/"]
+---
 
-<p>Este proyecto fue armado para la materia Técnica Digital de la facultad. Básicamente es una cerradura como las de las cajas de seguridad de los hoteles.</p>
+<p>Este proyecto fue armado para la materia Técnica Digital de la facultad, en el año 2012. Básicamente es una cerradura como las de las cajas de seguridad de los hoteles.</p>
 <p>Para simplificar el diseño, la clave es de 4 dígitos y módulo 4. A diferencia de otras alarmas que permiten cambiar la clave soldando distintos cables, la idea del proyecto era hacerlo de tal forma que la clave se pudiera "guardar" en un dip switch.</p>
 <p><img src="/images/td-diagbloques.png" alt="Diagrama de bloques cerradura" style="width:100%;max-width:562px;"/></p>
 <p><img src="/images/td-esquema.png" alt="Esquemático cerradura" style="width:100%;max-width:1010px;"/></p>

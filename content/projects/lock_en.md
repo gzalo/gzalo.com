@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/lock_en/"]
+---
 'Digital combination lock (2012)','Digital logic based that implements a combination lock similar to those used in hotel rooms.','/thumbs/cerradura.png','/lock_en/');
 
 	$descripcionPagina = 'Digital combination lock, without microcontroller';

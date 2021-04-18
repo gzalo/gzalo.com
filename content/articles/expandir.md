@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/expandir/"]
 ---
 
 addProjectBox('Expansión de puertos de entrada y salida', 'Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers).','/thumbs/expandir.png','/expandir/');

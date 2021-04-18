@@ -3,7 +3,7 @@ title: ""
 tags: ["articles", "electronics"]
 summary: ""
 thumbnail: "/thumbs/.png"
-aliases: ["//"]
+aliases: ["/compiladores_gnu/"]
 ---
 
 addProjectBox('Compilación de programas con compiladores GNU', 'Cómo aprovechar los compiladores libres de GNU para armar programas.','/thumbs/compiladores_gnu.png','/compiladores_gnu/');

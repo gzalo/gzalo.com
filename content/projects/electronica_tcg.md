@@ -1,3 +1,9 @@
+---
+title: ""
+summary: ""
+thumbnail: "/thumbs/.png"
+aliases: ["/electronica_tcg/"]
+---
 'Juego de cartas de electrónica (2010)','Juego multijugador basado en la biblioteca SDL, hecho como proyecto final para una materia.','/thumbs/electronica-tcg.png','/electronica_tcg/');
 
 	$descripcionPagina = 'Pequeño juego que hice con Lucas Tavolaro como proyecto final para "Electrónica Digital III".';
