@@ -1,15 +1,10 @@
 ---
-title: ""
+title: "LCDs gráficos basados en KS0108"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S."
+thumbnail: "/thumbs/lcdgrafico.png"
 aliases: ["/lcdgrafico/"]
 ---
-addProjectBox('LCDs gráficos basados en KS0108', 'Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S.','/thumbs/lcdgrafico.png','/lcdgrafico/');
-
-$descripcionPagina = 'Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S.';
-	$tituloPagina = 'Control de LCDs gráficos basados en KS0108 (128x64 píxeles)';
-	
 <p>La mayoría de los LCDs gráficos usan un controlador como el KS0108 (o compatible). Cada controlador tiene una memoria de 512 bytes interna y por lo tanto permite controlar un display de 64x64 píxeles. El truco que usan los diplays más grandes es usar un controlador por cada fracción de la pantalla, es decir, un display de 128x64 tiene 2 controladores, un display de 196x64 tiene 3 controladores, y uno de 128x128 tiene 4 controladores.</p>
 <p>Cada controlador es independiente, es decir, no transmiten información entre ellos. Para elegir a qué controlador hablarle, se usan dos líneas de control, llamadas CS1 y CS2 (CS = Chip Select). Básicamente actúa como una "dirección" de 2 bits, que elige a cual de los 4 controladores posibles se desea hablar. El controlador no tiene generador interno de fuentes, por lo que si se desea escribir un texto, será necesario almacenar los píxeles de cada caracter en un microcontrolador o memoria externa.</p>
 <p>En total están estas líneas:	

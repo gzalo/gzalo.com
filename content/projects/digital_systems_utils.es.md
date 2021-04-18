@@ -1,6 +1,7 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Utilities for Digital Systems classes"
+summary: "Software I made to assist with the development of FPGA systems that include a VGA output."
+thumbnail: "/thumbs/cordic.png"
 ---
-'Utilities for Digital Systems classes (2015)','Software I made to assist with the development of FPGA systems that include a VGA output.','/thumbs/cordic.png','https://github.com/gzalo/sistemas-digitales');
+
+(2015) https://github.com/gzalo/sistemas-digitales 

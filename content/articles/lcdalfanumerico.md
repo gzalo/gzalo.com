@@ -1,17 +1,13 @@
 ---
-title: ""
+title: "LCDs alfanuméricos basados en HD44780"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo controlar un LCD alfanumérico inteligente desde un microcontrolador. Incluye Comandos y esquemáticos."
+thumbnail: "/thumbs/lcdalfanumerico.png"
 aliases: ["/lcdalfanumerico/"]
 ---
-addProjectBox('LCDs alfanuméricos basados en HD44780', 'Cómo controlar un LCD alfanumérico "Inteligente" desde un microcontrolador. Incluye Comandos y esquemáticos.','/thumbs/lcdalfanumerico.png','/lcdalfanumerico/');
-
-$descripcionPagina = 'Cómo controlar un LCD alfanumérico -Inteligente- desde un microcontrolador. Incluye comandos y esquemáticos.';
-	$tituloPagina = 'Control de LCDs alfanuméricos de 20x4 con controlador HD44780';
 
 <p>Estos LCDS alfanuméricos (también llamados "inteligentes", por poseer controlador en la misma placa y casi no necesitar tiempo de CPU para usarlos) son un estándar industrial diseñados especialmente para interfaces con sistemas embebidos (microcontroladores o microprocesadores). Vienen en una gran cantidad de configuraciones distintas, 8x1 (1 fila, 8 carácteres), 16x2, 20x4, entre otros. La más común es la de 20x4.</p>
-<p>En estos LCDs se puede mostra unicamente texto (y hasta 8 caracteres definidos), por lo que se suelen usar en máquinas sencillas como impresoras, faxes, copiadoras, cajas registradoras, entre otras. Pueden venir con o sin backlight (luz de fondo), que puede ser fluorescente o LED (más común).</p>
+<p>En estos LCDs se puede mostrar unicamente texto (y hasta 8 caracteres definidos), por lo que se suelen usar en máquinas sencillas como impresoras, faxes, copiadoras, cajas registradoras, entre otras. Pueden venir con o sin backlight (luz de fondo), que puede ser fluorescente o LED (más común).</p>
 <p>Suelen venir en una interfaz de 16 pines, cuyo pinout suele ser el siguiente:</p>
 <ul>
 	<li>Masa</li>

@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Uso del MAX232 para conversiones RS232-TTL"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora."
+thumbnail: "/thumbs/rs232ttl.png"
 aliases: ["/rs232ttl/"]
 ---
-addProjectBox('Uso del MAX232 para conversiones RS232-TTL', 'Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora.','/thumbs/rs232ttl.png','/rs232ttl/');
-
-$descripcionPagina = 'Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora.';
-	$tituloPagina = 'RS232-TTL con MAX232';
 <p>Este circuito es muy usado en el ámbito de microcontroladores, básicamente permite hacer de adaptador de niveles entre una señal TTL (0 ... 5v) y una señal RS232 (15v ... -15v).</p>
 <p>Se basa en el integrado MAX232, que está diseñado específicamente para eso, necesitando unicamente cuatro capacitores externos para elevar la señal (se alimenta a 5V y genera señales de 12V)</p>
 <p>Hay varios clones del max232 (por ejemplo el HIN232) que tienen la misma funcionalidad pero por lo general son más baratos. Es posible intercambiarlos sin ningún problema.</p>

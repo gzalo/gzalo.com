@@ -1,13 +1,10 @@
 ---
-title: ""
+title: "Using GPS modules with microcontrollers"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to get the position from a GPS module, by parsing the NMEA strings."
+thumbnail: "/thumbs/gps.png"
 aliases: ["/gps_en/"]
 ---
-addProjectBox('Using GPS modules with microcontrollers', 'How to get the position from a GPS module, by parsing the NMEA strings.','/thumbs/gps.png','/gps_en/');
-
-$tituloPagina = 'Using GPS modules with microcontrollers';
 <p>This information should work with any GPS module (it was tested with an <a href="http://www.globalsat.co.uk/product_pages/product_et332.htm">ET-332</a>) that transmits data via a serial port, using the NMEA protocol.</p>
 <p>The main output of the GPS module are lots of NMEA strings, generally more than 10 per second, separated by carriage return and line feed characters. The most interesting one for typical applications is the one starting with GPGGA. For instance: <pre>$GPGGA,182402.02,3436.5829,S,05825.7855,W,1,04,1.5,57,M,-34.0,M,,,*70 </pre></p>
 <p>Each field has a different information:

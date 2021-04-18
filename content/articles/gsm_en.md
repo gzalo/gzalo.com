@@ -1,16 +1,15 @@
 ---
-title: ""
+title: "Using a cellphone or GSM/GPRS modem with a microcontroller"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to use a cellphone or a modem to send and receive texts and SMS using a microcontroller."
+thumbnail: "/thumbs/gsm.png"
 aliases: ["/gsm_en/"]
 ---
 
-$tituloPagina = 'Using a cellphone or GSM/GPRS modem with a microcontroller';
 <p>It's possible to connect a microcontroller to a modem or GSM/GPRS cellphone, which enables the microcontroller to do stuff such as answer the phone, call a number, send and receive SMS as well as connect to the internet, even with small microcontrollers.</p>
 <p>The first thing needed to know is that most cellphones and GSM modules work with AT commends, which are mostly universals and presents in any cellphone with a data cable, particularly old ones which could be used as modems through a virtual serial port.</p>
 <p>We need to build the interface between the microcontroller and the module/cellphone. In most cases the cellphones work with 3.3 V, so the microcontroller needs to be supplied that voltage, or a level shifter or a simple resistive divider needs to be used.</p>
-<p>Dedicated modules (such as the motorola G20 or G24) tend to use a complete RS232 interface (to keep compatibility with old modems), so an IC such as the MAX232 is needed to connect them together (se <a href="/rs232ttl_en/">more information of the MAX232</a>).</p>
+<p>Dedicated modules (such as the Motorola G20 or G24) tend to use a complete RS232 interface (to keep compatibility with old modems), so an IC such as the MAX232 is needed to connect them together (se <a href="/rs232ttl_en/">more information of the MAX232</a>).</p>
 <p>Once both parts can interface, it's possible to talk to the module via a standard serial communication, usually at 4800bps, 1 bit stop, no parity and no flow control. Commands can then be sent.</p>
 <p>Everything sent will be echoed by the module, so that will have to be handled in software.</p>
 <p>List of main commands:</p>

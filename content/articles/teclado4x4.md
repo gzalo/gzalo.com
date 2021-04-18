@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Teclados de matriz, interfaz con microcontroladores"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Formas fáciles para routear tact switches en formas de matriz."
+thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/teclado4x4/"]
 ---
-addProjectBox('Teclados de matriz, interfaz con microcontroladores', 'Formas fáciles para routear tact switches en formas de matriz.','/thumbs/teclado4x4.png','/teclado4x4/');
-
-$descripcionPagina = 'Cómo hacer un teclado de 4x4 con interruptores, cómo conectarlo a un microcontrolador y cómo detectar la presión de teclas.';
-	$tituloPagina = 'Teclados de matriz, interfaz con microcontroladores';
 <p>Hacer un teclado con botones de 4 terminales (también denominados tact switches) es relativamente sencillo, aprovechando el hecho que los botones de 4 terminales tienen dos contactos unidos internamente, por lo que podemos evitar puentes en el circuito impreso.</p>
 <img src="/images/keypad_lyt.png" alt="Esquemático teclado 3x4 con tact switches" style="width:100%;max-width:373px;"/>
 <p><a href="/downloads/keypad.zip" >Descargar circuito impreso editable en Proteus</a></p>

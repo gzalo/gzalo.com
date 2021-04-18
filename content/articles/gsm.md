@@ -1,18 +1,15 @@
 ---
-title: ""
+title: "Utilización de un celular o modem GSM/GPRS con microcontroladores"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador."
+thumbnail: "/thumbs/gsm.png"
 aliases: ["/gsm/"]
 ---
-addProjectBox('Utilización de un celular o modem GSM/GPRS con microcontroladores', 'Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador.','/thumbs/gsm.png','/gsm/');
 
-$descripcionPagina = 'Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador.';
-	$tituloPagina = 'Utilización de un celular o modem GSM/GPRS con microcontroladores';
 <p>Es posible conectar un microcontrolador a un modem o celular GSM o GPRS, lo que nos permite hacer cosas como atender el teléfono, llamar a cierto número, enviar y recibir mensajes de texto, o incluso conectarse a internet, todo desde un microcontrolador cualquiera.</p>
 <p>Lo primero que necesitamos saber es que la mayoría de los celulares y módulos GSM trabajan con comandos AT, que son casi universales y están presentes en todo celular que tenga un cable de datos y se pueda usar como modem.</p>
 <p>Necesitamos construir una interfaz entre el módulo/celular y el microcontrolador. Por lo general los celulares trabajan con 3.3v (casi TTL), por lo que podremos alimentar el microcontrolador a 3.3V, o caso contrario usar un divisor resistivo para bajar la tensión de salida del microcontrolador a 3.3V.</p>
-<p>Los módulos dedicados, por el contrario, suelen tener una interfaz RS232, por lo que necesitaremos un integrado como el Max232 para conectarlos (ver <a href="/rs232ttl">más información del Max232</a>).</p>
+<p>Los módulos dedicados (como el Motorola G20 o G24), por el contrario, suelen tener una interfaz RS232, por lo que necesitaremos un integrado como el Max232 para conectarlos (ver <a href="/rs232ttl">más información del Max232</a>).</p>
 <p>Una vez que tenemos a ambas partes conectadas, por lo general es posible hablarle al módulo/modem a 4800bps (1 bit de stop, ninguno de paridad y sin control de flujo) y enviar comandos. </p>
 <p>Todo lo que escribamos será repetido por el módulo (eco), por lo que tenemos que tener cuidado al escribir rutinas para hablarle al mismo</p>
 <p>Esta es la lista de comandos principales:</p>

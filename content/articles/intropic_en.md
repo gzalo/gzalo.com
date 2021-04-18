@@ -1,13 +1,10 @@
 ---
-title: ""
+title: "Introduction to PIC microcontrollers"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Small introductory article about 8 bit microcontrollers, focusing on Microchip PIC16 family"
+thumbnail: "/thumbs/pic.png"
 aliases: ["/intropic_en/"]
 ---
-addProjectBox('Introduction to PIC microcontrollers', 'Small introductory article about 8 bit microcontrollers, focusing on Microchip PIC16 family','/thumbs/pic.png','/intropic_en/');
-
-$tituloPagina = 'Introduction to PIC microcontrollers';
 	
 <p>In order to define a PIC microcontroller, we will first need to know what a microcontroller is. In broad strokes, it's an integrated circuit that has most of the stuff a computer has:<ul>
   <li><strong>CPU:</strong> processes and executes every instruction. Them main parameters are the maximum speed it supports and the width of the data bus it has, which generally defines de width of the internal registers. In most microcontrollers, CPUs are orders of magnitude slower in comparison with typical PC CPUs, and typically 8 to 16 bits.</li><li><strong>Memory:</strong> holds both the program instructions as well as the data space that will be used by the program to store temporal data (RAM). Typically, microcontrollers have their program stored in an EEPROM/Flash memory.</li><li><strong>Peripherals:</strong>

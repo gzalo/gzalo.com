@@ -1,15 +1,11 @@
 ---
-title: ""
+title: "List of software commonly used in electronics"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Analysis of some electronic programs I used or use daily."
+thumbnail: "/thumbs/software.png"
 aliases: ["/software_en/"]
 ---
 
-addProjectBox('List of software commonly used in electronics', 'Analysis of some electronic programs I used or use daily.','/thumbs/software.png','/software_en/');
-
-$descripcionPagina = 'List of software commonly used in electronics: schematic design, PCB design, simulation, programming';
-	$tituloPagina = 'List of software commonly used in electronics';
 <h3>Simulation, PCB design and schematic software</h3>
 	<p>
 		<span style="font-weight: bold;">Electro Workbench 5.12: </span>Full of bugs, specially with wires (when adding connections they tend to move randomly), has only a few components, some ICs are badly drawn, the automatic redraw fails, has no undo button. Doesn't support PCBs. It's fine for simulating simple logic gate circuits, allows for equation simplification and conversion to NAND. Doesn't support microcontrollers (PICs, AVRs, 8051, etc.)

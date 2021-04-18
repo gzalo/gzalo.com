@@ -1,17 +1,13 @@
 ---
-title: ""
+title: "Graphical LCDs based on KS0108"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to control a Graphic LCD with a resolution of 128x64 (or 192x64) based in KS0108, using a microcontroller and two 8 bit I/O ports."
+thumbnail: "/thumbs/lcdgrafico.png"
 aliases: ["/graphicallcd_en/"]
 ---
-addProjectBox('Graphical LCDs based on KS0108', 'How to control a Graphic LCD with a resolution of 128x64 (or 192x64) based in KS0108, using a microcontroller and two 8 bit I/O ports.','/thumbs/lcdgrafico.png','/graphicallcd_en/');
-
-$descripcionPagina = 'How to drive Graphical LCDs of 128x64 (or 192x64) resolution with KS0108 controller, by using a microcontroller and two I/O ports';
-	$tituloPagina = 'Graphical LCDs based on KS0108';
-<p>Most monochromatic graphical LCDs use a controller compatible with KS0108. Each one has an internal 512 byte memory, so it allows resolutions up to 64x64 pixels. Bigger displays tend to use multiple controllers, one per fraction of the screen. For instance, a 128x64 lcd has 2 controllers, a 196x64 has 3, and a 128x128 has 4 of them.</p>
-<p>Each controller is independent, they don't transmit information between them. In order to choose which controller has to be activated, two control lines are used: CS1 and CS2 (chip select), acting like a 2 bit address which can select up to four different ICs. They don't have an internal font generator, so in order to write text the driver has to store the pixels of each wanted glyph, in a microcontroller or an external memory.</p>
-<p>The LCDs have this terminals.
+<p>Most monochromatic graphical LCDs use a controller compatible with KS0108. Each one has an internal 512-byte memory, so it allows resolutions up to 64x64 pixels. Bigger displays tend to use multiple controllers, one per fraction of the screen. For instance, a 128x64 LCD has two controllers, a 196x64 has 3, and a 128x128 has 4 of them.</p>
+<p>Each controller is independent thus they don't transmit information between them. In order to choose which controller has to be activated, two control lines are used: CS1 and CS2 (chip select), acting like a 2 bit address which can select up to four different ICs. They don't have an internal font generator, so in order to write text the driver has to store the pixels of each wanted glyph, in a microcontroller or an external memory.</p>
+<p>The LCDs have these terminals:
 	<ul>
 		<li>VSS: 0V, ground reference</li>
 		<li>VDD: 5V, supply voltage for LCD</li>

@@ -1,15 +1,11 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Sensores de inclinación caseros"
+tags: ["articles", "misc"]
+summary: "Cómo construir un pequeño sensor de dos estados para sensar la orientación en el espacio de una placa."
+thumbnail: "/thumbs/sensores_inclinacion.png"
 aliases: ["/sensores_inclinacion/"]
 ---
 
-addProjectBox('Sensores de inclinación caseros', 'Cómo construir un pequeño sensor de dos estados para sensar la orientación en el espacio de una placa.','/thumbs/sensores_inclinacion.png','/sensores_inclinacion/');
-
-$descripcionPagina = 'Armado de sensores de inclinación caseros.';
-	$tituloPagina = 'Sensores de inclinación caseros';
 <p>Para un proyecto de la facultad, decidimos hacer unos sensores para detectar en qué orientación (dentro de un plano vertical) estaba un proyecto. Investigando encontramos unos simples sensores, basados en las comunes tiras de pines: <br/>
 <img src="/images/sensor0.png" alt="Sensor de inclinacion sencillo" style="width:100%;max-width:318px;"/><br/>
 Basicamente son dos pares de tiras, con una esfera conductora en el medio. Dichos sensores fueron armados y funcionaban más o menos, a veces era necesario hacer mucha fuerza lateral para activarlos, por lo que no se suelen activar solo con la gravedad.

@@ -1,14 +1,11 @@
 ---
-title: ""
+title: "Input/output port expansion"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to add more digital inputs or outputs to a microcontroller, using shift registers."
+thumbnail: "/thumbs/expandir.png"
 aliases: ["/expansion_en/"]
 ---
 
-addProjectBox('Input/output port expansion', 'How to add more digital inputs or outputs to a microcontroller, using shift registers.','/thumbs/expandir.png','/expansion_en/');
-
-$tituloPagina = 'Input/output port expansion';
 <p>In some projects, more inputs or outputs than the microcontroller can handle are needed. These are some solutions:</p>
 <ul>
 	<li>Use a PPI IC like the old 8255 (slow and big), parallel interface, uses 10 extra terminals and provides 3 extra 8-bit I/O ports.</li>

@@ -1,13 +1,11 @@
 ---
-title: ""
+title: "Four channel RF remote control, using HT12D/E"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to remote control loads via an RF link, using cheap modules and ICs."
+thumbnail: "/thumbs/rfht12.png"
 aliases: ["/rfht12_en/"]
 ---
-addProjectBox('Four channel RF remote control, using HT12D/E', 'How to remote control loads via an RF link, using cheap modules and ICs.','/thumbs/rfht12.png','/rfht12_en/');
 
-$tituloPagina = 'Four channel RF remote control, using HT12D/E';
 <img src="/images/controlrf_lyt.png" alt="Transmitter and receiver, RF, 4 channels" style="width:100%;max-width:681px;"/>
 <p>This simple circuits can be used for a high number of applications, for RC cars and ships to garage door openers, car alarms, data adquisition, robotics, and others.</p>
 <p>The radiofrequency section is based on the cheap transmitter/receiver pair WenShing TWS-BS-X, and RWS-X-X which modulate using ASK (more information of the <a href="http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Transmitter_Module/">transmitters</a> and the <a href="http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Receiver_Module/">receivers</a>). They usually cost less than 2 U$D each, and with a good antenna and tuning they might work with distances of around 50 meters.</p>

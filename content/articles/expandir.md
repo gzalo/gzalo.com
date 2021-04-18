@@ -1,15 +1,11 @@
 ---
-title: ""
+title: "Expandir puertos de entrada y salida de un microcontrolador"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers)."
+thumbnail: "/thumbs/expandir.png"
 aliases: ["/expandir/"]
 ---
 
-addProjectBox('Expansión de puertos de entrada y salida', 'Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers).','/thumbs/expandir.png','/expandir/');
-
-$descripcionPagina = 'Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers).';
-	$tituloPagina = 'Expandir puertos de entrada/salida de un microcontrolador';
 <p>Hay veces en las que para alguna aplicación necesitamos más pines de salida o entrada de los que tenemos en el microcontrolador. Hay varias soluciones:</p>
 <ul>
 	<li>Usar algún chip PPI como el 8255 (caro, grande y lento), de interfaz paralela (nos usa 10 terminales)</li>

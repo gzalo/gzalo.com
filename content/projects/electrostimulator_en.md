@@ -1,11 +1,9 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Muscular electrostimulator"
+summary: "Muscular electrostimulator controlled by a microcontroller"
+thumbnail: "/thumbs/electroestimulador.png"
 aliases: ["/electrostimulator_en/"]
 ---
-	$descripcionPagina = 'Muscular electrostimulator controlled by a microcontroller';
-	$tituloPagina = 'Muscular electrostimulator';
 <p><img src="/images/electro4.jpg" alt="electrostimulator" style="width:100%;max-width:160px;"/></p>
 <p><strong>The following information is given without any warranty, I'm not responsible for possible accidents. The project involves high voltages, which can lead to severe accidents and even death.</strong></p>
 <p>The electrostimulator is formed by three main blocks: a voltage booster, a controller and a high voltage control stage.</p>

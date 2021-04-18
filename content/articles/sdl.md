@@ -1,14 +1,10 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Introducción a SDL, desarrollando un editor simple de tipografías pixel"
+tags: ["articles", "programming"]
+summary: "Pequeño tutorial para aprender a usar SDL, en C++."
+thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl/"]
 ---
-addProjectBox('Introducción a SDL, haciendo un editor de fuentes pixel', 'Pequeño tutorial para aprender a usar SDL, en C++.','/thumbs/sdl.png','/sdl/');
-
-$descripcionPagina = 'Cómo hacer un pequeño editor de fuentes pixeladas. Introducción a SDL como librería gráfica y manejadora de eventos.';
-	$tituloPagina = 'Introducción a SDL, desarrollando un editor simple de tipografías pixel';
 <p>En este pequeño tutorial mostraré como hacer un editor de fuentes píxel de 8x8, útil para diseñar tu propia tipografía estilo "pixel". Usaré C++ y SDL (para acceder a la pantalla y eventos). Conocimiento de C/C++ es recomendado.</p>
 <p><img src="/images/sdleditor.png" alt="Editor de fuentes pixel 8x8" style="width:100%;max-width:304px;"/></p>
 <p>Primero necesitamos incluir todas los archivos cabecera (headers, extensión .h) de todas las librerías que vayamos a usar en el editor. Estos archivos incluyen prototipos de funciones (dicen como se llaman, la cantidad y tipos de argumentos, el tipo de retorno) y son necesarios para que el compilador pueda escribir correctamente la referencia a lo que necesitemos.</p>

@@ -1,14 +1,11 @@
 ---
-title: ""
+title: "Control de motores de continua con puente H"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Distintas formas de controlar motores de CC."
+thumbnail: "/thumbs/puenteh.png"
 aliases: ["/puenteh/"]
 ---
-addProjectBox('Control de motores de continua con puente H', 'Distintas formas de controlar motores de CC.','/thumbs/puenteh.png','/puenteh/');
 
-$descripcionPagina = 'Análisis de distintos tipos de puente H (para controlar motores de corriente contínua). Ventajas y desventajas.';
-	$tituloPagina = 'Control de motores de contínua con puente H';
 <p>Principalmente, hay tres tipos de control de motor de corriente continua:</p>
 <ul>
 	<li>Apagado/Prendido: El motor se puede apagar y prender</li>

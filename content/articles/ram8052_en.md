@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "External RAM memories in MCS51 architecture (8051/8052)"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to connect and use an external memory, using data and address multiplexing."
+thumbnail: "/thumbs/ram8052.png"
 aliases: ["/ram8052_en/"]
 ---
-addProjectBox('External RAM memories in MCS51 architecture (8051/8052)', 'How to connect and use an external memory, using data and address multiplexing.','/thumbs/ram8052.png','/ram8052_en/');
-
-$descripcionPagina = 'How to connect and use an external memory (data and address multiplexing). Schematic and PCB available.';
-	$tituloPagina = 'External RAM memories in MCS51 architecture (8051/8052)';
 <p>This article is useful for every derivative microcontroller (AT89C52, AT89S52, AT89S8253, amongs others)</p>
 <p>When an external memory position is read (movx a, @dptr), the 8052 does the following:	
 	<ol>

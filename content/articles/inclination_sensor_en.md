@@ -1,12 +1,11 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Homemade inclination sensors"
+tags: ["articles", "misc"]
+summary: "How to build small sensors with two states, that can sense the rotation of a board in two axes."
+thumbnail: "/thumbs/sensores_inclinacion.png"
 aliases: ["/inclination_sensor_en/"]
 ---
-addProjectBox('Homemade inclination sensors', 'How to build small sensors with two states, that can sense the rotation of a board in two axes.','/thumbs/sensores_inclinacion.png','/inclination_sensor_en/');
-$tituloPagina = 'Homemade inclination sensors';
+
 <p>For a university project, we decided to make some sensors to detect in which orientation (inside a vertical plane) a board was. Investigating in the Internet we found simple sensors, based in regular 90º double pin strips:<br/>
 <img src="/images/sensor0.png" alt="Homemade inclination sensor" style="width:100%;max-width:318px;"/><br/>
 Basically there is a small conductive sphere in the middle, which electrically joins the two contacts on any of both sides. Those sensors were built and tested, and they worked erratically. Sometimes it was necessary to make a high lateral force to trigger them, and they didn't get activated by gravity.</p>

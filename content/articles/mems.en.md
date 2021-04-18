@@ -1,7 +1,8 @@
 ---
-title: ""
+title: "Introducción to MEMS (micromechanical systems)"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Spanish presentation: examples of application and materials used for construction of MEMS."
+thumbnail: "/thumbs/mems.png"
 ---
-addProjectBox('Introducción to MEMS (micromechanical systems)', 'Spanish presentation: examples of application and materials used for construction of MEMS.','/thumbs/mems.png','/downloads/mems.pdf');
+
+[Download presentation](/downloads/mems.pdf)

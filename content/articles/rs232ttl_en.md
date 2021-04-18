@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Usage of MAX232 for RS232-TTL level shifting"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "A simple circuit used in almost every circuit that needs a connection with a PC."
+thumbnail: "/thumbs/rs232ttl.png"
 aliases: ["/rs232ttl_en/"]
 ---
-addProjectBox('Usage of MAX232 for RS232-TTL level shifting', 'A simple circuit used in almost every circuit that needs a connection with a PC.','/thumbs/rs232ttl.png','/rs232ttl_en/');
-
-$tituloPagina = 'RS232-TTL with MAX232';
-
 <p>This circuit is widely used in the world of microcontrollers. It basically allows to shift levels between a TTL signal (0 ... 5 V) and a RS232 signal (15 V ... -15 V).</p>
 <p>It's built around the MAX232 IC, which is designed specifically for that purpose, needing only four external capacitors to generate higher voltage. </p>
 <p>There are different clones of the MAX232 IC (for instance the HIN232) which have the same functionality but are generally cheaper. It's possible to swap them without any issue.</p>

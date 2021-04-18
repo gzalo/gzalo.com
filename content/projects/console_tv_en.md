@@ -1,13 +1,11 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Mini game console with TV out "
+summary: "Sample application that generates NTSC signals (black and white) which can be viewed in any standard definition TV. Based in a 8052 microcontroller."
+thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/console_tv_en/"]
 ---
-'Mini game console with TV out (2012)','Sample application that generates NTSC signals (black and white) which can be viewed in any standard definition TV. Based in a 8052 microcontroller.','/thumbs/consolatetris.png','/console_tv_en/');
 
-	$tituloPagina = 'Mini game console with TV out';
-<p>A few years after designing and building the <a href="/miniconsole_en/">Mini game console with LED matrix</a>, I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. <a href="http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php">The article itself can be found here</a>.</p>
+<p>In 2012, a few years after designing and building the <a href="/miniconsole_en/">Mini game console with LED matrix</a>, I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. <a href="http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php">The article itself can be found here</a>.</p>
 <p>Using the idea of two resistors to generate 4 values and thus create the sync signal and 3 colors (black, white, gray), I adapted the mini console to have a composite video out. Hardware-wise, it was needed to add a buffer, since the output current of the used microcontroller (AT89S52) is not high enough to drive the signal, which has a 75 ohm impedance at the TV end.</p>
 <p>Regarding the software, the fact that multiple televisions and capture cards don't require the full vertical sync signal was used. In this time, the game logic was executed. Bit accesable registers were used, in order to extract the bits of the framebuffer in an efficient way. For faster output, the UART of the micorcontroller may be used in an syncronic mode, and thus improve the horizontal resolution by a factor of ~8. In this prototype, a 30x32 resolution was perfectly achieved. To have a higher resolution, external RAM would be needed.</p>
 <p>

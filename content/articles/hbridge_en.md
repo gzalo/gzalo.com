@@ -1,13 +1,10 @@
 ---
-title: ""
+title: "DC motor control with H bridge"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Different ways to control DC motors."
+thumbnail: "/thumbs/puenteh.png"
 aliases: ["/hbridge_en/"]
 ---
-addProjectBox('DC motor control with H bridge', 'Different ways to control DC motors.','/thumbs/puenteh.png','/hbridge_en/');
-
-$tituloPagina = 'DC motor control with H bridge';
 <p>There are three principal types of motor control:</p>
 <ul>
 	<li>On/Off: The motor can spin in one direction or stop</li>

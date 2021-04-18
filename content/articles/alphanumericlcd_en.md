@@ -1,15 +1,11 @@
 ---
-title: ""
+title: "Alphanumeric LCDs based on HD44780"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to control an Alphanumeric LCD using a microcontroller. Includes commands and schematics."
+thumbnail: "/thumbs/lcdalfanumerico.png"
 aliases: ["/alphanumericlcd_en/"]
 ---
 
-addProjectBox('Alphanumeric LCDs based on HD44780', 'How to control an Alphanumeric LCD using a microcontroller. Includes commands and schematics.','/thumbs/lcdalfanumerico.png','/alphanumericlcd_en/');
-
-$descripcionPagina = 'How to control alphanumeric LCDs based on the HD44780 controller. Includes commands and schematics.';
-	$tituloPagina = 'Alphanumeric LCDs based on HD44780';
 <p>Most alphanumeric LCDs (sometimes called smart LCDs, since they include a controller in the same board and don't need a powerful CPU to use them) are an industrial standard designed for interfacing with embedded system (mostly microcontrollers or microprocessors). They come in a lot of different configurations, 8x1 (1 row, 8 characters per row), 16x2, 20x4, and even bigger ones are available.</p>
 <p>This LCDs are designed to show text (and up to 8 custom defined characters) so they are used in simple machines that don't need to display complex information, such as printers, faxes, copiers, etc. They can include backlight, which can be flourescent or more commonly LEDs</p>
 <p>They often come with a 16 pin interface, with the following typical pinout:</p>

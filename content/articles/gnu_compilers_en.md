@@ -1,14 +1,10 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Compiling programs with GNU compilers"
+tags: ["articles", "programming"]
+summary: "How to use the free GNU compilers to build C/C++ projects."
+thumbnail: "/thumbs/compiladores_gnu.png"
 aliases: ["/gnu_compilers_en/"]
 ---
-
-addProjectBox('Compiling programs with GNU compilers', 'How to use the free GNU compilers to build projects.','/thumbs/compiladores_gnu.png','/gnu_compilers_en/');
-
-$tituloPagina = 'Compiling C/C++ programs with GNU compilers';
 <p>The programs of a project are typically based on many source code files, with .c or .cpp (in case of C++) extension. Compiling each one of those creates .o files, called "object files", which contain the source code "translated" into machine code.</p>
 <p>After having all the .o files (and the .a that correspond to dynamic libraries), it's necessary to join them to create the final executable, using a linker. This tool joins all the files in such a way that the cross references work fine.</p>
 <p>The completed process can be seen in this image:<br/><img src="/images/com_enlazado.png" alt="Compile and link process" style="width:100%;max-width:471px;"/></p>

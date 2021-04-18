@@ -1,13 +1,10 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Digital combination lock"
+summary: "Digital logic based that implements a combination lock similar to those used in hotel rooms."
+thumbnail: "/thumbs/cerradura.png"
 aliases: ["/lock_en/"]
 ---
-'Digital combination lock (2012)','Digital logic based that implements a combination lock similar to those used in hotel rooms.','/thumbs/cerradura.png','/lock_en/');
-
-	$descripcionPagina = 'Digital combination lock, without microcontroller';
-	$tituloPagina = 'Digital combination lock';
+	2012
 <p>This project was developed for the subject "Técnica Digital", for the university. Basically it's a lock similar to those found in hotel rooms.</p>
 <p>To simplify the design, the key is 4 digit, modulo 4. Unlike other locks that only allow to change the key by soldering different wires, the idea of the project is to make it in such a way that the key can be "stored" in a DIP switch.</p>
 <p><img src="/images/td-diagbloques.png" alt="Block diagram of the lock" style="width:100%;max-width:562px;"/></p>

@@ -1,14 +1,11 @@
 ---
-title: ""
+title: "Introducción al protocolo I2C, lectura y escritura en memorias 24LC"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Muy útiles, por ejemplo para guardar datos de configuración o mantener un registro de sensores."
+thumbnail: "/thumbs/i2c.png"
 aliases: ["/i2c/"]
 ---
-addProjectBox('Introducción al protocolo I2C, lectura y escritura en memorias 24LC', 'Muy útiles, por ejemplo para guardar datos de configuración o mantener un registro de sensores.','/thumbs/i2c.png','/i2c/');
 
-$descripcionPagina = 'Introducción al protocolo I2C. Señales de START, STOP, envío y recepción de datos. Aplicación en memoria 24LCXXX';
-	$tituloPagina = 'Introducción al protocolo I2C, lectura y escritura en memorias 24LC';
 <p>I2C (pronunciado I cuadrado C) es un estándar que facilita la comunicación entre distintos dispositivos (microcontroladores, memorias, monitores de computadoras, y muchos otros dispositivos que tengan "inteligencia").</p>
 <p>Solamente requiere dos líneas de señal: Una de datos y una de clock (además de la masa común). Fue diseñado por Philips y la velocidad a la que se lo suele usar es 100 Kbits por segundo, pero hay algunos dispositivos que pueden transmitir más rapido.</p>
 <p>El bus I2C es serie (todos los datos van por una misma señal "uno atrás del otro") y síncronico (una de las señales se usa para sincronizar y marcar el tiempo).</p>

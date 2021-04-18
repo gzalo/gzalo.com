@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Control remoto de 4 canales por RF, mediante HT12D/E"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo controlar cargas a distancias a través de un enlace de radiofrecuencia, usando módulos y ciruitos integrados de bajo costo."
+thumbnail: "/thumbs/rfht12.png"
 aliases: ["/rfht12/"]
 ---
-addProjectBox('Control remoto de 4 canales por RF, mediante HT12D/E', 'Cómo controlar cargas a distancias a través de un enlace de radiofrecuencia, usando módulos y ciruitos integrados de bajo costo.','/thumbs/rfht12.png','/rfht12/');
-
-$descripcionPagina = 'Cómo usar módulos RF y circuitos integrados (de)moduladores para comandar cosas a distancia.';
-	$tituloPagina = 'Control remoto de 4 canales por Radiofrecuencia, usando HT12D/E';
 	
 <img src="/images/controlrf_lyt.png" alt="Transmisor y Receptor RF 4 canales" style="width:100%;max-width:681px;"/>
 <p>Estos circuitos sencillos se puede usar para controlar una gran cantidad de aplicaciones, desde autos y barcos radiocontrolados hasta apertura de portones de garages, alarmas de autos, adquisición de datos, robótica, entre muchas otras cosas.</p>

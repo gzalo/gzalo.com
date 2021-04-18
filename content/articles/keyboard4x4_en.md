@@ -1,13 +1,10 @@
 ---
-title: ""
+title: "Matrix keyboards, microcontroller interface"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Easy tips to route multiple tact switches disposed in a matrix configuration."
+thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/keyboard4x4_en/"]
 ---
-addProjectBox('Matrix keyboards, microcontroller interface', 'Easy tips to route multiple tact switches disposed in a matrix configuration.','/thumbs/teclado4x4.png','/keyboard4x4_en/');
-
-$tituloPagina = 'Matrix keyboards, microcontroller interface';
 <p>Making a keyboard with 4 terminal buttons (also known as tact switches) is very easy, specially using the fact that two of the 4 terminals are internally joined, so it's possible to use a single board PCB without needing extra wire jumps.</p>
 <img src="/images/keypad_lyt.png" alt="3x4 keyboard schematic" style="width:100%;max-width:373px;"/>
 <p><a href="/downloads/keypad.zip">Download editable PCB (for Proteus)</a></p>

@@ -1,12 +1,10 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Video camera modification to see IR light"
+tags: ["articles", "misc"]
+summary: "How to modify an ordinary video camera to increase the spectrum of the light it can see, allowing the visualization of near-infrared."
+thumbnail: "/thumbs/ircam.png"
 aliases: ["/ircam_en/"]
 ---
-addProjectBox('Video camera modification to see IR light', 'How to modify an ordinary video camera to increase the spectrum of the light it can see, allowing the visualization of near-infrarred.','/thumbs/ircam.png','/ircam_en/');
-$tituloPagina = 'Video camera modification to see IR light';
 <p>A couple of years ago I found an old video camera: una JVC GR-C7u. It's a camera from the 80s, has a CCD color sensor, autofocus, black and white viewfinder, records in VHSC tapes. Its a very similar model to the one used by Marty in "Back to the future" (gr-c1u) but with a red chassis.</p>
 <p>It's widely known that CCD sensors by their construction detect light beyond the human view, specially the so called "near infrared" (which is closed to the red in the wavelength table). This infrared isn't the type emmited by all bodies (medium infrared), which is impossible to see by regular CCD and needs another technology to be fabricated.</p>
 <p>This cameras have a IR block filter, which only allows light in the visible range to pass to the sensor. This is needed since otherwise the camera would see images with a reddish hue, and the colors wouldn't exactly match what's seen by the human eye. Removing this filter and replacing it by one that's IR only pass, it's possible for the camera to see IR light.</p>

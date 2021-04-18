@@ -1,13 +1,10 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Introduction to SDL, developing a pixel font editor"
+tags: ["articles", "programming"]
+summary: "Small tutorial to learn the basics of SDL, using C++."
+thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl_en/"]
 ---
-addProjectBox('Introduction to SDL, making a pixel font editor', 'Small tutorial to learn the basics of SDL, using C++.','/thumbs/sdl.png','/sdl_en/');
-
-$tituloPagina = 'Introduction to SDL, developing a simple pixel font editor';
 <p>This small tutorial will show how to develop a small 8x8 pixel font editor, useful for designing small fonts with a pixel style. C++ y SDL will be used. C/C++ knowledge is recommended.</p>
 <p><img src="/images/sdleditor.png" alt="8x8 pixel font editor" style="width:100%;max-width:304px;"/></p>
 <p>First we need to include all the header files (.h extension) of all the libraries that we'll use in the editor. This inclusions are needed so that the compiler can correctly reference the functions we'll use.</p>

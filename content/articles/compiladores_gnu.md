@@ -1,16 +1,11 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
+title: "Compilación de programas con compiladores GNU"
+tags: ["articles", "programming"]
+summary: "Cómo usar los compiladores libres de GNU para armar programas en C o C++."
 thumbnail: "/thumbs/.png"
 aliases: ["/compiladores_gnu/"]
 ---
 
-addProjectBox('Compilación de programas con compiladores GNU', 'Cómo aprovechar los compiladores libres de GNU para armar programas.','/thumbs/compiladores_gnu.png','/compiladores_gnu/');
-
-$descripcionPagina = 'Cómo usar las herramientas libres para compilar archivos .c o .cpp.';
-	$tituloPagina = 'Compilación de programas con compiladores GNU';
-	
 <p>Los programas de un proyecto suelen estar compuestos de varios archivos de código fuente, con extensión .c o .cpp (en caso de ser C++). Compilar cada uno de estos archivos resulta en archivos .o, llamados código objeto. Estos archivos contienen el código fuente traducido a código máquina.</p>
 <p>Luego de tener todos los archivos .o resultantes (y los .a que corresponden a librerías dinámicas), es necesario juntarlos para formar el .exe final, usando un enlazador. Este proceso se encarga de unirlos, haciendo que las referencias entre las distintas partes funcione correctamente. </p>
 <p>El proceso completo se puede ver en esta imagen:<br/><img src="/images/com_enlazado.png" alt="Proceso de compilación y enlazado" style="width:100%;max-width:471px;"/></p>

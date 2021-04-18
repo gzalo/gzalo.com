@@ -6,21 +6,21 @@ thumbnail: "/thumbs/adc.png"
 aliases: ["/adc_en/"]
 ---
 
-There are some low cost systems in which the reading of some sensors, potentiometers or other analog devices is required, by using a cheap microcontroller without integrated analog to digital converter.
+There are some low-cost systems that require reading from some sensors, potentiometers, or other analog devices, by using a cheap microcontroller without an integrated analog to digital converter.
 
-Adding an external ADC might require more microcontroller pins, more space in the PCB or more software complexity (for instance, I2C routines may be needed if that's the used bus).
+Adding an external ADC might require more microcontroller pins, more space in the PCB, or more software complexity (for instance, I2C routines may be needed if that's the used bus).
 
-If there aren't many requirements regarding resolution, accuracy, lineality, sample time, the solution is to use an RC circuit, and measure the time it takes to charge (similar to a double ramp ADC)
+If there aren't many requirements regarding resolution, accuracy, linearity, sample time, the solution is to use an RC circuit and measure the time it takes to charge (similar to a double ramp ADC)
 
 ![RC Circuit](/images/rc.png)
 
-The resistor may be changed to a thermistor (PTC or NTC) if the temperature is the variable to be measured, or a LDR to measure luminosity. It's also possible to use a capacitive sensor, by using a fixed resistor.
+The resistor could be replaced with a thermistor (PTC or NTC) if the temperature of something has to be measured, or with an LDR to measure luminosity. It's also possible to use this circuit to measure capacitance if the resistor value is fixed.
 
-It's needed to have a bidirectional pin in the microcontroller, which also should allow to set a high impedance (High-Z) state
+This circuit requires a bidirectional pin in the microcontroller, which should also allow setting a high impedance (High-Z) input state.
 
 The principle is the following:
-* Set the terminal to high for around 1ms, to charge the capacitor</li>
-* Set the terminal in high z state and measure how long the capacitor holds the charge.</li>
+* Set the terminal to high for around 1 millisecond to charge the capacitor</li>
+* Set the terminal in a high-z state and measure how long the capacitor holds the charge.</li>
 * Repeat the cycle according to the desired sample rate.</li>
 
 ![Charge/Discharge RC cycle](/images/descarga.png)
@@ -35,6 +35,4 @@ DIR_LOAD = INPUT;
 while(PIN_LOAD == 0) time++; // Wait for the capacitor to discharge and count the time
 ```
 
-The 16 bit output should then be scaled to get a correct value according to the resistor. To avoid wasting CPU time in the while loop, an internal capture module may be used to easily count the interval during which the pin was in a high state. This method works best with pins that feature Schmitt Trigger capability, since it helps to remove the dependence of the supply voltage in the measured times.
-
-
+The 16 bit output should then be scaled to get a correct value according to the resistor. To avoid wasting CPU time in the `while` loop, an internal capture module may be used to easily count the interval during which the pin was in a high state. This method works best with pins that feature Schmitt Trigger capability, since it helps to remove the dependency of the supply voltage in the measured times.

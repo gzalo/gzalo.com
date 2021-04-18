@@ -1,11 +1,9 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Electroestimulador Muscular"
+summary: "Electroestimulador Muscular controlado por microcontrolador"
+thumbnail: "/thumbs/electroestimulador.png"
 aliases: ["/electroestimulador/"]
 ---
-$descripcionPagina = 'Electroestimulador Muscular controlado por microcontrolador';
-$tituloPagina = 'Electroestimulador Muscular';
 	
 <p><img src="/images/electro4.jpg" alt="Electroestimulador" style="width:100%;max-width:160px;"/></p>
 <p><strong>La siguiente información se da sin ninguna garantía, no me responsabilizo por posibles accidentes. El proyecto involucra altas tensiones, que mal manejadas pueden causar accidentes graves y la muerte.</strong></p>

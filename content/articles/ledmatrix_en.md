@@ -1,13 +1,10 @@
 ---
-title: ""
+title: "LED Matrix, methods to control"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "How to control a LED matrix with a microcontroller."
+thumbnail: "/thumbs/ledmatrix.png"
 aliases: ["/ledmatrix_en/"]
 ---
-addProjectBox('LED Matrix, methods to control', 'How to control a LED matrix with a microcontroller.','/thumbs/ledmatrix.png','/ledmatrix_en/');
-	
-	$tituloPagina = 'LED Matrix, methods to control';
 <p>An LED matrix is often composed by diodes disposed in this way:</p>
 <p><img src="/images/matrizinterna.png" style="width:100%;max-width:263px;" alt="LED matrix schematic"/></p>
 <p>The configuration is like the one used in diode ROMs, with the difference that it uses LEDs.</p>

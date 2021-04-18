@@ -1,15 +1,11 @@
 ---
-title: ""
+title: "Casas de electrónica de CABA"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Lista y análisis de algunas casas de electrónica en la Ciudad Autónoma de Buenos Aires (Argentina)."
+thumbnail: "/thumbs/casas.png"
 aliases: ["/casas/"]
 ---
 
-addProjectBox('Casas de electrónica de CABA', 'Lista de varias casas de electrónica de Buenos Aires, junto a una pequeña descripción de cada una.','/thumbs/casas.png','/casas/');
-
-$descripcionPagina = 'Análisis de algunas casas de electrónica en la Ciudad Autónoma de Buenos Aires (Capital Federal) de Argentina.';
-	$tituloPagina = 'Casas de electrónica de CABA';
 <p><a href="http://goo.gl/maps/Frji9">Ver las direcciones marcadas en un mapa</a></p>
 <ul>
 <li><b>Electrónica Liniers</b><br/>Dirección: Timoteo Gordillo 35 y Rivadavia (Liniers)<br/>Tiene muchos integrados TTL y CMOS, y componentes que no se consiguen en otro lado, como componentes viejos. Está lejos de las otras casas, pero se puede llegar rapido a través del metrobús que tiene una parada a un par de cuadras.</li>

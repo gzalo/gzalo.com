@@ -1,14 +1,9 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Mini consola de juegos con salida a TV (2012)"
+summary: "Aplicación de prueba para generar señales NTSC (blanco y negro) que pueden ser vistas en cualquier televisión con entrada de video compuesta. Basado en un microcontrolador 8052."
+thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/consola_tv/"]
 ---
-'Mini consola de juegos con salida a TV (2012)','Aplicación de prueba para generar señales NTSC (blanco y negro) que pueden ser vistas en cualquier televisión con entrada de video compuesta. Basado en un microcontrolador 8052.','/thumbs/consolatetris.png','/consola_tv/');
-
-	$descripcionPagina = 'Armado de una miniconsola con microcontrolador, con salida PAL.';
-	$tituloPagina = 'Mini consola de juegos con salida para TV';
-	
 <p>Unos años luego de diseñar y armar la <a href="/miniconsola/">miniconsola con matriz de LEDs</a>, encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero <a href="http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php">puede encontrarse aquí</a>.</p>
 <p>Utilizando la idea de usar dos resistencias para generar 4 valores y así poder generar la señal de sincronismo y 3 colores (blanco, negro, gris), adapté la miniconsola para tener salida de video compuesto. Basicamente fue necesario agregar un buffer, porque la corriente de salida del microcontrolador AT89S52 no es suficiente para hacer un correcto manejo de la señal (que tiene impedancia 75 ohms).</p>
 <p>En cuanto al software, se aprovechó el hecho de que muchos televisores y placas capturadoras no requieren la señal completa de sincronismo vertical, utilizando por lo tanto ese tiempo para actualizar la "lógica del juego". Se usó la memoria accesible en forma de bits, para lograr extraer los bits del framebuffer de una manera eficiente. Además, se podría llegar a usar la UART del microcontrolador en modo sincrónico, y de esa forma tener mucha mejor resolución horizontal. En el prototipo se llegó a una resolución de 30x32 pixeles sin problemas. Para usar mayor resolución sería necesario también agregar más memoria RAM al microcontrolador.</p>

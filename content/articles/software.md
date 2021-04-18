@@ -1,12 +1,10 @@
 ---
-title: ""
+title: "Listado de software utilizados en electrónica"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Análisis de algunos programas de electrónica que utilizé en algún momento."
+thumbnail: "/thumbs/software.png"
 aliases: ["/software/"]
 ---
-addProjectBox('Listado de software utilizados en electrónica', 'Análisis de algunos programas de electrónica que utilizé en algún momento.','/thumbs/software.png','/software/');
-
 $descripcionPagina = 'Análisis de algunos programas de electrónica: diseño de esquemáticos, circuitos impresos, simulación, programación.';
 	$tituloPagina = 'Listado y análisis de software utilizados en electrónica';
 <h3>Software de simulación, esquemáticos e impresos</h3>

@@ -1,11 +1,9 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Mini game console with LED matrix"
+summary: "Simple 8x8 game console based in an 8052 microcontroller, developed in C."
+thumbnail: "/thumbs/miniconsola.png"
 aliases: ["/miniconsole_en/"]
 ---
-'Mini game console with LED matrix (2009)', 'Simple 8x8 game console based in an 8052 microcontroller, developed in C.','/thumbs/miniconsola_.png','/miniconsole_en/');
-	$tituloPagina = 'Mini game console with LED matrix (8x8)';
 <p>As a final project for the subject "Electrónica Digital II" (2009, Professor: José Salama) we had to do a project using the 8052 microcontroller. I had some 8x8 LED matrices laying around, so I decided to make a mini game console. Using the Proteus simulator, I could design the circuit, program it and test it without needing a physical prototype. First I started using assembler, but it got too complex (specially the game logic section), so I decided to rewrite it using C, compiling with SDCC (free and open source compiler for various embedded platforms). </p>
 <p>It supports simple sounds, has 4 games (a tetris clone with single pixel pieces), a simple racing game, an helicopter avoider and a snake clone. Only one color of the matrix was implemented in the harware, due to time constraints and the requirement of single sided board construction.</p>
 <p>The Timer0 is used in 16 bit mode, and it's job is to refresh the display every 200 uS. Timer1 is also used in 16 bit mode, it executes the game logic and handles the menu and the scores. Timer2 is used in a 16 bit with autorecharge mode, it generates square waveforms of different frequencies (the melodies) and has priority to avoid sound glitches. Some buttons are connected as interrupt sources, and are used to feed the random number generator.</p>

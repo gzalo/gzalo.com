@@ -1,13 +1,11 @@
 ---
-title: ""
+title: "Introduction to PLD (Programmable Logic Devices)"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Small summary of applications of PLA, PAL, GAL and PLD based systems."
+thumbnail: "/thumbs/pld.png"
 aliases: ["/pld_en/"]
 ---
-addProjectBox('Introduction to PLD (Programmable Logic Devices)', 'Small synopsis of applications of PLA, PAL, GAL and PLD based systems.','/thumbs/pld.png','/pld_en/');
 
-$tituloPagina = 'Introduction to PLD (Programmable Logic Devices)';
 <h2>What is a Pal/Gal/Pla? What is their main use?</h2>
 <p>They are programmable electronic components that can be used to build digital circuits. The complete family is called PLD (Programmable Logic Device).</p>
 <p>Their main use is to minimize the amount of integrated circuits, and thus lower the cost and size of a board.</p>

@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Introduction to I2C protocol, reading and writing in 24LC memories"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Very useful memories, typically used to store configuration data or to keep logs with sensor data."
+thumbnail: "/thumbs/i2c.png"
 aliases: ["/i2c_en/"]
 ---
-addProjectBox('Introduction to I2C protocol, reading and writing in 24LC memories', 'Very useful memories, typically used to store configuration data or to keep logs with sensor data.','/thumbs/i2c.png','/i2c_en/');
-
-$descripcionPagina = 'START, STOP signals, how to send and receive data. Usage example using 24LC memories.';
-	$tituloPagina = 'Introduction to I2C protocol, reading and writing in 24LC memories';
 <p>I2C (spelled I squared C) is a standard that allows for easy communication between multiple devices (microcontrollers, memories, computer monitors, sensors, converters, and many other smart devices).</p>
 <p>It only requires two signals: one for clock and one for data (as well as the common ground). Originally designed by Philips, it has a maximum speed of 100 Kbits per second, but some devices can be interfaced at a higher speed.</p>
 <p>It's a serial type bus (the bits travel one after the other) and synchronic (one of the signal is used to synchronize the master and slave)</p>

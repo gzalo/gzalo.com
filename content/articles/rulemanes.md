@@ -1,15 +1,11 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Tamaños de rulemanes"
+tags: ["articles", "misc"]
+summary: "Tabla con tamaños de diversos rulemanes que se consiguen localmente, muy útil a la hora de hacer un proyecto mecánico."
+thumbnail: "/thumbs/rulemanes.png"
 aliases: ["/rulemanes/"]
 ---
 
-addProjectBox('Tamaños de rulemanes', 'Tabla con tamaños de diversos rulemanes que se consiguen localmente, muy útil a la hora de hacer un proyecto mecánico.','/thumbs/rulemanes.png','/rulemanes/');
-
-$descripcionPagina = 'Medidas de rulemanes que se consiguen localmente.';
-	$tituloPagina = 'Tabla de tamaños de rulemanes';
 <table class="w3-table w3-striped w3-bordered w3-border" id="tablita">
 <thead>
 	<tr>

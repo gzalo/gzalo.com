@@ -1,14 +1,10 @@
 ---
-title: ""
+title: "Utilización de módulos GPS con microcontroladores"
 tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+summary: "Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía."
+thumbnail: "/thumbs/gps.png"
 aliases: ["/gps/"]
 ---
-addProjectBox('Utilización de módulos GPS con microcontroladores', 'Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía.','/thumbs/gps.png','/gps/');
-
-$descripcionPagina = 'Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía.';
-	$tituloPagina = 'Utilización de módulos GPS con microcontroladores';
 <p>Esta información sirve para cualquier módulo GPS (fue probado con el <a href="http://www.globalsat.co.uk/product_pages/product_et332.htm">ET-332</a>) que transmita datos via un puerto serie, usando el protocolo NMEA.</p>
 <p>Básicamente aproximadamente 10 veces por segundo, el GPS envía muchas cadenas NMEA, separadas por retornos de carro y fines de línea, de las cuales la que más interesa es la que comienza con GPGGA. Un ejemplo de cadena es: <pre>$GPGGA,182402.02,3436.5829,S,05825.7855,W,1,04,1.5,57,M,-34.0,M,,,*70 </pre></p>
 <p>Significado de cada campo:

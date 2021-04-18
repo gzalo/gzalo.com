@@ -1,6 +1,6 @@
 baseURL = "https://gzalo.com/"
 languageCode = "es-ar"
-title = "Gzalo.com"
+title = "Gzalo"
 theme = "gzalo"
 disqusShortname = "gzalo"
 defaultContentLanguage = "es"

@@ -1,6 +1,6 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Utilidades para Sistemas Digitales"
+summary: "Programas desarrollados para TPs de Sistemas Digitales, permiten debuggear a través de simulación sistemas basados en FPGAs que usan salidas de video VGA."
+thumbnail: "/thumbs/cordic.png"
 ---
-'Utilidades para Sistemas Digitales (2015)','Programas desarrollados para TPs de Sistemas Digitales, permiten debuggear a través de simulación sistemas basados en FPGAs que usan salidas de video VGA.','/thumbs/cordic.png','https://github.com/gzalo/sistemas-digitales');
+(2015) https://github.com/gzalo/sistemas-digitales 

@@ -1,13 +1,10 @@
 ---
-title: ""
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Domotic control via IR and PC"
+summary: "A domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces. This group project was done with Juan Ignacio Troisi and Martin Menendez, for the university subject Laboratorio de microcontroladores"
+thumbnail: "/thumbs/controldomotico.png"
 aliases: ["/tp_labodemicros_en/"]
 ---
-'Domotic control via IR and PC (2014)','A domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces. This group project was done with Juan Ignacio Troisi and Martin Menendez, for the university subject "Laboratorio de microcontroladores".','/thumbs/controldomotico.png','/tp_labodemicros_en/');
-
-	echo addBoxBeg('Domotic control via PC and infrared');
-<p>This group project was done with Juan Ignacio Troisi and Martin Menendez, for the university subject "Laboratorio de microcontroladores". The idea was to make a domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces:
+<p>2014 This group project was done with Juan Ignacio Troisi and Martin Menendez, for the university subject "Laboratorio de microcontroladores". The idea was to make a domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces:
 <ul>
 <li>Using buttons and an alphanumeric display in the control panel, with the ability to set the time and automate the turn on/off of the loads, while also being able to set different permissions for different users. This interface is password protected.</li>
 <li>Using a PC, via a USB-TTL adapter. This allows the user to execute the same actions available in the control panel, with the possibility of downloading a log of the last instructions executed, for security purposes.</li>

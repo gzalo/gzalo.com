@@ -1,14 +1,10 @@
 ---
-title: ""
-tags: ["articles", "electronics"]
-summary: ""
-thumbnail: "/thumbs/.png"
+title: "Modificación de cámara de video para ver luz infrarroja"
+tags: ["articles", "misc"]
+summary: "Cómo modificar una cámara de video estándar para agrandar el espectro de luz que puede observar, permitiendo ver parte del infrarrojo cercano."
+thumbnail: "/thumbs/ircam.png"
 aliases: ["ircam/"]
 ---
-addProjectBox('Modificación de cámara de video para ver luz infrarroja', 'Cómo modificar una cámara de video estándar para agrandar el espectro de luz que puede observar, permitiendo ver parte del infrarrojo cercano.','/thumbs/ircam.png','/ircam/');
-
-$descripcionPagina = 'Conversión de cámara de video JVC para que solamente vea infrarrojo.';
-	$tituloPagina = 'Modificación de cámara de video para ver luz infrarroja';
 <p>Hace un par de años encontré una cámara vieja de video: una JVC GR-C7u. Es una cámara de los años '80, tiene CCD, autofoco, viewfinder blanco y negro y graba en cinta, en formato VHSC. Es un modelo muy parecido a la usada en la película "Volver al futuro" (gr-c1u), con carcasa roja.</p>
 <p>La estuve usando un poco como visora de viejas cintas, hasta que un día decidí ver cómo se podía modificar. Es conocido que los sensores CCD (usados en gran parte de las cámaras digitales) por naturaleza detectan un rango de luz que abarca más que la luz visible. Detectan parte del llamado "infrarrojo cercano", que está cerca del color rojo en la tabla de longitudes de onda. Este infrarrojo NO es el tipo de infrarrojo emitido por los cuerpos que tienen temperatura. El infrarrojo "térmico" es el mediano, y es imposible de ver por sensores CCD normales.</p>
 <p>Las cámaras tienen por diseño un filtro anti-infrarrojo, que deja pasar solamente el rango de luz que el ojo ve. Esto es necesario ya que de otra forma las imágenes saldrían con un tono rojizo, y los colores no corresponderían a lo que las personas ven. Sacando a este filtro, y cambiándolo por uno paso-infrarrojo, que deje pasar lo infrarrojo y bloquee parte de la luz visible, es posible que la cámara "vea" infrarrojo.</p>
