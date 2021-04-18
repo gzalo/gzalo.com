@@ -5,8 +5,8 @@ summary: "Cómo usar un módulo GPS para obtener la posición, parseando las cad
 thumbnail: "/thumbs/gps.png"
 aliases: ["/gps/"]
 ---
-<p>Esta información sirve para cualquier módulo GPS (fue probado con el <a href="http://www.globalsat.co.uk/product_pages/product_et332.htm">ET-332</a>) que transmita datos via un puerto serie, usando el protocolo NMEA.</p>
-<p>Básicamente aproximadamente 10 veces por segundo, el GPS envía muchas cadenas NMEA, separadas por retornos de carro y fines de línea, de las cuales la que más interesa es la que comienza con GPGGA. Un ejemplo de cadena es: <pre>$GPGGA,182402.02,3436.5829,S,05825.7855,W,1,04,1.5,57,M,-34.0,M,,,*70 </pre></p>
+<p>Esta información sirve para cualquier módulo GPS (fue probado con el <a href="http://www.globalsat.co.uk/product_pages/product_et332.htm">ET-332</a>) que transmita datos via un puerto serie, usando el protocolo NMEA.
+<p>Básicamente aproximadamente 10 veces por segundo, el GPS envía muchas cadenas NMEA, separadas por retornos de carro y fines de línea, de las cuales la que más interesa es la que comienza con GPGGA. Un ejemplo de cadena es: <pre>$GPGGA,182402.02,3436.5829,S,05825.7855,W,1,04,1.5,57,M,-34.0,M,,,*70 </pre>
 <p>Significado de cada campo:
 	<ol>
 		<li><tt>$GPGGA</tt>: Identificador de la cadena</li>
@@ -20,6 +20,6 @@ aliases: ["/gps/"]
 		<li><tt>-34.0,M</tt>: Altura respecto al sistema de referencia <a href="http://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a></li>
 		<li><tt>*70</tt>: Checksum, se calcula como un XOR de todos los bytes entre $ y *</li>
 	</ol>
-</p>
-<p>Una forma sencilla de interpretar los datos desde un microcontrolador es guardar almacenar todas las cadenas (desde $ hasta un \r\n) en un buffer, y analizarlas posteriormente. Esto se complica en dispositivos con poca memoria, ya que las cadenas suelen tener alrededor de 80 caracteres.<br/>Por eso, es posible analizar la cadena a medida que vaya llegando. Esto usa poca memoria pero usa toda la CPU, ya que tiene que quedarse esperando a que lleguen bytes (<a href="http://en.wikipedia.org/wiki/Busy_waiting">busy waiting</a>).</p>
-<p>Es posible implementar lo mismo en una ISR (rutina de manejo de interrupción) que se ejecute cada vez que llega un byte, mediante una máquina de estados que se acuerde de por qué parte va.</p>
+
+<p>Una forma sencilla de interpretar los datos desde un microcontrolador es guardar almacenar todas las cadenas (desde $ hasta un \r\n) en un buffer, y analizarlas posteriormente. Esto se complica en dispositivos con poca memoria, ya que las cadenas suelen tener alrededor de 80 caracteres.<br/>Por eso, es posible analizar la cadena a medida que vaya llegando. Esto usa poca memoria pero usa toda la CPU, ya que tiene que quedarse esperando a que lleguen bytes (<a href="http://en.wikipedia.org/wiki/Busy_waiting">busy waiting</a>).
+<p>Es posible implementar lo mismo en una ISR (rutina de manejo de interrupción) que se ejecute cada vez que llega un byte, mediante una máquina de estados que se acuerde de por qué parte va.

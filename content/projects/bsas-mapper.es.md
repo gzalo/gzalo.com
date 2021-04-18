@@ -4,4 +4,6 @@ summary: "Mapa 3d de Buenos Aires usando datos provistos por el gobierno. Usa Op
 thumbnail: "/thumbs/mapabsas.png"
 ---
 
-(2014) https://github.com/gzalo/MapaBSAS
+Este proyecto fue realizado en 2014, y utiliza distintas fuentes de datos provistas por el gobierno para dibujar un mapa 3D de CABA.
+
+[Ver código fuente y ejecutables](https://github.com/gzalo/MapaBSAS)

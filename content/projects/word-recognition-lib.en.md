@@ -1,7 +1,7 @@
 ---
 title: "Reconocimiento de habla para EDU-CIAA"
-summary: "Biblioteca liviana para realizar reconocimiento de palabras aisladas en microcontroladores ARM Cortex M4. Desarrollado como proyecto final para Seminario de Sistemas Embebidos. Se basa en la extracción de coeficientes MFCC y el reconocimiento usando el algoritmo de Viterbi para hallar la palabra más probable dadas las observaciones. Los modelos estadísticos fueron basados en cadenas ocultas de Markov (HMM), de primer orden, con probabilidades del tipo mezcla de Gaussianas."
+summary: "Lightweight library for speech recognition in ARM Cortex M4 microcontrollers. It extracts MFCC coefficients and recognises words using Viterbi algorithm, and Hidden Markov Chains (HMM), first-order, using gaussian mixture probabilities."
 thumbnail: "/thumbs/bla.png"
 ---
 
-2016 https://github.com/gzalo/bla
+[Access the repository with code and application examples](https://github.com/gzalo/bla)

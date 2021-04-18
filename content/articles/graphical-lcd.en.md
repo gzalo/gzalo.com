@@ -5,10 +5,10 @@ summary: "How to control a Graphic LCD with a resolution of 128x64 (or 192x64) b
 thumbnail: "/thumbs/lcdgrafico.png"
 aliases: ["/graphicallcd_en/"]
 ---
-<p>Most monochromatic graphical LCDs use a controller compatible with KS0108. Each one has an internal 512-byte memory, so it allows resolutions up to 64x64 pixels. Bigger displays tend to use multiple controllers, one per fraction of the screen. For instance, a 128x64 LCD has two controllers, a 196x64 has 3, and a 128x128 has 4 of them.</p>
-<p>Each controller is independent thus they don't transmit information between them. In order to choose which controller has to be activated, two control lines are used: CS1 and CS2 (chip select), acting like a 2 bit address which can select up to four different ICs. They don't have an internal font generator, so in order to write text the driver has to store the pixels of each wanted glyph, in a microcontroller or an external memory.</p>
+<p>Most monochromatic graphical LCDs use a controller compatible with KS0108. Each one has an internal 512-byte memory, so it allows resolutions up to 64x64 pixels. Bigger displays tend to use multiple controllers, one per fraction of the screen. For instance, a 128x64 LCD has two controllers, a 196x64 has 3, and a 128x128 has 4 of them.
+<p>Each controller is independent thus they don't transmit information between them. In order to choose which controller has to be activated, two control lines are used: CS1 and CS2 (chip select), acting like a 2 bit address which can select up to four different ICs. They don't have an internal font generator, so in order to write text the driver has to store the pixels of each wanted glyph, in a microcontroller or an external memory.
 <p>The LCDs have these terminals:
-	<ul>
+	
 		<li>VSS: 0V, ground reference</li>
 		<li>VDD: 5V, supply voltage for LCD</li>
 		<li>V0: Contrast adjustment</li>
@@ -20,9 +20,9 @@ aliases: ["/graphicallcd_en/"]
 		<li>RES: Reset signal, if 0 all controllers get reseted</li>
 		<li>Vee: Negative voltage OUTPUT</li>
 		<li>K y A: Backlight, typically LEDs</li>
-	</ul>
-</p>
-<p>Most LCDs feature an internal negative voltage generator, which is needed by the controller to turn on the segments. To control the contrast, a 20 kiloohm preset can be used, connected between Vee and Vss (extremes) and the middle terminal (wiper) can be connected to V0. A and K terminals are typically connected to LEDs in the side of the display, and should be connected to 5V and 0V, with a series resistance of 100-200 ohm to make sure that they don't have a high current.</p>
+	
+
+<p>Most LCDs feature an internal negative voltage generator, which is needed by the controller to turn on the segments. To control the contrast, a 20 kiloohm preset can be used, connected between Vee and Vss (extremes) and the middle terminal (wiper) can be connected to V0. A and K terminals are typically connected to LEDs in the side of the display, and should be connected to 5V and 0V, with a series resistance of 100-200 ohm to make sure that they don't have a high current.
 <p>How to send a command or data to the LCD::
 	<ol>
 		<li>Select the wanted controller (CS1 and CS2)</li>
@@ -31,14 +31,14 @@ aliases: ["/graphicallcd_en/"]
 		<li>Make a pulse in the E line</li>
 		<li>Wait a small time (~500nS). Alternatively, the LCD status can be read to avoid hardcoding delays in the code.</li>
 	</ol>
-</p>
-<p>The display itself is divided in 8 horizontal pages (each with 8 pixels of height) and 64 vertical lines.</p>
+
+<p>The display itself is divided in 8 horizontal pages (each with 8 pixels of height) and 64 vertical lines.
 <h3>Important commands</h3>
 <h4>Turn on/off display</h4>
-<p>D/I = 0, DB = 0x3F (on) or 0x3E (off)</p>
+<p>D/I = 0, DB = 0x3F (on) or 0x3E (off)
 <h4>Move pointer - X axis</h4>
-<p>D/I = 0, DB = 0x40 + line (0 to 63)</p>
+<p>D/I = 0, DB = 0x40 + line (0 to 63)
 <h4>Move pointer - Y axis</h4>
-<p>D/I = 0, DB = 0x9C + page (0 to 7)</p>
+<p>D/I = 0, DB = 0x9C + page (0 to 7)
 <h4>Write data to screen</h4>
-<p>D/I = 1, DB = DataToWrite<br/>The data is written into the place stored by the pointer. After writing a value, the X position is incremented, in order to avoid fast copies.</p>
+<p>D/I = 1, DB = DataToWrite<br/>The data is written into the place stored by the pointer. After writing a value, the X position is incremented, in order to avoid fast copies.

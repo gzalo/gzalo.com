@@ -4,8 +4,13 @@ summary: "Very simple tile engine done in HTML5, originally made for an online b
 thumbnail: "/thumbs/motor_tiles.png"
 aliases: ["/tile_engine_en/"]
 ---
-<p>2011 It is a 'engine' (if it can be called that way, it's a very small code) for tile games, running in the browser, supporting scrolling and dynamic changes. It doesn't use Flash, it uses HTML5, so it probably works in Androd and iPad/iPod. It can be used to create top-down view RPGs, platformers, tower defense games, etc.</p>
-<p>To test the scrolling, <strong>click the frame and use the WASD keys</strong> to move the map. A sample tile change (random in this case) is shown.</p>
-<iframe src="/inc/tile/index.html" style="width:100%;height:650px;"></iframe>
 
-<p><a href="/downloads/te.zip" >Download code</a> (License: Public domain, except for the tileset which is a <a href="http://www.planetminecraft.com/member/johnsmith27/texture_packs/server/">Minecraft texture pack, by JohnSmith27</a>) </p>
+It is a minimalistic tile engine created in 2011 (it's very small and simple code) for tile games, running in the browser, supporting scrolling and dynamic changes. It doesn't use Flash, it uses HTML5, so it works in Android and on an iPad/iPod. It can be used to create top-down view RPGs, platformers, tower defense games, etc.
+
+To test the scrolling, **click the frame and use the WASD keys** to move the map. A sample tile change (random in this case) is shown.
+
+{{< rawhtml >}}
+<iframe src="/inc/tile/index.html" style="width:100%;height:650px;"></iframe>
+{{< /rawhtml >}}
+
+[Download code](/downloads/te.zip) (License: Public domain, except for the tileset which is a [Minecraft texture pack, by JohnSmith27](http://www.planetminecraft.com/member/johnsmith27/texture_packs/server/)) 

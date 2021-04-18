@@ -4,12 +4,15 @@ summary: "Aplicación de prueba para generar señales NTSC (blanco y negro) que 
 thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/consola_tv/"]
 ---
-<p>Unos años luego de diseñar y armar la <a href="/miniconsola/">miniconsola con matriz de LEDs</a>, encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero <a href="http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php">puede encontrarse aquí</a>.</p>
-<p>Utilizando la idea de usar dos resistencias para generar 4 valores y así poder generar la señal de sincronismo y 3 colores (blanco, negro, gris), adapté la miniconsola para tener salida de video compuesto. Basicamente fue necesario agregar un buffer, porque la corriente de salida del microcontrolador AT89S52 no es suficiente para hacer un correcto manejo de la señal (que tiene impedancia 75 ohms).</p>
-<p>En cuanto al software, se aprovechó el hecho de que muchos televisores y placas capturadoras no requieren la señal completa de sincronismo vertical, utilizando por lo tanto ese tiempo para actualizar la "lógica del juego". Se usó la memoria accesible en forma de bits, para lograr extraer los bits del framebuffer de una manera eficiente. Además, se podría llegar a usar la UART del microcontrolador en modo sincrónico, y de esa forma tener mucha mejor resolución horizontal. En el prototipo se llegó a una resolución de 30x32 pixeles sin problemas. Para usar mayor resolución sería necesario también agregar más memoria RAM al microcontrolador.</p>
-<p>
+Unos años luego de diseñar y armar la [miniconsola con matriz de LEDs](({{< ref "/projects/game-console" >}})), encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero [puede encontrarse aquí](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).
+
+Utilizando la idea de usar dos resistencias para generar 4 valores y así poder generar la señal de sincronismo y 3 colores (blanco, negro, gris), adapté la miniconsola para tener salida de video compuesto. Basicamente fue necesario agregar un buffer, porque la corriente de salida del microcontrolador AT89S52 no es suficiente para hacer un correcto manejo de la señal (que tiene impedancia 75 ohms).
+
+En cuanto al software, se aprovechó el hecho de que muchos televisores y placas capturadoras no requieren la señal completa de sincronismo vertical, utilizando por lo tanto ese tiempo para actualizar la "lógica del juego". Se usó la memoria accesible en forma de bits, para lograr extraer los bits del framebuffer de una manera eficiente. Además, se podría llegar a usar la UART del microcontrolador en modo sincrónico, y de esa forma tener mucha mejor resolución horizontal. En el prototipo se llegó a una resolución de 30x32 pixeles sin problemas. Para usar mayor resolución sería necesario también agregar más memoria RAM al microcontrolador.
+
 Un código similar al usado para el manejo de la parte de salida de video es el siguiente:
-<code><pre>
+
+```c
 #define BitSync P1_0
 #define BitColor P3_0
 
@@ -127,8 +130,11 @@ int main(){
 	
 	while(1);
 }
+```
 
-</pre></code>
-</p>
-<p>Algunos resultados pueden observarse en estos GIFs animados, capturados con una capturadora de video Aimslab VHX. Se usó el mismo código de la miniconsola, por lo que la resolución del juego sigue siendo 8x8 (aunque es posible adaptarlo y usar todos los 30x32 píxeles sin problemas)<br/>
-<img src="/images/consolaAuto.gif" alt="Vid1" style="width:100%;max-width:360px;"/> <img src="/images/consolaChopper.gif" alt="Vid2" style="width:100%;max-width:360px;"/> <img src="/images/consolaMenu.gif" alt="Vid2" style="width:100%;max-width:360px;"/> <img src="/images/consolaTetris.gif" alt="Vid2" style="width:100%;max-width:360px;"/></p>
+Algunos resultados pueden observarse en estos GIFs animados, capturados con una capturadora de video Aimslab VHX. Se usó el mismo código de la miniconsola, por lo que la resolución del juego sigue siendo 8x8 (aunque es posible adaptarlo y usar todos los 30x32 píxeles sin problemas)
+
+![Vid1](/images/consolaAuto.gif)
+![Vid2](/images/consolaChopper.gif)
+![Vid3](/images/consolaMenu.gif)
+![Vid4](/images/consolaTetris.gif)

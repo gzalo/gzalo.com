@@ -6,8 +6,8 @@ thumbnail: "/thumbs/casas.png"
 aliases: ["/casas/"]
 ---
 
-<p><a href="http://goo.gl/maps/Frji9">Ver las direcciones marcadas en un mapa</a></p>
-<ul>
+<p><a href="http://goo.gl/maps/Frji9">Ver las direcciones marcadas en un mapa</a>
+
 <li><b>Electrónica Liniers</b><br/>Dirección: Timoteo Gordillo 35 y Rivadavia (Liniers)<br/>Tiene muchos integrados TTL y CMOS, y componentes que no se consiguen en otro lado, como componentes viejos. Está lejos de las otras casas, pero se puede llegar rapido a través del metrobús que tiene una parada a un par de cuadras.</li>
 <li><b>Electrocomponentes</b><br/>Dirección: Solís 225 (Congreso)<br/>Tienen muchos componentes difíciles de conseguir, se pueden pedir algunos del exterior. Trabajan con pocos microcontroladores PICs, se especializan en Freescale (ex Motorola).</li>
 <li><b>Electrónica Cika</b><br/>Dirección: Av. de los incas 4821 (Parque chas)<br/>Tienen precios bastante baratos y componentes "exóticos" (LCDs gráficos y alfanumericos, módulos GSM, GPS y bluetooth, entre otros). Tienen un monto de compra mínima (de U$S 50 desde el 2008) y algunos componentes se venden por cantidad mínima. Sin embargo tienen buena atención</li>
@@ -17,4 +17,3 @@ aliases: ["/casas/"]
 <li><b>SyC electrónica</b><br/>Dirección: Paraná 274 (Congreso)<br/>Trato cordial, lista de precios y componentes online. Los precios están bien, aunque hay algunas cosas poco lógicas. Suele haber bastante gente, a veces no tienen en stock aunque digan que sí en la página.</li>
 <li><b>MicroElectrónica</b><br/>Dirección: Perón 1455 (Congreso)<br/>Tienen bastantes componentes dificíles de encontrar (memorias ram estáticas tipo paralelo por ej.). Tiene un local en el que venden herramientas, cables y componentes en Paraná 180 (a la vuelta). Ambos locales son muy chicos y a veces es necesario esperar afuera.</li>
 <li><b>GM electrónica</b><br/>Dirección: Rivadavia 2458 (Congreso)<br/>Se especializan en cosas industriales, tienen algunos componentes "vintage" (como Z80s). Los precios de algunos componentes son demasiado altos.</li>
-</ul>

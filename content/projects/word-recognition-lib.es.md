@@ -4,4 +4,4 @@ summary: "Biblioteca liviana para realizar reconocimiento de palabras aisladas e
 thumbnail: "/thumbs/bla.png"
 ---
 
-2016 https://github.com/gzalo/bla
+[Acceder al repositorio con código y ejemplos de aplicación](https://github.com/gzalo/bla)

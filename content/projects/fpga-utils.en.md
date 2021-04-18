@@ -4,4 +4,5 @@ summary: "Software I made to assist with the development of FPGA systems that in
 thumbnail: "/thumbs/cordic.png"
 ---
 
-(2015) https://github.com/gzalo/sistemas-digitales 
+This are a couple of tools that I created in 2015 to aid with the debugging of FPGA-based systems:\
+[Access source code](https://github.com/gzalo/sistemas-digitales)

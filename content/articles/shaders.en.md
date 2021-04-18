@@ -10,45 +10,45 @@ This doesn't pretend to be a complete tutorial about shaders but a simple explan
 Hence the output pixels get that color (0.5, 0.0, 0.0). 
 <br/><br/>
 <h2>Directional lights</h2>
-<p>Directional lights are supposed to be at an infinite distance, so they don't have a position, only a direction, since all of their rays are parallel.</p>
-<p>The diffuse component of a light is the first term of the approximation, where it's assumed that the intensity depends only on the normal of the surface in that point and the direction vector of the light.</p>
-<p>The reflected light value will be higher when the angle between the light and the normal to the surface is smaller. When the vectors are parallel, the diffuse component will have a maximum, and when they are orthogonal the contribution will be zero.</p>
-<p><a href="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png" /></a></p>
-<p>To calculate the angle between the light and the normal, the inner product (dot product) can be used. It returns |LightDir| x |Normal| x cos(angle).</p>
-<p>To avoid having to divide by both norms, both vectors are normalized before doing the dot product. Since the cosine of the angle can be negative, we clamp the value to a number between 0 and 1.</p>
+<p>Directional lights are supposed to be at an infinite distance, so they don't have a position, only a direction, since all of their rays are parallel.
+<p>The diffuse component of a light is the first term of the approximation, where it's assumed that the intensity depends only on the normal of the surface in that point and the direction vector of the light.
+<p>The reflected light value will be higher when the angle between the light and the normal to the surface is smaller. When the vectors are parallel, the diffuse component will have a maximum, and when they are orthogonal the contribution will be zero.
+<p><a href="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png" /></a>
+<p>To calculate the angle between the light and the normal, the inner product (dot product) can be used. It returns |LightDir| x |Normal| x cos(angle).
+<p>To avoid having to divide by both norms, both vectors are normalized before doing the dot product. Since the cosine of the angle can be negative, we clamp the value to a number between 0 and 1.
 
 <p>The formula looks like this:
- I = Object.AmbientColor * Light.AmbientColor + Object.DiffuseColor * Light.DiffuseColor *  clamp(dot(Face.Normal, Light.Direction))</p>
+ I = Object.AmbientColor * Light.AmbientColor + Object.DiffuseColor * Light.DiffuseColor *  clamp(dot(Face.Normal, Light.Direction))
 
 Source code:<br />Vector Shader:<br /><blockquote>varying vec3 normal;<br /><br />void main()<br />{&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; normal = gl_Normal;<br />&nbsp;&nbsp;&nbsp; gl_Position = ftransform();<br />} </blockquote>varying vec3 normal;<br /><br />void main()<br />{<br />&nbsp;&nbsp;&nbsp; vec4 color = gl_FrontMaterial.ambient * gl_LightSource[0].ambient + gl_FrontMaterial.diffuse * gl_LightSource[0].diffuse * clamp(dot(normalize(gl_LightSource[0].position), normalize(normal)));<br /><br />&nbsp;&nbsp;&nbsp; color.a = 1.0;<br />&nbsp;&nbsp;&nbsp; gl_FragColor = color;<br />} </blockquote>
 
 <p>Screenshot:
-<a href="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png" /></a></p>
+<a href="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png" /></a>
 
-<p>The light used is green, shining from above, and it can be seen that the places more lit are those whose normal is similar to the light direction.</p>
+<p>The light used is green, shining from above, and it can be seen that the places more lit are those whose normal is similar to the light direction.
 
-<p>A varying type variable is used to pass data from the vertex shader to the pixel shader (in this case the normal of each vertex), which implies that OpenGL interpolates it. This allows for a "per pixel" illumination. If the color was calculated in the vertex shader and then interpolated, it would look different (second screenshot).</p>
+<p>A varying type variable is used to pass data from the vertex shader to the pixel shader (in this case the normal of each vertex), which implies that OpenGL interpolates it. This allows for a "per pixel" illumination. If the color was calculated in the vertex shader and then interpolated, it would look different (second screenshot).
 
 <a href="http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png" /></a>
 
 <h2>Types of Lighting</h2>
-<p><b>Static Lighting:</b> The light effects (as well as the shadows) are prerendered when the models are built, and then combined with the diffuse texture of the object, as well as the ambiental occlusion. This method mostly works for still rigid objects, and it's impossible to move the lights, since they are pre baked as textures. Creating the textures may take a long time, since raytracing-like algorithms are used, but a higher realism may be achieved.</p>
+<p><b>Static Lighting:</b> The light effects (as well as the shadows) are prerendered when the models are built, and then combined with the diffuse texture of the object, as well as the ambiental occlusion. This method mostly works for still rigid objects, and it's impossible to move the lights, since they are pre baked as textures. Creating the textures may take a long time, since raytracing-like algorithms are used, but a higher realism may be achieved.
 
-<p><b>Dynamic Lighting (per vertex):</b> This is the basic illumination included in older OpenGL. The normals of each vertex are used to calculate the incidence of light, and then the colors are interpolating along the face.</p>
+<p><b>Dynamic Lighting (per vertex):</b> This is the basic illumination included in older OpenGL. The normals of each vertex are used to calculate the incidence of light, and then the colors are interpolating along the face.
 
-<p><b>Dynamic Lighting (per píxel):</b> Similar to the previous one, but the normal is interpolated instead of the color. Has a higher quality than per vertex.</p>
+<p><b>Dynamic Lighting (per píxel):</b> Similar to the previous one, but the normal is interpolated instead of the color. Has a higher quality than per vertex.
 
-<p><b>Deferred Lighting:</b> If multiple lights are desired (more than 4/5), both previous methods are quite slow, because the scene has to be rendered multiple times and the lights should get "accumulated". The idea of this method is to store the information of the scene (depth map, normal, diffuse texture of each pixel of the screen). And then lots of simple passes use that information to calculate the contribution of each light. This method is quite fast, especially when it's an indoor map with lots of point lights or spot lights. As a disadvantage, this method doesn't allow for translucid materials nor for antialiasing, and it needs a high amount of GPU memory, proportional to the resolution of the screen.</p>
+<p><b>Deferred Lighting:</b> If multiple lights are desired (more than 4/5), both previous methods are quite slow, because the scene has to be rendered multiple times and the lights should get "accumulated". The idea of this method is to store the information of the scene (depth map, normal, diffuse texture of each pixel of the screen). And then lots of simple passes use that information to calculate the contribution of each light. This method is quite fast, especially when it's an indoor map with lots of point lights or spot lights. As a disadvantage, this method doesn't allow for translucid materials nor for antialiasing, and it needs a high amount of GPU memory, proportional to the resolution of the screen.
 
-<p>There are other methods based on the last one, that use the precalculation of the screne as seen by the camera to avoid multiple geometry passes.</p>
+<p>There are other methods based on the last one, that use the precalculation of the screne as seen by the camera to avoid multiple geometry passes.
 
-<p>Methods to render shadows</p>
-<p><b>Pre baked shadows:</b> Calculated while doing the map and static objects, they can't be moved, deform or destroy, and the light positions have to remain static to keep the illusion.</p>
+<p>Methods to render shadows
+<p><b>Pre baked shadows:</b> Calculated while doing the map and static objects, they can't be moved, deform or destroy, and the light positions have to remain static to keep the illusion.
 
-<p><b>Fake shadows:</b> Bellow each object that needs a shadow a small sprite is drawn, typically a round black image with blurred borders. It's a very fast way to draw shadows, but not really used due because it's not realis.t</p>
+<p><b>Fake shadows:</b> Bellow each object that needs a shadow a small sprite is drawn, typically a round black image with blurred borders. It's a very fast way to draw shadows, but not really used due because it's not realis.t
 
-<p><b>Shadow mapping:</b> The scene is rendered from the light viewpoint, and then in the eye object the depth that the camera sees gets compared to the depth seen by the light. If one is greater than the other, its shadowed, otherwise it isn't. It is a relatively fast method, and can be used for point lights with a technique such as <i>dual paraboloid mapping</i> and other methods such as <i>cascaded shadow maps</i></p>
+<p><b>Shadow mapping:</b> The scene is rendered from the light viewpoint, and then in the eye object the depth that the camera sees gets compared to the depth seen by the light. If one is greater than the other, its shadowed, otherwise it isn't. It is a relatively fast method, and can be used for point lights with a technique such as <i>dual paraboloid mapping</i> and other methods such as <i>cascaded shadow maps</i>
 
-<p><b>Shadow volume:</b>This method founds the borders of the geometry as seen by the light, and then proyects it to the back of the scene. It isn't very used since it heavily depends on the geometry, and more vertices are generated for the shadows. </p>
+<p><b>Shadow volume:</b>This method founds the borders of the geometry as seen by the light, and then proyects it to the back of the scene. It isn't very used since it heavily depends on the geometry, and more vertices are generated for the shadows. 
 
-<p>There are other methods based on shadow mapping that allow for better quality and higher performance. Some of them split the shadow map into multiple ones, in order to keep a constant quality for far and near shadows.</p>
+<p>There are other methods based on shadow mapping that allow for better quality and higher performance. Some of them split the shadow map into multiple ones, in order to keep a constant quality for far and near shadows.

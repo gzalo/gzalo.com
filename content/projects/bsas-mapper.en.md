@@ -4,4 +4,6 @@ summary: "3D Map of Buenos Aires using data provided by the government. Uses Ope
 thumbnail: "/thumbs/mapabsas.png"
 ---
 
-(2014) https://github.com/gzalo/MapaBSAS
+This project was developed in 2014, and it uses various data sources provided by the government to render a 3D map of Buenos Aires.
+
+[Get source code and executables](https://github.com/gzalo/MapaBSAS)

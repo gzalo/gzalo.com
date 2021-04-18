@@ -9,9 +9,8 @@ Este proyecto fue armado para la materia Técnica Digital de la facultad, en el 
 
 Para simplificar el diseño, la clave es de 4 dígitos y módulo 4. A diferencia de otras alarmas que permiten cambiar la clave soldando distintos cables, la idea del proyecto era hacerlo de tal forma que la clave se pudiera "guardar" en un dip switch.
 
-<img src="/images/td-diagbloques.png" alt="Diagrama de bloques cerradura" style="width:100%;max-width:562px;"/>
-
-<img src="/images/td-esquema.png" alt="Esquemático cerradura" style="width:100%;max-width:1010px;"/>
+![Diagrama de bloques cerradura](/images/td-diagbloques.png)
+![Esquemático cerradura](/images/td-esquema.png)
 
 El circuito fue diseñado para no necesitar clock, es totalmente asincrónico: la señal se extrae de los presiones de los botones. Se usan dos registros de desplazamiento para guardar la clave a medida que se va introduciendo, y un contador modulo 5 para saber en qué estado se encuentra. Luego de introducir los 4 dígitos, se compara lo introducido con lo del dip switch, y en base a eso se enciende un LED rojo o verde. 
 

@@ -4,4 +4,6 @@ summary: "Reconocimiento distribuido con gramática finita, basado en el toolkit
 thumbnail: "/thumbs/habla.png"
 ---
 
-(2016) https://casa.gzalo.com/habla
+Este proyecto desarrollado en 2016 permite el reconocimiento de diversas frases con gramática finita, utilizando el toolkit HTK.
+
+[Acceder al sistema de reconocimiento (temporalmente desactivado)](https://casa.gzalo.com/habla)

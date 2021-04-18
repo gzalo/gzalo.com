@@ -13,7 +13,7 @@ The map has certain secret tunnels that connect the different bases, to make the
 
 To install, just copy the .bsp file to the cstrike/maps folder, inside the install folder of the game.
 
-**[Download cs_electronicaort here.](/downloads/cs_electronicaort.zip)**
+**[Download cs_electronicaort here](/downloads/cs_electronicaort.zip)**
 
 ![Cs_electronicaort](/images/cs_electronicaort00.png)
 ![Cs_electronicaort](/images/cs_electronicaort01.png)
