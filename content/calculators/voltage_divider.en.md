@@ -4,6 +4,7 @@ summary: "Given the value of two series resistors and an input voltage, it calcu
 thumbnail: "/thumbs/voltage_divider.png"
 aliases: ["/resistive_divider_en/"]
 ---
+
 Given the two values of the resistors and an input voltage, this page calculates the output voltage of the resistor divider.
 
 {{< rawhtml >}}
@@ -26,10 +27,10 @@ Given the two values of the resistors and an input voltage, this page calculates
 
 ![Resistive divider](/images/divisorresistivo.png)
 
-A resistive divider (also called voltage divider) is a linear circuit that outputs a voltage (Vout) which is a fraction of the input voltage (Vin).
+A resistive divider (also called voltage divider) is a linear circuit that outputs a `Vout` voltage which is a fraction of `Vin` (input voltage).
 
-The circuit itself is based on two resistors in series, taking the middle node as the output. It's usually done to create a reference, or to attenuate a signal.
+The circuit itself is based on two resistors in series, taking the middle node as the output. It's typically used to create a reference or to attenuate a signal.
 
-Whenever a load is connected to the output node, a loading effect is produced. This means that the output voltage drops. To avoid this, the current flowing by the resistors should be higher than the one flowing to the load. The disadvantage of doing this is that efficiency is low, as most of that current disipates as heat.
+Whenever a load is connected to the output node, a loading effect can be seen (the output voltage drops). To avoid this, the current of the resistors should be higher than the load current. The disadvantage of doing this is that efficiency is low, as most of the total current dissipates as heat outside of the load.
 
-The output resistance is the equivalent of the paralell of both resistor, Rout = (R1*R2)/(R1+R2).
+The output resistance is the equivalent of the parallel of both resistors, `Rout = (R1*R2)/(R1+R2)`.

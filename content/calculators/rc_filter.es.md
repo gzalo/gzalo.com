@@ -34,5 +34,4 @@ El capacitor debería ser no polarizado, para que el filtro sirva con cualquier 
 
 Si el capacitor necesario es muy grande, y no se puede aumentar la resistencia, posiblemente convenga implementar el filtro de forma activa, con un amplificador operacional. [En este sitio hay una calculadora para eso](http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm).
 
-Si la resistencia carga es del orden de las impedancias del filtro, la frecuencia de corte será distinta a la deseada. En ese caso convendría agregar un buffer, amplificador operacional puesto como seguidor de voltaje, de forma tal que no influya la carga en el filtro propiamente dicho.
-
+Si la resistencia carga es del orden de las impedancias del filtro, la frecuencia de corte será distinta a la deseada. En ese caso convendría agregar un buffer (por ejemplo un amplificador operacional en configuración seguidora), de forma tal que no influya la carga en el filtro propiamente dicho.

@@ -19,7 +19,7 @@ Dados el tipo de LED (su tensión y corriente nominal) y la tensión de la fuent
 <script src="/inc/calculators/led_resistor.js"></script>
 {{< /rawhtml >}}
 
-Tensión/Voltaje del LED (valores típicos):
+Tensión del LED (valores típicos):
 * **Rojo**: 1,8 V a 2,2 V
 * **Naranja**: 2,1 V a 2,2 V
 * **Amarillo**: 2,1 V a 2,4 V

@@ -22,7 +22,7 @@ aliases: ["/pld/"]
 <p>Por lo general se usa algún lenguaje de "alto nivel" (como CUPL o ABEL) que describe la ecuaciones lógicas deseadas, y posteriormente se lo compila (mediante pasos de optimización y minimización) a un archivo JEDEC, que posee la información sobre qué fusibles internos quemar. Un entorno de desarrollo y simulación gratuito es <a href="http://www.atmel.com/tools/WINCUPL.aspx">WinCUPL</a> de Atmel.</p>
 
 <h2>¿Cómo se programa?</h2>
-<p>Es necesario comprar (o construir) un programador. Al contrario que con los mayoría de los microcontroladores, no parece haber ninguno sencillo, ya que por lo general todos los PLD necesitan un voltaje de programación VPP de aproximadamente 15V.</p>
+<p>Es necesario comprar (o construir) un programador. Al contrario que con los mayoría de los microcontroladores, no parece haber ninguno sencillo, ya que por lo general todos los PLD necesitan una tensión de programación VPP de aproximadamente 15V.</p>
 
 <h2>¿Dónde se puede comprar? ¿Cuánto cuesta?</h2>
 <p>El modelo GAL16v8 es posible comprarlo en varias casas de componentes, generalmente a un precio de aproximadamente 90 centavos de dolar por unidad.</p>

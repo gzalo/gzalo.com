@@ -1,11 +1,11 @@
 ---
 title: "Calculador de divisor resistivo"
-summary: "Dadas dos resistencias y un voltaje de entrada, calcula cual será el voltaje de salida del divisor resistivo."
+summary: "Dadas dos resistencias y una tensión de entrada, calcula cual será la tensión de salida del divisor resistivo."
 thumbnail: "/thumbs/voltage_divider.png"
 aliases: ["/divisor_resistivo/"]
 ---
 
-Dadas dos resistencias y un voltaje de entrada, esta página calcula cual será el voltaje de salida del divisor resistivo.
+Dadas dos resistencias y una tensión de entrada, esta página calcula cual será la tensión de salida del divisor resistivo.
 
 {{< rawhtml >}}
 <form action="">
@@ -27,9 +27,9 @@ Dadas dos resistencias y un voltaje de entrada, esta página calcula cual será 
 
 ![Divisor resistivo](/images/divisorresistivo.png)
 
-Un divisor resistivo (también llamado divisor de tensión o de potencial) es un circuito lineal que produce un voltaje de salida (Vout) que es una fracción del voltaje de entrada (Vin)
+Un divisor resistivo (también llamado divisor de tensión o de potencial) es un circuito lineal que produce una tensión de salida `Vout` que es una fracción de la tensión de entrada `Vin`
 
-El divisor de voltaje más sencillo cuenta con dos resistencias puestas en serie, tomando el nodo del medio como el voltaje de salida. Suele ser usado para crear un voltaje de referencia, o para obtener una señal de bajo voltaje proporcional a un voltaje medido (atenuador de señal).
+El divisor de tensión más sencillo cuenta con dos resistencias conectadas en serie, tomando el nodo del medio como la tensión de salida. Suele ser usado para crear una tensión de referencia, o para obtener una señal de baja tensión proporcional a una tensión medida (a modo de atenuador de señal).
 
 La carga conectada a la salida produce un efecto carga. Es decir, al conectarla disminuye la tensión de salida. Por esto, conviene que la corriente de entrada sea mucho mayor a la corriente de salida. La desventaja de hacer esto es que la mayor parte de la corriente de entrada se pierde en forma de calor en las resistencias.
 

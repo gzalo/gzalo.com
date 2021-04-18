@@ -15,7 +15,7 @@ Para poder definir a un microcontrolador PIC, primero necesitaríamos saber qué
     * **Temporizadores y contadores:** son circuitos sincrónicos que permiten contar tiempos internos (temporizadores) o externos (contadores). Pueden ser usados para general señales de clock, contar frecuencia, etc. Por lo general pueden ser usados como fuente de interrupciones (ver más abajo)
     * **Memorias no volátiles:** algunos microcontroladores también tienen una memoria EEPROM interna, usualmente destinada a guardar datos de configuración del programa que se conserven incluso después de sacada la energía. Algunos microcontroladores también permiten usar la memoria de programa como memoria de datos, como si fuese un periférico más. 
     * **Modulador de ancho de pulsos:** es un periférico que permite cambiar la frecuencia y el duty de un generador interno de PWM. Estos periféricos pueden ser usados para controlar velocidades de motores, convertir de digital a analógico, regular luz, hacer sonidos, etc. 
-    * **Comparadores:** son periféricos analógicos que permiten comparar dos señales analógicas, generalmente una es generada por un voltaje de referencia interno y la otra proviene del exterior. Esto nos permite saber cual es mayor y dar un resultado binario dependiendo de la salida del comparador. Algunos comparadores tienen soporte para interrupciones. 
+    * **Comparadores:** son periféricos analógicos que permiten comparar dos señales analógicas, generalmente una es generada por una tensión de referencia interna y la otra proviene del exterior. Esto nos permite saber cual es mayor y dar un resultado binario dependiendo de la salida del comparador. Algunos comparadores tienen soporte para interrupciones. 
     * **Puertos de comunicación:** La mayoría de los microcontroladores tiene internamente una UART/USART, que permite comunicar el microcontrolador con el exterior. Generalmente hay dos tres de comunicación: paralela, serie asincrónica y serie sincrónica. También algunos microcontroladores modernos poseen periféricos con soporte para USB, ethernet, etc. 
 
 
@@ -34,7 +34,7 @@ En este tutorial nos vamos a enfocar en el PIC16F628A, que tiene pocas prestacio
 Los modelos de PICs se distinguen de la siguiente forma:
 
 * Primer campo: Modelo
-* Segundo campo: Rango de temperatura y voltaje (I = industrial, E = extendido)
+* Segundo campo: Rango de temperatura y tensión (I = industrial, E = extendido)
 * Tercer campo (opcional): Velocidad máxima soportada (4/20/45) - en MHz
 * Cuarto campo: Formato del encapsulado (ML = QFN, P = PDIP, SO = SOIC, SS = SSOP) 
 
@@ -86,7 +86,7 @@ Las soluciones que usan ZIF (Zócalo en el que no hay que hacer fuerza, sólo gi
 
 Además, el microcontrolador permite programación In-Circuit, es decir, sin sacarlo del circuito de aplicación. Ésto se hace mediante cinco conexiones que se comunican al microcontrolador y al programador.
 
-Son las terminales llamadas VPP (Voltaje de programación), Vss, Vdd, Pgd (Programming Data) y Pgc (Programming Clock). Luego de cablear esto no es necesario sacar al integrado del zócalo para programarlo.
+Son las terminales llamadas VPP (Tensión de programación), Vss, Vdd, Pgd (Programming Data) y Pgc (Programming Clock). Luego de cablear esto no es necesario sacar al integrado del zócalo para programarlo.
 
 ![PIC pinout](/images/picpinout.jpg)
 

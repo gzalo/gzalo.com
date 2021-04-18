@@ -5,7 +5,6 @@ summary: "Cómo leer datos analógicos desde un microcontrolador que solamente t
 thumbnail: "/thumbs/adc.png"
 aliases: ["/adc/"]
 ---
-addProjectBox('Conversión analógica-digital sin ADC', 'Como medir facilmente el valor de una resistencia, usando un microcontrolador sin conversores analógico-digitales.','/thumbs/adc.png','/adc/');
 
 Hay sistemas en los que se necesita leer desde sensores, potenciómetros u otros dispositivos analógicos, desde un microcontrolador de bajo costo, sin conversores analógicos digitales integrados.
 

@@ -5,7 +5,7 @@ thumbnail: "/thumbs/timer.png"
 aliases: ["/timer_en/"]
 ---
 
-Given the timer configuration, this page calculates the rate of overflow.
+Given the timer configuration, this page calculates its overflow rate.
 
 {{< rawhtml >}}
 <form action="">

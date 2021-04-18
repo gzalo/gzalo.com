@@ -35,7 +35,7 @@ Depending on the regulator model, the input voltage should be at least 2 volts h
 ![Voltage regulator schematic](/images/reguladortension.png)
 
 ## Current regulator
-Given the value of the resistor and the regulator model, this page calculates the maximum output current, as well as the power disipated by the resistor in the worst case.
+Given the value of the resistor and the regulator model, this page calculates the maximum output current, as well as the power dissipated by the resistor in the worst case.
 
 {{< rawhtml >}}
 <form action="" id="reguladorf_i">
