@@ -1,7 +1,7 @@
 ---
 title: "Electroestimulador Muscular"
 summary: "Electroestimulador Muscular controlado por microcontrolador"
-thumbnail: "/thumbs/electroestimulador.png"
+thumbnail: "/thumbs/muscle-stimulator.png"
 aliases: ["/electroestimulador/"]
 ---
 	

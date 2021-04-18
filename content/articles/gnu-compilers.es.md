@@ -2,7 +2,7 @@
 title: "Compilación de programas con compiladores GNU"
 tags: ["articles", "programming"]
 summary: "Cómo usar los compiladores libres de GNU para armar programas en C o C++."
-thumbnail: "/thumbs/.png"
+thumbnail: "/thumbs/compiladores_gnu.png"
 aliases: ["/compiladores_gnu/"]
 ---
 
