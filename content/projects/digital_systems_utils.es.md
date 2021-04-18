@@ -1,0 +1,1 @@
+'Utilities for Digital Systems classes (2015)','Software I made to assist with the development of FPGA systems that include a VGA output.','/thumbs/cordic.png','https://github.com/gzalo/sistemas-digitales');

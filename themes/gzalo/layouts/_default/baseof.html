@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <section class="w3-row w3-content">
+            <article class="w3-container w3-twothird">
+                {{- block "main" . }}{{- end }}
+            </article>
+            {{- partial "sidebar.html" . -}}
+        </section>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

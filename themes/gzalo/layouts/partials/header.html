@@ -1,0 +1,37 @@
+
+<header class="w3-display-container">
+  <div class="w3-container w3-display-middle w3-center">
+        <h1 class="w3-jumbo color_header_h"><a href="{{ .Site.Home.RelPermalink }}" style="color:black;">{{ .Site.Title }}</a></h1>
+        <h2 class="w3-large w3-hide-medium w3-hide-small color_header_h">{{ .Site.Params.Description }}</h2>
+  </div>
+</header>
+
+    <nav id="nav" class="nav justify-content-center">
+      <div class="w3-bar w3-large color_menu">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | absLangURL }}" class="w3-hover-blue w3-bar-item">
+           {{ .Name }}
+        </a>
+        {{ end }}
+
+        <div class="w3-bar-item w3-right w3-hide" id="in_busqueda">
+          <form action="/buscar/" method="get" id="busqueda">
+          <input type="text" class="w3-input w3-border-0 w3-tiny" name="q" placeholder="Buscar...">
+          </form>
+        </div>
+
+        <a class="w3-right w3-bar-item w3-hover-blue" href="javascript:void(0);" onclick="open_search(this)" class="w3-hover-blue"><i class="fa fa-search"></i></a>
+                
+            <div class="w3-dropdown-hover w3-hover-blue w3-right">
+                <button class="w3-button w3-hover-blue"><i class="fa fa-globe"></i></button>
+            
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-2">
+
+                    {{ range $.Site.Home.AllTranslations }}
+                    <a href="{{ .Permalink }}" class="w3-bar-item w3-button">{{ .Language.LanguageName }}</a>
+                    {{ end }}
+
+                </div>
+             </div>
+      </div>
+    </nav>

@@ -1,0 +1,1 @@
+'Buenos Aires mapper (2014)','3D Map of Buenos Aires using data provided by the government. Uses OpenGL for 3D acceleration, SDL for window and event management.','/thumbs/mapabsas.png','https://github.com/gzalo/MapaBSAS');
