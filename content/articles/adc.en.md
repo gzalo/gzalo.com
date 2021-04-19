@@ -19,9 +19,9 @@ The resistor could be replaced with a thermistor (PTC or NTC) if the temperature
 This circuit requires a bidirectional pin in the microcontroller, which should also allow setting a high impedance (High-Z) input state.
 
 The principle is the following:
-* Set the terminal to high for around 1 millisecond to charge the capacitor</li>
-* Set the terminal in a high-z state and measure how long the capacitor holds the charge.</li>
-* Repeat the cycle according to the desired sample rate.</li>
+* Set the terminal to high for around 1 millisecond to charge the capacitor
+* Set the terminal in a high-z state and measure how long the capacitor holds the charge.
+* Repeat the cycle according to the desired sample rate.
 
 ![Charge/Discharge RC cycle](/images/descarga.png)
 

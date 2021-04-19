@@ -6,48 +6,33 @@ thumbnail: "/thumbs/rulemanes.png"
 aliases: ["/rulemanes/"]
 ---
 
-<table class="w3-table w3-striped w3-bordered w3-border" id="tablita">
-<thead>
-	<tr>
-		<th>Código</th>
-		<th>Diámetro interno</th>
-		<th>Diámetro externo</th>
-		<th>Longitud</th>
-	</tr>
-</thead>
-<tbody>
-	<tr><td>6301</td><td>12</td><td>37</td><td>12</td></tr>
-	<tr><td>6302</td><td>13</td><td>42</td><td>15</td></tr>
-	<tr><td>6303</td><td>17</td><td>47</td><td>14</td></tr>
-	<tr><td>6304</td><td>20</td><td>52</td><td>15</td></tr>
-	<tr><td>6305</td><td>25</td><td>62</td><td>17</td></tr>
-					
-	<tr><td>6200</td><td>10</td><td>30</td><td>9</td></tr>
-	<tr><td>6201</td><td>12</td><td>32</td><td>10</td></tr>
-	<tr><td>6202</td><td>15</td><td>35</td><td>11</td></tr>
-	<tr><td>6203</td><td>17</td><td>40</td><td>12</td></tr>
-	<tr><td>6204</td><td>20</td><td>47</td><td>14</td></tr>
-	<tr><td>6205</td><td>25</td><td>52</td><td>15</td></tr>
-	<tr><td>6206</td><td>30</td><td>62</td><td>16</td></tr>
-					
-	<tr><td>6000</td><td>10</td><td>26</td><td>8</td></tr>
-	<tr><td>6001</td><td>12</td><td>28</td><td>8</td></tr>
-	<tr><td>6002</td><td>15</td><td>32</td><td>9</td></tr>
-	<tr><td>6003</td><td>17</td><td>35</td><td>10</td></tr>
-	<tr><td>6004</td><td>20</td><td>42</td><td>12</td></tr>
-	<tr><td>6005</td><td>25</td><td>47</td><td>12</td></tr>
-	<tr><td>6006</td><td>30</td><td>55</td><td>13</td></tr>
-					
-	<tr><td>607</td><td>7</td><td>19</td><td>6</td></tr>
-	<tr><td>608</td><td>8</td><td>22</td><td>7</td></tr>
-	<tr><td>609</td><td>9</td><td>24</td><td>7</td></tr>
-					
-	<tr><td>623</td><td>3</td><td>10</td><td>4</td></tr>
-	<tr><td>624</td><td>4</td><td>13</td><td>5</td></tr>
-	<tr><td>625</td><td>5</td><td>16</td><td>5</td></tr>
-	<tr><td>626</td><td>6</td><td>19</td><td>6</td></tr>
-	<tr><td>627</td><td>7</td><td>22</td><td>7</td></tr>
-	<tr><td>629</td><td>9</td><td>26</td><td>8</td></tr>
-</tbody>
-</table>
-
+| Código | Diámetro interno | Diámetro externo | Longitud |
+| ------ | ---------------- | ---------------- | -------- |
+| 6301 | 12 | 37 | 12|
+| 6302 | 13 | 42 | 15|
+| 6303 | 17 | 47 | 14|
+| 6304 | 20 | 52 | 15|
+| 6305 | 25 | 62 | 17|
+| 6200 | 10 | 30 | 9|
+| 6201 | 12 | 32 | 10|
+| 6202 | 15 | 35 | 11|
+| 6203 | 17 | 40 | 12|
+| 6204 | 20 | 47 | 14|
+| 6205 | 25 | 52 | 15|
+| 6206 | 30 | 62 | 16|
+| 6000 | 10 | 26 | 8|
+| 6001 | 12 | 28 | 8|
+| 6002 | 15 | 32 | 9|
+| 6003 | 17 | 35 | 10|
+| 6004 | 20 | 42 | 12|
+| 6005 | 25 | 47 | 12|
+| 6006 | 30 | 55 | 13|
+| 607 | 7 | 19 | 6|
+| 608 | 8 | 22 | 7|
+| 609 | 9 | 24 | 7|
+| 623 | 3 | 10 | 4|
+| 624 | 4 | 13 | 5|
+| 625 | 5 | 16 | 5|
+| 626 | 6 | 19 | 6|
+| 627 | 7 | 22 | 7|
+| 629 | 9 | 26 | 8|
