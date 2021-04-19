@@ -3,7 +3,7 @@ title: "Modificación de cámara de video para ver luz infrarroja"
 tags: ["articles", "misc"]
 summary: "Cómo modificar una cámara de video estándar para agrandar el espectro de luz que puede observar, permitiendo ver parte del infrarrojo cercano."
 thumbnail: "/thumbs/ircam.png"
-aliases: ["ircam/"]
+aliases: ["/ircam/"]
 date: "2013-01-01"
 ---
 Hace un par de años encontré una cámara vieja de video: una JVC GR-C7u. Es una cámara de los años '80, tiene CCD, autofoco, viewfinder blanco y negro y graba en cinta, en formato VHSC. Es un modelo muy parecido a la usada en la película "Volver al futuro" (gr-c1u), con carcasa roja.
