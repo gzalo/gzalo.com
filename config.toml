@@ -48,7 +48,3 @@ defaultContentLanguage = "es"
         name = "Projects"
         url = "/en/projects/"
         weight = 4
-
-#[params]
-#  description = "Electrónica, programación y otras cosas" 
-
