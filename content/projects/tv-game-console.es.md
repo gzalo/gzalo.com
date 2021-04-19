@@ -1,8 +1,9 @@
 ---
-title: "Mini consola de juegos con salida a TV (2012)"
+title: "Mini consola de juegos con salida a TV"
 summary: "Aplicación de prueba para generar señales NTSC (blanco y negro) que pueden ser vistas en cualquier televisión con entrada de video compuesta. Basado en un microcontrolador 8052."
 thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/consola_tv/"]
+date: "2012-01-01"
 ---
 Unos años luego de diseñar y armar la [miniconsola con matriz de LEDs](({{< ref "/projects/game-console" >}})), encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero [puede encontrarse aquí](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).
 

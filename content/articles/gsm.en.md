@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to use a cellphone or a modem to send and receive texts and SMS using a microcontroller."
 thumbnail: "/thumbs/gsm.png"
 aliases: ["/gsm_en/"]
+date: "2010-01-01"
 ---
 
 It's possible to connect a microcontroller to a modem or GSM/GPRS cellphone, which enables the microcontroller to do stuff such as answer the phone, call a number, send and receive SMS as well as connect to the internet, even with small microcontrollers.

@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Very useful memories, typically used to store configuration data or to keep logs with sensor data."
 thumbnail: "/thumbs/i2c.png"
 aliases: ["/i2c_en/"]
+date: "2010-01-01"
 ---
 I2C (spelled I squared C) is a standard that allows for easy communication between multiple devices (microcontrollers, memories, computer monitors, sensors, converters, and many other smart devices).
 

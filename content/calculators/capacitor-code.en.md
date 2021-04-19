@@ -3,6 +3,7 @@ summary: "Given the number found in a capacitor, this page calculates its value,
 title: "Capacitor value calculator"
 thumbnail: "/thumbs/capacitor_code.png"
 aliases: ["/capacitor_code_en/"]
+date: "2011-01-01"
 ---
 
 Given the number found in a capacitor, this page calculates its value, as well as the tolerance.

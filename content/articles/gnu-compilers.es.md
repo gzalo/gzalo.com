@@ -4,6 +4,7 @@ tags: ["articles", "programming"]
 summary: "Cómo usar los compiladores libres de GNU para armar programas en C o C++."
 thumbnail: "/thumbs/compiladores_gnu.png"
 aliases: ["/compiladores_gnu/"]
+date: "2010-01-01"
 ---
 
 Los programas de un proyecto suelen estar compuestos de varios archivos de código fuente, con extensión .c o .cpp (en caso de ser C++). Compilar cada uno de estos archivos resulta en archivos .o, llamados código objeto. Estos archivos contienen el código fuente traducido a código máquina.

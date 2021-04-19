@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to get the position from a GPS module, by parsing the NMEA strings."
 thumbnail: "/thumbs/gps.png"
 aliases: ["/gps_en/"]
+date: "2010-01-01"
 ---
 This information should work with any GPS module (it was tested with an [ET-332](http://www.globalsat.co.uk/product_pages/product_et332.htm)) that transmits data via a serial port, using the NMEA protocol.
 

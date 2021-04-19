@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S."
 thumbnail: "/thumbs/lcdgrafico.png"
 aliases: ["/lcdgrafico/"]
+date: "2010-01-01"
 ---
 La mayoría de los LCDs gráficos usan un controlador como el KS0108 (o compatible). Cada controlador tiene una memoria de 512 bytes interna y por lo tanto permite controlar un display de 64x64 píxeles. El truco que usan los diplays más grandes es usar un controlador por cada fracción de la pantalla, es decir, un display de 128x64 tiene 2 controladores, un display de 196x64 tiene 3 controladores, y uno de 128x128 tiene 4 controladores.
 

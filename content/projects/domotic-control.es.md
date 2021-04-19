@@ -3,6 +3,7 @@ title: "Control domótico via infrarrojo y PC"
 summary: "Panel de control domótico para controlar luces de distintas habitaciones, permitiendo al usuario el cambio de intensidad a través de tres interfaces. Realizado para la materia Laboratorio de microcontroladores"
 thumbnail: "/thumbs/controldomotico.png"
 aliases: ["/tp_labodemicros/"]
+date: "2014-01-01"
 ---
 Este proyecto grupal fue realizado en 2014 junto a Juan Ignacio Troisi y Martin Menendez, para la materia de la FIUBA "Laboratorio de microcontroladores". La idea es un control domótico, que permita el control de las luces de varias habitaciones, permitiendo cambiar la intensidad de cada una de ellas mediante 3 interfaces:
 

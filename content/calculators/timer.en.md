@@ -3,6 +3,7 @@ title: "Timer overflow calculator"
 summary: "Given a timer configuration, it calculates how often it will overflow."
 thumbnail: "/thumbs/timer.png"
 aliases: ["/timer_en/"]
+date: "2011-01-01"
 ---
 
 Given the timer configuration, this page calculates its overflow rate.

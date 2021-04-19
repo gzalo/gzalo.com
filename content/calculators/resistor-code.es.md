@@ -3,6 +3,7 @@ title: "Calculadora de código de colores de resistencias"
 summary: "Dados los colores de una resistencia, calcula cuánto es su valor y tolerancia."
 thumbnail: "/thumbs/resistor_code.png"
 aliases: ["/codigo_resistencias/"]
+date: "2011-01-01"
 ---
 
 Dados los colores de una resistencia, esta página calcula cuánto es su valor y tolerancia.

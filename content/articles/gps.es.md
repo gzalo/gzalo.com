@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía."
 thumbnail: "/thumbs/gps.png"
 aliases: ["/gps/"]
+date: "2010-01-01"
 ---
 Esta información sirve para cualquier módulo GPS (fue probado con el [ET-332](http://www.globalsat.co.uk/product_pages/product_et332.htm)) que transmita datos via un puerto serie, usando el protocolo NMEA.
 

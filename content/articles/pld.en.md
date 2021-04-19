@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Small summary of applications of PLA, PAL, GAL and PLD based systems."
 thumbnail: "/thumbs/pld.png"
 aliases: ["/pld_en/"]
+date: "2009-01-01"
 ---
 
 ## What is a Pal/Gal/Pla? What is their main use?

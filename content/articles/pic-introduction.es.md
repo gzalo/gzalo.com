@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Pequeño resumen introductorio sobre microcontroladores de 8 bit, en particular de la familia Microchip PIC16"
 thumbnail: "/thumbs/pic.png"
 aliases: ["/intropic/"]
+date: "2010-01-01"
 ---
 
 Para poder definir a un microcontrolador PIC, primero necesitaríamos saber qué es un microcontrolador. A grandes rasgos es un circuito integrado que adentro posee las mismas cosas básicas que tiene una computadora: 

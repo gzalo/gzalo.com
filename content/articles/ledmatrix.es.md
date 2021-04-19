@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo controlar una matriz de LEDs desde un microcontrolador."
 thumbnail: "/thumbs/ledmatrix.png"
 aliases: ["/ledmatrix/"]
+date: "2010-01-01"
 ---
 Una matriz suele estar compuesta con diodos dispuestos de esta forma:
 

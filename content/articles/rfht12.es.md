@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo controlar cargas a distancias a través de un enlace de radiofrecuencia, usando módulos y ciruitos integrados de bajo costo."
 thumbnail: "/thumbs/rfht12.png"
 aliases: ["/rfht12/"]
+date: "2009-01-01"
 ---
 	
 ![Transmisor y Receptor RF 4 canales](/images/controlrf_lyt.png)

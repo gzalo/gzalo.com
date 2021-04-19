@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Analysis of some electronic programs I used or use daily."
 thumbnail: "/thumbs/software.png"
 aliases: ["/software_en/"]
+date: "2010-01-01"
 ---
 
 ### Simulation, PCB design and schematic software

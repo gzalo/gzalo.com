@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to control an Alphanumeric LCD using a microcontroller. Includes commands and schematics."
 thumbnail: "/thumbs/lcdalfanumerico.png"
 aliases: ["/alphanumericlcd_en/"]
+date: "2010-01-01"
 ---
 
 Most alphanumeric LCDs (sometimes called smart LCDs, since they include a controller in the same board and don't need a powerful CPU to use them) are an industrial standard designed for interfacing with embedded system (mostly microcontrollers or microprocessors). They come in a lot of different configurations, 8x1 (1 row, 8 characters per row), 16x2, 20x4, and even bigger ones are available.

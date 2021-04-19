@@ -4,6 +4,7 @@ tags: ["articles", "programming"]
 summary: "A small article that can help people that want to get into the world of graphic shaders development."
 thumbnail: "/thumbs/shaders.png"
 aliases: ["/shaders_en/"]
+date: "2010-01-01"
 ---
 
 This doesn't pretend to be a complete tutorial about shaders but a simple explanation on how to make some visual effects typically used in games.

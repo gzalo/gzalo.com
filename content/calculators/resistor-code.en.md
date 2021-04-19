@@ -3,6 +3,7 @@ title: "Resistor value calculator"
 summary: "Given the color bands of a resistor, calculates its value and tolerance."
 thumbnail: "/thumbs/resistor_code.png"
 aliases: ["/resistor_code_en/"]
+date: "2011-01-01"
 ---
 
 Given the colors of a resistor, this page calculates the value and the tolerance.

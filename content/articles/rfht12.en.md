@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to remote control loads via an RF link, using cheap modules and ICs."
 thumbnail: "/thumbs/rfht12.png"
 aliases: ["/rfht12_en/"]
+date: "2009-01-01"
 ---
 
 ![Transmitter and receiver, RF, 4 channels](/images/controlrf_lyt.png)

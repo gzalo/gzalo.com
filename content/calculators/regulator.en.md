@@ -3,6 +3,7 @@ title: "Voltage and current regulator calculator"
 summary: "Given the values of both resistors and the type of regulator, calculates the output voltage or current of a linear regulator, both in voltage and current regulation mode."
 thumbnail: "/thumbs/regulator.png"
 aliases: ["/regulator_en/"]
+date: "2011-01-01"
 ---
 ## Voltage regulator
 Given the value of both resistors, and the regulator model, this page calculates the output voltage of the regulator.

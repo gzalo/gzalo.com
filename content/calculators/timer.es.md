@@ -3,6 +3,7 @@ title: "Calculadora de overflow de timer"
 summary: "Dada la configuración de un timer, calcula cada cuanto tiempo hace overflow."
 thumbnail: "/thumbs/timer.png"
 aliases: ["/timer/"]
+date: "2011-01-01"
 ---
 Dada la configuración del timer, calcula el tiempo de overflow del mismo.
 

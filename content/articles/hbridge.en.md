@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Different ways to control DC motors."
 thumbnail: "/thumbs/puenteh.png"
 aliases: ["/hbridge_en/"]
+date: "2010-01-01"
 ---
 
 There are three principal types of motor control:

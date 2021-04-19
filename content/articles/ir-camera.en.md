@@ -4,6 +4,7 @@ tags: ["articles", "misc"]
 summary: "How to modify an ordinary video camera to increase the spectrum of the light it can see, allowing the visualization of near-infrared."
 thumbnail: "/thumbs/ircam.png"
 aliases: ["/ircam_en/"]
+date: "2013-01-01"
 ---
 A couple of years ago I found an old video camera: una JVC GR-C7u. It's a camera from the 80s, has a CCD color sensor, autofocus, black and white viewfinder, records in VHSC tapes. Its a very similar model to the one used by Marty in "Back to the future" (gr-c1u) but with a red chassis.
 

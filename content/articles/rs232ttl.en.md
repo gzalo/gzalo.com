@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "A simple circuit used in almost every circuit that needs a connection with a PC."
 thumbnail: "/thumbs/rs232ttl.png"
 aliases: ["/rs232ttl_en/"]
+date: "2009-01-01"
 ---
 This circuit is widely used in the world of microcontrollers. It basically allows to shift levels between a TTL signal (0 ... 5 V) and a RS232 signal (15 V ... -15 V).
 

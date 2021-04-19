@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora."
 thumbnail: "/thumbs/rs232ttl.png"
 aliases: ["/rs232ttl/"]
+date: "2009-01-01"
 ---
 Este circuito es muy usado en el ámbito de microcontroladores, básicamente permite hacer de adaptador de niveles entre una señal TTL (0 ... 5v) y una señal RS232 (15v ... -15v).
 

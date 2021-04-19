@@ -2,6 +2,7 @@
 title: "Half-Life map viewer"
 summary: "This project is a renderer designed specifically to explore the world of Half-Life. It allows for realtime rendering of the Black Mesa Research Facility."
 thumbnail: "/thumbs/halfmapper.png"
+date: "2016-01-01"
 ---
 		
 [Download Latest Windows binaries](/downloads/halfmapper-latest.zip) (September 22, 2016)

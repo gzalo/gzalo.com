@@ -3,6 +3,7 @@ title: "Digital combination lock"
 summary: "Digital logic based that implements a combination lock similar to those used in hotel rooms."
 thumbnail: "/thumbs/cerradura.png"
 aliases: ["/lock_en/"]
+date: "2012-01-01"
 ---
 This project was developed in 2012 for the subject "Técnica Digital", for the university. Basically it's a lock similar to those found in hotel rooms.
 

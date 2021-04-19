@@ -3,6 +3,7 @@ title: "Electroestimulador Muscular"
 summary: "Electroestimulador Muscular controlado por microcontrolador"
 thumbnail: "/thumbs/muscle-stimulator.png"
 aliases: ["/electroestimulador/"]
+date: "2011-01-01"
 ---
 	
 ![Electroestimulador](/images/electro4.jpg)

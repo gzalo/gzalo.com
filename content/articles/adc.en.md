@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to easily measure the value of a resistor, using a microcontroller without Analog to Digital converters."
 thumbnail: "/thumbs/adc.png"
 aliases: ["/adc_en/"]
+date: "2010-01-01"
 ---
 
 There are some low-cost systems that require reading from some sensors, potentiometers, or other analog devices, by using a cheap microcontroller without an integrated analog to digital converter.

@@ -4,6 +4,7 @@ tags: ["articles", "programming"]
 summary: "Pequeño tutorial para aprender a usar SDL, en C++."
 thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl/"]
+date: "2010-01-01"
 ---
 En este pequeño tutorial mostraré como hacer un editor de fuentes píxel de 8x8, útil para diseñar tu propia tipografía estilo "pixel". Usaré C++ y SDL (para acceder a la pantalla y eventos). Conocimiento de C/C++ es recomendado.
 

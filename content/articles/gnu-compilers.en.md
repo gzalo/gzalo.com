@@ -4,6 +4,7 @@ tags: ["articles", "programming"]
 summary: "How to use the free GNU compilers to build C/C++ projects."
 thumbnail: "/thumbs/compiladores_gnu.png"
 aliases: ["/gnu_compilers_en/"]
+date: "2010-01-01"
 ---
 
 The programs of a project are typically based on many source code files, with .c or .cpp (in case of C++) extension. Compiling each one of those creates .o files, called "object files", which contain the source code "translated" into machine code.

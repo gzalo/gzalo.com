@@ -3,6 +3,7 @@ title: "Calculador de regulador de tensión y corriente"
 summary: "Dados el valor de las dos resistencias y el modelo de regulador, calcula cuanto es la tensión o corriente de salida de un regulador lineal, configurado como regulador de tensión o corriente."
 thumbnail: "/thumbs/regulator.png"
 aliases: ["/regulador/"]
+date: "2011-01-01"
 ---
 ## Regulador de tensión
 Dados el valor de las dos resistencias y el modelo de regulador, esta página calcula cuanto es la tensión de salida de un regulador.

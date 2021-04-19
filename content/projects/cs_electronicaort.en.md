@@ -3,6 +3,7 @@ title: "Cs_electronicaort"
 thumbnail: "/thumbs/cs_electronicaort.png"
 summary: "Counter-Strike 1.6 map, inspired in the Electronics floor of ORT Yatay (Highschool I attended)."
 aliases: ["/cs_electronicaort_en/"]
+date: "2008-01-01"
 ---
 
 cs_electronicaort is a map for the computer game Counter-Strike 1.6, loosely based on the Electronics floor of ORT Yatay Highschool.

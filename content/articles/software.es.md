@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Análisis de algunos programas de electrónica que utilizé en algún momento."
 thumbnail: "/thumbs/software.png"
 aliases: ["/software/"]
+date: "2010-01-01"
 ---
 $descripcionPagina = 'Análisis de algunos programas de electrónica: diseño de esquemáticos, circuitos impresos, simulación, programación.';
 	$tituloPagina = 'Listado y análisis de software utilizados en electrónica';

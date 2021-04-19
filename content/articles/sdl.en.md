@@ -4,6 +4,7 @@ tags: ["articles", "programming"]
 summary: "Small tutorial to learn the basics of SDL, using C++."
 thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl_en/"]
+date: "2010-01-01"
 ---
 
 This small tutorial will show how to develop a small 8x8 pixel font editor, useful for designing small fonts with a pixel style. C++ y SDL will be used. C/C++ knowledge is recommended.

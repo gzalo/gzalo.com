@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador."
 thumbnail: "/thumbs/gsm.png"
 aliases: ["/gsm/"]
+date: "2010-01-01"
 ---
 
 Es posible conectar un microcontrolador a un modem o celular GSM o GPRS, lo que nos permite hacer cosas como atender el teléfono, llamar a cierto número, enviar y recibir mensajes de texto, o incluso conectarse a internet, todo desde un microcontrolador cualquiera.

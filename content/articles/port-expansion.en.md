@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to add more digital inputs or outputs to a microcontroller, using shift registers."
 thumbnail: "/thumbs/expandir.png"
 aliases: ["/expansion_en/"]
+date: "2010-01-01"
 ---
 
 In some projects, more inputs or outputs than the microcontroller can handle are needed. These are some solutions:

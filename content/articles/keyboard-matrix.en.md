@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Easy tips to route multiple tact switches disposed in a matrix configuration."
 thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/keyboard4x4_en/"]
+date: "2010-01-01"
 ---
 Making a keyboard with 4 terminal buttons (also known as tact switches) is very easy, specially using the fact that two of the 4 terminals are internally joined, so it's possible to use a single board PCB without needing extra wire jumps.
 ![3x4 keyboard schematic](/images/keypad_lyt.png)

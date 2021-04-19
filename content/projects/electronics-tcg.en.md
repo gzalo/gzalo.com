@@ -3,6 +3,7 @@ title: "Card game - Electrónica"
 summary: "SDL based multiplayer game done as a final project for an assignature."
 thumbnail: "/thumbs/electronica-tcg.png"
 aliases: ["/electronica_tcg_en/"]
+date: "2010-01-01"
 ---
 	
 It's a small game I did as a final project for highschool with Lucas Tavolaro. It's a multiplayer card game (working via LAN and Internet). The idea was to make some similar to Pokemon Trading Card Game, but with funny cards (with internal jokes)

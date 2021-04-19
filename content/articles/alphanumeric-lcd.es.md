@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo controlar un LCD alfanumérico inteligente desde un microcontrolador. Incluye Comandos y esquemáticos."
 thumbnail: "/thumbs/lcdalfanumerico.png"
 aliases: ["/lcdalfanumerico/"]
+date: "2010-01-01"
 ---
 
 Estos LCDS alfanuméricos (también llamados "inteligentes", por poseer controlador en la misma placa y casi no necesitar tiempo de CPU para usarlos) son un estándar industrial diseñados especialmente para interfaces con sistemas embebidos (microcontroladores o microprocesadores). Vienen en una gran cantidad de configuraciones distintas, 8x1 (1 fila, 8 carácteres), 16x2, 20x4, entre otros. La más común es la de 20x4.

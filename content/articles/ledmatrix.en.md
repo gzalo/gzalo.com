@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to control a LED matrix with a microcontroller."
 thumbnail: "/thumbs/ledmatrix.png"
 aliases: ["/ledmatrix_en/"]
+date: "2010-01-01"
 ---
 An LED matrix is often composed by diodes disposed in this way:
 

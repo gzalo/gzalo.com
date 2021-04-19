@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Distintas formas de controlar motores de CC."
 thumbnail: "/thumbs/puenteh.png"
 aliases: ["/puenteh/"]
+date: "2010-01-01"
 ---
 
 Principalmente, hay tres tipos de control de motor de corriente continua:

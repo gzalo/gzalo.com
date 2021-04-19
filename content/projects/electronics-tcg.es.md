@@ -3,6 +3,7 @@ title: "Juego de cartas de electrónica"
 summary: "Juego multijugador basado en la biblioteca SDL, hecho como proyecto final para una materia."
 thumbnail: "/thumbs/electronica-tcg.png"
 aliases: ["/electronica_tcg/"]
+date: "2010-01-01"
 ---
 
 Es un juego que hicimos de proyecto final de una materia para el colegio (Electrónica Digital III) en el 2010, junto a Lucas Tavolaro. Es un juego de cartas multijugador (funciona via LAN e internet). La idea era hacer algo similar al juego de las cartas pokémon, pero con cartas graciosas (con bromas internas de la división). 

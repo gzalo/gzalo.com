@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "How to control a Graphic LCD with a resolution of 128x64 (or 192x64) based in KS0108, using a microcontroller and two 8 bit I/O ports."
 thumbnail: "/thumbs/lcdgrafico.png"
 aliases: ["/graphicallcd_en/"]
+date: "2010-01-01"
 ---
 Most monochromatic graphical LCDs use a controller compatible with KS0108. Each one has an internal 512-byte memory, so it allows resolutions up to 64x64 pixels. Bigger displays tend to use multiple controllers, one per fraction of the screen. For instance, a 128x64 LCD has two controllers, a 196x64 has 3, and a 128x128 has 4 of them.
 

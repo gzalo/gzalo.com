@@ -4,6 +4,7 @@ tags: ["articles", "misc"]
 summary: "Tabla con tamaños de diversos rulemanes que se consiguen localmente, muy útil a la hora de hacer un proyecto mecánico."
 thumbnail: "/thumbs/rulemanes.png"
 aliases: ["/rulemanes/"]
+date: "2017-01-01"
 ---
 
 | Código | Diámetro interno | Diámetro externo | Longitud |

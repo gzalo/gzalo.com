@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Lista y análisis de algunas casas de electrónica en la Ciudad Autónoma de Buenos Aires (Argentina)."
 thumbnail: "/thumbs/casas.png"
 aliases: ["/casas/"]
+date: "2015-01-01"
 ---
 
 [Ver las direcciones marcadas en un mapa](http://goo.gl/maps/Frji9)

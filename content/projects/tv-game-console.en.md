@@ -3,6 +3,7 @@ title: "Mini game console with TV out "
 summary: "Sample application that generates NTSC signals (black and white) which can be viewed in any standard definition TV. Based in a 8052 microcontroller."
 thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/console_tv_en/"]
+date: "2012-01-01"
 ---
 
 In 2012, a few years after designing and building the [Mini game console with LED matrix]({{< ref "/projects/game-console" >}}), I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. [The article itself can be found here](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).

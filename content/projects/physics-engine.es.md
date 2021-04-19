@@ -3,6 +3,7 @@ title: "Pequeño motor físico"
 summary: "Basado en el paper Advanced Character Physics de Jakobsen. Desarrollado con HTML5 and Javascript based, solamente soporta círculos."
 thumbnail: "/thumbs/fisica.png"
 aliases: ["/motor_fisico/"]
+date: "2010-01-01"
 ---
 
 Este es un pequeño motor de físicas desarrollado en 2010, basado en el artículo "Advanced Character Physics" de Jakobsen.

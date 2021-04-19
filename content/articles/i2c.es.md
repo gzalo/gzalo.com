@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Muy útiles, por ejemplo para guardar datos de configuración o mantener un registro de sensores."
 thumbnail: "/thumbs/i2c.png"
 aliases: ["/i2c/"]
+date: "2010-01-01"
 ---
 
 I2C (pronunciado I cuadrado C) es un estándar que facilita la comunicación entre distintos dispositivos (microcontroladores, memorias, monitores de computadoras, y muchos otros dispositivos que tengan "inteligencia").

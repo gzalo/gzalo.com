@@ -3,6 +3,7 @@ title: "Cerradura de combinación digital"
 summary: "Lógica digital que implementa una cerradura de combinación similar a la usada en hoteles."
 thumbnail: "/thumbs/cerradura.png"
 aliases: ["/cerradura/"]
+date: "2012-01-01"
 ---
 
 Este proyecto fue armado para la materia Técnica Digital de la facultad, en el año 2012. Básicamente es una cerradura como las de las cajas de seguridad de los hoteles.

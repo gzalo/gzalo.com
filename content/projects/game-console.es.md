@@ -3,6 +3,7 @@ title: "Mini consola de juegos con matriz de LEDs"
 summary: "Consola con resolución 8x8, basada en un microcontrolador 8052 microcontroller, desarrollo en C."
 thumbnail: "/thumbs/miniconsola.png"
 aliases: ["/miniconsola/"]
+date: "2009-01-01"
 ---
 
 Como proyecto final de la materia Electrónica Digital II (2009, Prof: José Salama) había que hacer un proyecto con un microcontrolador 8052. Tenía algunas matrices de LEDs de 8x8, así que decidí hacer una mini consola de juegos. Usando el simulador Proteus pude diseñar el circuito y programarlo sin hacer ningún prototipo físico. Primero comenzé la programación en assembler, pero se fue haciendo cada vez más complejo (especialmente implementar la lógica de los juegos) así que decidí reescribirlo en C (compilando con el compilador SDCC, que es gratuito y open source).

@@ -4,6 +4,7 @@ tags: ["articles", "misc"]
 summary: "Cómo construir un pequeño sensor de dos estados para sensar la orientación en el espacio de una placa."
 thumbnail: "/thumbs/sensores_inclinacion.png"
 aliases: ["/sensores_inclinacion/"]
+date: "2010-01-01"
 ---
 
 Para un proyecto de la facultad, decidimos hacer unos sensores para detectar en qué orientación (dentro de un plano vertical) estaba un proyecto. Investigando encontramos unos simples sensores, basados en las comunes tiras de pines: 

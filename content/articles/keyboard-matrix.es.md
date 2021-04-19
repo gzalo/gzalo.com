@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Formas fáciles para routear tact switches en formas de matriz."
 thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/teclado4x4/"]
+date: "2010-01-01"
 ---
 Hacer un teclado con botones de 4 terminales (también denominados tact switches) es relativamente sencillo, aprovechando el hecho que los botones de 4 terminales tienen dos contactos unidos internamente, por lo que podemos evitar puentes en el circuito impreso.
 

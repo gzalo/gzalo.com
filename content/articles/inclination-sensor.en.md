@@ -4,6 +4,7 @@ tags: ["articles", "misc"]
 summary: "How to build small sensors with two states, that can sense the rotation of a board in two axes."
 thumbnail: "/thumbs/sensores_inclinacion.png"
 aliases: ["/inclination_sensor_en/"]
+date: "2010-01-01"
 ---
 
 For a university project, we decided to make some sensors to detect in which orientation (inside a vertical plane) a board was. Investigating in the Internet we found simple sensors, based in regular 90º double pin strips:

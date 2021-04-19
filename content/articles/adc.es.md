@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo leer datos analógicos desde un microcontrolador que solamente tiene entradas/salidas digitales.."
 thumbnail: "/thumbs/adc.png"
 aliases: ["/adc/"]
+date: "2010-01-01"
 ---
 
 Hay sistemas en los que se necesita leer desde sensores, potenciómetros u otros dispositivos analógicos, desde un microcontrolador de bajo costo, sin conversores analógicos digitales integrados.

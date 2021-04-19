@@ -3,6 +3,7 @@ title: "Cs_electronicaort"
 thumbnail: "/thumbs/cs_electronicaort.png"
 summary: "Mapa para Counter-Strike 1.6, inspirado en el piso de electrónica de la escuela ORT (sede Yatay)."
 aliases: ["/cs_electronicaort/"]
+date: "2008-01-01"
 ---
 
 cs_electronicaort es un mapa para el juego Counter-Strike 1.6, basado en el piso de electrónica de la escuela ORT Yatay.

@@ -4,6 +4,7 @@ tags: ["articles", "electronics"]
 summary: "Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers)."
 thumbnail: "/thumbs/expandir.png"
 aliases: ["/expandir/"]
+date: "2010-01-01"
 ---
 
 Hay veces en las que para alguna aplicación necesitamos más pines de salida o entrada de los que tenemos en el microcontrolador. Hay varias soluciones:
