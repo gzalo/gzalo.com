@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <section class="w3-row w3-content">
+            <article class="w3-container w3-twothird">
+                <div class="w3-card-2 w3-white">
+                    <header class="w3-container w3-margin-top color_headers">
+                        <h2>{{ .Title }}</h2>
+                    </header>
+                    <div class="w3-container">
+                        <p>La página seleccionada no existe más.</p>
+                        <p><a href="/">Volver a la página principal.</a></p>
+                    </div>
+                </div>
+            </article>
+            {{- partial "sidebar.html" . -}}
+        </section>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

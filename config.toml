@@ -1,0 +1,50 @@
+languageCode = "es-ar"
+title = "Gzalo"
+theme = "gzalo"
+disqusShortname = "gzalo"
+defaultContentLanguage = "es"
+
+[languages]
+  [languages.es]
+    languageName = "Español"
+    description = "Electrónica, programación y otras cosas"
+    weight = 1
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        name = "Principal"
+        url = "/"
+        weight = 1
+      [[languages.es.menu.main]]
+        name = "Calculadoras"
+        url = "/calculators/"
+        weight = 2
+      [[languages.es.menu.main]]
+        name = "Artículos"
+        url = "/articles/"
+        weight = 3
+      [[languages.es.menu.main]]
+        name = "Proyectos"
+        url = "/projects/"
+        weight = 4
+
+  [languages.en]
+    languageName = "English"
+    description = "Electronics, programming & other stuff"
+    weight = 2
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/en/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Calculators"
+        url = "/en/calculators/"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Articles"
+        url = "/en/articles/"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Projects"
+        url = "/en/projects/"
+        weight = 4

@@ -1,0 +1,8 @@
+[search]
+  other = "Search..."
+[comments]
+  other = "Comments" 
+[latest_video]
+  other = "Latest video"
+[latest_news]
+  other = "Latest news"

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="w3-card-2 w3-white">
+    <header class="w3-container w3-margin-top color_headers">
+        <h2>{{ .Title }}</h2>
+    </header>
+    <div class="w3-container">
+        {{ .Content }}
+        {{ partial "metadata.html" . }}
+    </div>
+</div>
+{{ if not .Params.noComment }}
+<div class="w3-card-2 w3-margin-top w3-white">
+    <header class="w3-container color_headers">
+        <h2>{{i18n "comments"}}</h2>
+    </header>
+    <div class="w3-container w3-center">
+        {{ template "_internal/disqus.html" . }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
