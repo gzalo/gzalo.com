@@ -28,22 +28,22 @@ Para mantener la misma altura del filtro, usé un par de vidrios viejos del mism
 
 Algunas fotos luego de la modificación:
 
-Árboles y plantas "blancas" bajo la luz del sol:
+Árboles y plantas "blancas" bajo la luz del sol:\
 ![Arboles bajo luz infrarroja](/images/ir0.jpg)
 
-Venas:
+Venas:\
 ![Venas bajo luz infrarroja](/images/ir1.jpg)
 
-Control remoto se ve transparente:
+Control remoto se ve transparente:\
 ![Control remoto bajo luz infrarroja](/images/ir2.jpg)
 
-Teclado con algunas teclas de otro color (no tengo idea por qué):
+Teclado con algunas teclas de otro color (no tengo idea por qué):\
 ![Teclado bajo luz infrarroja](/images/ir3.jpg)
 
-Billete de dos pesos argentinos (se ve "blanco") la tinta refleja la luz infrarroja IR. Los dólares parece que usan otro tipo de tinta y no pasa esto.
+Billete de dos pesos argentinos (se ve "blanco") la tinta refleja la luz infrarroja IR. Los dólares parece que usan otro tipo de tinta y no pasa esto.\
 ![Billete bajo luz infrarroja](/images/ir4.jpg)
 
-Partes del ojo:
+Partes del ojo:\
 ![Ojo bajo luz infrarroja](/images/ir5.jpg)
 
 Otras cosas: Las bebidas gaseosas se ven transparentes (no saqué una foto todavía). Algunos tipos de telas dejan pasar la luz IR, por lo que se puede ver a través de algunas prendas de ropa. También hay muchas cosas que se ven "sin textura", como algunas maderas, algunas impresiones, entre otras cosas.

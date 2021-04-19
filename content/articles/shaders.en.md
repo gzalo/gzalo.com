@@ -80,7 +80,7 @@ The formula looks like this:
 Source code:
 
 Vector Shader:
-```
+```c
 varying vec3 normal;
 
 void main()
@@ -134,6 +134,6 @@ Methods to render shadows:
 
 **Shadow mapping:** The scene is rendered from the light viewpoint, and then in the eye object the depth that the camera sees gets compared to the depth seen by the light. If one is greater than the other, its shadowed, otherwise it isn't. It is a relatively fast method, and can be used for point lights with a technique such as *dual paraboloid mapping* and other methods such as *cascaded shadow maps*.
 
-**Shadow volume:**This method founds the borders of the geometry as seen by the light, and then proyects it to the back of the scene. It isn't very used since it heavily depends on the geometry, and more vertices are generated for the shadows. 
+**Shadow volume:** This method founds the borders of the geometry as seen by the light, and then proyects it to the back of the scene. It isn't very used since it heavily depends on the geometry, and more vertices are generated for the shadows. 
 
 There are other methods based on shadow mapping that allow for better quality and higher performance. Some of them split the shadow map into multiple ones, in order to keep a constant quality for far and near shadows.

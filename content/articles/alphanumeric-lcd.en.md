@@ -107,4 +107,5 @@ After doing the init sequence, writing a character in an (x;y) position is as ea
 After doing that, the desired character will appear in the LCD, in the selected position. It's possible to expand the software by storing x and y coordinates, in such a way that a long text gets written on two different lines.
 
 Characters that are built-in are usually the following ones:
+
 ![HD44780 Alphanumeric LCD character table](/images/lcd-font.png)

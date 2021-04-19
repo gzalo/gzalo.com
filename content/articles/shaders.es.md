@@ -32,8 +32,7 @@ I = Objeto.ColorAmbiente * Luz.ColorAmbiente
 
 Donde ambos valores son vectores de 3 coordenadas (R,G,B) , correspondientes al color del objeto y el color de la luz ambiente. I es el color resultante. 
 
-Código fuente:\
-
+Código fuente:
 
 Vertex Shader:
 
@@ -77,11 +76,11 @@ Para evitar tener que dividir por el largo de ambos vectores, los normalizamos a
 La cuenta queda así entonces:
  I = Objeto.ColorAmbiente * Luz.ColorAmbiente + Objeto.ColorDifuso * Luz.ColorDifuso *  clamp(Cara.Normal X Luz.Dirección)
 
-Código Fuente:\
-
+Código Fuente:
 
 Vector Shader:
-```
+
+```c
 varying vec3 normal;
 
 void main()

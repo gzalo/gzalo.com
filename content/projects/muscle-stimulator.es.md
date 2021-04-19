@@ -16,7 +16,7 @@ El electroestimulador construido consta de tres bloques principales: un bloque e
 
 El bloque elevador de tensión está construido con una metodología tipo flyback:
 
-![Flyback inverter](/images/inversor.jpg)
+![Flyback inverter](/images/inversor.png)
 
 El transformador es uno típico 220V-6V, conectado de forma tal que a la salida haya más tensión que a la entrada. El zener se encarga de limitar la tensión de salida a aproximadamente 100V de continua.
 

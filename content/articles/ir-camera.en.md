@@ -25,18 +25,24 @@ To create an IR-pass filter, it's possible to use the internal part of the flopp
 
 To keep the same height of the filter, I used a couple of old glasses of the same size. Varying a bit this dimensions, the camera loses it's parfocal properties (keeping the focus while varying zoom or focal distance), and has problems focusing to close stuff. To focus to infinity, it might be needed to unscrew the outer element past the allowed limits.
 
-Some photos after the modification
+Some photos after the modification:
 
-Trees and plants look white under the sun: ![Trees under IR light](/images/ir0.jpg)
+Trees and plants look white under the sun:\
+![Trees under IR light](/images/ir0.jpg)
 
-Veins: ![Veins, skin under IR light](/images/ir1.jpg)
+Veins:\
+![Veins, skin under IR light](/images/ir1.jpg)
 
-The TV control remote looks transparent: ![TV remote control under IR light](/images/ir2.jpg)
+The TV control remote looks transparent:\
+![TV remote control under IR light](/images/ir2.jpg)
 
-The keyboard has some keys of different colors (no idea what causes this): ![Keyboard under IR light](/images/ir3.jpg)
+The keyboard has some keys of different colors (no idea what causes this):\
+![Keyboard under IR light](/images/ir3.jpg)
 
-Two argentinian pesos bill looks white: (dollars look fine under IR light) ![Bill under IR light](/images/ir4.jpg)
+Two argentinian pesos bill looks white: (dollars look fine under IR light)\
+![Bill under IR light](/images/ir4.jpg)
 
-Eye: ![Eye under IR light](/images/ir5.jpg) 
+Eye:\
+![Eye under IR light](/images/ir5.jpg) 
 
 Other stuff: Cola drinks look pretty transparent (no photo yet). Some types of clothing are transparent to IR light, so you can see through them. Other things look like lacking a texture, like certain woods, paintings, printings, etc.

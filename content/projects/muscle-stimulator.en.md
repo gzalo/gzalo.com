@@ -14,7 +14,7 @@ The electrostimulator is formed by three main blocks: a voltage booster, a contr
 
 ## Voltage booster
 The booster is built using a flyback type inverter:
-![Flyback inverter](/images/inversor.jpg)
+![Flyback inverter](/images/inversor.png)
 
 The transformer used is a 220V-6V, connected in such a way that outputs more voltage in the output. The zener diode limits the voltage to around 100V DC.
 

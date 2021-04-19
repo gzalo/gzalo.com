@@ -47,6 +47,7 @@ En el primer circuito, cada relé controla a qué tensión va conectada cada una
 
 En el segundo circuito, cada transistor interrumpe o deja pasar corriente al motor, por lo que hay 16 combinaciones:
 | A | B | C | D | Resultado |
+| - | - | - | - | --------- |
 | 0 | 0 | 0 | 0 | Motor cortocircuitado a +V |
 | 0 | 0 | 0 | 1 | **CORTOCIRCUITO** |
 | 0 | 0 | 1 | 0 | Motor flotando |

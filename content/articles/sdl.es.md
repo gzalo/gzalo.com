@@ -23,7 +23,8 @@ Incluímos la biblioteca principal de SDL, la biblioteca fstream (para trabajar 
 int fuente[8][8];
 ```
 Declaramos un array bidimensional de enteros de 8x8, que contentrá los valores de cada celda (1 si está pintado de negro, 0 si está pintado de blanco). Para mantener las cosas simples, el tamaño de cada glifo será fijo.
-```
+
+```c
 int main(int argc, char* args[]){
 	if(SDL_Init(SDL_INIT_EVERYTHING) != 0){
 		cerr << "Error al iniciar SDL" << endl;
