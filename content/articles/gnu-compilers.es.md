@@ -17,7 +17,7 @@ El proceso completo se puede ver en esta imagen:
 
 En la implementación de compiladores de GCC (tanto el de Linux como el que se puede instalar en Windows mediante Mingw), el ejecutable principal se llama `gcc`, y se encarga tanto de la compilación como del enlazado.
 
-Supongamos que quisieramos armar el "Programa.exe" como muestra la imagen. Estos serían los pasos:
+Supongamos que quisieramos armar el `Programa.exe` como muestra la imagen. Estos serían los pasos:
 
 * Primero necesitamos compilar Archivo1.c para generar Archivo1.o. Esto se puede hacer con el siguiente comando: `gcc Archivo1.c -o Archivo1.o`
 * Luego necesitamos compilar Archivo2.c, al igual que el paso anterior. Para eso usamos un comando similar: `gcc Archivo2.c -o Archivo2.o`

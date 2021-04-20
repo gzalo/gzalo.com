@@ -6,7 +6,7 @@ thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl/"]
 date: "2010-01-01"
 ---
-En este pequeño tutorial mostraré como hacer un editor de fuentes píxel de 8x8, útil para diseñar tu propia tipografía estilo "pixel". Usaré C++ y SDL (para acceder a la pantalla y eventos). Conocimiento de C/C++ es recomendado.
+En este pequeño tutorial mostraré como hacer un editor de fuentes píxel de 8x8, útil para diseñar tu propia tipografía estilo *pixel*. Usaré C++ y SDL (para acceder a la pantalla y eventos). Conocimiento de C/C++ es recomendado.
 
 ![Editor de fuentes pixel 8x8](/images/sdleditor.png)
 
@@ -144,7 +144,7 @@ for(int y=0;y<8;y++){
 }
 of.close();
 ```
-Si llegamos a este punto es porque cerraron la aplicación, por lo que abrimos el archivo "salida.txt" como salida, vamos por cada celda e imprimimos el valor correspondiente. Luego cerramos el archivo.
+Si llegamos a este punto es porque cerraron la aplicación, por lo que abrimos el archivo `salida.txt` como salida, vamos por cada celda e imprimimos el valor correspondiente. Luego cerramos el archivo.
 
 ```c
 	SDL_Delay(100);
@@ -158,6 +158,6 @@ Esperamos un tiempo y abrimos el archivo con el bloc de notas. No es una soluci�
 ```
 Le decimos a SDL que puede devolver toda la memoria que haya usado, y le decimos al sistema operativo que el proceso se terminó correctamente.
 
-Para compilar el código en Windows, es posible usar directamente Mingw32, o una interfaz como CodeBlocks o Dev-Cpp. Es necesario instalar la biblioteca SDL (incluyendo los headers y archivos lib) y agregar "-lsdlmain -lsdl" a la línea de comandos del compilador, para que se incluyan las bibliotecas.
+Para compilar el código en Windows, es posible usar directamente Mingw32, o una interfaz como CodeBlocks o Dev-Cpp. Es necesario instalar la biblioteca SDL (incluyendo los headers y archivos lib) y agregar `-lsdlmain -lsdl` a la línea de comandos del compilador, para que se incluyan las bibliotecas.
 
 [Descargar código fuente y ejecutable](/downloads/editorfuentes.zip)

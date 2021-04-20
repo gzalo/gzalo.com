@@ -11,7 +11,7 @@ This small tutorial will show how to develop a small 8x8 pixel font editor, usef
 
 ![8x8 pixel font editor](/images/sdleditor.png)
 
-First we need to include all the header files (.h extension) of all the libraries that we'll use in the editor. This inclusions are needed so that the compiler can correctly reference the functions we'll use.
+We first need to include all the header files (.h extension) of all the libraries that we'll use in the editor. These inclusions are required so that the compiler can correctly reference the functions we'll use.
 
 ```c
 #include <SDL/SDL.h>
@@ -24,7 +24,7 @@ using namespace std;
 int font[8][8];
 ```
 
-We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep the things simple, every glyph size will be fixed at 8x8.
+We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep things simple, every glyph size will be fixed at 8x8.
 
 ```c
 int main(int argc, char* args[]){
@@ -60,13 +60,13 @@ We change the title of the window.
 	int pressedButton = 0;
 	
 ```
-We declare two variables, one bool that will indicate if the program is still running and other one that indicates if any mouse button is down (0=none, 1=left, 2=right).
+We declare two variables, one bool that will indicate if the program is still running and the other one that indicates if any mouse button is down (0=none, 1=left, 2=right).
 
 ```c
 	while(!quit){
 ```
 
-While the window is still open, we keep doing the main loop.	
+While the window is still open, we keep looping.	
 
 ```c
 	SDL_Event event;
@@ -80,7 +80,7 @@ if(event.type == SDL_QUIT)
 	quit = true;
 ```
 
-If the X of the window got pressed we proceed to quit in the next frame, by setting the variable "quit" to true.
+If the X of the window got pressed we proceed to quit in the next frame, by setting the variable `quit` to true.
 				
 ```c
 if(event.type == SDL_MOUSEBUTTONDOWN){
@@ -156,7 +156,7 @@ If the value of the cell was in 0, we paint the corresponding rectangle with whi
 	}
 ```
 
-We force the window to redraw, and wait some time to avoid hogging the CPU.
+We force the window to redraw and wait some time to avoid hogging the CPU.
 	
 ```c
 	ofstream of("output.txt");
@@ -168,7 +168,7 @@ We force the window to redraw, and wait some time to avoid hogging the CPU.
 	of.close();
 ```
 
-If we got outside the loop, it's because the app got closed, so we open the file "output.txt" as output, and we save the state of each cell. Finally we close the file.
+If we got outside the loop, it's because the app got closed, so we open the file "output.txt" as output, and we save the state of each cell. Finally, we close the file.
 
 ```c
 	SDL_Delay(100);
@@ -185,6 +185,6 @@ We wait a while and we open the file with notepad. It's not a very elegant solut
 
 We let SDL free every piece of memory it's used, and we tell the operating system that the process finished correctly.
 
-To compile the code in Windows, it's possible to use mingw directly, or an IDE such as CodeBlocks or Dev-Cpp. It's needed to install the SDL library (the -devel version, including the headers and lib files) and add "-lsdlmain -lsdl" to the compiler line, to include the libraries in the linking process.
+To compile the code in Windows, it's possible to use MinGW directly, or an IDE such as CodeBlocks or Dev-Cpp. It's needed to install the SDL library (the -devel version, including the headers and lib files) and add "-lsdlmain -lsdl" to the compiler line, to include the libraries in the linking process.
 
 [Download source code and executable](/downloads/editorfonts.zip)

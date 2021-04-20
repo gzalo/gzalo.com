@@ -26,13 +26,13 @@ Esta es la lista de comandos principales:
 * `ATE1`\r\n : activa el eco
 * `AT+CPIN="1234"`\r\n : si la sim tiene protección por PIN, setea el PIN a usar
 * `AT+CMGF=1`\r\n : activa el modo texto para sms (facilita las rutinas de envío y recepción de sms)
-* `AT+CMGS="+541155554444"`\r`Mensaje<^Z>` : Envía "Mensaje" al número especificado.
+* `AT+CMGS="+541155554444"`\r`Mensaje<^Z>` : Envía `Mensaje` al número especificado.
 * `AT+CNMI=,2`\r\n : Habilita la redirección de mensajes entrantes a la terminal\
 Cuando llega un mensaje, el celular escribe `+CMT: "+541155554444,”10/9/22,14:12:34"\r\nMENSAJE`\
 Es necesario avisar al celular que se recibió correctamente, con `AT+CNMA\r\n`
 		
 `\r` Es el caracter de control correspondiente al retorno de carro (ASCII 13 o 0x0D)\
 `\n` Es el caracter de salto de linea (ASCII 10 o 0x0A)\
-`^z` Es el caracter correspondiente al "fin de archivo" - EOF (ASCII 26 o 0x1A)
+`^z` Es el caracter correspondiente al *fin de archivo* - EOF (ASCII 26 o 0x1A)
 
 Las rutinas para conectarse a internet, enviar y recibir paquetes TCP y UDP no son estándar, y suelen variar de acuerdo al fabricante. Es necesario que el módulo tenga una pila TCP/IP integrada para poder usarlo (los baratos no lo tienen). En el caso que no lo tengan, para conectar el microcontrolador a internet hay que implementar todos los protocolos en el firmware del micro. Esta [nota de aplicación de Freescale (AN120)](http://cache.freescale.com/files/microcontrollers/doc/app_note/AN2120.pdf) explica cómo hacerlo y da código en C que se puede portar a otros microcontroladores.

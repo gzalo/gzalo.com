@@ -8,7 +8,7 @@ date: "2010-01-01"
 ---
 
 Para poder definir a un microcontrolador PIC, primero necesitaríamos saber qué es un microcontrolador. A grandes rasgos es un circuito integrado que adentro posee las mismas cosas básicas que tiene una computadora: 
-* **CPU**: es el que procesa y realiza todas las instrucciones de una computadora. Sus parámetros más importantes son la velocidad máxima que puede soportar y el ancho del bus de datos que poseen. Generalmente en los microcontroladores se utilizan CPUs relativamente lentas, y por lo general de 8 a 16 bits.
+* **CPU**: es el que procesa y realiza todas las instrucciones de una computadora. Sus parámetros más importantes son la velocidad máxima que puede soportar y el ancho del bus de datos que poseen. Generalmente en los microcontroladores se utilizan CPUs relativamente lentas, y por lo general de 8 a 32 bits.
 * **Memoria**: es la que almacena tanto las instrucciones del programa como los espacios que van a ser usados por el programa para almacenar datos temporales (RAM). Generalmente los microcontroladores tienen su memoria de programa en una del tipo flash.
 * **Periféricos**:
     * **Entradas y salidas de propósito general** (*GPIO* en inglés): suelen estar agrupadas de a 8, permiten leer datos del exterior del microcontrolador o escribir al exterior. Suelen usarse para controlar dispositivos externos, como leds, relés, interruptores, o cualquier otra cosa que pueda ser controlada de forma digital.
@@ -83,11 +83,11 @@ Necesitamos un programador (también llamado quemador) de PICs. Es posible const
 
 Hay varios programas para pasar el hex al microcontrolador, como el IC-Prog, Pony Prog, WinPic800, PicPGM. 
 
-Las soluciones que usan ZIF (Zócalo en el que no hay que hacer fuerza, sólo girar una palanca para sacar el microcontrolador) permiten evitar problemas de roturas de terminales luego de muchas inserciones.
+Las soluciones que usan ZIF (`Zero-insertion force`, un tipo de zócalo en el que no hay que hacer fuerza, sólo girar una palanca para sacar el circuito integrado) permiten evitar problemas de roturas de los pines luego de muchas inserciones.
 
 Además, el microcontrolador permite programación In-Circuit, es decir, sin sacarlo del circuito de aplicación. Ésto se hace mediante cinco conexiones que se comunican al microcontrolador y al programador.
 
-Son las terminales llamadas VPP (Tensión de programación), Vss, Vdd, Pgd (Programming Data) y Pgc (Programming Clock). Luego de cablear esto no es necesario sacar al integrado del zócalo para programarlo.
+Son los pines llamados VPP (Tensión de programación), Vss, Vdd, Pgd (Programming Data) y Pgc (Programming Clock). Luego de cablear esto no es necesario sacar al integrado del zócalo para programarlo.
 
 ![PIC pinout](/images/picpinout.jpg)
 
@@ -99,4 +99,4 @@ Componentes:
 
 * D1 es un diodo rectificador, evita que se queme el microcontrolador al conectar la tensión al revés.
 * IC1 regula la tensión de entrada a 5v, necesarios para que el micro corra bien y no se queme (C1 y C2 hacen de filtro y sacan ruido eléctrico)
-* El PIC está conectado a 5v y masa, y de la terminal 17 (Bit 0 del puerto A - RA0) salen un LED y una resistencia en serie. La resistencia está para limitar la corriente que circula por el LED, si no estuviese podría quemar tanto al LED como al PIC.
+* El PIC está conectado a 5v y masa, y del pin 17 (Bit 0 del puerto A - RA0) salen un LED y una resistencia en serie. La resistencia está para limitar la corriente que circula por el LED, si no estuviese podría quemar tanto al LED como al PIC.

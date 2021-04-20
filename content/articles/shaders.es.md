@@ -14,11 +14,11 @@ Un shader es un pequeño programa que se ejecuta directamente en el procesador d
 Actualmente la mayoría (por no decir todas) las placas gráficas desde la gama baja soportan algun tipo de shaders. Los shaders también se pueden usar para hacer procesamiento general de datos, aprovechando el gran poder de cálculo en paralelo que poseen las placas gráficas. Para ese tipo de aplicaciones se deberia usar OpenCL y no shaders normales.
 
 Básicamente hay tres tipos de shaders:\
-Vertex Shaders: se ejecutan una vez por cada vértice que forma parte del elemento que se quiere renderizar. Permiten hacer efectos sobre los propios vértices, es decir, moverlos para hacer algún efecto de distorsión (aplicar una función trigonométrica como seno podría servir para simular las olas de un océano, por ejemplo). Su valor de "retorno" es la posición del vértice procesada.
+Vertex Shaders: se ejecutan una vez por cada vértice que forma parte del elemento que se quiere renderizar. Permiten hacer efectos sobre los propios vértices, es decir, moverlos para hacer algún efecto de distorsión (aplicar una función trigonométrica como seno podría servir para simular las olas de un océano, por ejemplo). Su valor de *retorno* es la posición del vértice procesada.
 
-Pixel Shaders (en OpenGL los llaman Fragment Shader): se ejecutan una vez por cada fragmento visible de la imagen (es decir, la cantidad de veces que se ejecuten depende de la vista de cámara, tamaño del objeto y otros factores más). Su valor de "retorno" es el color del pixel resultante. Con la ayuda de los vertex shaders, permiten hacer efectos vistosos como iluminación, cel shading, bump mapping, y una gran cantidad de filtros de post-procesamiento como desenfoque, profundidad de campo, desenfoque de movimiento, bloom, hdr, entre otros. 
+Pixel Shaders (en OpenGL los llaman Fragment Shader): se ejecutan una vez por cada fragmento visible de la imagen (es decir, la cantidad de veces que se ejecuten depende de la vista de cámara, tamaño del objeto y otros factores más). Su valor de *retorno* es el color del pixel resultante. Con la ayuda de los vertex shaders, permiten hacer efectos vistosos como iluminación, cel shading, bump mapping, y una gran cantidad de filtros de post-procesamiento como desenfoque, profundidad de campo, desenfoque de movimiento, bloom, hdr, entre otros. 
 
-Geometry Shaders: se ejecutan por cada cara del modelo que se quiere renderizar. Tienen la particularidad que pueden "crear" nuevos vértices por lo que son muy útiles para generar efectos como pasto, pelo, sombras proyectadas, reflejos, etc. 
+Geometry Shaders: se ejecutan por cada cara del modelo que se quiere renderizar. Tienen la particularidad que pueden *crear* nuevos vértices por lo que son muy útiles para generar efectos como pasto, pelo, sombras proyectadas, reflejos, etc. 
 
 Hay varios lenguajes en los que se pueden programar shaders, éste pseudo tutorial mostrará código en GLSL porque es similar a C/C++ y muy sencillo de aprender y similar al HLSL de DirectX.
 
@@ -30,7 +30,7 @@ La fórmula básica para luz ambiente es:
 
 I = Objeto.ColorAmbiente * Luz.ColorAmbiente
 
-Donde ambos valores son vectores de 3 coordenadas (R,G,B) , correspondientes al color del objeto y el color de la luz ambiente. I es el color resultante. 
+Donde ambos valores son vectores de 3 coordenadas (R,G,B), correspondientes al color del objeto y el color de la luz ambiente. I es el color resultante. 
 
 Código fuente:
 
@@ -69,7 +69,7 @@ El valor de luz reflejada será mayor a medida que el ángulo entre la luz y la 
 
 [![](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png)](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png)
 
-Para calcular el ángulo entre la luz y la normal de la superficie es posible utilizar el producto escalar entre ambos vectores. El producto escalar "devuelve" lo siguiente: |Luz| x |Normal| x cos(angulo).
+Para calcular el ángulo entre la luz y la normal de la superficie es posible utilizar el producto escalar entre ambos vectores. El producto escalar *devuelve* lo siguiente: |Luz| x |Normal| x cos(angulo).
 
 Para evitar tener que dividir por el largo de ambos vectores, los normalizamos antes de hacer la cuenta. Como el coseno del ángulo puede ser negativo (cuando el ángulo es mayor a 180º), restringimos el valor a un número entre 0 y 1.
 
@@ -110,7 +110,7 @@ Screenshot:
 
 Como se puede ver, estoy usando una luz difusa verde, directamente desde arriba, por lo que se puede ver claramente que los lugares más iluminados los que cuya normal coincide con la dirección de la luz.
 
-Estoy usando una variable varying para pasar información del vertex shader (en este caso la normal de cada vértice del objeto), lo que implica que OpenGL la interpola cuando la pasa al pixel shader. Esto logra una "iluminación por pixel". Si en lugar de hacer esto calculásemos el color del pixel resultante en cada llamada al vertex shader, obtendríamos un resultado como el siguiente, donde se nota la baja calidad en la iluminación.
+Estoy usando una variable varying para pasar información del vertex shader (en este caso la normal de cada vértice del objeto), lo que implica que OpenGL la interpola cuando la pasa al pixel shader. Esto logra una *iluminación por pixel*. Si en lugar de hacer esto calculásemos el color del pixel resultante en cada llamada al vertex shader, obtendríamos un resultado como el siguiente, donde se nota la baja calidad en la iluminación.
 
 [![](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png)](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png)
 

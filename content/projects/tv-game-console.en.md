@@ -8,9 +8,9 @@ date: "2012-01-01"
 
 In 2012, a few years after designing and building the [Mini game console with LED matrix]({{< ref "/projects/game-console" >}}), I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. [The article itself can be found here](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).
 
-Using the idea of two resistors to generate 4 values and thus create the sync signal and 3 colors (black, white, gray), I adapted the mini console to have a composite video out. Hardware-wise, it was needed to add a buffer, since the output current of the used microcontroller (AT89S52) is not high enough to drive the signal, which has a 75 ohm impedance at the TV end.
+Using the idea of two resistors to generate 4 values and thus create the sync signal and 3 colors (black, white, gray), I adapted the mini console to have a composite video out. Hardware-wise, it was needed to add a buffer, since the output current of the used microcontroller (AT89S52) is not high enough to drive the signal, which has a 75-ohm impedance at the TV end.
 
-Regarding the software, the fact that multiple televisions and capture cards don't require the full vertical sync signal was used. In this time, the game logic was executed. Bit accesable registers were used, in order to extract the bits of the framebuffer in an efficient way. For faster output, the UART of the micorcontroller may be used in an syncronic mode, and thus improve the horizontal resolution by a factor of ~8. In this prototype, a 30x32 resolution was perfectly achieved. To have a higher resolution, external RAM would be needed.
+Regarding the software, the fact that multiple televisions and capture cards don't require the full vertical sync signal was used. In this time, the game logic was executed. Bit accessible registers were used, in order to extract the bits of the frame buffer in an efficient way. For faster output, the UART of the microcontroller may be used in an synchronic mode, and thus improve the horizontal resolution by a factor of ~8. In this prototype, a 30x32 resolution was perfectly achieved. To have a higher resolution, external RAM would be needed.
 
 The code used is similar to this one:
 
@@ -134,7 +134,7 @@ int main(){
 }
 ```
 
-Some results may be seen in this animated GIFs, captured using an Aimslab VHX card. The game code is the same one of the mini game console, so the game resolution is still 8x8 (it should be adaptable and all the 30x32 pixels may be used)
+Some results may be seen in these animated GIFs, captured using an Aimslab VHX card. The game code is the same used in the small game console, so the game resolution is still 8x8 (it should be adaptable and all the 30x32 pixels can be used)
 
 ![Vid1](/images/consolaAuto.gif)
 ![Vid2](/images/consolaChopper.gif)

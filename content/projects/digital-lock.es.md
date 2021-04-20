@@ -8,7 +8,7 @@ date: "2012-01-01"
 
 Este proyecto fue armado para la materia Técnica Digital de la facultad, en el año 2012. Básicamente es una cerradura como las de las cajas de seguridad de los hoteles.
 
-Para simplificar el diseño, la clave es de 4 dígitos y módulo 4. A diferencia de otras alarmas que permiten cambiar la clave soldando distintos cables, la idea del proyecto era hacerlo de tal forma que la clave se pudiera "guardar" en un dip switch.
+Para simplificar el diseño, la clave es de 4 dígitos y módulo 4. A diferencia de otras alarmas que permiten cambiar la clave soldando distintos cables, la idea del proyecto era hacerlo de tal forma que la clave se pudiera *guardar* en un dip switch.
 
 ![Diagrama de bloques cerradura](/images/td-diagbloques.png)
 ![Esquemático cerradura](/images/td-esquema.png)

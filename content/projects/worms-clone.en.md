@@ -6,7 +6,7 @@ aliases: ["/worms_en/"]
 date: "2010-01-01"
 ---
 
-This is a small project to start with SDL and OpenGL. Its a clone of Worms, with one weapon and ninja cord. Supports 4 players (2 with keyboard, 2 with joystick/joypad). The code isn't very clean, but should be understandable.
+This is a small project to start with SDL and OpenGL. It's a clone of Worms, with one weapon and ninja cord. Supports 4 players (2 with keyboard, 2 with joystick/joypad). The code isn't very clean, but should be understandable.
 
 {{< youtube QNa76bQrdOM >}}
 

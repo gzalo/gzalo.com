@@ -8,7 +8,7 @@ date: "2011-01-01"
 ## Voltage regulator
 Given the value of both resistors, and the regulator model, this page calculates the output voltage of the regulator.
 
-Depending on the regulator model, the input voltage should be at least 2 volts higher than the desired output voltage. If a lower input voltage is required, a low dropout (LDO) regulator should be used instead, since they can operate without needing a high voltage drop. For higher efficiency or a voltage booster, a switching regulator is suggested.
+Depending on the regulator model, the input voltage should be at least 2 volts higher than the desired output voltage. If a lower input voltage is required, a low dropout (LDO) regulator should be used instead, since they can operate without requiring a high voltage drop. For higher efficiency or a voltage booster, a switching regulator is suggested.
 
 {{< rawhtml >}}
 <form action="" id="reguladorf_v">

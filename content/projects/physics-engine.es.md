@@ -6,7 +6,7 @@ aliases: ["/motor_fisico/"]
 date: "2010-01-01"
 ---
 
-Este es un pequeño motor de físicas desarrollado en 2010, basado en el artículo "Advanced Character Physics" de Jakobsen.
+Este es un pequeño motor de físicas desarrollado en 2010, basado en el artículo *Advanced Character Physics* de Jakobsen.
 
 Click izquierdo: agregar una bola. Click derecho: arrastrar bolas con vínculo tipo resorte.
 

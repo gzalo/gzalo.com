@@ -13,7 +13,7 @@ Para un proyecto de la facultad, decidimos hacer unos sensores para detectar en 
 
 Basicamente son dos pares de tiras, con una esfera conductora en el medio. Dichos sensores fueron armados y funcionaban más o menos, a veces era necesario hacer mucha fuerza lateral para activarlos, por lo que no se suelen activar solo con la gravedad.
 
-Por lo tanto decidimos rearmarlos de otra forma: con un tubo conductivo y una esfera que conecta el tubo con dos terminales laterales.
+Por lo tanto decidimos rearmarlos de otra forma: con un tubo conductivo y una esfera que conecta el tubo con dos pines laterales.
 
 ![Sensor de inclinacion casero (figura)](/images/sensor1.png)
 ![Sensor de inclinacion casero armado](/images/sensor2.png)

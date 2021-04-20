@@ -8,14 +8,14 @@ date: "2015-01-01"
 ---
 
 ### Final 10 de agosto de 2015
-Se define una estructura *tnodo* con un cierto campo "valor" (de cualquier tipo) y "*sig", puntero a *tnodo*. Hay dos vectores de punteros, 
+Se define una estructura *tnodo* con un cierto campo `valor` (de cualquier tipo) y `*sig`, puntero a *tnodo*. Hay dos vectores de punteros, 
 ```c
 tnodo *VE[100], tnodo *VCOL[100]
 ```
 
 El primero es un vector de punteros a listas (de distintas longitudes -obviamente pueden haber 2 o más con la misma longitud-), con NULL en la última posición.
 
-Hay que hace un procedimiento `void elim_cols(tnodo *VE, tnodo *VCOL)` que realice lo siguiente: Que desenganche (removiéndolas de la lista correspondiente) las "columnas" impares de cada lista (formadas por los nodos del vector de listas que estén a una misma "profundidad"), y las enganche entre sí, guardando el primer nodo de cada columna en un puntero de una posición del vector de VCOL. Es decir que el **sig* de cada nodo de cada columna impar, debe apuntar al nodo "de abajo" de la columna, y el nodo anterior (el de la columna par) debe apuntar al nodo siguiente al de la columna impar. Los nodos finales de cada lista tendrán *sig=NULL*.
+Hay que hace un procedimiento `void elim_cols(tnodo *VE, tnodo *VCOL)` que realice lo siguiente: Que desenganche (removiéndolas de la lista correspondiente) las *columnas* impares de cada lista (formadas por los nodos del vector de listas que estén a una misma *profundidad*), y las enganche entre sí, guardando el primer nodo de cada columna en un puntero de una posición del vector de VCOL. Es decir que el **sig* de cada nodo de cada columna impar, debe apuntar al nodo *de abajo* de la columna, y el nodo anterior (el de la columna par) debe apuntar al nodo siguiente al de la columna impar. Los nodos finales de cada lista tendrán *sig=NULL*.
 
 Realizar una función que ordene un vector usando solamente **recursividad**, aplicando el método de *Selección*. La función puede recibir por parámetro **solamente** al vector y a su cantidad de elementos. Todas las sub-funciones que se usen deben usar recursividad (pueden recibir más variables por parámetro). No se puede usar nada iterativo.
 ### Final 4 de julio de 2013
@@ -60,7 +60,7 @@ Escribir un procedimiento `void enganchar(materia *materias, alumno **primer2);`
 ![Final 4 julio 2013 - Ejercicio 2](/images/algo1_2.png)
 
 ### Final 8 de julio de 2013
-Dada una matriz cuadrada imprimir las celdas recorriendo en forma de "reloj de arena":
+Dada una matriz cuadrada imprimir las celdas recorriendo en forma de *reloj de arena*:
 
 ![Reloj](/images/reloj.png)
 

@@ -5,7 +5,7 @@ thumbnail: "/thumbs/motor_tiles.png"
 aliases: ["/motor_tiles/"]
 date: "2011-01-01"
 ---
-Es un "motor" creado en 2011 (si se lo puede llamar motor, es un código muy pequeño) de tiles, que corre en el navegador, soporta scrolling y cambios dinámicos. No usa Flash, usa HTML5, por lo que seguramente funcione en Android y iPad/iPod. Pueden usarlo para crear RPGs vistos desde arriba, juegos de plataforma, de defensa de torres, entre otras cosas. 
+Es un *pequeño motor* creado en 2011 de tiles, que corre en el navegador, soporta scrolling y cambios dinámicos. No usa Flash, usa HTML5, por lo que seguramente funcione en Android y iPad/iPod. Pueden usarlo para crear RPGs vistos desde arriba, juegos de plataforma, de defensa de torres, entre otras cosas. 
 
 Para probar el scrolling, **hacer click y usar las teclas WASD** para desplazar el mapa. Se muestra el cambio dinámico de tiles posible.
 

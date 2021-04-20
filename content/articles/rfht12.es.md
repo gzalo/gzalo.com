@@ -18,12 +18,12 @@ La parte de codificación se basa en los integrados HT12E (codificador) y HT12D 
 ### Transmisión
 ![Diagrama conexión HT12E codificador para RF](/images/ht12e.png)
 
-Las terminales 1 a 8 eligen la dirección (que tendría que ser igual en el transmisor y receptor para lograr comunicación), las terminales 10 a 13 son los datos que se desean enviar, la pata 14 controla el envío (al dejarla en estado bajo transmite, es posible dejarla en 0 para que transmita continuamente), la terminales 15 y 16 necesita ser conectada a una resistencia de 1 Megaohm para generar la señal de clock interna, la pata 17 es la salida de datos, que debe ser conectada al módulo de transmisión.
+Los pines 1 a 8 eligen la dirección (que tendría que ser igual en el transmisor y receptor para lograr comunicación), los pines 10 a 13 son los datos que se desean enviar, la pata 14 controla el envío (al dejarla en estado bajo transmite, es posible dejarla en 0 para que transmita continuamente), los pines 15 y 16 necesita ser conectada a una resistencia de 1 Megaohm para generar la señal de clock interna, la pata 17 es la salida de datos, que debe ser conectada al módulo de transmisión.
 
 ### Recepción
 ![Diagrama conexión HT12D decodificador para RF](/images/ht12d.png)
 
-Nuevamente, las terminales 1 a 8 eligen la dirección (que tendría que ser igual en el transmisor y receptor para lograr comunicación), las terminales 10 a 13 son los datos recibidos (pueden ser conectados a LEDs o cargas siempre que la corriente no supere 5mA), la pata 14 deberá ser conectada a la salida del módulo de recepción de RF, las terminales 15 y 16 necesitan ser conectadas a una resistencia de 47 Kilohm para generar la señal de clock interna, la pata 17 dice si la recepción fue correcta o no.
+Nuevamente, los pines 1 a 8 eligen la dirección (que tendría que ser igual en el transmisor y receptor para lograr comunicación), los pines 10 a 13 son los datos recibidos (pueden ser conectados a LEDs o cargas siempre que la corriente no supere 5mA), la pata 14 deberá ser conectada a la salida del módulo de recepción de RF, los pines 15 y 16 necesitan ser conectadas a una resistencia de 47 Kilohm para generar la señal de clock interna, la pata 17 dice si la recepción fue correcta o no.
 
 [Descargar circuitos impresos editables con Proteus](/downloads/controlrf.zip)
 

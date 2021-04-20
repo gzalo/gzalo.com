@@ -17,7 +17,7 @@ Dirección: Solís 225 (Congreso)\
 Tienen muchos componentes difíciles de conseguir, se pueden pedir algunos del exterior. Trabajan con pocos microcontroladores PICs, se especializan en Freescale (ex Motorola).
 * **Electrónica Cika**\
 Dirección: Av. de los incas 4821 (Parque chas)\
-Tienen precios bastante baratos y componentes "exóticos" (LCDs gráficos y alfanumericos, módulos GSM, GPS y bluetooth, entre otros). Tienen un monto de compra mínima (de U$S 50 desde el 2008) y algunos componentes se venden por cantidad mínima. Sin embargo tienen buena atención
+Tienen precios bastante baratos y componentes *exóticos* (como LCDs gráficos y alfanumericos, módulos GSM, GPS y bluetooth, entre otros). Tienen un monto de compra mínima (de U$S 50 desde el 2008) y algunos componentes se venden por cantidad mínima. Sin embargo tienen buena atención
 * **High Tec Electrónica**\
 Dirección: Scalabrini Ortiz 100 y Warnes (Villa Crespo)\
 Cerca de colectivos y subtes, venden en MercadoLibre también, tienen varias cosas como cables, herramientas, gabinetes para proyectos, disipadores y ventiladores. Los componentes complejos no están a precios muy buenos, a veces no hacen factura.
@@ -35,4 +35,4 @@ Dirección: Perón 1455 (Congreso)\
 Tienen bastantes componentes dificíles de encontrar (memorias ram estáticas tipo paralelo por ej.). Tiene un local en el que venden herramientas, cables y componentes en Paraná 180 (a la vuelta). Ambos locales son muy chicos y a veces es necesario esperar afuera.
 * **GM electrónica**\
 Dirección: Rivadavia 2458 (Congreso)\
-Se especializan en cosas industriales, tienen algunos componentes "vintage" (como Z80s). Los precios de algunos componentes son demasiado altos.
+Se especializan en cosas industriales, tienen algunos componentes *vintage* (como Z80s). Los precios de algunos componentes son demasiado altos.

@@ -5,7 +5,7 @@ thumbnail: "/thumbs/controldomotico.png"
 aliases: ["/tp_labodemicros/"]
 date: "2014-01-01"
 ---
-Este proyecto grupal fue realizado en 2014 junto a Juan Ignacio Troisi y Martin Menendez, para la materia de la FIUBA "Laboratorio de microcontroladores". La idea es un control domótico, que permita el control de las luces de varias habitaciones, permitiendo cambiar la intensidad de cada una de ellas mediante 3 interfaces:
+Este proyecto grupal fue realizado en 2014 junto a Juan Ignacio Troisi y Martin Menendez, para la materia de la FIUBA *Laboratorio de microcontroladores*. La idea es un control domótico, que permita el control de las luces de varias habitaciones, permitiendo cambiar la intensidad de cada una de ellas mediante 3 interfaces:
 
 * Mediante botones y un display alfanumerico en el panel de control, con la posibilidad de establecer horarios
 para automatizar el encendido y apagado de las cargas, modificar la hora actual y establecer permisos.

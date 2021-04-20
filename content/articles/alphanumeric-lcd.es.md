@@ -7,7 +7,7 @@ aliases: ["/lcdalfanumerico/"]
 date: "2010-01-01"
 ---
 
-Estos LCDS alfanuméricos (también llamados "inteligentes", por poseer controlador en la misma placa y casi no necesitar tiempo de CPU para usarlos) son un estándar industrial diseñados especialmente para interfaces con sistemas embebidos (microcontroladores o microprocesadores). Vienen en una gran cantidad de configuraciones distintas, 8x1 (1 fila, 8 carácteres), 16x2, 20x4, entre otros. La más común es la de 20x4.
+Estos LCDS alfanuméricos (también llamados *inteligentes*, por poseer controlador en la misma placa y casi no necesitar tiempo de CPU para usarlos) son un estándar industrial diseñados especialmente para interfaces con sistemas embebidos (microcontroladores o microprocesadores). Vienen en una gran cantidad de configuraciones distintas, 8x1 (1 fila, 8 carácteres), 16x2, 20x4, entre otros. La más común es la de 20x4.
 
 En estos LCDs se puede mostrar unicamente texto (y hasta 8 caracteres definidos), por lo que se suelen usar en máquinas sencillas como impresoras, faxes, copiadoras, cajas registradoras, entre otras. Pueden venir con o sin backlight (luz de fondo), que puede ser fluorescente o LED (más común).
 
@@ -33,13 +33,13 @@ La conexión básica de un LCD alfanumérico a un microcontrolador sería la sig
 
 ![Conexión LCD alfanumérico HD44780](/images/lcdalfa.png)
 
-Como se puede ver, el control del contraste se hace con un potenciómetro de 10K (puesto como divisor resistivo). La terminal de RW se puso a masa porque no necesitaremos leeremos del LCD. Las lineas de datos deben ser conectadas a un puerto del microcontrolador (preferiblemente mantieniendo el orden) y las de control también.
+Como se puede ver, el control del contraste se hace con un potenciómetro de 10K (puesto como divisor resistivo). El pin de RW se conectó a masa porque no necesitaremos leeremos del LCD. Las lineas de datos deben ser conectadas a un puerto del microcontrolador (preferiblemente mantieniendo el orden) y las de control también.
 
 Como enviar un comando o dato al LCD:
 	
 * Poner RS en el estado correcto: 0 si se desea escribir un comando, 1 si se desea escribir datos
 * Poner en el bus de datos el comando o dato que se desea escribir
-* Hacer un pulso descendente en la terminal E
+* Hacer un pulso descendente en el pin E
 * Esperar el tiempo correspondiente a esa instrucción
 	
 Como se puede ver es relativamente sencillo. Cabe aclarar que al prenderse, el HD44780 hace unas pruebas internas, limpia la memoria y otras tareas, que puede tardar hasta 20 milisegundos. Por eso hay que asegurarse de que los comandos que enviemos los enviemos luego que el LCD se haya inicializado.

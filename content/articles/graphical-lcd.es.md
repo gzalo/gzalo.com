@@ -8,7 +8,7 @@ date: "2010-01-01"
 ---
 La mayoría de los LCDs gráficos usan un controlador como el KS0108 (o compatible). Cada controlador tiene una memoria de 512 bytes interna y por lo tanto permite controlar un display de 64x64 píxeles. El truco que usan los diplays más grandes es usar un controlador por cada fracción de la pantalla, es decir, un display de 128x64 tiene 2 controladores, un display de 196x64 tiene 3 controladores, y uno de 128x128 tiene 4 controladores.
 
-Cada controlador es independiente, es decir, no transmiten información entre ellos. Para elegir a qué controlador hablarle, se usan dos líneas de control, llamadas CS1 y CS2 (CS = Chip Select). Básicamente actúa como una "dirección" de 2 bits, que elige a cual de los 4 controladores posibles se desea hablar. El controlador no tiene generador interno de fuentes, por lo que si se desea escribir un texto, será necesario almacenar los píxeles de cada caracter en un microcontrolador o memoria externa.
+Cada controlador es independiente, es decir, no transmiten información entre ellos. Para elegir a qué controlador hablarle, se usan dos líneas de control, llamadas CS1 y CS2 (CS = Chip Select). Básicamente actúa como una *dirección* de 2 bits, que elige a cual de los 4 controladores posibles se desea hablar. El controlador no tiene generador interno de fuentes, por lo que si se desea escribir un texto, será necesario almacenar los píxeles de cada caracter en un microcontrolador o memoria externa.
 
 En total están estas líneas:	
 	
@@ -17,21 +17,21 @@ En total están estas líneas:
 * V0: Contraste
 * D/I: Elige si se desea escribir/leer un dato (1) o instrucción (0)
 * R/W: Elige si se desa leer (1) o escribir (0)
-* E: Cuando se hace un pulso en esta terminal, se hace la transferencia
+* E: Cuando se hace un pulso en este pin, se hace la transferencia
 * DB0..7: Conforman el bus de datos, es de donde se lee y donde se escriben los datos a transferir
 * CS1..2: Eligen el controlador al que se le quiere hablar
 * RES: Al estar en 0 resetea los controladores
 * Vee: Salida de tensión negativa
 * K y A: Luz de fondo (Backlight) del LCD
 
-La mayoría de los LCDs poseen internamente un generador de tensión negativa, necesario para manejar los segmentos propiamente dichos. Para controlar el contraste, es necesario usar un preset de 20 kiloohms, conectado entre Vee y Vdd (en los extremos) y la terminal del medio a V0. Las terminales A y K están conectadas a un LED interno, deberían ser conectadas a 5v y 0v correspondientemente, con una resistencia de 100-200 ohm en serie para asegurarse de que el/los LEDs estén protegidos.
+La mayoría de los LCDs poseen internamente un generador de tensión negativa, necesario para manejar los segmentos propiamente dichos. Para controlar el contraste, es necesario usar un preset de 20 kiloohms, conectado entre Vee y Vdd (en los extremos) y el pin del medio a V0. Los pines A y K están conectadas a un LED interno, deberían ser conectadas a 5v y 0v correspondientemente, con una resistencia de 100-200 ohm en serie para asegurarse de que el/los LEDs estén protegidos.
 
 Como enviar un comando o dato al LCD:
 	
-* Elegir el controlador al que se desea hablar (terminales CS1 y CS2)
+* Elegir el controlador al que se desea hablar (pines CS1 y CS2)
 * Poner D/I en el estado correcto: 1 si se desea escribir un comando, 0 si se desea escribir datos
 * Poner en el bus de datos el comando o dato que se desea escribir
-* Hacer un pulso en la terminal E
+* Hacer un pulso en el pin E
 * Esperar el tiempo correspondiente (500nS) por lo general
 
 El display está dividido en 8 secciones horizontales llamadas páginas (de 8 pixeles de alto cada uno) y 64 líneas verticales.

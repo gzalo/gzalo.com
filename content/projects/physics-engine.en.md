@@ -6,9 +6,9 @@ aliases: ["/physics_engine_en/"]
 date: "2010-01-01"
 ---
 	
-This is a small physics engine created in 2010, based on the "Advanced Character Physics" paper by Jakobsen.
+This is a small physics engine created in 2010, based on the *Advanced Character Physics* paper by Jakobsen.
 
-Left click: add a ball. Right click: drag a ball using a spring link.
+Left-click adds a ball. Right-click lets you drag a ball using a spring link.
 
 {{< rawhtml >}}
 <iframe src="/inc/spe/index.html" style="width:100%;height:500px;"></iframe>
