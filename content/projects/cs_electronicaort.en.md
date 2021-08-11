@@ -8,7 +8,7 @@ date: "2008-01-01"
 
 cs_electronicaort is a map for the computer game Counter-Strike 1.6, loosely based on the Electronics floor of ORT Yatay Highschool.
 
-It was created in December of 2008, designed by me (Gonzalo Ávila), and textured by Gastón Kirsman. The map was modeled using Valve Hammer Editor. If you are interested in creating a derivative or similar map and need the editable files, send me an email and I'll send them to you.
+It was created in December of 2008, designed by me, Gonzalo Avila Alterach, and textured by Gastón Kirsman. The map was modeled using Valve Hammer Editor. If you are interested in creating a derivative or similar map and need the editable files, send me an email and I'll send them to you.
 
 The map has some secret tunnels that connect the different bases, to make the game more entertaining. On the roof, you can find a house with ammo. To enter it you have to know the secret code.
 
