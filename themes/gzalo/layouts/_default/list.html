@@ -1,17 +1,17 @@
 {{ define "main" }}
-<div class="w3-card-2 w3-white">
-  <header class="w3-container w3-margin-top color_headers">
+<div>
+  <header>
   <h2>{{ .Title }}</h2>
   </header>
-<div class="w3-row w3-margin-top">
+<div>
 {{ range .Pages.ByPublishDate.Reverse }}
 
-<div class="w3-row w3-margin w3-card-4">
+<div>
   <a href="{{ .RelPermalink }}">
-    <div class="w3-third ">
-      <img src="{{ .Params.Thumbnail }}" style="width:100%;"/>
+    <div>
+      <img src="{{ .Params.Thumbnail }}"/>
     </div>
-    <div class="w3-twothird w3-container">
+    <div>
       <p><strong>{{.Title}}</strong></p>
       <p>{{ .Summary }}</p>
     </div>

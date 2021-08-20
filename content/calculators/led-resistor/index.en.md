@@ -9,13 +9,13 @@ date: "2011-01-01"
 Given the type of LED (nominal voltage and current) and the supply voltage, this page calculates the required resistor to connect the LED safely, as well as the required power that it will dissipate.
 
 {{< rawhtml >}}
-<form action="" class="w3-container">
-<p><label class="w3-label">Supply voltage [Volts]</label><input id="vfuente" value="5" type="number" class="w3-input w3-border"/></p>
-<p><label class="w3-label">LED voltage drop [Volts]</label><input id="vled" value="2" type="number"  class="w3-input w3-border"/></p>
-<p><label class="w3-label">LED current [Milliamps]</label><input id="iled" value="15"  type="number" class="w3-input w3-border"/></p>
-<p>Resistor <input id="r" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Commercial value <input id="rCom" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Power <input id="p" disabled="disabled" class="w3-input w3-border"/><br/>A safety margin is advised, specially if the power is close to 1/8W (125mW) or 1/4W (250mW)</p>
+<form action="">
+<p><label>Supply voltage [Volts]</label><input id="vfuente" value="5" type="number" /></p>
+<p><label>LED voltage drop [Volts]</label><input id="vled" value="2" type="number"  /></p>
+<p><label>LED current [Milliamps]</label><input id="iled" value="15"  type="number" /></p>
+<p>Resistor <input id="r" disabled="disabled" /></p>
+<p>Commercial value <input id="rCom" disabled="disabled" /></p>
+<p>Power <input id="p" disabled="disabled" /><br/>A safety margin is advised, specially if the power is close to 1/8W (125mW) or 1/4W (250mW)</p>
 </form>
 <script src="/inc/calculators/led_resistor.js"></script>
 {{< /rawhtml >}}

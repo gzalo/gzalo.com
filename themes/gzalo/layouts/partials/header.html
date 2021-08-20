@@ -1,31 +1,31 @@
-<header class="w3-display-container">
-  <div class="w3-container w3-display-middle w3-center">
-    <h1 class="w3-jumbo color_header_h"><a href="{{ .Site.Home.RelPermalink }}" style="color:black;">{{ .Site.Title }}</a></h1>
-    <h2 class="w3-large w3-hide-medium w3-hide-small color_header_h">{{ .Site.Params.Description }}</h2>
+<header>
+  <div>
+    <h1 class="text-4xl"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
+    <h2 class="text-xl">{{ .Site.Params.Description }}</h2>
   </div>
 </header>
 
 <nav>
-  <div class="w3-bar w3-large color_menu">
+  <div>
     {{ range .Site.Menus.main }}
-    <a href="{{ .URL | absLangURL }}" class="w3-hover-blue w3-bar-item">
+    <a href="{{ .URL | absLangURL }}">
       {{ .Name }}
     </a>
     {{ end }}
 
-    <div class="w3-bar-item w3-right w3-hide" id="in_busqueda">
-      <form action="/search/" method="get" id="busqueda">
-      <input type="text" class="w3-input w3-border-0 w3-tiny" name="q" placeholder="{{ i18n "search" }}">
+    <div>
+      <form action="/search/" method="get">
+      <input type="text" name="q" placeholder="{{ i18n "search" }}">
       </form>
     </div>
 
-    <a class="w3-right w3-bar-item w3-hover-blue" href="javascript:void(0);" onclick="open_search(this)" class="w3-hover-blue"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fas fa-search"></i></a>
 
-    <div class="w3-dropdown-hover w3-hover-blue w3-right">
-      <button class="w3-button w3-hover-blue"><i class="fa fa-globe"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-white w3-card-2">
+    <div>
+      <button><i class="fas fa-globe"></i></button>     
+      <div>
       {{ range $.Site.Home.AllTranslations }}
-      <a href="{{ .Permalink }}" class="w3-bar-item w3-button">{{ .Language.LanguageName }}</a>
+      <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
       {{ end }}
       </div>
     </div>

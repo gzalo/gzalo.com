@@ -10,18 +10,18 @@ Dados el valor de la resistencia y el capacitor, esta página calcula cuanto es 
 
 {{< rawhtml >}}
 <form action="">
-<p>R: <input id="r" value="1" class="w3-input w3-border" type="number"/><select id="rScale" class="w3-select w3-border">
+<p>R: <input id="r" value="1"  type="number"/><select id="rScale" >
   <option></option>
   <option selected="selected">Kilo</option>
   <option>Mega</option>
 </select> Ohms</p>
-<p>C: <input id="c" value="31.833" class="w3-input w3-border" type="number"/><select id="cScale" class="w3-select w3-border">
+<p>C: <input id="c" value="31.833"  type="number"/><select id="cScale" >
   <option>Pico</option>
   <option>Nano</option>
   <option selected="selected">Micro</option>
   <option>Mili</option>
 </select> Faradios</p>
-<p>F: <input id="f" disabled="disabled" class="w3-input w3-border"/></p>
+<p>F: <input id="f" disabled="disabled" /></p>
 </form>
 <script src="/inc/calculators/rc_filter.js"></script>
 {{< /rawhtml >}}

@@ -12,18 +12,18 @@ Dados el valor de la resistencia y el capacitor, esta página calcula cuanto es 
 
 {{< rawhtml >}}
 <form action="" id="monoestable">
-<p>R: <input id="r_m" value="4.7" type="number" class="w3-input w3-border"/><select id="rScale_m" class="w3-select w3-border">
+<p>R: <input id="r_m" value="4.7" type="number" /><select id="rScale_m" >
   <option></option>
   <option selected="selected">Kilo</option>
   <option>Mega</option>
 </select> Ohms</p>
-<p>C: <input id="c_m" value="1" type="number" class="w3-input w3-border"/><select id="cScale_m" class="w3-select w3-border">
+<p>C: <input id="c_m" value="1" type="number" /><select id="cScale_m" >
   <option>Pico</option>
   <option>Nano</option>
   <option selected="selected">Micro</option>
   <option>Mili</option>
 </select> Faradios</p>
-<p>T: <input id="t_m" disabled="disabled" class="w3-input w3-border"/></p>
+<p>T: <input id="t_m" disabled="disabled" /></p>
 </form>
 {{< /rawhtml >}}
 
@@ -36,27 +36,27 @@ Dados el valor de las resistencias y el capacitor, esta página calcula cuanto e
 
 {{< rawhtml >}}
 <form action="" id="astable">
-<p>R1: <input id="r1_a" value="1" type="number" class="w3-input w3-border"/><select id="r1Scale_a" class="w3-select w3-border">
+<p>R1: <input id="r1_a" value="1" type="number" /><select id="r1Scale_a" >
   <option></option>
   <option selected="selected">Kilo</option>
   <option>Mega</option>
 </select> Ohms</p>
-<p>R2: <input id="r2_a" value="10" type="number" class="w3-input w3-border"/><select id="r2Scale_a" class="w3-select w3-border">
+<p>R2: <input id="r2_a" value="10" type="number" /><select id="r2Scale_a" >
   <option></option>
   <option selected="selected">Kilo</option>
   <option>Mega</option>
 </select> Ohms</p>
-<p>C:  <input id="c_a" value="1" type="number" class="w3-input w3-border"/><select id="cScale_a" class="w3-select w3-border">
+<p>C:  <input id="c_a" value="1" type="number" /><select id="cScale_a" >
   <option>Pico</option>
   <option>Nano</option>
   <option selected="selected">Micro</option>
   <option>Mili</option>
 </select> Faradios</p>
-<p>T: <input id="t_a" disabled="disabled" class="w3-input w3-border"/></p>
-<p>F: <input id="f_a" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Ton: <input id="ton_a" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Toff: <input id="toff_a" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Duty: <input id="duty_a" disabled="disabled" class="w3-input w3-border"/></p>
+<p>T: <input id="t_a" disabled="disabled" /></p>
+<p>F: <input id="f_a" disabled="disabled" /></p>
+<p>Ton: <input id="ton_a" disabled="disabled" /></p>
+<p>Toff: <input id="toff_a" disabled="disabled" /></p>
+<p>Duty: <input id="duty_a" disabled="disabled" /></p>
 </form>
 {{< /rawhtml >}}
 

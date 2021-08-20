@@ -9,13 +9,13 @@ date: "2011-01-01"
 Dados el tipo de LED (su tensión y corriente nominal) y la tensión de la fuente, esta página muestra cuanto es la resistencia comercial más cercana para alimentar al LED de forma segura, así como la potencia que deberá disipar.
 
 {{< rawhtml >}}
-<form action="" class="w3-container">
-<p><label class="w3-label">Tensión de la fuente [Volts]</label><input id="vfuente" value="5" class="w3-input w3-border" type="number"/></p>
-<p><label class="w3-label">Caida de tensión del LED [Volts]</label><input id="vled" value="2" class="w3-input w3-border" type="number"/></p>
-<p><label class="w3-label">Corriente del LED [Miliamperes]</label><input id="iled" value="15" class="w3-input w3-border" type="number"/></p>
-<p>Resistencia <input id="r" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Resistencia comercial <input id="rCom" disabled="disabled" class="w3-input w3-border"/></p>
-<p>Potencia <input id="p" disabled="disabled" class="w3-input w3-border"/><br/>Conviene dejar un margen de seguridad en el caso que esté muy cerca a 1/8W (125mW) o 1/4W (250mW)</p>
+<form action="">
+<p><label>Tensión de la fuente [Volts]</label><input id="vfuente" value="5"  type="number"/></p>
+<p><label>Caida de tensión del LED [Volts]</label><input id="vled" value="2"  type="number"/></p>
+<p><label>Corriente del LED [Miliamperes]</label><input id="iled" value="15"  type="number"/></p>
+<p>Resistencia <input id="r" disabled="disabled" /></p>
+<p>Resistencia comercial <input id="rCom" disabled="disabled" /></p>
+<p>Potencia <input id="p" disabled="disabled" /><br/>Conviene dejar un margen de seguridad en el caso que esté muy cerca a 1/8W (125mW) o 1/4W (250mW)</p>
 </form>
 <script src="/inc/calculators/led_resistor.js"></script>
 {{< /rawhtml >}}

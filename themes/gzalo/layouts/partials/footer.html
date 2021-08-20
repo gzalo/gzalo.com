@@ -1,33 +1,18 @@
-<footer class="color_footer w3-padding-16 w3-center w3-margin-top">
-    <p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" class="w3-hover-text-blue"><i class="fa fa-creative-commons"></i></a> 2004-{{ now.Format "2006"}} - <em>Gzalo.com</em> by Gonzalo Avila Alterach</p>
-
+<footer>
+    <p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><i class="fab fa-creative-commons"></i></a> 2004-{{ now.Format "2006"}} - <em>Gzalo.com</em> by Gonzalo Avila Alterach</p>
     {{ if eq .Site.Language.Lang "es" }}
-    <span class="w3-tiny w3-text-white">Este sitio usa cookies para darte una mejor experiencia.<br/> El uso del mismo implica la aceptación de la <a href="/en/cookies" class="w3-text-blue w3-underline">política de privacidad y de cookies</a>.</span>
+    <p>Este sitio usa cookies para darte una mejor experiencia.<br/> El uso del mismo implica la aceptación de la <a href="/en/cookies" class="w3-text-blue w3-underline">política de privacidad y de cookies</a>.</p>
     {{ else }}
-    <span class="w3-tiny w3-text-white">This site uses cookies for a better experience.<br/> Its usage implies accepting the <a href="/en/cookies" class="w3-text-blue w3-underline">privacy and cookie policy</a>.</span>
+    <p>This site uses cookies for a better experience.<br/> Its usage implies accepting the <a href="/en/cookies" class="w3-text-blue w3-underline">privacy and cookie policy</a>.</p>
     {{ end }}
-
-    <p class="w3-xlarge w3-text-blue"><a href="mailto:gonzaloavilaalterach@gmail.com" class="w3-hover-text-white w3-padding-small"><i class="fa fa-envelope"></i></a>
-    <a href="https://www.facebook.com/gzalocom" class="w3-hover-text-white w3-padding-small"><i class="fa fa-facebook-official"></i></a>
-    <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/" class="w3-hover-text-white w3-padding-small"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.youtube.com/c/Gzalo" class="w3-hover-text-white w3-padding-small"><i class="fa fa-youtube"></i></a>
-    <a href="https://github.com/gzalo" class="w3-hover-text-white w3-padding-small"><i class="fa fa-github"></i></a></p>
+    <p><a href="mailto:gonzaloavilaalterach@gmail.com"><i class="far fa-envelope"></i></a>
+    <a href="https://www.facebook.com/gzalocom"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/c/Gzalo"><i class="fab fa-youtube"></i></a>
+    <a href="https://github.com/gzalo"><i class="fab fa-github"></i></a></p>
 </footer>
 
 <script>
-    function open_search(elmnt) {
-        var a = document.getElementById("in_busqueda");
-
-        if (a.classList.contains("w3-hide")){
-            a.classList.remove("w3-hide");
-            document.getElementById("in_busqueda").getElementsByTagName('input')[0].focus(); 
-            elmnt.innerHTML = "<i class='fa fa-times-circle'></i>";
-        } else {
-            a.classList.add("w3-hide");
-            elmnt.innerHTML = "<i class='fa fa-search'></i>";    
-        }
-    }
-
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
