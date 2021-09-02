@@ -1,7 +1,19 @@
-<header>
+<header class="h-40 py-10 flex items-end justify-between	">
   <div>
-    <h1 class="text-4xl"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
-    <h2 class="text-xl">{{ .Site.Params.Description }}</h2>
+    <h1 class="text-4xl font-mono font-bold"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
+    <h2 class="text-xl font-mono">> {{ .Site.Params.Description }} <span style="animation: 2s blink step-end infinite;">·</span></h2>
+  </div>
+  <style>
+    @-webkit-keyframes blink {
+      0% {color: #000;}
+      50% {color: #FFF;}
+    }
+  </style>
+
+  <div>
+    {{ range $.Site.Home.AllTranslations }}
+      <a href="{{ .Permalink }}" class="uppercase text-blue-400 font-medium {{if eq .Lang $.Lang}} border-b-2 border-blue-200 {{end}}" title="{{.Language.LanguageName}}">{{ i18n .Language.LanguageName }}</a>
+    {{ end }}
   </div>
 </header>
 
@@ -13,21 +25,10 @@
     </a>
     {{ end }}
 
-    <div>
       <form action="/search/" method="get">
-      <input type="text" name="q" placeholder="{{ i18n "search" }}">
+        <div class="border p-1 flex w-52">
+          <i class="fas fa-search p-1"></i> <input type="text" name="q" placeholder="{{ i18n "search" }}" class="w-full">
+        </div>
       </form>
-    </div>
-
-    <a href="#"><i class="fas fa-search"></i></a>
-
-    <div>
-      <button><i class="fas fa-globe"></i></button>     
-      <div>
-      {{ range $.Site.Home.AllTranslations }}
-      <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-      {{ end }}
-      </div>
-    </div>
   </div>
 </nav>
