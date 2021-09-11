@@ -160,4 +160,4 @@ Le decimos a SDL que puede devolver toda la memoria que haya usado, y le decimos
 
 Para compilar el código en Windows, es posible usar directamente Mingw32, o una interfaz como CodeBlocks o Dev-Cpp. Es necesario instalar la biblioteca SDL (incluyendo los headers y archivos lib) y agregar `-lsdlmain -lsdl` a la línea de comandos del compilador, para que se incluyan las bibliotecas.
 
-[Descargar código fuente y ejecutable](/downloads/editorfuentes.zip)
+[Descargar código fuente y ejecutable](https://github.com/gzalo/minifontcreator)

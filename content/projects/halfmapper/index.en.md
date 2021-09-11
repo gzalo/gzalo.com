@@ -5,7 +5,7 @@ thumbnail: "/thumbs/halfmapper.png"
 date: "2016-01-01"
 ---
 		
-[Download Latest Windows binaries](/downloads/halfmapper-latest.zip) (September 22, 2016)
+[Download Latest Windows binaries](https://github.com/gzalo/HalfMapper/releases/tag/v0.1) (September 22, 2016)
 
 **Please read README file before running**, the config file needs to be adjusted to your installation of the game.
 

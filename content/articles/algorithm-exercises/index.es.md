@@ -88,9 +88,6 @@ Dado un vector de listas como se ve en la figura (cuadrado), se pide enganchar l
 * Enganchar un vector de listas de manera de recorrerlo por *columnas*, es decir: primer nodo de primera lista → primer nodo de segunda lista → ... → segundo nodo de primera lista → ...
 * Dada una matriz de enteros, escribir una función que diga en qué celda (qué fila y columna) es máxima la suma de los valores de las celdas vecinas. Variantes: conectividad4/8 (incluyendo y no incluyendo vecinos en diagonal), warpeado (la matriz es un toroide/dona, los vecinos se repiten horizontal y verticalmente)
 
-[Ejercicios resueltos por Fernando Filippetti](/downloads/practica_kuhn_ffilippetti.tar.gz)
+[Ejercicios resueltos enviados por Fernando Filippetti (pueden contener errores)](/downloads/practica_kuhn_ffilippetti.zip)
 
 ##### Última actualización: Febrero de 2017
-	
-
-	
