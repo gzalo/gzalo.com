@@ -187,4 +187,5 @@ We let SDL free every piece of memory it's used, and we tell the operating syste
 
 To compile the code in Windows, it's possible to use MinGW directly, or an IDE such as CodeBlocks or Dev-Cpp. It's needed to install the SDL library (the -devel version, including the headers and lib files) and add "-lsdlmain -lsdl" to the compiler line, to include the libraries in the linking process.
 
-[Download source code and executable](/downloads/editorfonts.zip)
+[Download source code and executable](https://github.com/gzalo/minifontcreator)
+

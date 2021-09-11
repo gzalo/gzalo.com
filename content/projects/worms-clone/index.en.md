@@ -10,4 +10,4 @@ This is a small project to start with SDL and OpenGL. It's a clone of Worms, wit
 
 {{< youtube QNa76bQrdOM >}}
 
-[Download code and executable](/downloads/wc.zip) (License: ZLib)
+[Download code and executable](https://github.com/gzalo/wormsclone) (License: MIT)

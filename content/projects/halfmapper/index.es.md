@@ -6,7 +6,7 @@ aliases: ["/halfmapper_en/"]
 date: "2016-01-01"
 ---
 	
-[Descargar los últimos binarios para windows](/downloads/halfmapper-latest.zip) (September 22, 2016)
+[Download Latest Windows binaries](https://github.com/gzalo/HalfMapper/releases/tag/v0.1) (Sep 22, 2016)
 
 **Leer el archivo README antes de ejecutar**, es necesario modificar el archivo de configuración para apuntar a la carpeta de instalación del juego.
 
