@@ -1,30 +1,24 @@
 ---
-title: "Introduction to SDL, developing a pixel font editor"
+title: "Introduction to SDL2, developing a pixel font editor"
 tags: ["articles", "programming"]
-summary: "Small tutorial to learn the basics of SDL, using C++."
+summary: "Small tutorial to learn the basics of SDL2, using C++."
 thumbnail: "/thumbs/sdl.png"
 aliases: ["/sdl_en/"]
 date: "2010-01-01"
 ---
 
-This small tutorial will show how to develop a small 8x8 pixel font editor, useful for designing small fonts with a pixel style. C++ y SDL will be used. C/C++ knowledge is recommended.
+This small tutorial will show how to develop a small 8x8 pixel font editor, useful for designing small fonts with a pixel style. C++ y SDL2 will be used. C/C++ knowledge is recommended.
 
 ![8x8 pixel font editor](/images/sdleditor.png)
 
 We first need to include all the header files (.h extension) of all the libraries that we'll use in the editor. These inclusions are required so that the compiler can correctly reference the functions we'll use.
 
 ```c
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include <fstream>
 #include <iostream>
 using namespace std;
 ```
-
-```c
-int font[8][8];
-```
-
-We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep things simple, every glyph size will be fixed at 8x8.
 
 ```c
 int main(int argc, char* args[]){
@@ -37,27 +31,29 @@ int main(int argc, char* args[]){
 We declare the main function of the program, and try to initialize the library. If it fails, we print an error and return
 
 ```c
-	SDL_Surface *screen = SDL_SetVideoMode( 8*32, 8*32, 32, SDL_SWSURFACE );
+	int pixels[8][8] = {};
+```
+
+We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep things simple, every glyph size will be fixed at 8x8. By default all of them will be intialized with the value 0.
+
+
+```c
+	SDL_Surface *window = SDL_CreateWindow("Font editor", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 8 * 32,
+                                          8 * 32, SDL_WINDOW_SHOWN);
 		
 	if(screen == NULL){
-		cerr << "Error creating video surface" << endl;
+		cerr << "Error creating window" << endl;
 		return -1;
 	}
 
 ```
 
-We try to create a 256x256 pixel window, with 32 bit depth of color and no hardware acceleration. if it fails, we write an error message.
-
-```c
-	SDL_WM_SetCaption("Font Editor",NULL);
-```
-
-We change the title of the window.
+We try to create a 256x256 pixel window with the given title. If that fails, we print an error.
 
 ```c
 
-	bool quit=false;	
-	int pressedButton = 0;
+	bool closed=false;	
+	int buttonPressed = 0;
 	
 ```
 We declare two variables, one bool that will indicate if the program is still running and the other one that indicates if any mouse button is down (0=none, 1=left, 2=right).
@@ -113,9 +109,9 @@ If there is a button press, we store the position of the mouse.
 			int cellY = posY/32;
 			
 			if(pressedButton == 1){
-				font[cellY][cellX] = 1;
+				pixels[cellY][cellX] = 1;
 			}else{
-				font[cellY][cellX] = 0;
+				pixels[cellY][cellX] = 0;
 			}
 		}
 		
@@ -126,6 +122,8 @@ If there is a button press, we store the position of the mouse.
 If the mouse is inside the window, we calculate to which cell that position corresponds, by dividing the position by the cell size (32 px in this case). If the left button is pressed, we set a value of 1, otherwise a 0.
 		
 ```c
+		SDL_Surface *screenSurface = SDL_GetWindowSurface(window);
+
 		for(int y=0;y<8;y++){
 			for(int x=0;x<8;x++){
 			
@@ -136,7 +134,7 @@ If the mouse is inside the window, we calculate to which cell that position corr
 				rect.w = 32;
 				
 ```
-We iterate through the 64 cells and calculate the position of each square.
+We get a surface that can be used to draw on the created window. We then iterate through the 64 cells and calculate the position of each square.
 
 ```c
 				if(font[y][x]==0){
@@ -151,7 +149,7 @@ We iterate through the 64 cells and calculate the position of each square.
 If the value of the cell was in 0, we paint the corresponding rectangle with white, otherwise we paint it black.
 
 ```c
-		SDL_Flip(screen);
+		SDL_UpdateWindowSurface(screen);
 		SDL_Delay(1);
 	}
 ```
@@ -178,14 +176,16 @@ If we got outside the loop, it's because the app got closed, so we open the file
 We wait a while and we open the file with notepad. It's not a very elegant solution but it works correctly, and allows for a fast copy of the values of the pixels.
 
 ```c
+	SDL_DestroyWindow(window);
 	SDL_Quit();
 	return 0;
 }
 ```
 
-We let SDL free every piece of memory it's used, and we tell the operating system that the process finished correctly.
+We destroy the created window, and then tell SDL to free every piece of memory it has used, and we tell the operating system that the process finished correctly.
 
-To compile the code in Windows, it's possible to use MinGW directly, or an IDE such as CodeBlocks or Dev-Cpp. It's needed to install the SDL library (the -devel version, including the headers and lib files) and add "-lsdlmain -lsdl" to the compiler line, to include the libraries in the linking process.
+The source code contains a `CMakeLists.txt` file, that can be used by an IDE such as IntelliJ CLion to compile the code using any C++ compiler installed in your system.
+Before actually configuring `cmake`, your enviroment must have the SDL2 library installed (the `-devel` version, which includes the headers and lib files).
 
 [Download source code and executable](https://github.com/gzalo/minifontcreator)
 
