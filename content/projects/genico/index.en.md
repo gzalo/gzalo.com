@@ -11,6 +11,6 @@ The code is quite simple and is contained within a single file, and it's quite e
 
 It uses Vue to update all the icons (which are drawn using Canvas) whenever any parameter is modified. When pressing the save button, `FileSaver.js` is used to export all the 12 generated files as PNG files.
 
-[Launch icon generator](https://genico.gzalo.com/)
+**[Launch icon generator](https://genico.gzalo.com/)**
 
-[Download code](https://github.com/gzalo/genico/) (Licence: MIT)
+**[Access and download source code from the repository](https://github.com/gzalo/genico/) (Licence: MIT)**

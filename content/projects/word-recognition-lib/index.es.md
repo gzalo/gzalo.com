@@ -5,4 +5,8 @@ thumbnail: "/thumbs/bla.png"
 date: "2017-01-01"
 ---
 
-[Acceder al repositorio con código y ejemplos de aplicación](https://github.com/gzalo/bla)
+Biblioteca liviana para Reconocimiento de Habla en español.
+
+La idea es poder integrar de forma sencilla el reconocimiento de palabras aisladas a una aplicación embebida. Implementando únicamente lo mínimo requerido y de forma optimizada, se obtienen tasas de errores bajas con un consumo bajo de recursos.
+
+**[Acceder al repositorio con código y ejemplos de aplicación](https://github.com/gzalo/bla)**

@@ -5,4 +5,8 @@ thumbnail: "/thumbs/bla.png"
 date: "2017-01-01"
 ---
 
-[Access the repository with code and application examples](https://github.com/gzalo/bla)
+Lightweight library for speech recognition.
+
+The main idea is to add the ability to recognise isolated words to an existing embedded application. By implementing just the needed modules, and optimizing the code, low error rate and low resource usage is achieved.
+
+**[Access the repository with code and application examples](https://github.com/gzalo/bla)**

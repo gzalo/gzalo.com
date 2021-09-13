@@ -11,6 +11,6 @@ El código es muy sencillo y está en un único archivo, es posible modificarlo 
 
 Usa la biblioteca Vue para actualizar todos los íconos (que se dibujan con Canvas) cuando se modifica cualquier parámetro. Al presionar el botón de guardar, usa `FileSaver.js` para exportar los 12 archivos generados en formato PNG.
 
-[Abrir generador de íconos](https://genico.gzalo.com/)
+**[Abrir generador de íconos](https://genico.gzalo.com/)**
 
-[Descargar código](https://github.com/gzalo/genico/) (Licencia: MIT)
+**[Acceder al repositorio para descargar el código](https://github.com/gzalo/genico/) (Licencia: MIT)**

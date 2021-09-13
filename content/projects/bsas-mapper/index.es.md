@@ -7,4 +7,4 @@ date: "2014-01-01"
 
 Este proyecto fue realizado en 2014, y utiliza distintas fuentes de datos provistas por el gobierno para dibujar un mapa 3D de CABA.
 
-[Ver código fuente y ejecutables](https://github.com/gzalo/MapaBSAS)
+**[Acceder al repositoprio para ver código fuente y ejecutables](https://github.com/gzalo/MapaBSAS)**

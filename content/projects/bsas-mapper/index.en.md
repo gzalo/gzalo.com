@@ -7,4 +7,4 @@ date: "2014-01-01"
 
 This project was developed in 2014, and it uses various data sources provided by the government to render a 3D map of Buenos Aires.
 
-[Get source code and executables](https://github.com/gzalo/MapaBSAS)
+**[Access the repository to get the source code and executables](https://github.com/gzalo/MapaBSAS)**
