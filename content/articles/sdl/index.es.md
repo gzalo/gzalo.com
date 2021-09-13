@@ -162,4 +162,4 @@ Destruimos la ventana y luego le decimos a SDL que puede devolver toda la memori
 El código fuente contiene un archivo `CMakeLists.txt`, que puede ser usado por un entorno de desarrollo como IntelliJ CLion para compilar el código usando cualquier compilador de C++ que esté instalado en el sistema.
 Antes de configurar `cmake`, el entorno deberá tener la biblioteca SDL2 instalada (la versión `-devel`, que include archivos de cabezera y las bibliotecas propiamente dichas).
 
-[Descargar código fuente y ejecutable](https://github.com/gzalo/minifontcreator)
+**[Acceder al repositorio para descargar el código fuente y ejecutable](https://github.com/gzalo/minifontcreator)**

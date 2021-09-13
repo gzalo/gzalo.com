@@ -6,12 +6,12 @@ aliases: ["/halfmapper_en/"]
 date: "2016-01-01"
 ---
 	
-[Download Latest Windows binaries](https://github.com/gzalo/HalfMapper/releases/tag/v0.1) (Sep 22, 2016)
+**[Download Latest Windows binaries](https://github.com/gzalo/HalfMapper/releases/tag/v0.1) (Sep 22, 2016)**
 
 **Leer el archivo README antes de ejecutar**, es necesario modificar el archivo de configuración para apuntar a la carpeta de instalación del juego.
 
 Si no funciona en tu computadora, enviame un mensaje y te intentaré ayudar a ejecutarlo.
 
-[Código fuente](https://github.com/gzalo/HalfMapper)
+**[Acceder al repositorio para ver el código fuente](https://github.com/gzalo/HalfMapper)**
 
 {{< youtube Hl2HbV3UbMs >}}

@@ -187,5 +187,5 @@ We destroy the created window, and then tell SDL to free every piece of memory i
 The source code contains a `CMakeLists.txt` file, that can be used by an IDE such as IntelliJ CLion to compile the code using any C++ compiler installed in your system.
 Before actually configuring `cmake`, your enviroment must have the SDL2 library installed (the `-devel` version, which includes the headers and lib files).
 
-[Download source code and executable](https://github.com/gzalo/minifontcreator)
+**[Access repository to download source code and executable](https://github.com/gzalo/minifontcreator)**
 
