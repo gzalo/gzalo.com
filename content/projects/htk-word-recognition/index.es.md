@@ -7,4 +7,4 @@ date: "2016-01-01"
 
 Este proyecto desarrollado en 2016 permite el reconocimiento de diversas frases con gramática finita, utilizando el toolkit HTK.
 
-[Acceder al sistema de reconocimiento (temporalmente desactivado)](https://casa.gzalo.com/habla)
+**[Acceder al sistema de reconocimiento](https://habla.gzalo.com)**
