@@ -1,7 +1,7 @@
 ---
 title: "Introduction to PIC microcontrollers"
 tags: ["articles", "electronics"]
-summary: "Small introductory article about 8 bit microcontrollers, focusing on Microchip PIC16 family"
+summary: "Small introductory article about 8 bit microcontrollers, focusing on Microchip PIC16 family."
 thumbnail: "/thumbs/pic.png"
 aliases: ["/intropic_en/"]
 date: "2010-01-01"
