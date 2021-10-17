@@ -1,6 +1,6 @@
 ---
 title: "Genico - Numeric icon generator"
-summary: "A numeric icon generator, very useful for working with HMI display, like DGUS (DWIN) / SGUS / VGUS"
+summary: "A numeric icon generator, very useful for working with HMI display, like DGUS (DWIN) / SGUS / VGUS."
 thumbnail: "/thumbs/genico.png"
 date: "2019-01-01"
 ---

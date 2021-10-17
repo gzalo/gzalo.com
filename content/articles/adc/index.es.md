@@ -1,7 +1,7 @@
 ---
 title: "Convertir una tensión en un valor digital, sin usar ADC"
 tags: ["articles", "electronics"]
-summary: "Cómo leer datos analógicos desde un microcontrolador que solamente tiene entradas/salidas digitales.."
+summary: "Cómo leer datos analógicos desde un microcontrolador que solamente tiene entradas/salidas digitales."
 thumbnail: "/thumbs/adc.png"
 aliases: ["/adc/"]
 date: "2010-01-01"
