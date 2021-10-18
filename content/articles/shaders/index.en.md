@@ -54,7 +54,7 @@ void main(){
 
 Screenshot:
 
-[![](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s320/screen1.png)](http://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s1600-h/screen1.png)
+[![](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s320/screen1.png)](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s1600-h/screen1.png)
 
 As can be seen from the image, the ambient light is purely red (1.0,0.0,0.0) and the object color is gray (0.5,0.5,0.5).
 Hence the output pixels get that color (0.5, 0.0, 0.0). 
@@ -66,7 +66,7 @@ The diffuse component of a light is the first term of the approximation, where i
 
 The reflected light value will be higher when the angle between the light and the normal to the surface is smaller. When the vectors are parallel, the diffuse component will have a maximum, and when they are orthogonal the contribution will be zero.
 
-[![](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png)](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png)
+[![](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png)](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png)
 
 To calculate the angle between the light and the normal, the inner product (dot product) can be used. It returns |LightDir| x |Normal| x cos(angle).
 
@@ -105,13 +105,13 @@ void main()
 
 Screenshot:
 
-[![](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png)](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png)
+[![](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png)](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png)
 
 The light used is green, shining from above, and it can be seen that the places more lit are those whose normal is similar to the light direction.
 
 A varying type variable is used to pass data from the vertex shader to the pixel shader (in this case the normal of each vertex), which implies that OpenGL interpolates it. This allows for a *per pixel* illumination. If the color was calculated in the vertex shader and then interpolated, it would look different (second screenshot).
 
-[![](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png)](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png)
+[![](https://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png)](https://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png)
 
 ## Types of Lighting
 **Static Lighting:** The light effects (as well as the shadows) are prerendered when the models are built, and then combined with the diffuse texture of the object, as well as the ambient occlusion. This method mostly works for still rigid objects, and it's impossible to move the lights since the shadows are pre-baked as textures. Creating the textures may take a long time since raytracing-like algorithms are used, but a higher realism may be achieved.

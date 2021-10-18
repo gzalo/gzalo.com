@@ -6,7 +6,7 @@ aliases: ["/console_tv_en/"]
 date: "2012-01-01"
 ---
 
-In 2012, a few years after designing and building the [Mini game console with LED matrix]({{< ref "/projects/game-console" >}}), I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. [The article itself can be found here](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).
+In 2012, a few years after designing and building the [Mini game console with LED matrix]({{< ref "/projects/game-console" >}}), I found a very interesting article showing an easy way to generate black and white NTSC signals using cheap microcontrollers. [The article itself can be found here](https://web.archive.org/web/20100221181006/https://www.rickard.gunee.com/projects/video/pic/howto.php).
 
 Using the idea of two resistors to generate 4 values and thus create the sync signal and 3 colors (black, white, gray), I adapted the mini console to have a composite video out. Hardware-wise, it was needed to add a buffer, since the output current of the used microcontroller (AT89S52) is not high enough to drive the signal, which has a 75-ohm impedance at the TV end.
 

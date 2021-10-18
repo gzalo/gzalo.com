@@ -7,7 +7,7 @@ aliases: ["/casas/"]
 date: "2015-01-01"
 ---
 
-[Ver las direcciones marcadas en un mapa](http://goo.gl/maps/Frji9)
+[Ver las direcciones marcadas en un mapa](https://goo.gl/maps/Frji9)
 
 * **Electrónica Liniers**\
 Dirección: Timoteo Gordillo 35 y Rivadavia (Liniers)\
