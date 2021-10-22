@@ -10,7 +10,7 @@ date: "2009-01-01"
 ## ¿Qué es y para qué sirve una Pal/Gal/Pla?
 Es un componente electrónico programable que permite construir circuitos digitales. La familia completa es llamada PLD (Dispositivo lógico programable).
 
-El uso principal es minimizar la cantidad de circuitos integrados (y así bajar el costo y tamaño del equipo).
+El uso principal es minimizar la cantidad de circuitos integrados (y así reducir el costo y tamaño del equipo).
 
 ## ¿Qué circuitos pueden sintetizarse en un PLD?
 Por lo general, es posible sintetizar cualquier circuito del tipo suma de productos (minitérminos) y en algunos dispositivos también circuitos secuenciales (aunque por lo general muy sencillos).
@@ -22,7 +22,7 @@ Por lo general hay un ahorro de costo y espacio significativo. Además, en algun
 Las PLA son más flexibles, ya que permiten programar no solo la matriz de AND sino también la matriz de OR. Las PAL, en cambio, solamente permiten programar la matriz de AND, por lo que cuestan menos pero están limitadas en cuanto a la máxima cantidad de minitérminos por salida. Las GAL tienen las mismas propiedades de que las PALs, pero con la adición que pueden ser borradas y reprogramadas. Los CPLD son dispositivos lógicos programables que juntan varias celdas programables, de tal forma de que se puedan sintetizar circuitos más complejos, por lo general secuenciales, que necesiten máquinas de estado complejas o que no puedan ser implementadas en microcontroladores por necesitar altas velocidades.
 
 ## ¿En qué lenguaje se programa?
-Por lo general se usa algún lenguaje de *alto nivel* (como CUPL o ABEL) que describe la ecuaciones lógicas deseadas, y posteriormente se lo compila (mediante pasos de optimización y minimización) a un archivo JEDEC, que posee la información sobre qué fusibles internos quemar. Un entorno de desarrollo y simulación gratuito es [WinCUPL](http://www.atmel.com/tools/WINCUPL.aspx) de Atmel.
+Por lo general se usa algún lenguaje de *alto nivel* (como CUPL o ABEL) que describe la ecuaciones lógicas deseadas, y posteriormente se lo compila (mediante pasos de optimización y minimización) a un archivo JEDEC, que posee la información sobre qué fusibles internos quemar. Un entorno de desarrollo y simulación gratuito es [WinCUPL](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources) de Microchip (ex Atmel).
 
 ## ¿Cómo se programa?
 Es necesario comprar (o construir) un programador. Al contrario que con los mayoría de los microcontroladores, no parece haber ninguno sencillo, ya que por lo general todos los PLD necesitan una tensión de programación VPP de aproximadamente 15V.
@@ -40,7 +40,7 @@ Dependiendo del software en el que se esté programando, al acceder a la variabl
 * Verificadores de paridad y chequeo de errores
 * Distintos tipos de contadores y registros
 * Controladores de memoria y E/S para microprocesadores
-* Tablas predefinidas ([LUTs](http://es.wikipedia.org/wiki/Lookup_table))
+* Tablas predefinidas ([LUTs](https://es.wikipedia.org/wiki/Lookup_table))
 
 ## ¿Como hacer una tabla en CUPL? 
 Con este método se evita tener que hacer la tabla, hacer el mapa de Karnaugh y hallar la ecuación (suma de minitérminos) de cada salida, es posible dejar que el compilador lo haga automáticamente, por ejemplo de la siguiente manera:

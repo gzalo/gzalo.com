@@ -54,7 +54,7 @@ void main(){
 
 Screenshot:
 
-[![](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s320/screen1.png)](http://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s1600-h/screen1.png)
+[![](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s320/screen1.png)](https://4.bp.blogspot.com/_i7DtQvb7RtE/Sz2ltNlAJEI/AAAAAAAADts/pNrrpKLkZdQ/s1600-h/screen1.png)
 
 Como se puede ver, estoy usando un color de luz ambiente puramente rojo (1.0,0.0,0.0) y gris como color del objeto (0.5,0.5,0.5).
 
@@ -67,7 +67,7 @@ La componente difusa es una aproximación a la luz que choca en un objeto, depen
 
 El valor de luz reflejada será mayor a medida que el ángulo entre la luz y la normal de la superficie sea cada vez más chica. Cuando el vector de la luz sea paralelo a la normal la componente difusa será máxima y cuando los vectores sean perpendiculares será nula.
 
-[![](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png)](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png)
+[![](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s400/imagen1.png)](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2pk6gEICI/AAAAAAAADt0/G0zxdebPoZQ/s1600-h/imagen1.png)
 
 Para calcular el ángulo entre la luz y la normal de la superficie es posible utilizar el producto escalar entre ambos vectores. El producto escalar *devuelve* lo siguiente: |Luz| x |Normal| x cos(angulo).
 
@@ -106,13 +106,13 @@ void main()
 
 Screenshot:
 
-[![](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png)](http://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png)
+[![](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s320/screen2.png)](https://3.bp.blogspot.com/_i7DtQvb7RtE/Sz2rjM_DiGI/AAAAAAAADt8/Bi0b93L9kOU/s1600-h/screen2.png)
 
 Como se puede ver, estoy usando una luz difusa verde, directamente desde arriba, por lo que se puede ver claramente que los lugares más iluminados los que cuya normal coincide con la dirección de la luz.
 
 Estoy usando una variable varying para pasar información del vertex shader (en este caso la normal de cada vértice del objeto), lo que implica que OpenGL la interpola cuando la pasa al pixel shader. Esto logra una *iluminación por pixel*. Si en lugar de hacer esto calculásemos el color del pixel resultante en cada llamada al vertex shader, obtendríamos un resultado como el siguiente, donde se nota la baja calidad en la iluminación.
 
-[![](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png)](http://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png)
+[![](https://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s320/screen3.png)](https://1.bp.blogspot.com/_i7DtQvb7RtE/Sz2uF0FWrsI/AAAAAAAADuE/Xg_XyH_3OrA/s1600-h/screen3.png)
 
 De lejos la diferencia entre ambas es mínima, pero de cerca se nota. En este caso la iluminación por vértice no salió tan mal porque OpenGL interpola los valores de color al pasarlos del vertex al pixel shader (interpolación de Gouraud). Por ejemplo, en la parte superior del asa, se ve que hay pocos vértices en esa zona y por eso se nota algo raro en la iluminación.
 

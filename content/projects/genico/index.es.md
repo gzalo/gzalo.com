@@ -14,3 +14,5 @@ Usa la biblioteca Vue para actualizar todos los íconos (que se dibujan con Canv
 **[Abrir generador de íconos](https://genico.gzalo.com/)**
 
 **[Acceder al repositorio para descargar el código](https://github.com/gzalo/genico/) (Licencia: MIT)**
+
+**[Acceder a documentación y ejemplos que pueden ser usados en pantallas HMI similares](https://github.com/gzalo/gus-utils)**

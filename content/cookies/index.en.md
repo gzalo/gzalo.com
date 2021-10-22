@@ -134,7 +134,7 @@ Google will not associate your IP address with any other data held by Google.
 This website uses Disqus as a platform for user comments. They have their own [privacy policy](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy) and [cookie policy](https://help.disqus.com/en/articles/1717155-use-of-cookies)
 
 ### YouTube
-Parts of this website contain embedded videos from YouTube. Read the [YouTube Privacy Policy](http://www.youtube.com/t/privacy_at_youtube).
+Parts of this website contain embedded videos from YouTube. Read the [YouTube Privacy Policy](https://www.youtube.com/t/privacy_at_youtube).
 
 ### AddThis
 This website uses AddThis for social sharing. Read their [frequently asked questions about compliance](https://www.addthis.com/blog/2018/05/22/gdpr-and-addthis-your-questions-answered/).

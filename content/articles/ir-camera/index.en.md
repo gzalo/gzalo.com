@@ -17,7 +17,7 @@ This filter is typically really close to the sensor:
 ![IR filter](/images/ircam0.jpg)
 ![IR filter placement](/images/ircam3.jpg)
 
-After some searching, [http://www.freeservicemanuals.info/en/servicemanuals/](I found the service manual of the camera on this site), which has lots of free manuals. If they don't have it, they scan it after asking them, a nice free service. The block in red is the filter itself.
+After some searching, [https://www.freeservicemanuals.info/en/servicemanuals/](I found the service manual of the camera on this site), which has lots of free manuals. If they don't have it, they scan it after asking them, a nice free service. The block in red is the filter itself.
 
 To create an IR-pass filter, it's possible to use the internal part of the floppy disks, or the subexposed section of photo negatives (the part that looks black):
 

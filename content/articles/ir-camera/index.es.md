@@ -18,7 +18,7 @@ Este filtro por lo general está bien cerca del sensor:
 
 ![Ubicación Filtro infrarrojo](/images/ircam3.jpg)
 
-Luego de varias horas de búsqueda, [conseguí el manual de service de la cámara en este lugar](http://www.freeservicemanuals.info/en/servicemanuals/), tienen muchos manuales gratis y los escanean a pedido. En la imagen marqué con rojo cual es el filtro que hay que cambiar.
+Luego de varias horas de búsqueda, [conseguí el manual de service de la cámara en este lugar](https://www.freeservicemanuals.info/en/servicemanuals/), tienen muchos manuales gratis y los escanean a pedido. En la imagen marqué con rojo cual es el filtro que hay que cambiar.
 
 Para crear un filtro pasa-infrarrojo, es posible usar la parte interna de los disquettes, o la parte subexpuesta (negra) de los negativos de fotos:
 

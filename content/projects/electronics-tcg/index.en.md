@@ -12,6 +12,6 @@ The game uses the SDL and SDL_image libraries to open windows, handle events and
 
 ![Trading card game](/images/tcgort.jpg)
 
-[Download code and executable](http://code.google.com/p/electronica-tgc/)
+[Download code and executable](https://code.google.com/p/electronica-tgc/)
 (License: GPL2)
 

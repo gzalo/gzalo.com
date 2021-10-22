@@ -11,7 +11,7 @@ date: "2009-01-01"
 
 Estos circuitos sencillos se puede usar para controlar una gran cantidad de aplicaciones, desde autos y barcos radiocontrolados hasta apertura de portones de garages, alarmas de autos, adquisición de datos, robótica, entre muchas otras cosas.
 
-La parte de radiofrecuencia de este circuito se basa en los transmisores baratos WenShing TWS-BS-X, que transmiten via ASK y los receptores RWS-X-X (ver más información de los [transmisores](http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Transmitter_Module/) y de los [receptores](http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Receiver_Module/)). Suelen costar menos de 10 dólares cada uno, y con una buena antena y buena sintonización pueden llegar facilmente a los 50 metros de distancia.
+La parte de radiofrecuencia de este circuito se basa en los transmisores baratos WenShing TWS-BS-X, que transmiten via ASK y los receptores RWS-X-X (ver más información de los [transmisores](https://www.wenshing.com.tw/?action=en&style=list&classid=158) y de los [receptores](https://www.wenshing.com.tw/?action=en&style=list&classid=157)). Suelen costar menos de 10 dólares cada uno, y con una buena antena y buena sintonización pueden llegar facilmente a los 50 metros de distancia.
 
 La parte de codificación se basa en los integrados HT12E (codificador) y HT12D (decodificador), que permiten enviar hasta 4 bits de datos y 8 de dirección (por lo que sería posible transmitir a hasta 256 dispositivos en la misma frecuencia)
 

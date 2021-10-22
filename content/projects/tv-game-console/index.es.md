@@ -5,7 +5,7 @@ thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/consola_tv/"]
 date: "2012-01-01"
 ---
-Unos años luego de diseñar y armar la [miniconsola con matriz de LEDs](({{< ref "/projects/game-console" >}})), encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero [puede encontrarse aquí](http://web.archive.org/web/20100221181006/http://www.rickard.gunee.com/projects/video/pic/howto.php).
+Unos años luego de diseñar y armar la [miniconsola con matriz de LEDs](({{< ref "/projects/game-console" >}})), encontré un artículo muy interesante que explica una forma sencilla de generar señales NTSC blanco y negro utilizando microcontroladores baratos. El artículo ya no está más en el sitio original pero [puede encontrarse aquí](https://web.archive.org/web/20100221181006/https://www.rickard.gunee.com/projects/video/pic/howto.php).
 
 Utilizando la idea de usar dos resistencias para generar 4 valores y así poder generar la señal de sincronismo y 3 colores (blanco, negro, gris), adapté la miniconsola para tener salida de video compuesto. Basicamente fue necesario agregar un buffer, porque la corriente de salida del microcontrolador AT89S52 no es suficiente para hacer un correcto manejo de la señal (que tiene impedancia 75 ohms).
 

@@ -37,4 +37,4 @@ It's necessary to tell the module that the message was received correctly, using
 
 The routines to connect to the Internet, send and receive TCP and UDP packets aren't standardized and tend to vary depending on the manufacturer. The module needs to have a TCP/IP stack to use it. Otherwise, every protocol required (from PPP up to UDP) has to be implemented in the microcontroller's firmware.
 
-A sample code from an [application note by Freescale (AN120)](http://cache.freescale.com/files/microcontrollers/doc/app_note/AN2120.pdf) explains how to do it, including C code that can be ported to other microcontrollers.
+A sample code from an [application note by Freescale (AN120)](https://www.nxp.com/docs/en/application-note/AN2120.pdf) explains how to do it, including C code that can be ported to other microcontrollers.

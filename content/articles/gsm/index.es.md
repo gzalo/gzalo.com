@@ -11,7 +11,7 @@ Es posible conectar un microcontrolador a un modem o celular GSM o GPRS, lo que 
 
 Lo primero que necesitamos saber es que la mayoría de los celulares y módulos GSM trabajan con comandos AT, que son casi universales y están presentes en todo celular que tenga un cable de datos y se pueda usar como modem.
 
-Necesitamos construir una interfaz entre el módulo/celular y el microcontrolador. Por lo general los celulares trabajan con 3.3v (casi TTL), por lo que podremos alimentar el microcontrolador a 3.3V, o caso contrario usar un divisor resistivo para bajar la tensión de salida del microcontrolador a 3.3V.
+Necesitamos construir una interfaz entre el módulo/celular y el microcontrolador. Por lo general los celulares trabajan con 3.3v (casi TTL), por lo que deberemos alimentar el microcontrolador a 3.3V, o caso contrario usar un divisor resistivo u otro adaptador de niveles para reducir la tensión de salida del microcontrolador a 3.3V.
 
 Los módulos dedicados (como el Motorola G20 o G24), por el contrario, suelen tener una interfaz RS232, por lo que necesitaremos un integrado como el Max232 para conectarlos (ver [más información del MAX232]({{< ref "/articles/rs232ttl" >}})).
 
@@ -35,4 +35,4 @@ Es necesario avisar al celular que se recibió correctamente, con `AT+CNMA\r\n`
 `\n` Es el caracter de salto de linea (ASCII 10 o 0x0A)\
 `^z` Es el caracter correspondiente al *fin de archivo* - EOF (ASCII 26 o 0x1A)
 
-Las rutinas para conectarse a internet, enviar y recibir paquetes TCP y UDP no son estándar, y suelen variar de acuerdo al fabricante. Es necesario que el módulo tenga una pila TCP/IP integrada para poder usarlo (los baratos no lo tienen). En el caso que no lo tengan, para conectar el microcontrolador a internet hay que implementar todos los protocolos en el firmware del micro. Esta [nota de aplicación de Freescale (AN120)](http://cache.freescale.com/files/microcontrollers/doc/app_note/AN2120.pdf) explica cómo hacerlo y da código en C que se puede portar a otros microcontroladores.
+Las rutinas para conectarse a internet, enviar y recibir paquetes TCP y UDP no son estándar, y suelen variar de acuerdo al fabricante. Es necesario que el módulo tenga una pila TCP/IP integrada para poder usarlo (los baratos no lo tienen). En el caso que no lo tengan, para conectar el microcontrolador a internet hay que implementar todos los protocolos en el firmware del micro. Esta [nota de aplicación de Freescale (AN120)](https://www.nxp.com/docs/en/application-note/AN2120.pdf) explica cómo hacerlo y da código en C que se puede portar a otros microcontroladores.

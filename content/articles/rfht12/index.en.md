@@ -11,7 +11,7 @@ date: "2009-01-01"
 
 These simple circuits can be used for a high number of applications, from RC cars and ships to garage door openers, car alarms, data acquisition, robotics, and others.
 
-The radiofrequency section is based on the cheap transmitter/receiver pair WenShing TWS-BS-X, and RWS-X-X which modulate using ASK (more information of the [transmitters](http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Transmitter_Module/) and the [receivers](http://www.wenshing.com.tw/Products/RF_Module/ASK_RF_Receiver_Module/)). They usually cost less than 2 U$D each, and with a good antenna and tuning, they might work with distances of around 50 meters.
+The radiofrequency section is based on the cheap transmitter/receiver pair WenShing TWS-BS-X, and RWS-X-X which modulate using ASK (more information of the [transmitters](https://www.wenshing.com.tw/?action=en&style=list&classid=158) and the [receivers](https://www.wenshing.com.tw/?action=en&style=list&classid=157)). They usually cost less than 2 U$D each, and with a good antenna and tuning, they might work with distances of around 50 meters.
 
 The encoding and decoding is based on the HT12E (encoder) and HT12D (decoder) ICs, that allow up to 4-bit data and 8-bit address (allowing up to 256 devices on the same frequency, provided they don't attempt to transmit at the same time)
 
