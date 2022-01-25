@@ -11,7 +11,7 @@ It supports simple sounds, has 4 games (a Tetris clone with single pixel pieces)
 
 The Timer0 is used in 16 bit mode, and it's job is to refresh the display every 200 uS. Timer1 is also used in 16 bit mode, it executes the game logic and handles the menu and the scores. Timer2 is used in a 16 bit with auto-recharge mode, it generates square waveforms of different frequencies (the melodies) and has priority to avoid sound glitches. Some buttons are connected as interrupt sources and are used to feed the random number generator.
 
-[Download schematic, PCB, source code](/downloads/miniconsola.zip)
+[Download schematic, PCB, source code](https://github.com/gzalo/minigameconsole/)
 
 {{< youtube ic0n-pDeKgQ >}}
 

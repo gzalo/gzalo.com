@@ -12,7 +12,7 @@ Soporta reproducción de melodías sencillas (el circuito impreso lo hice antes,
 
 El timer0 es usado en modo 16 bits, y se encarga de refrescar el display cada 200 microsegundos. El timer1 es usado en modo 16 bits, y ejecuta la lógica de juego, se encarga de mostrar menúes y puntajes. El timer2 es usado en modo 16 bits con autorecarga, y se encarga de generar ondas cuadradas de frecuencia variable (que se convierten en melodías) y tiene prioridad para evitar glitches (discontinuidades) en el sonido. Algunos botones están conectados como fuentes de interrupciones, y son usados para realimentar el generador de números aleatorios.
 
-[Descargar esquemático, circuito impreso y programación](/downloads/miniconsola.zip)
+[Descargar esquemático, circuito impreso y programación](https://github.com/gzalo/minigameconsole/)
 
 {{< youtube ic0n-pDeKgQ >}}
 

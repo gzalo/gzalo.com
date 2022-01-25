@@ -9,8 +9,6 @@ date: "2010-01-01"
 Making a keyboard with 4-pin buttons (also known as tactile switches) is very easy, especially using the fact that two pairs of the 4-pins are connected internally, so it's possible to use a single board PCB without needing extra wire jumps.
 ![3x4 keyboard schematic](/images/keypad_lyt.png)
 
-[Download editable PCB (for Proteus)](/downloads/keypad.zip)
-
 The easiest way to read the keyboard status from a microcontroller is the following: it can be connected to a single 8-bit I/O port, using the low nibble for columns and the high nibble for rows.
 
 ![3x4 keyboard connection for microcontroller](/images/keypad_conn.png)
