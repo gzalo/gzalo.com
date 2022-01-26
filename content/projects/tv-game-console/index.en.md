@@ -12,6 +12,8 @@ Using the idea of two resistors to generate 4 values and thus create the sync si
 
 Regarding the software, the fact that multiple televisions and capture cards don't require the full vertical sync signal was used. In this time, the game logic was executed. Bit accessible registers were used, in order to extract the bits of the frame buffer in an efficient way. For faster output, the UART of the microcontroller may be used in an synchronic mode, and thus improve the horizontal resolution by a factor of ~8. In this prototype, a 30x32 resolution was perfectly achieved. To have a higher resolution, external RAM would be needed.
 
+[The working code can be found inside of the same repository that contains the mini game console.](https://github.com/gzalo/minigameconsole)
+
 The code used is similar to this one:
 
 ```c

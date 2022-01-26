@@ -22,8 +22,8 @@ To detect the project orientation, we used two sensors placed 90 degrees in resp
 
 ![Homemade inclination sensor, gravity detection](/images/sensor3.png)
 
-After implementing them, we found two main issues. The first one is that it was necessary to sand the inner face of the cylinder to remove oxide and help conduction. The second one was the bounce of the ball after rotating the board, caused by the physical bounce of the sphere over the contacts. To solve it, the sensors were oversampled and we coded a small software solution that waits until they get into a stable state in order to change the image.
+After implementing them, we found two main issues. The first one is that it was necessary to sand the inner face of the cylinder to remove impurities and help conduction. The second one was the bounce of the ball after rotating the board, caused by the physical bounce of the sphere over the contacts. To solve it, the sensors were oversampled and we coded a small software solution that waits until they get into a stable state in order to change the image.
 
-To avoid the bad conduction problem caused by oxide, it might be possible to use optical (reflective) sensors, and a colored sphere in such a way that distance to the ball can be detected. That would be a much more robust system. For higher rotation angle resolution, it would make sense to replace the sensors with a small accelerometer and a microcontroller, which can read the acceleration in each axis and then estimate the more likely orientation.
+To avoid the bad conduction problem caused by rust, it might be possible to use optical (reflective) sensors, and a colored sphere in such a way that distance to the ball can be detected. That would be a much more robust system. For higher rotation angle resolution, it would make sense to replace the sensors with a small accelerometer and a microcontroller, which can read the acceleration in each axis and then estimate the more likely orientation.
 
 {{< youtube TV9hBVALbbg >}}

@@ -11,6 +11,8 @@ Utilizando la idea de usar dos resistencias para generar 4 valores y así poder 
 
 En cuanto al software, se aprovechó el hecho de que muchos televisores y placas capturadoras no requieren la señal completa de sincronismo vertical, utilizando por lo tanto ese tiempo para actualizar la *lógica del juego*. Se usó la memoria accesible en forma de bits, para lograr extraer los bits del framebuffer de una manera eficiente. Además, se podría llegar a usar la UART del microcontrolador en modo sincrónico, y de esa forma tener mucha mejor resolución horizontal. En el prototipo se llegó a una resolución de 30x32 pixeles sin problemas. Para usar mayor resolución sería necesario también agregar más memoria RAM al microcontrolador.
 
+[El código funcionando puede encontrarse en el mismo repositorio que contiene los datos de la mini consola original.](https://github.com/gzalo/minigameconsole)
+
 Un código similar al usado para el manejo de la parte de salida de video es el siguiente:
 
 ```c
