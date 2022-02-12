@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["layouts/**/*.html"],
+  content: ['./themes/gzalo/layouts/**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -10,5 +10,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

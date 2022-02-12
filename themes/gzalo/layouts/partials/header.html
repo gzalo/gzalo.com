@@ -1,11 +1,11 @@
-<header class="h-40 py-10 flex items-end justify-between	">
+<header class="h-40 py-5 flex items-end justify-between	">
   <div>
     <h1 class="text-4xl font-mono font-bold"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
-    <h2 class="text-xl font-mono">> {{ .Site.Params.Description }} <span style="animation: 2s blink step-end infinite;">·</span></h2>
+    <h2 class="text-xl font-mono text-gray-500">> {{ .Site.Params.Description }} <span style="animation: 1.5s blink step-end infinite;">█</span></h2>
   </div>
   <style>
     @-webkit-keyframes blink {
-      0% {color: #000;}
+      0% {color: #a3a3a3;}
       50% {color: #FFF;}
     }
   </style>
@@ -19,16 +19,22 @@
 
 <nav>
   <div>
-    {{ range .Site.Menus.main }}
-    <a href="{{ .URL | absLangURL }}">
-      {{ .Name }}
-    </a>
-    {{ end }}
+    <div class="flex space-x-4">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | absLangURL }}">
+        <div class="uppercase font-semibold border-2 border-t-4 border-black px-6 h-10 py-1 hover:border-t-2 {{ .Pre }}">
+          {{ .Name }}
+        </div>
+      </a>
+      {{ end }}
 
       <form action="/search/" method="get">
-        <div class="border p-1 flex w-52">
-          <i class="fas fa-search p-1"></i> <input type="text" name="q" placeholder="{{ i18n "search" }}" class="w-full">
+        <div class="border-2 border-gray-500 p-1 flex w-52 h-10">
+          <i class="fas fa-search p-2 text-gray-500"></i> <input type="text" name="q" placeholder="{{ i18n "search" }}" class="w-full">
         </div>
       </form>
+    </div>
+
   </div>
+  <div class="border-sky-400 border-red-500"></div>
 </nav>
