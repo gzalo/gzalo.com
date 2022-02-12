@@ -14,18 +14,26 @@ defaultContentLanguage = "es"
         name = "Calculadoras"
         url = "/calculators/"
         weight = 1
+        pre = "border-sky-400"
       [[languages.es.menu.main]]
         name = "Artículos"
         url = "/articles/"
         weight = 2
+        pre = "border-red-500"
       [[languages.es.menu.main]]
         name = "Proyectos"
         url = "/projects/"
         weight = 3
+        pre = "#00F"
       [[languages.es.menu.main]]
         name = "Experimentos"
         url = "/experiments/"
         weight = 4
+      [[languages.es.menu.main]]
+        name = "Acerca de gzalo"
+        url = "/about/"
+        weight = 5
+        pre = "#0FF"
 
   [languages.en]
     languageName = "English"
@@ -48,4 +56,8 @@ defaultContentLanguage = "es"
         name = "Experiments"
         url = "/en/experiments/"
         weight = 4
-
+      [[languages.en.menu.main]]
+        name = "About gzalo"
+        url = "/en/about/"
+        weight = 5  
+        pre = "#0FF"
