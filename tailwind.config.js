@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
+      sans: ['Roboto', 'Arial', 'sans-serif'],
       mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular"],
     },
     extend: {},

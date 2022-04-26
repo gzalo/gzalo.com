@@ -6,17 +6,14 @@
             {{- partial "header.html" . -}}
             <section>
                 <article>
+                    <header>
+                        <h2 class="text-xl">{{ .Title }}</h2>
+                    </header>
                     <div>
-                        <header>
-                            <h2>{{ .Title }}</h2>
-                        </header>
-                        <div>
-                            <p>La página seleccionada no existe más.</p>
-                            <p><a href="/">Volver a la página principal.</a></p>
-                        </div>
+                        <p>La página seleccionada no existe más.</p>
+                        <p><a href="/">Volver a la página principal.</a></p>
                     </div>
                 </article>
-                {{- partial "sidebar.html" . -}}
             </section>
             {{- partial "footer.html" . -}}
         </div>
