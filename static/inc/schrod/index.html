@@ -1,0 +1,232 @@
+<html>
+<head>
+	<title>Schrod</title>
+<style>
+body, html {font-family: Arial, Helvetica, sans-serif;}
+
+</style>
+</head>
+<body>
+<canvas
+id="canvas"
+width="512"
+height="512"
+style="border: 1px solid black;"
+></canvas>
+<p>Controls: 
+<ul>
+<li><strong>Space</strong>: play/pause</li>
+<li><strong>1</strong>: switch to heat equation</li>
+<li><strong>2</strong>: switch to Schrödinger's equation</li>
+<li><strong>Mouse click</strong>: change initial conditions (only when paused)</li>
+<li><strong>A</strong>: toggle audio output</li>
+</ul>
+</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js" integrity="sha512-AfRcJIj922x/jSJpQLnry0DYIBg6EGCtwk/MiQ6QvDlzb7kNFxH8EdqXLkaXXY3YHQS9FrSb8H7LzuLn0CZQ1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	const canvas = document.getElementById('canvas');
+	const context = canvas.getContext('2d');
+
+	const QFACTORES = 50;
+	const factores = new Array(QFACTORES).fill(0);
+
+	const WIDTH = 512;
+	const HEIGHT = 512;
+	const funcion = new Array(WIDTH).fill(0);
+
+	let corriendo = true;
+	let t = 0;
+	let mouseX = 0, mouseY = 0, mouseStatus = 0;
+	let eq = 1;
+
+	window.AudioContext = window.AudioContext || window.webkitAudioContext;
+	const audioContext = new window.AudioContext();
+	let osc = null;
+	const masterGain = audioContext.createGain();
+	const analyser = audioContext.createAnalyser();
+
+	masterGain.connect(analyser);
+	analyser.connect(audioContext.destination);
+
+	let isPlaying = false;
+
+	const u1 = (x, t) => {
+		let ret = 0.0;
+		for (let n=1;n<QFACTORES;n++) {
+			ret += factores[n] * Math.sin(n*Math.PI*x) * Math.exp(-n*n*Math.PI*Math.PI*t);
+		}
+		return ret;
+	}
+
+	const u2 = (x, t) => {
+		let ret = math.complex(0,0);
+		for(let n=1;n<QFACTORES;n++){
+			const k = n*Math.PI;
+			const constant = factores[n] * Math.sqrt(2) * Math.sin(k*x);
+			const exponent = math.complex(0, n*n*t);
+			ret = math.add(ret, math.multiply(constant, math.exp(exponent)));
+		}
+		
+		return math.norm(ret);
+	}
+
+	const calcFactores = function() {
+		for(let n=1;n<QFACTORES;n++){
+			let acc = 0.0;
+			for(let j=0;j<WIDTH;j++){
+				const x = j/WIDTH;
+				const dx = 2.0/WIDTH;
+				acc+=funcion[j]*Math.sin(n*Math.PI*x)*dx;
+			}
+			factores[n] = acc;
+		}
+	}
+
+	const calcFactores2 = function(){
+		for(let n=1;n<QFACTORES;n++){
+			let acc=0.0;
+			for(let j=0;j<WIDTH;j++){
+				const x = j/WIDTH;
+				const dx = 1/WIDTH;
+				//if(x<0.5)
+					acc+=funcion[j]*Math.sin(n*Math.PI*x)*dx;
+			}
+			
+			factores[n] = acc;
+		}
+	}
+
+	for(let i=0;i<WIDTH;i++){
+		const x = i/WIDTH * 2.0;
+		funcion[i]=x*(2-x);
+	}
+
+	document.onkeyup = function(e){
+		const key = (e==null)?event.keyCode:e.which;
+		if(key==32){
+			if(!corriendo){
+				corriendo = true;
+			}else{
+				for(let i=0;i<WIDTH;i++){
+					funcion[i] = u1(i/WIDTH,t);
+				}
+				corriendo = false;
+			}
+		}
+		if(key == 49) eq = 1;
+		if(key == 50) eq = 2;
+		if(key == 65){
+			isPlaying = !isPlaying;
+			if(!isPlaying){
+				masterGain.gain.setValueAtTime(0, audioContext.currentTime);
+			} else {
+				if(!osc){
+					osc = audioContext.createOscillator(); 
+    				osc.frequency.value = 220;
+					osc.connect(masterGain);
+					const imag= new Float32Array([0,0,0,0,0]);   // sine
+					const real = new Float32Array(imag.length);  // cos
+					const customWave = audioContext.createPeriodicWave(real, imag);  // cos,sine
+					osc.setPeriodicWave(customWave);
+					osc.start();
+				} else {
+					masterGain.gain.setValueAtTime(1, audioContext.currentTime);
+				}
+			}
+		}
+	}
+	canvas.addEventListener('mousemove', function(evt) {
+		var rect = canvas.getBoundingClientRect();
+        mouseX = evt.clientX - rect.left;
+        mouseY = evt.clientY - rect.top;
+	}, false);
+	
+	canvas.addEventListener('mousedown', function(evt) {
+		if(evt.which == 1){
+			mouseStatus = 1;
+		}else if(evt.which == 3){
+			mouseStatus = 2;
+		}
+		evt.preventDefault();
+	}, false);
+	
+	canvas.addEventListener('contextmenu', function(evt) {		
+		evt.preventDefault();
+		return false;
+	}, false);
+	
+	document.addEventListener('mouseup', function(evt) {
+		mouseStatus = 0;
+	}, false);
+
+	function nextFrame(){
+		context.clearRect(0, 0, canvas.width, canvas.height);
+
+		if(eq == 1)
+		calcFactores();
+		else
+		calcFactores2();
+
+		if(corriendo)
+		t+=0.001;
+		else t = 0;
+			
+		context.beginPath();
+		context.lineJoin = "round";
+		context.lineCap = "round";
+		context.lineWidth = 1;
+		context.strokeStyle = 'rgb(0, 0, 0)';
+
+		if(mouseStatus == 1){
+			const posX = Math.floor(mouseX); 
+			const posY = Math.floor(mouseY);	
+			const delta = eq == 1 ? 5 : 20;
+			for(let i=-delta;i<=delta;i++)
+				funcion[posX+i] = (-posY+HEIGHT/2)/(HEIGHT/4);
+		}
+
+		if(osc){
+			const imagFactors = [];
+			const realFactors = [];
+			for(let i=0;i<QFACTORES;i++){
+				if(eq == 1){ 
+					imagFactors[i] = factores[i] * Math.exp(-i*i*Math.PI*Math.PI*t);
+					realFactors[i] = 0;
+				} else{
+					const constant = factores[i] * Math.sqrt(2);
+					const exponent = math.complex(0, i*i*t);
+					const ret = math.multiply(constant, math.exp(exponent));
+					imagFactors[i] = ret.re;
+					realFactors[i] = ret.im;
+				}
+			}
+
+ 			const imag = new Float32Array(imagFactors);   // sine
+			const real = new Float32Array(realFactors);  // cos
+			const customWave = audioContext.createPeriodicWave(real, imag, {disableNormalization: true});  // cos,sine
+			osc.setPeriodicWave(customWave);
+		}
+
+		for(let x=0;x<1;x+=1/WIDTH){
+			const posX = x*WIDTH;
+			const posY = HEIGHT/2-HEIGHT/4* (eq == 1? u1(x,t) : u2(x,t));
+
+			if(x == 0){
+				context.moveTo(posX, posY);
+			} else {
+				context.lineTo(posX, posY);
+			}
+		}
+
+		context.stroke();
+	
+		
+		window.requestAnimationFrame(nextFrame);
+	}
+	
+	window.requestAnimationFrame(nextFrame);
+
+</script>
+
+</body>
+</html>

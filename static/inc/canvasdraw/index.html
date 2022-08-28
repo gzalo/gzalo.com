@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Canvas Draw</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body, html {height: 100%;}
+
+#canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>	
+
+<script>
+	var canvas = document.getElementById('canvas');
+	var context = canvas.getContext('2d');
+	let canvasWidth, canvasHeight;
+	fixDimensions();
+	window.onresize = fixDimensions;
+	
+	function fixDimensions(){
+		canvasWidth = document.documentElement.clientWidth;
+		canvasHeight = document.documentElement.clientHeight;
+		canvas.width = canvasWidth;
+		canvas.height = canvasHeight;
+	}
+
+	var posX = canvasWidth/2, posY = canvasHeight/2, angle = 33, vel = 2;	
+	var prevX = canvasWidth/2, prevY = canvasHeight/2, t=0;
+	function nextFrame(){
+		nextX = posX + vel * Math.cos(angle*0.0174532925);
+		nextY = posY + vel * Math.sin(angle*0.0174532925);
+		
+		var rand = Math.floor(Math.random()*100);
+		
+		if(rand == 1) angle += 90,t=0;
+		if(rand == 2) angle -= 90,t=0;
+		
+		var imgd = context.getImageData(nextX, nextY, 1, 1);
+		var pix = imgd.data;
+
+		if(pix[3] == 255){
+			t=5;
+		}
+		
+		if(nextX > canvasWidth) angle=180-angle;
+		if(nextY > canvasHeight) angle=-angle;
+		if(nextX < 0) angle=-180-angle;
+		if(nextY < 0) angle=-angle;
+		
+		if(t == 0){
+		context.beginPath();
+		context.lineJoin = "round";
+		context.lineCap = "round";
+		context.lineWidth = 5;
+		context.strokeStyle = 'rgb(0, 0, 0)';
+		context.moveTo(prevX, prevY);
+		context.lineTo(posX, posY);
+		context.closePath();
+		context.stroke();
+		}
+
+		prevX = posX;
+		prevY = posY;
+		posX = nextX;
+		posY = nextY;
+	
+		if(t>0) t--;
+	}
+	
+	setInterval("nextFrame()", 1);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="math.min.js"></script>
+		<script type="text/javascript" src="kalman.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>	
+		<meta charset="utf-8">
+		<title>Kalman</title>
+	</head>
+	<body>
+		<div id="derecha">
+			<div id="config">
+				<p>
+				Move the object using WASD<br>
+				<label for="rangeDesvioAceleracion">Acceleration measurement noise/standard deviation</label>
+				<input type="range" min="0" max="360" value="360" id="rangeDesvioAceleracion" step="0.1" oninput="actualizarDesvioAceleracion(value)"/>
+				<output for="desvioAceleracion" id="desvioAceleracion">360</output></p>
+				
+				<p><label for="rangeDesvioAceleracion">Distance measurement noise/standard deviation</label>
+				<input type="range" min="0.1" max="100" value="25" id="rangeDesvioDistancia" step="0.1" oninput="actualizarDesvioDistancia(value)"/>
+				<output for="desvioDistancia" id="desvioDistancia">25</output></p>
+				
+				<p><button onclick="reiniciarValores()">Reset</button></p>
+			</div>
+			<div id="fps"></div>
+		</div>
+		<canvas id="canvas" width="800" height="640"></canvas>
+	</body>
+</html>

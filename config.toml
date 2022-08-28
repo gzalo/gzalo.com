@@ -26,6 +26,10 @@ defaultContentLanguage = "es"
         name = "Proyectos"
         url = "/projects/"
         weight = 4
+      [[languages.es.menu.main]]
+        name = "Experimentos"
+        url = "/experiments/"
+        weight = 5
 
   [languages.en]
     languageName = "English"
@@ -48,3 +52,7 @@ defaultContentLanguage = "es"
         name = "Projects"
         url = "/en/projects/"
         weight = 4
+      [[languages.en.menu.main]]
+        name = "Experiments"
+        url = "/en/experiments/"
+        weight = 5

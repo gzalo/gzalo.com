@@ -1,0 +1,410 @@
+<html>
+<head>
+	<title>TestPattern</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body, html {height: 100%;}
+
+</style>
+</head>
+<body>
+<canvas
+id="canvas"
+width="900"
+height="900"
+style="border: 1px solid black;"
+></canvas>
+
+<script>
+	const canvas = document.getElementById('canvas');
+	const context = canvas.getContext('2d');
+	const tileImg = new Image();
+	tileImg.src = 'patterns.png';
+
+	const WIDTH = 25;
+	const HEIGHT = 25;
+	const tiles = new Array(WIDTH*HEIGHT).fill(0);
+
+	const TILE_DIMS = 36;
+
+    const EMPTY = 0;
+    const VERTICAL = 1;
+    const HORIZONTAL = 2;
+    const VERTICAL_OVER_HORIZONTAL = 3;
+
+    const HORIZONTAL_OVER_VERTICAL = 4;
+    const BOTTOM_RIGHT = 5;
+    const BOTTOM_LEFT = 6;
+
+    const TOP_RIGHT_BOTTOM_LEFT = 8;
+    const TOP_RIGHT = 9;
+    const TOP_LEFT = 10;
+    const TOP_LEFT_BOTTOM_RIGHT = 11;
+
+	const isVerticalPossible = (tile, posX, posY) => (tile == EMPTY || tile == HORIZONTAL) && posY > 1 && posY < HEIGHT-2;
+	const isHorizontalPossible = (tile, posX, posY) => (tile == EMPTY || tile == VERTICAL) && posX > 1 && posX < WIDTH-2;
+	const isBottomLeftPossible = (tile, posX, posY) => (tile == EMPTY || tile == TOP_RIGHT) && posX > 1 && posY < HEIGHT - 2;
+	const isTopLeftPossible = (tile, posX, posY) => (tile == EMPTY || tile == BOTTOM_RIGHT) && posX > 1 && posY > 1;
+	const isTopRightPossible = (tile, posX, posY) => (tile == EMPTY || tile == BOTTOM_LEFT) && posX < WIDTH-2 && posY > 1;
+	const isBottomRightPossible = (tile, posX, posY) => (tile == EMPTY || tile == TOP_LEFT) && posX<WIDTH-2  && posY < HEIGHT -2;
+
+    const LEFT = 0;
+    const RIGHT = 1;
+    const UP = 2;
+    const DOWN = 3;
+
+	let posX = Math.floor(WIDTH / 2);
+    let posY = Math.floor(HEIGHT / 2);
+    let edge = UP;
+
+	const getIndex = (x, y) => x + y * WIDTH;
+
+	const addBottomLeftLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+
+		if(tile == EMPTY) {
+			tiles[index] = BOTTOM_LEFT;
+		} else if(tile == TOP_RIGHT){
+			tiles[index] = TOP_RIGHT_BOTTOM_LEFT;
+		}
+	};
+
+	const addTopLeftLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+
+		if(tile == EMPTY) {
+			tiles[index] = TOP_LEFT;
+		} else if(tile == BOTTOM_RIGHT){
+			tiles[index] = TOP_LEFT_BOTTOM_RIGHT;
+		}
+	};
+
+	const addTopRightLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+				
+		if (tile == EMPTY) {
+			tiles[index] = TOP_RIGHT;
+		} else if (tile == BOTTOM_LEFT) {
+			tiles[index] = TOP_RIGHT_BOTTOM_LEFT;
+		}
+	};
+
+	const addBottomRightLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+
+		if(tile == EMPTY) {
+			tiles[index] = BOTTOM_RIGHT;
+		} else if(tile == TOP_LEFT){
+			tiles[index] = TOP_LEFT_BOTTOM_RIGHT;
+		}
+	};
+
+	const addVerticalLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+
+		if(tile == EMPTY) {
+			tiles[index] = VERTICAL;
+		} else if(tile == HORIZONTAL){
+			tiles[index] = HORIZONTAL_OVER_VERTICAL;
+		}
+	};
+
+	const addHorizontalLine = (tiles, x, y) => {
+		const index = getIndex(x,y);
+		const tile = tiles[index];
+
+		if(tile == EMPTY) {
+			tiles[index] = HORIZONTAL;
+		} else if(tile == VERTICAL){
+			tiles[index] = VERTICAL_OVER_HORIZONTAL;
+		}
+	};
+
+	const countTrue = (a, b, c, d, e, f) => {
+    	let count = 0;
+		if(a) count++;
+		if(b) count++;
+		if(c) count++;
+		if(d) count++;
+		if(e) count++;
+		if(f) count++;
+		return count;
+	}
+
+	const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+	const nextTick = () => {
+
+		if(edge == UP) {
+			// UP
+			const canGoUp = isVerticalPossible(tiles[posX + (posY - 1) * WIDTH], posX, posY-1);
+			const canGoUpLeft = isBottomLeftPossible(tiles[posX + (posY - 1) * WIDTH], posX, posY-1);
+			const canGoUpRight = isBottomRightPossible(tiles[posX + (posY - 1) * WIDTH], posX, posY-1);
+			const canGoDown = isVerticalPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoDownLeft = isTopLeftPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoDownRight = isTopRightPossible(tiles[posX + posY * WIDTH], posX, posY);
+
+
+			const options = countTrue(canGoUp, canGoUpLeft, canGoUpRight, canGoDown, canGoDownLeft, canGoDownRight);
+			if(options == 0) return;
+			const randomNumber = getRandomInt(0, options);
+			let optionIdx = 0;
+
+			if(canGoUp){
+				if(randomNumber == optionIdx) {
+					addVerticalLine(tiles, posX, posY-1);
+					posY -= 1;
+				}
+				optionIdx++;
+			}
+			if(canGoUpLeft){
+				if(randomNumber == optionIdx) {
+					addBottomLeftLine(tiles, posX, posY-1);
+					posY -= 1;
+					edge = LEFT;
+				}
+				optionIdx++;
+			}
+			if(canGoUpRight){
+				if(randomNumber == optionIdx) {
+					addBottomRightLine(tiles, posX, posY-1);
+					posY -= 1;
+					edge = RIGHT;
+				}
+				optionIdx++;
+			}
+
+			if(canGoDown){
+				if(randomNumber == optionIdx) {
+					addVerticalLine(tiles, posX, posY);
+					edge = DOWN;
+				}
+				optionIdx++;
+			}
+			if(canGoDownLeft){
+				if(randomNumber == optionIdx) {
+					addTopLeftLine(tiles, posX, posY);
+					edge = LEFT;
+				}
+				optionIdx++;
+			}
+			if(canGoDownRight){
+				if(randomNumber == optionIdx) {
+					addTopRightLine(tiles, posX, posY);
+					edge = RIGHT;
+				}
+				optionIdx++;
+			}
+
+		} else if (edge == DOWN) {
+			// DOWN
+			const canGoUp = isVerticalPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoUpLeft = isBottomLeftPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoUpRight = isBottomRightPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoDown = isVerticalPossible(tiles[posX + (posY + 1) * WIDTH], posX, posY+1);
+			const canGoDownLeft = isTopLeftPossible(tiles[posX + (posY + 1) * WIDTH], posX, posY+1);
+			const canGoDownRight = isTopRightPossible(tiles[posX + (posY + 1) * WIDTH], posX, posY+1);
+
+			const options = countTrue(canGoUp, canGoUpLeft, canGoUpRight, canGoDown, canGoDownLeft, canGoDownRight);
+			if(options == 0) return;
+			const randomNumber = getRandomInt(0, options);
+			let optionIdx = 0;
+
+			if(canGoUp){
+				if(randomNumber == optionIdx) {
+					addVerticalLine(tiles, posX, posY);
+				}
+				optionIdx++;
+			}
+			if(canGoUpLeft){
+				if(randomNumber == optionIdx) {
+					addBottomLeftLine(tiles, posX, posY);
+					edge = LEFT;
+				}
+				optionIdx++;
+			}
+			if(canGoUpRight){
+				if(randomNumber == optionIdx) {
+					addBottomRightLine(tiles, posX, posY);
+					edge = RIGHT;
+				}
+				optionIdx++;
+			}
+
+			if(canGoDown){
+				if(randomNumber == optionIdx) {
+					addVerticalLine(tiles, posX, posY+1);
+					posY += 1;
+				}
+				optionIdx++;
+			}
+			if(canGoDownLeft){
+				if(randomNumber == optionIdx) {
+					addTopLeftLine(tiles, posX, posY+1);
+					posY += 1;
+					edge = LEFT;
+				}
+				optionIdx++;
+			}
+			if(canGoDownRight){
+				if(randomNumber == optionIdx) {
+					addTopRightLine(tiles, posX, posY+1);
+					posY += 1;
+					edge = RIGHT;
+
+				}
+				optionIdx++;
+			}
+
+		} else if (edge == LEFT) {
+			// LEFT
+			const canGoLeft = isHorizontalPossible(tiles[posX - 1 + posY * WIDTH], posX-1, posY);
+			const canGoLeftUp = isTopRightPossible(tiles[posX - 1 + posY * WIDTH], posX-1, posY);
+			const canGoLeftDown = isBottomRightPossible(tiles[posX - 1 + posY * WIDTH], posX-1, posY);
+			const canGoRight = isHorizontalPossible(tiles[posX + (posY) * WIDTH], posX, posY);
+			const canGoRightUp = isTopLeftPossible(tiles[posX + (posY) * WIDTH], posX, posY);
+			const canGoRightDown = isBottomLeftPossible(tiles[posX + (posY) * WIDTH], posX, posY);
+
+			const options = countTrue(canGoLeft, canGoLeftUp, canGoLeftDown, canGoRight, canGoRightUp, canGoRightDown);
+			if(options == 0) return;
+			const randomNumber = getRandomInt(0, options);
+			let optionIdx = 0;
+
+			if(canGoLeft){
+				if(randomNumber == optionIdx) {
+					addHorizontalLine(tiles, posX-1, posY);
+					posX-=1;
+				}
+				optionIdx++;
+			}
+			if(canGoLeftUp){
+				if(randomNumber == optionIdx) {
+					addTopRightLine(tiles, posX-1, posY);
+					posX-=1;
+					edge = UP;
+				}
+				optionIdx++;
+			}
+			if(canGoLeftDown){
+				if(randomNumber == optionIdx) {
+					addBottomRightLine(tiles, posX-1, posY);
+					posX-=1;
+					edge = DOWN;
+				}
+				optionIdx++;
+			}
+
+			if(canGoRight){
+				if(randomNumber == optionIdx) {
+					addHorizontalLine(tiles, posX, posY);
+					edge = RIGHT;
+				}
+				optionIdx++;
+			}
+			if(canGoRightUp){
+				if(randomNumber == optionIdx) {
+					addTopLeftLine(tiles, posX, posY);
+					edge = UP;
+				}
+				optionIdx++;
+			}
+			if(canGoRightDown){
+				if(randomNumber == optionIdx) {
+					addBottomLeftLine(tiles, posX, posY);
+					edge = DOWN;
+				}
+				optionIdx++;
+			}
+
+		} else {
+			// Right
+			const canGoLeft = isHorizontalPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoLeftUp = isTopRightPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoLeftDown = isBottomRightPossible(tiles[posX + posY * WIDTH], posX, posY);
+			const canGoRight = isHorizontalPossible(tiles[posX + 1 + (posY) * WIDTH], posX+1, posY);
+			const canGoRightUp = isTopLeftPossible(tiles[posX + 1 + (posY) * WIDTH], posX+1, posY);
+			const canGoRightDown = isBottomLeftPossible(tiles[posX + 1 + (posY) * WIDTH], posX+1, posY);
+
+			const options = countTrue(canGoLeft, canGoLeftUp, canGoLeftDown, canGoRight, canGoRightUp, canGoRightDown);
+			if(options == 0) return;
+			const randomNumber = getRandomInt(0, options);
+			let optionIdx = 0;
+
+			if(canGoLeft){
+				if(randomNumber == optionIdx) {
+					addHorizontalLine(tiles, posX, posY);
+					edge = LEFT;
+				}
+				optionIdx++;
+			}
+			if(canGoLeftUp){
+				if(randomNumber == optionIdx) {
+					addTopRightLine(tiles, posX, posY);
+					edge = UP;
+				}
+				optionIdx++;
+			}
+			if(canGoLeftDown){
+				if(randomNumber == optionIdx) {
+					addBottomRightLine(tiles, posX, posY);
+					edge = DOWN;
+				}
+				optionIdx++;
+			}
+
+			if(canGoRight){
+				if(randomNumber == optionIdx) {
+					addHorizontalLine(tiles, posX+1, posY);
+					posX+=1;
+				}
+				optionIdx++;
+			}
+			if(canGoRightUp){
+				if(randomNumber == optionIdx) {
+					addTopLeftLine(tiles, posX+1, posY);
+					posX+=1;
+					edge = UP;
+
+				}
+				optionIdx++;
+			}
+			if(canGoRightDown){
+				if(randomNumber == optionIdx) {
+					addBottomLeftLine(tiles, posX+1, posY);
+					posX+=1;
+					edge = DOWN;
+				}
+				optionIdx++;
+			}
+
+		}
+	}
+
+	function nextFrame(){
+		context.clearRect(0, 0, canvas.width, canvas.height);
+
+		nextTick();
+
+		for(y=0;y<WIDTH;y++){
+			for(x=0;x<HEIGHT;x++){
+				const id = tiles[x+y*WIDTH];		
+				const xTile = Math.floor(id%4);
+				const yTile = Math.floor(id/4);
+				context.drawImage(tileImg, xTile*36, yTile*36, TILE_DIMS, TILE_DIMS, x*TILE_DIMS, y*TILE_DIMS, TILE_DIMS, TILE_DIMS);
+			}
+		}	
+	}
+	
+	setInterval(nextFrame, 25);
+
+</script>
+</body>
+</html>

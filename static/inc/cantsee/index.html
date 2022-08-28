@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CantSee</title>
+
+  <style>
+	@import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,1000);	
+
+	#test{
+		font-family:"Exo";
+	}
+	#original{
+		display:none;
+	}
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+  <script>
+ 
+	$(function() {
+		let texto = $("#original").html();
+		let weight = 1100;
+
+		for(i=0;i<texto.length;i++){
+			if(i%(Math.floor(texto.length/10)) == 0) weight -= 100;
+			let size = (-i+texto.length)/texto.length * 30 + 10;
+			let valor = "<span style='font-size:"+parseInt(size)+"px;font-weight:"+parseInt(weight)+"'>"+texto[i]+"</span>";
+			
+			$("#test").append(valor);
+		}
+	});
+  </script>
+  <div id="test"></div>
+  <div id="original">
+  El médico le preguntó, Nunca le había ocurrido nada así, quiero decir, lo de ahora, o algo parecido, Nunca, doctor, ni siquiera llevo gafas, Y dice que fue de repente, Sí, doctor, Como una luz que se apaga, Más bien como una luz que se enciende, Había notado diferencias en la vista estos días pasados, No, doctor, Y hubo algún caso de ceguera en su familia, No, doctor, en los parientes que he conocido o de los que oí hablar, nadie, Sufre diabetes, No, doctor, Y sífilis, No, doctor, Hipertensión arterial o intracraneana, Intracraneana, no sé, de la otra sé que no, en la empresa nos hacen reconocimientos, Se dio algún golpe fuerte en la cabeza, hoy o ayer, No, doctor, Cuántos años tiene, Treinta y ocho, Bueno, vamos a ver esos ojos. El ciego los abrió mucho, como para facilitar el examen, pero el médico lo cogió por el brazo y lo colocó detrás de un aparato que alguien con imaginación tomaría por un nuevo modelo de confesionario en el que los ojos hubieran sustituido a las palabras, con el confesor mirando directamente el interior del alma del pecador.
+Apoye la barbilla aquí, recomendó, y mantenga los ojos bien abiertos, no se mueva. La mujer se acercó al marido, le puso la mano en el hombro, dijo, Verás como todo se arregla. El médico subió y bajó el sistema binocular de su lado, hizo girar tornillos de paso finísimo, y empezó el examen. No encontró nada en la córnea, nada en la esclerótica, nada en el iris, nada en la retina, nada en el cristalino, nada en el nervio óptico, nada en ninguna parte. Se apartó del aparato, se frotó los ojos, luego volvió a iniciar el examen desde el principio, sin hablar, y cuando terminó, de nuevo mostraba en su rostro una expresión perpleja, No le encuentro ninguna lesión, tiene los ojos perfectos. La mujer juntó las manos en un gesto de alegría, y exclamó, Ya te lo dije, ya te dije que todo se iba a resolver.
+Sin hacerle caso, el ciego preguntó, Puedo sacar la barbilla de aquí, doctor, Claro que sí, perdone, Si, como dice, mis ojos están perfectos, por qué estoy ciego, Por ahora no sé decírselo, vamos a tener que hacer exámenes más minuciosos, análisis, ecografía, encefalograma, Cree que esto tiene algo que ver con el cerebro, Es una posibilidad, pero no lo creo, Sin embargo, doctor, dice usted que en mis ojos no encuentra nada malo, Así es, no veo nada, No entiendo, Lo que quiero decir es que si usted está de hecho ciego, su ceguera, en este momento, resulta inexplicable, Duda acaso de que yo esté ciego, No, hombre, no, el problema es la rareza del caso, personalmente, en toda mi vida de médico, nunca vi un caso igual, y me atrevería incluso a decir que no se ha visto en toda la historia de la oftalmología, Y cree usted que tengo cura, En principio, dado que no encuentro lesión alguna ni malformaciones congénitas, mi respuesta tendría que ser afirmativa, Pero, por lo visto, no lo es, Sólo por prudencia, sólo porque no quiero darle esperanzas que podrían luego resultar carentes de fundamento, Comprendo, Es así, Y tengo que seguir algún tratamiento, tomar alguna medicina, Por ahora no voy a recetarle nada, sería recetar a ciegas, Ésa es una observación apropiada, observó el ciego. 
+El médico hizo como si no hubiera oído, se apartó del taburete giratorio en el que se había sentado para efectuar la observación y, de pie, escribió en una hoja de receta los exámenes y análisis que consideraba necesarios. Le entregó el papel a la mujer, Aquí tiene, señora, vuelva con su marido cuando tengan los resultados, y si mientras tanto hay algún cambio, llámeme, La consulta, doctor, Páguenla a la salida, a la enfermera. Los acompañó hasta la puerta, musitó una frase dándoles confianza, algo como Vamos a ver, vamos a ver, es necesario no desesperar, y, cuando se encontró de nuevo solo, entró en el pequeño cuarto de baño anejo y se quedó mirándose al espejo durante un minuto largo, Qué será eso, murmuró. Luego volvió a la sala de consulta, llamó a la enfermera, Que entre el siguiente.
+Aquella noche, el ciego soñó que estaba ciego.
+</div>
+</body>
+</html>

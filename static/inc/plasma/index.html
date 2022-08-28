@@ -1,0 +1,252 @@
+<html>
+<head>
+	<title>Plasma</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body, html {height: 100%;}
+
+#canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>	
+
+<script>
+	//2009-plasma
+	let canvas = document.getElementById('canvas');
+	let context = canvas.getContext('2d');
+	let canvasWidth, canvasHeight;
+	let dataArray;
+	let yOffset = 0;
+	let subsampling = 0.5;
+
+	let formulaA = "(127.5 + +(127.5 * Math.sin(x / 32.0))) + (127.5 + +(127.5 * Math.sin(y / 32.0))) + + (127.5 + +(127.5 * Math.sin(Math.sqrt((x * x + y * y)) / 32.0)) + Math.sqrt(x*x) + Math.sqrt(y*x) + 1/(x+1) * 2)";
+	let formulaB = "64.0 + 63.0 * Math.sin( x/(37.0+15.0*Math.cos(y/74.0)) ) * Math.cos( y/(31.0+11.0*Math.sin(x/57.0)))";
+	let formulaC = "(127.5 + (127.5 * Math.sin(x / 32.0))) + (127.5 + +(127.5 * Math.sin(y / 32.0))) + + (127.5 + +(127.5 * Math.sin(Math.sqrt((x * x + y * y)) / 32.0)))";
+
+	let palettes = [];
+	let data = {formula: formulaA, palette: 0, regenPalettes};
+
+	let gui = new dat.GUI();
+	gui.add(data, 'formula', {a: formulaA, b: formulaB, c: formulaC});
+	gui.add(data, 'palette', 0, 4).step(1);
+	gui.add(data, 'regenPalettes');
+
+	let paletteShift = 0;
+	regenPalettes();
+
+	function regenPalettes(){
+		let seed = Math.floor(Math.random()*256);
+		palettes = [genPaletteA(seed),  genPaletteB(seed), genPaletteC(seed), genPaletteD(seed), genPaletteE(seed)];
+	}
+
+	function genPaletteA(seed){
+		let palette = [];
+		for(let i=0;i<256;i++){
+			let color = Math.floor(128+128*Math.sin((i/255)*2*Math.PI+seed));
+			if(color > 255) color = 255;
+			if(color < 0) color = 0;
+			palette.push(color+color*256+color*256*256+0xff000000);
+		}
+		return palette;
+	}
+
+	function genPaletteB(seed){
+		let palette = [];
+
+		for(let i=0;i<256;i++){
+			let h = Math.floor(i/255.0*359 + seed);
+			let r=0,g=0,b=0;
+			let c=Math.floor(h/60)%6+1;
+			let crece=Math.floor((h%60)*255/60);
+			let decrece=Math.floor((60-(h%60))*255/60);
+			if(c==1)g=crece;
+			if(c==2)r=decrece;
+			if(c==3)b=crece;
+			if(c==4)g=decrece;
+			if(c==5)r=crece;
+			if(c==6)b=decrece;
+			if(c==1||c==6)r=255;
+			if(c==2||c==3)g=255;
+			if(c==4||c==5)b=255;
+			
+			palette.push(Math.floor(r+g*256+b*256*256)+0xff000000);
+		}
+		return palette;
+	}
+	
+	function genPaletteC(seed){
+		let palette = [];
+
+		for(let i=0;i<256;i++){
+			let r=0,g=0,b=0;
+			
+			r = Math.floor(128+128*Math.sin((i/255)*2*Math.PI*2 + seed));
+			if(r > 255) r = 255;
+			if(r < 0) r = 0;
+
+			g = Math.floor(128+128*Math.sin((i/255)*2*Math.PI*2 + seed*2));
+			if(g > 255) g = 255;
+			if(g < 0) g = 0;
+
+			b = Math.floor(128+128*Math.sin((i/255)*2*Math.PI*2 + seed*3));
+			if(b > 255) b = 255;
+			if(b < 0) b = 0;
+			
+			palette.push(Math.floor(r+g*256+b*256*256)+0xff000000);
+		}
+		return palette;
+	}
+
+	function genPaletteD(seed){
+		let palette = [];
+
+		for(let i=0;i<256;i++){
+			let r=0,g=0,b=0;
+			
+			r = Math.ceil(Math.exp(i/47) + seed);
+			if(r>255) r = 255;
+			if(r<0) r = 0;
+
+			g = Math.ceil(Math.exp((i+seed)%256/47));
+			if(g>255) g = 255;
+			if(g<0) g = 0;
+
+			b = Math.ceil(Math.exp((i+seed*seed)%256/47));
+			if(b>255) b = 255;
+			if(b<0) b = 0;
+			
+			palette.push(Math.floor(r+g*256+b*256*256)+0xff000000);
+		}
+
+		for(let i=1;i<255;i++){
+			palette[i] = average(palette[i-1], palette[i], palette[i+1]);
+		}
+
+		return palette;
+	}
+
+	function average(a,b,c){
+		let r1 = a & 0xFF;
+		let r2 = b & 0xFF;
+		let r3 = c & 0xFF;
+
+		let g1 = (a>>8) & 0xFF;
+		let g2 = (b>>8) & 0xFF;
+		let g3 = (c>>8) & 0xFF;
+
+		let b1 = (a>>16) & 0xFF;
+		let b2 = (b>>16) & 0xFF;
+		let b3 = (c>>16) & 0xFF;
+
+		let ro = Math.floor((r1+r2+r3)/3);
+		let go = Math.floor((g1+g2+g3)/3);
+		let bo = Math.floor((b1+b2+b3)/3);
+
+		return Math.floor(ro+go*256+bo*256*256)+0xff000000;
+	}
+
+	function getRandomColor(seed){
+		let r = Math.random() * 255;
+		let g = Math.random() * 255;
+		let b = Math.random() * 255;
+		
+		return Math.floor(r+g*256+b*256*256);
+	}
+
+	function genPaletteE(){
+		let palette = [];
+		let colors = [getRandomColor(), getRandomColor(), getRandomColor()];
+
+		for(let i=0;i<256;i++){
+			let color;
+
+			if(i > 85*2){
+				color = colors[0];
+			}else if(i > 85){
+				color = colors[1];
+			}else{
+				color = colors[2];
+			}
+			
+			palette.push(color+0xff000000);
+		}
+		return palette;
+	}
+
+	function plasma(x, y){
+		let val = eval(data.formula);
+		
+		let idx = Math.round(val % 256);
+		if(idx > 255) idx = 255;
+		if(idx < 0) idx = 0;
+		return idx;
+	}
+
+	function calcArray(){
+		let out = new Uint8Array(canvasWidth * canvasHeight);
+
+		for(let y=0;y<canvasHeight;y++){
+			for(let x=0;x<canvasWidth;x++){
+				let idx = plasma(x, y+yOffset);
+				out[x+y*canvasWidth] = idx;
+			}
+		}
+		return out;
+	}
+	
+	function fixDimensions(){
+		canvasWidth = Math.round(document.documentElement.clientWidth * subsampling);
+		canvasHeight = Math.round(document.documentElement.clientHeight * subsampling);
+		canvas.width = canvasWidth;
+		canvas.height = canvasHeight;
+
+		dataArray = calcArray();
+	}
+
+	function randomRGB(pixelData) {
+		var i = 0;
+		var dat32 = new Uint32Array(pixelData.data.buffer);
+                   
+		for(let y=0;y<pixelData.height;y++){
+			for(let x=0;x<pixelData.width;x++){
+				if(y != pixelData.height - 1){
+					dataArray[x+y*pixelData.width] = dataArray[x+(y+1)*pixelData.width];
+				}
+
+				let idx = x+y*pixelData.width;
+				dat32[idx] = palettes[data.palette][Math.round(dataArray[idx] + paletteShift)%256];
+			}
+		}
+
+		for(let x=0;x<pixelData.width;x++){
+			dataArray[x+(pixelData.height-1)*pixelData.width] = plasma(x, yOffset+pixelData.height);
+		}
+
+		yOffset++;
+
+		return pixelData;
+	}
+
+	function nextFrame(){
+		let rand = randomRGB(context.createImageData(canvasWidth, canvasHeight));
+		context.putImageData(rand, 0, 0);	
+		paletteShift++;
+		window.requestAnimationFrame(nextFrame);
+	}
+	
+	fixDimensions();
+	window.onresize = fixDimensions;
+	window.requestAnimationFrame(nextFrame);
+
+</script>
+</body>
+</html>
