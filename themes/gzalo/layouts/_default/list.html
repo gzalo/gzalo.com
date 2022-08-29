@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div>
-  <header>
-  <h2>{{ .Title }}</h2>
+  <header class="my-5">
+    <h2 class="text-2xl font-extrabold">{{ .Title }}</h2>
   </header>
 <div>
 {{ range .Pages.ByPublishDate.Reverse }}

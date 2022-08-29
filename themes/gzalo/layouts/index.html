@@ -5,7 +5,7 @@
 	  <h2 class="font-extrabold text-2xl">{{i18n "latest_news"}}</h2>
 	</header>
 
-	<div>
+	<div class="prose prose-sm lg:prose-base max-w-none">
 		<ul>
 		{{ range first 5 .Site.RegularPages}}
 			<li>
@@ -18,8 +18,8 @@
 </div>
 
 <div>
-	<header>
-		<h2>{{i18n "latest_video"}}</h2>
+	<header class="pt-5">
+		<h2 class="font-extrabold text-2xl">{{i18n "latest_video"}}</h2>
 	</header>
 
 	<div>

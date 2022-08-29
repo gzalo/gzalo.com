@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./themes/gzalo/layouts/**/*.html'],
+  content: ['./themes/gzalo/layouts/**/*.html', './content/**/*.md'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
