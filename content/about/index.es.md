@@ -1,5 +1,5 @@
 ---
-title: "Acerca de"
+title: "Acerca de gzalo"
 date: "2004-01-01"
 noComment: true
 ---
@@ -10,11 +10,11 @@ _Gzalo_ (antes _gzaloprgm_) es mi sobrenombre, lo uso en la mayoría de las cuen
 
 Soy Ingeniero Electrónico, graduado de la Facultad de Ingeniería de la UBA (_FIUBA_) en 2017. Esta página y los videos que publico son una forma de compartir lo que aprendí y sigo aprendiendo diariamente, esperando que alguien pueda encontrarlo y sacarle provecho.
 
-Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento y dificultan el avance de la humanidad, por lo que la mayoría de mis proyectos personales están liberados bajo licencias abiertas (incluso para uso comercial). 
+Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento y dificultan el avance de la humanidad, por lo que la mayoría de mis proyectos están liberados bajo licencias abiertas (en muchos casos incluso para uso comercial). 
 
-[Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos personales, podés verlos aquí](https://github.com/gzalo?tab=projects).
+[Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos, podés verlos aquí](https://github.com/gzalo?tab=projects).
 
-Actualmente trabajo en _Roche_ como Ingeniero de Software (especializado en backend), y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
+Actualmente trabajo en _Roche_ como Ingeniero de Software Senior, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
 
 ## Qué me interesa
  
@@ -22,10 +22,11 @@ Actualmente trabajo en _Roche_ como Ingeniero de Software (especializado en back
 - Sistemas embebidos, tanto de 8 como de 32 bits
 - Robótica, algoritmos y aplicaciones de la misma
 - Procesamiento de señales 
-- Desarrollo de sitios webs, aplicaciones gráficas y juegos
+- Desarrollo de sitios web
 - Fotografía (cámaras analógicas y digitales) y creación de videos
-- Realidad virtual
-- Impresión 3d, mecanizado de piezas
+- Desarrollo de juegos
+- Realidad Virtual
+- Carpintería, impresión 3d, mecanizado de piezas
 
 ## Qué tecnologías uso
 

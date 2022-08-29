@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About gzalo"
 date: "2004-01-01"
 noComment: true
 ---
@@ -10,11 +10,11 @@ _Gzalo_ (formerly _gzaloprgm_) is my nickname, I use it as an username in most o
 
 I'm an Electronics Engineer, graduated from the Faculty of Engineering of the UBA (_FIUBA_) in 2017. This page and the different videos I publish are a way of sharing everything I learn and continue to learn on a daily basis, in the hopes that someone can find it and make the most out of it.
 
-I consider that in the modern day we have many _paywalls_ that don't let us access the knowledge, and they difficult the advancement of humanity, so most of my personal projects are released under open licenses (even for commercial usage).
+I consider that nowadays we have many _paywalls_ that don't let us access the knowledge, and they difficult the advancement of humanity, so most of my projects are released under open licenses (in most cases even for commercial usage).
 
-[I use GitHub Projects to track the progress of most of my personal projects, you can look at them here](https://github.com/gzalo?tab=projects).
+[I use GitHub Projects to track the progress of most of my projects, you can look at them here](https://github.com/gzalo?tab=projects).
 
-Right now I'm working in _Roche_ as a Software engineer (specialized in backend), the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
+Right now I'm working for _Roche_ as a Senior Software Engineer, the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
 
 ## Interests
  
@@ -22,10 +22,11 @@ Right now I'm working in _Roche_ as a Software engineer (specialized in backend)
 - Embedded systems, both 8 and 32 bits
 - Robotics, algorithms and its applications
 - Signal processing
-- Website, graphical applications and game development
+- Web development
 - Photography (both analog and digital cameras) and video creation
-- Virtual reality
-- 3d printing and machining parts
+- Gaming and game development
+- Virtual Reality
+- Woodworking, 3d printing and machining of parts
 
 ## Technologies I use
 

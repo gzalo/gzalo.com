@@ -14,7 +14,7 @@ Hay veces en las que para alguna aplicación necesitamos más pines de salida o 
 * Usar lógica 74xxx (relativamente barato, programación sencilla, facil de conseguir)
 
 ### Expandir Salidas
-La mejor solución es la tercera, es posible emplear un 74x164 (sin latch) o 74x595 (con latch) para expandir la cantidad de salidas. La ventaja de estos integrados es que se pueden poner en cascada, y así agregar 8 puertos por cada integrado agregado.
+La solución más sencilla es la tercera, es posible emplear un 74x164 (sin latch) o 74x595 (con latch) para expandir la cantidad de salidas. La ventaja de estos integrados es que se pueden poner en cascada, y así agregar 8 puertos por cada integrado agregado.
 
 Básicamente son shift registers, es decir, una cadena de flip-flops del tipo D encadenados, por lo que uno puede ir *empujando* datos por un lado y tener acceso a los 8 bits:
 

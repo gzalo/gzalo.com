@@ -10,8 +10,8 @@
 </div>
 {{ if not .Params.noComment }}
 <div>
-    <header>
-        <h2>{{i18n "comments"}}</h2>
+    <header class="my-5">
+        <h2 class="text-xl font-extrabold">{{i18n "comments"}}</h2>
     </header>
     <div>
         {{ template "_internal/disqus.html" . }}

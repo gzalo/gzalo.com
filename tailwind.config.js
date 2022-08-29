@@ -6,7 +6,16 @@ module.exports = {
       sans: ['Roboto', 'Arial', 'sans-serif'],
       mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular"],
     },
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+            css: {
+                "code::before": {content: ''},
+                "code::after": {content: ''}
+            }
+        }
+      }
+    },
   },
   variants: {
     extend: {},

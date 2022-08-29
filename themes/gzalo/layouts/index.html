@@ -1,28 +1,29 @@
 {{ define "main" }}
-<div>
-
-	<header class="pt-5">
-	  <h2 class="font-extrabold text-2xl">{{i18n "latest_news"}}</h2>
-	</header>
-
-	<div class="prose prose-sm lg:prose-base max-w-none">
-		<ul>
-		{{ range first 5 .Site.RegularPages}}
-			<li>
-				<a href="{{.Permalink}}">{{.Title}}</a>
-			</li>
-		{{ end }}
-		</ul>
-	</div>
-
+<div class="prose prose-sm lg:prose-base max-w-none pt-5">
+	{{ if eq .Site.Language.Lang "es" }}
+	<p>¡Te doy la bienvenida a mi sitio web! Aquí encontrarás información sobre desarrollo de software, electrónica, y muchos temas más.</p>
+	{{ else }}
+	<p>Welcome to my website! Here you can find information related to software develompent, electronics, and other subjects.</p>
+	{{ end }}
 </div>
 
-<div>
-	<header class="pt-5">
-		<h2 class="font-extrabold text-2xl">{{i18n "latest_video"}}</h2>
-	</header>
+<div class="flex flex-col lg:flex-row justify-between pt-5">
+	<div>
+		<h2 class="font-extrabold text-2xl">{{i18n "latest_news"}}</h2>
+
+		<div class="prose prose-sm lg:prose-base max-w-none">
+			<ul>
+			{{ range first 8 .Site.RegularPages}}
+				<li>
+					<a href="{{.Permalink}}">{{.Title}}</a>
+				</li>
+			{{ end }}
+			</ul>
+		</div>
+	</div>
 
 	<div>
+		<h2 class="font-extrabold text-2xl">{{i18n "latest_video"}}</h2>
 		<div id="ytplayer"></div>
 	</div>
 </div>

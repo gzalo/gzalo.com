@@ -3,21 +3,20 @@
   <header class="my-5">
     <h2 class="text-2xl font-extrabold">{{ .Title }}</h2>
   </header>
-<div>
-{{ range .Pages.ByPublishDate.Reverse }}
-
-<div>
-  <a href="{{ .RelPermalink }}">
-    <div>
-      <img src="{{ .Params.Thumbnail }}"/>
-    </div>
-    <div>
-      <p><strong>{{.Title}}</strong></p>
-      <p>{{ .Summary }}</p>
-    </div>
-  </a>
-</div>
-{{ end }}
-</div>
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:gap-8 xl:grid-cols-4">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <a href="{{ .RelPermalink }}">
+        <div class="group border border-black border-t-2 h-full">
+          <div class="overflow-hidden border-black border-b">
+            <img src="{{ .Params.Thumbnail }}" class="transition duration-300 group-hover:scale-110 w-full"/>
+          </div>
+          <div class="p-5">
+            <p><strong>{{.Title}}</strong></p>
+            <p class="text-slate-600">{{ .Summary }}</p>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
 </div>
 {{ end }}

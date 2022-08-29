@@ -31,7 +31,7 @@ defaultContentLanguage = "es"
         weight = 4
         pre = "border-emerald-500 text-emerald-500"
       [[languages.es.menu.main]]
-        name = "Acerca de gzalo"
+        name = "Acerca"
         url = "/about/"
         weight = 5
 
@@ -61,6 +61,6 @@ defaultContentLanguage = "es"
         weight = 4
         pre = "border-emerald-500 text-emerald-500"
       [[languages.en.menu.main]]
-        name = "About gzalo"
+        name = "About"
         url = "/en/about/"
         weight = 5  

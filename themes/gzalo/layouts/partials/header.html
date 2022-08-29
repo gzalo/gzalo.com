@@ -19,17 +19,17 @@
 
 <nav>
   <div>
-    <div class="flex space-x-4">
+    <div class="flex flex-wrap gap-4">
       {{ range .Site.Menus.main }}
       <a href="{{ .URL | absLangURL }}">
-        <div class="uppercase font-semibold border-2 border-t-4 border-black px-6 h-10 py-1 hover:border-t-2 {{ .Pre }}">
+        <div class="uppercase font-semibold border-2 border-t-4 border-black px-6 h-10 py-1 hover:border-t-2 break-normal {{ .Pre }}">
           {{ .Name }}
         </div>
       </a>
       {{ end }}
 
       <form action="/search/" method="get">
-        <div class="border-2 border-gray-500 p-1 flex w-52 h-10">
+        <div class="border-2 border-gray-500 p-1 flex w-40 h-10">
           <i class="fas fa-search p-2 text-gray-500"></i> <input type="text" name="q" placeholder="{{ i18n "search" }}" class="w-full">
         </div>
       </form>
