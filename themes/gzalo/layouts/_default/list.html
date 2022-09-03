@@ -3,16 +3,28 @@
   <header class="my-5">
     <h2 class="text-2xl font-extrabold">{{ .Title }}</h2>
   </header>
-  <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:gap-8 xl:grid-cols-4">
+  <div class="grid grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-10 xl:grid-cols-4">
+    {{ $borderColor := "border-black" }}
+
+    {{ if (eq .Type "calculators") }}
+      {{ $borderColor = "border-sky-400" }}
+    {{ else if (eq .Type "articles") }}
+      {{ $borderColor = "border-red-500" }}
+    {{ else if (eq .Type "projects") }}
+      {{ $borderColor = "border-orange-400" }}
+    {{ else if (eq .Type "experiments") }}
+      {{ $borderColor = "border-emerald-500" }}
+    {{ end }}
+
     {{ range .Pages.ByPublishDate.Reverse }}
       <a href="{{ .RelPermalink }}">
-        <div class="group border border-black border-t-2 h-full">
-          <div class="overflow-hidden border-black border-b">
+        <div class="group border {{ $borderColor }} border-b-3 border-r-3 h-full">
+          <div class="overflow-hidden {{ $borderColor }} border-b">
             <img src="{{ .Params.Thumbnail }}" class="transition duration-300 group-hover:scale-110 w-full"/>
           </div>
           <div class="p-5">
-            <p><strong>{{.Title}}</strong></p>
-            <p class="text-slate-600">{{ .Summary }}</p>
+            <p class="ml-8 font-mono header-line"><strong>{{.Title}}</strong></p>
+            <p class="mt-3 text-slate-600">{{ .Summary }}</p>
           </div>
         </div>
       </a>

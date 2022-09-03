@@ -31,9 +31,15 @@ defaultContentLanguage = "es"
         weight = 4
         pre = "border-emerald-500 text-emerald-500"
       [[languages.es.menu.main]]
-        name = "Acerca"
+        name = "Sobre mí"
         url = "/about/"
         weight = 5
+        pre = "border-black"
+      [[languages.es.menu.main]]
+        name = "SearchIcon"
+        url = "/search/"
+        weight = 6
+        pre = "border-black"        
 
   [languages.en]
     languageName = "English"
@@ -61,6 +67,12 @@ defaultContentLanguage = "es"
         weight = 4
         pre = "border-emerald-500 text-emerald-500"
       [[languages.en.menu.main]]
-        name = "About"
+        name = "About me"
         url = "/en/about/"
         weight = 5  
+        pre = "border-black"
+      [[languages.en.menu.main]]
+        name = "SearchIcon"
+        url = "/en/search/"
+        weight = 6
+        pre = "border-black"             

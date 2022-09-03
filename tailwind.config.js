@@ -6,6 +6,14 @@ module.exports = {
       sans: ['Roboto', 'Arial', 'sans-serif'],
       mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular"],
     },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '8': '8px',
+    },
     extend: {
       typography: {
         DEFAULT: {
@@ -22,5 +30,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
   ],
 };

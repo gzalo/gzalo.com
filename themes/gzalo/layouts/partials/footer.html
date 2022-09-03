@@ -1,10 +1,10 @@
-<footer class="my-5 py-5 border-t-2">
+<footer class="my-5 py-5 border-t-2 mt-20">
     <div class="flex space-x-4 justify-between">
         
         <div>
             <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><i class="fab fa-creative-commons"></i></a> 2004-{{ now.Format "2006"}} - <em>Gzalo.com</em> by <strong>Gonzalo Avila Alterach</strong>
 
-            <span class="text-xs text-gray-600">
+            <div class="text-xs text-gray-600 pt-2">
                 {{ if eq .Site.Language.Lang "es" }}
                 <p><strong>Licencias:</strong> Textos e imágenes <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3</a></strong> · Códigos fuente <strong>dominio público</strong></p>
                 <p>Usar este sitio implica la aceptación de la <a href="/en/cookies" class="w3-text-blue w3-underline">política de privacidad y de cookies</a>.</p>
@@ -12,15 +12,15 @@
                 <p>Text and images from this web site are licenced under <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3</a></strong>.</p><p>Source codes are under <strong>public domain</strong>, unless stated otherwise.</p>
                 <p>This site uses cookies for a better experience.<br/> Its usage implies accepting the <a href="/en/cookies" class="w3-text-blue w3-underline">privacy and cookie policy</a>.</p>
                 {{ end }}
-            </span>
+            </div>
         </div>
 
-        <div class="text-3xl">
-            <a href="mailto:gonzaloavilaalterach@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="https://www.facebook.com/gzalocom"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/c/Gzalo"><i class="fab fa-youtube"></i></a>
-            <a href="https://github.com/gzalo"><i class="fab fa-github"></i></a>
+        <div class="text-2xl">
+            <a href="mailto:gonzaloavilaalterach@gmail.com"><i class="fas fa-envelope px-2"></i></a>
+            <a href="https://github.com/gzalo"><i class="fab fa-github px-2"></i></a>
+            <a href="https://www.youtube.com/c/Gzalo"><i class="fab fa-youtube px-2"></i></a>
+            <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/"><i class="fab fa-linkedin px-2"></i></a>
+            <a href="https://www.facebook.com/gzalocom"><i class="fab fa-facebook px-2"></i></a>
         </div>
     </div>
 </footer>

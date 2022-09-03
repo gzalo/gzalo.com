@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
-        <div class="container mx-auto">
+    <body class="border-t-4 border-solid border-orange-400 h-screen">
+        <div class="container mx-auto px-4 flex flex-col h-full">
             {{- partial "header.html" . -}}
-            <section>
+            <section class="grow">
                 <article>
                     <header>
                         <h2 class="text-2xl">{{ .Title }}</h2>
                     </header>
                     <div>
                         <p>La página seleccionada no existe más.</p>
-                        <p><a href="/">Volver a la página principal.</a></p>
+                        <p><a href="/" class="underline">Volver a la página principal.</a></p>
                     </div>
                 </article>
             </section>

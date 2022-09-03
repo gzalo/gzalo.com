@@ -1,10 +1,8 @@
 ---
-title: "Acerca de gzalo"
+title: "Me llamo Gonzalo Avila Alterach, soy de Buenos Aires, Argentina. "
 date: "2004-01-01"
 noComment: true
 ---
-
-Me llamo __Gonzalo Avila Alterach__, soy de Buenos Aires, Argentina. 
 
 _Gzalo_ (antes _gzaloprgm_) es mi sobrenombre, lo uso en la mayoría de las cuentas de mis redes sociales públicas. Y también es mi sitio web, esta especie de blog que mantengo hace casi 20 años, en el que posteo artículos y proyectos que he construido.
 

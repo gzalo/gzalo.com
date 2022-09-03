@@ -1,57 +1,32 @@
 {{ define "main" }}
-<div class="prose prose-sm lg:prose-base max-w-none pt-5">
-	{{ if eq .Site.Language.Lang "es" }}
-	<p>¡Te doy la bienvenida a mi sitio web! Aquí encontrarás información sobre desarrollo de software, electrónica, y muchos temas más.</p>
-	{{ else }}
-	<p>Welcome to my website! Here you can find information related to software develompent, electronics, and other subjects.</p>
-	{{ end }}
+
+<div class="grid grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-10 xl:grid-cols-4">	
+	{{ range .Site.RegularPages.ByPublishDate.Reverse }}
+		{{ if ne .Type "page" }} 
+				{{ $borderColor := "border-black" }}
+
+				{{ if (eq .Parent.Type "calculators") }}
+					{{ $borderColor = "border-sky-400" }}
+				{{ else if (eq .Parent.Type "articles") }}
+					{{ $borderColor = "border-red-500" }}
+				{{ else if (eq .Parent.Type "projects") }}
+					{{ $borderColor = "border-orange-400" }}
+				{{ else if (eq .Parent.Type "experiments") }}
+					{{ $borderColor = "border-emerald-500" }}
+				{{ end }}
+				<a href="{{ .RelPermalink }}">
+				<div class="group border border-b-3 border-r-3 h-full {{ $borderColor }}">
+				<div class="overflow-hidden border-b {{ $borderColor }}">
+					<img src="{{ .Params.Thumbnail }}" class="transition duration-300 group-hover:scale-110 w-full"/>
+				</div>
+				<div class="p-5">
+					<p class="ml-8 font-mono header-line"><strong>{{.Title}}</strong></p>
+					<p class="mt-3 text-slate-600">{{ .Summary }}</p>
+				</div>
+				</div>
+			</a>
+		{{ end }}
+    {{ end }}
 </div>
 
-<div class="flex flex-col lg:flex-row justify-between pt-5">
-	<div>
-		<h2 class="font-extrabold text-2xl">{{i18n "latest_news"}}</h2>
-
-		<div class="prose prose-sm lg:prose-base max-w-none">
-			<ul>
-			{{ range first 8 .Site.RegularPages}}
-				<li>
-					<a href="{{.Permalink}}">{{.Title}}</a>
-				</li>
-			{{ end }}
-			</ul>
-		</div>
-	</div>
-
-	<div>
-		<h2 class="font-extrabold text-2xl">{{i18n "latest_video"}}</h2>
-		<div id="ytplayer"></div>
-	</div>
-</div>
-
-<script type="text/javascript">
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	var player;
-	function onYouTubeIframeAPIReady() {
-		player = new YT.Player('ytplayer', {
-			height: '340',
-			width: '600',
-			videoId: 'ew01l9rJP_8',
-			playerVars: {
-				listType:'user_uploads',
-				list: 'gzaloprgm',
-			},
-			events: {
-				'onReady': onPlayerReady,
-			}
-		});
-	}
-	function onPlayerReady(event) {
-		event.target.playVideo();
-		event.target.mute();
-	}
-</script>
 {{ end }}
