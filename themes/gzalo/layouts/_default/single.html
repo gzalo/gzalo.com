@@ -1,19 +1,26 @@
 {{ define "main" }}
-<div class="w3-card-2 w3-white">
-    <header class="w3-container w3-margin-top color_headers">
+<div>
+    <div class="w-max">
+        <a href="{{ .Parent.RelPermalink }}" class="group transition duration-300">
+            <i class="fas fa-chevron-left"></i> {{i18n "back"}}
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+        </a>
+    </div>
+    <header class="mb-5 prose prose-sm lg:prose-lg max-w-prose mx-auto">
         <h2>{{ .Title }}</h2>
     </header>
-    <div class="w3-container">
+    <div class="prose prose-sm lg:prose-lg max-w-prose mx-auto">
         {{ .Content }}
         {{ partial "metadata.html" . }}
     </div>
+    <gcse:search></gcse:search>
 </div>
 {{ if not .Params.noComment }}
-<div class="w3-card-2 w3-margin-top w3-white">
-    <header class="w3-container color_headers">
-        <h2>{{i18n "comments"}}</h2>
+<div>
+    <header class="my-5">
+        <h2 class="text-xl font-extrabold">{{i18n "comments"}}</h2>
     </header>
-    <div class="w3-container w3-center">
+    <div>
         {{ template "_internal/disqus.html" . }}
     </div>
 </div>

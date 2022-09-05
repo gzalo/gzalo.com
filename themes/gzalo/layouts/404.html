@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <section class="w3-row w3-content">
-            <article class="w3-container w3-twothird">
-                <div class="w3-card-2 w3-white">
-                    <header class="w3-container w3-margin-top color_headers">
-                        <h2>{{ .Title }}</h2>
+    <body class="border-t-4 border-solid border-orange-400 h-screen">
+        <div class="container mx-auto px-4 flex flex-col h-full">
+            {{- partial "header.html" . -}}
+            <section class="grow">
+                <article>
+                    <header>
+                        <h2 class="text-2xl">{{ .Title }}</h2>
                     </header>
-                    <div class="w3-container">
+                    <div>
                         <p>La página seleccionada no existe más.</p>
-                        <p><a href="/">Volver a la página principal.</a></p>
+                        <p><a href="/" class="underline">Volver a la página principal.</a></p>
                     </div>
-                </div>
-            </article>
-            {{- partial "sidebar.html" . -}}
-        </section>
-        {{- partial "footer.html" . -}}
+                </article>
+            </section>
+            {{- partial "footer.html" . -}}
+        </div>
     </body>
 </html>

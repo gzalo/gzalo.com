@@ -12,7 +12,7 @@ Debido a que el costo de los equipos está subsidiado por las comisiones de los 
 
 En ambos casos para desarmar los lectores es necesario romper unas solapas plásticas que lo rodean (están soldadas ultrasónicamente de fábrica), por lo que sería posible detectar si alguien estuvo interfiriendo o saboteando el dispositivo.
 
-# Naranja (lector NPos)
+## Naranja (lector NPos)
 
 [![Naranja 1](/images/pos/npos1_small.jpg)](/images/pos/npos1.jpg)
 [![Naranja 2](/images/pos/npos2_small.jpg)](/images/pos/npos2.jpg)
@@ -30,7 +30,7 @@ Algunos componentes que se observan:
 No se hizo un intento de leer la memoria flash del procesador principal, pero se espera que la misma esté bloqueada y el debugging desactivado.
 Si se pudiera borrar la memoria y programarle algún firmware distinto, este POS podría ser usado para obtener muchos microcontroladores GD32F103 de forma económica, ya que comprarlos por separado puede costar alrededor de 5 USD, mientras que estos POS suelen venderse a 2-3 USD por unidad, e incluso más baratos en mayores cantidades. 
 
-# MercadoPago (Point Bluetooth - no mini)
+## MercadoPago (Point Bluetooth - no mini)
 
 [![MercadoPago 1](/images/pos/meli1_small.jpg)](/images/pos/meli1.jpg)
 [![MercadoPago 2](/images/pos/meli2_small.jpg)](/images/pos/meli2.jpg)
@@ -56,7 +56,7 @@ Algunos componentes que se observan:
 
 Al conectarlo por USB a una computadora se enumera como dispositivo HID, vid 2c69 pid 5750. No hay mucha información sobre el microcontrolador MH1902, y se espera que su memoria flash interna esté bloqueada y no sea posible reprogramarla.
 
-# MercadoPago Point Smart
+## MercadoPago Point Smart
 
 El modelo Point Smart (que corre Android) es fabricado por PAX, y el modelo interno es A910. 
 

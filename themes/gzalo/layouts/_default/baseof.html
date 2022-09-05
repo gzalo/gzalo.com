@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <section class="w3-row w3-content">
-            <article class="w3-container w3-twothird">
-                {{- block "main" . }}
-                {{- end }}
-            </article>
-            {{- partial "sidebar.html" . -}}
-        </section>
-        {{- partial "footer.html" . -}}
+    <body class="border-t-4 border-solid border-orange-400 h-screen">
+        <div class="container mx-auto px-4 flex flex-col h-full">
+            {{- partial "header.html" . -}}
+            <section class="grow">
+                <article>
+                    {{- block "main" . }}
+                    {{- end }}
+                </article>
+            </section>
+            {{- partial "footer.html" . -}}
+        </div>
     </body>
 </html>

@@ -11,25 +11,35 @@ defaultContentLanguage = "es"
     weight = 1
     [languages.es.menu]
       [[languages.es.menu.main]]
-        name = "Principal"
-        url = "/"
-        weight = 1
-      [[languages.es.menu.main]]
         name = "Calculadoras"
         url = "/calculators/"
-        weight = 2
+        weight = 1
+        pre = "border-sky-400 text-sky-400"
       [[languages.es.menu.main]]
         name = "Artículos"
         url = "/articles/"
-        weight = 3
+        weight = 2
+        pre = "border-red-500 text-red-500"
       [[languages.es.menu.main]]
         name = "Proyectos"
         url = "/projects/"
-        weight = 4
+        weight = 3
+        pre = "border-orange-400 text-orange-400"
       [[languages.es.menu.main]]
         name = "Experimentos"
         url = "/experiments/"
+        weight = 4
+        pre = "border-emerald-500 text-emerald-500"
+      [[languages.es.menu.main]]
+        name = "Sobre mí"
+        url = "/about/"
         weight = 5
+        pre = "border-black"
+      [[languages.es.menu.main]]
+        name = "SearchIcon"
+        url = "/search/"
+        weight = 6
+        pre = "border-black"        
 
   [languages.en]
     languageName = "English"
@@ -37,22 +47,32 @@ defaultContentLanguage = "es"
     weight = 2
     [languages.en.menu]
       [[languages.en.menu.main]]
-        name = "Home"
-        url = "/en/"
-        weight = 1
-      [[languages.en.menu.main]]
         name = "Calculators"
         url = "/en/calculators/"
-        weight = 2
+        weight = 1
+        pre = "border-sky-400 text-sky-400"
       [[languages.en.menu.main]]
         name = "Articles"
         url = "/en/articles/"
-        weight = 3
+        weight = 2
+        pre = "border-red-500 text-red-500"
       [[languages.en.menu.main]]
         name = "Projects"
         url = "/en/projects/"
-        weight = 4
+        weight = 3
+        pre = "border-orange-400 text-orange-400"
       [[languages.en.menu.main]]
         name = "Experiments"
         url = "/en/experiments/"
-        weight = 5
+        weight = 4
+        pre = "border-emerald-500 text-emerald-500"
+      [[languages.en.menu.main]]
+        name = "About me"
+        url = "/en/about/"
+        weight = 5  
+        pre = "border-black"
+      [[languages.en.menu.main]]
+        name = "SearchIcon"
+        url = "/en/search/"
+        weight = 6
+        pre = "border-black"             
