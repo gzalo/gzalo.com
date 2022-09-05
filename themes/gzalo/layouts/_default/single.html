@@ -1,9 +1,15 @@
 {{ define "main" }}
 <div>
-    <header class="my-5">
-        <h2 class="text-2xl font-extrabold">{{ .Title }}</h2>
+    <div class="w-max">
+        <a href="{{ .Parent.RelPermalink }}" class="group transition duration-300">
+            <i class="fas fa-chevron-left"></i> {{i18n "back"}}
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+        </a>
+    </div>
+    <header class="mb-5 prose prose-sm lg:prose-lg max-w-prose mx-auto">
+        <h2>{{ .Title }}</h2>
     </header>
-    <div class="prose prose-sm lg:prose-base max-w-none">
+    <div class="prose prose-sm lg:prose-lg max-w-prose mx-auto">
         {{ .Content }}
         {{ partial "metadata.html" . }}
     </div>
