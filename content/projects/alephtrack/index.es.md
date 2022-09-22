@@ -1,5 +1,5 @@
 ---
-title: "AlephTrack - Rastreador usando GPS y GSM/GPRS"
+title: "AlephTrack - Rastreador usando GPS y GSM/GPRS (2010)"
 summary: "Permite el seguimiento y monitoreo a través de Internet un dispositivo, que puede ser instalado facilmente en un auto."
 thumbnail: "/thumbs/alephtrack.png"
 date: "2010-01-01"
@@ -11,3 +11,4 @@ Alephtrack fue un proyecto desarrollado durante 2010, como proyecto final de gra
 
 [Ver blog de desarrollo](https://alephtrack.blogspot.com)
 
+Actualmente el código, esquemáticos y PCBs no están disponibles para descargar, pero puedo responder dudas del proyecto y ayudar en proyectos similares.

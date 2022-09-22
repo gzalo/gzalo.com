@@ -1,5 +1,5 @@
 ---
-title: "Control domótico via infrarrojo y PC"
+title: "Control domótico via infrarrojo y PC (2014)"
 summary: "Panel de control domótico para controlar luces de distintas habitaciones, permitiendo al usuario el cambio de intensidad a través de tres interfaces. Realizado para la materia Laboratorio de microcontroladores."
 thumbnail: "/thumbs/controldomotico.png"
 aliases: ["/tp_labodemicros/"]
@@ -26,3 +26,5 @@ En el control, se utilizó un microcontrolador AT89S52, junto a botones, LEDs, L
 En el receptor, se utilizó otro AT89S52, junto a un receptor de infrarrojo IS1U60 (que se encarga de captar, filtrar y demodular la señal), un reloj de tiempo real DS1307 (con interfaz I2C) y un LCD alfanumérico. El software del panel fue programado en assembler, ensamblado con Keil uVision. Se utilizaron casi todos los recursos del microcontrolador, casi toda la RAM, más del 80% de la memoria de código, todos los timers, varias fuentes de interrupciones y la UART.
 
 ![Panel de control domotico](/images/ldm_receptor.png)
+
+Actualmente el código, esquemáticos y PCB no están disponibles para descargar, pero puedo responder dudas del proyecto y ayudar en proyectos similares.

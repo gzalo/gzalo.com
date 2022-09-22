@@ -1,5 +1,5 @@
 ---
-title: "Lightweight speech recognition library for EDU-CIAA"
+title: "Lightweight speech recognition library for EDU-CIAA (2017)"
 summary: "Lightweight library for speech recognition in ARM Cortex M4 microcontrollers. It extracts MFCC coefficients and recognises words using Viterbi algorithm, and Hidden Markov Chains (HMM), first-order, using gaussian mixture probabilities."
 thumbnail: "/thumbs/bla.png"
 date: "2017-01-01"

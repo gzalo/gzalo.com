@@ -12,7 +12,7 @@ I'm an Electronics Engineer, graduated from the Faculty of Engineering of the UB
 
 I consider that nowadays we have many _paywalls_ that don't let us access the knowledge, and they difficult the advancement of humanity, so most of my projects are released under open licenses (in most cases even for commercial usage).
 
-[I use GitHub Projects to track the progress of most of my projects, you can look at them here](https://github.com/gzalo?tab=projects).
+[I use GitHub Projects to track the progress of most of my projects, you can look at them here](https://github.com/gzalo?tab=projects&type=classic).
 
 Right now I'm working for _Roche_ as a Senior Software Engineer, the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
 

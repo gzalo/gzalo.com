@@ -1,5 +1,5 @@
 ---
-title: "Cortador de espuma"
+title: "Cortador de espuma (2017)"
 summary: "Un cortador de espuma usando un alambre de nicromo."
 thumbnail: "/thumbs/foamcutter.png"
 date: "2017-01-01"

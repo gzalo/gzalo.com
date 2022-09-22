@@ -1,6 +1,6 @@
 ---
-title: "Worms clone using SDL y OpenGL"
-summary: "A simple clone of the game called Worms, using those libraries. Can be played by multiple players, using the same keyboard."
+title: "Worms clone using SDL y OpenGL (2010)"
+summary: "A simple clone of Worms, using those libraries. Can be played by multiple players locally."
 thumbnail: "/thumbs/worms.png"
 aliases: ["/worms_en/"]
 date: "2010-01-01"

@@ -1,5 +1,5 @@
 ---
-title: "Pequeño motor físico"
+title: "Pequeño motor físico (2010)"
 summary: "Basado en el paper Advanced Character Physics de Jakobsen. Desarrollado con HTML5 and Javascript based, solamente soporta círculos."
 thumbnail: "/thumbs/fisica.png"
 aliases: ["/motor_fisico/"]

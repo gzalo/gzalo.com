@@ -1,5 +1,5 @@
 ---
-title: "FoamCutter"
+title: "FoamCutter (2017)"
 summary: "A basic foam cutter, using a nichrome wire."
 thumbnail: "/thumbs/foamcutter.png"
 date: "2017-01-01"

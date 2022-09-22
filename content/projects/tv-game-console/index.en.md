@@ -1,5 +1,5 @@
 ---
-title: "Mini game console with TV out "
+title: "Mini game console with TV out (2012)"
 summary: "Sample application that generates NTSC signals (black and white) which can be viewed in any standard definition TV. Based in a 8052 microcontroller."
 thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/console_tv_en/"]

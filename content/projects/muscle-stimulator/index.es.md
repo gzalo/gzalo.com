@@ -1,5 +1,5 @@
 ---
-title: "Electroestimulador Muscular"
+title: "Electroestimulador Muscular (2011)"
 summary: "Electroestimulador Muscular controlado por microcontrolador."
 thumbnail: "/thumbs/muscle-stimulator.png"
 aliases: ["/electroestimulador/"]
@@ -10,7 +10,11 @@ date: "2011-01-01"
 
 **La siguiente información se da sin ninguna garantía, no me responsabilizo por posibles accidentes. El proyecto involucra altas tensiones, que mal manejadas pueden causar accidentes graves y la muerte.**
 
-El electroestimulador construido consta de tres bloques principales: un bloque elevador de tensión, un bloque controlador y un bloque de manejo de la alta tensión.
+[El código y esquemáticos editables de este proyecto pueden ser descargados desde acá.](https://github.com/gzalo/electroestimulador)
+
+![Esquemático de electroestimulador](/images/electrostimulator-schematic.png)
+
+Este electroestimulador construido consta de tres bloques principales: un bloque elevador de tensión, un bloque controlador y un bloque de manejo de la alta tensión.
 
 ## Elevador de tensión
 

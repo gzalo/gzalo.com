@@ -1,5 +1,5 @@
 ---
-title: "Juego de cartas de electrónica"
+title: "Juego de cartas de electrónica (2010)"
 summary: "Juego multijugador basado en la biblioteca SDL, hecho como proyecto final para una materia."
 thumbnail: "/thumbs/electronica-tcg.png"
 aliases: ["/electronica_tcg/"]

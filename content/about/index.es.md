@@ -10,7 +10,7 @@ Soy Ingeniero Electrónico, graduado de la Facultad de Ingeniería de la UBA (_F
 
 Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento y dificultan el avance de la humanidad, por lo que la mayoría de mis proyectos están liberados bajo licencias abiertas (en muchos casos incluso para uso comercial). 
 
-[Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos, podés verlos aquí](https://github.com/gzalo?tab=projects).
+[Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos, podés verlos aquí](https://github.com/gzalo?tab=projects&type=classic).
 
 Actualmente trabajo en _Roche_ como Ingeniero de Software Senior, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
 

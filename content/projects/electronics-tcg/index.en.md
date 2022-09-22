@@ -1,5 +1,5 @@
 ---
-title: "Card game - Electrónica"
+title: "Card game - Electrónica (2010)"
 summary: "SDL based multiplayer game done as a final project for an assignature."
 thumbnail: "/thumbs/electronica-tcg.png"
 aliases: ["/electronica_tcg_en/"]

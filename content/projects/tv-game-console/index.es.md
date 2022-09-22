@@ -1,5 +1,5 @@
 ---
-title: "Mini consola de juegos con salida a TV"
+title: "Mini consola de juegos con salida a TV (2012)"
 summary: "Aplicación de prueba para generar señales NTSC (blanco y negro) que pueden ser vistas en cualquier televisión con entrada de video compuesta. Basado en un microcontrolador 8052."
 thumbnail: "/thumbs/consolatetris.png"
 aliases: ["/consola_tv/"]

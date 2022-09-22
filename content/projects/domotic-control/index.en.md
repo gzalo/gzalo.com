@@ -1,5 +1,5 @@
 ---
-title: "Domotic control via IR and PC"
+title: "Domotic control via IR and PC (2014)"
 summary: "A domotic panel to control the lights of multiple bedrooms, allowing the user to change the intensity of them via 3 interfaces. This project was created with Juan Ignacio Troisi and Martin Menendez, for the university subject Laboratorio de microcontroladores."
 thumbnail: "/thumbs/controldomotico.png"
 aliases: ["/tp_labodemicros_en/"]
@@ -20,3 +20,5 @@ In the remote control, an AT89S52 microcontroller was used, as well as buttons, 
 In the receiver end, another AT89S52 was used, as well as a IS1U60 infrared receiver (which handles the capture, filter and demodulation of the signal), a DS1307 real-time clock (with I2C interface), and an alphanumeric LCD. The software was developed in assembler and built with Keil uVision. Almost every resource of the microcontroller got used: nearly all the ram, more than 80% of the code memory, every timer, various interrupt sources, and the UART.
 
 ![Domotic control panel](/images/ldm_receptor.png)
+
+Currently the code, schematics and PCB files aren't available for download, but I can answer questions related to the project (or other similar projects).

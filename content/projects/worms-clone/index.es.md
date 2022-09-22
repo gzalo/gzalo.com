@@ -1,5 +1,5 @@
 ---
-title: "Clon de Worms con SDL y OpenGL"
+title: "Clon de Worms con SDL y OpenGL (2010)"
 summary: "Un clon sencillo del juego Worms, usando las bibliotecas mencionadas. Soporta varios jugadores en el mismo teclado."
 thumbnail: "/thumbs/worms.png"
 aliases: ["/worms/"]

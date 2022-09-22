@@ -1,5 +1,5 @@
 ---
-title: "Small physics engine"
+title: "Small physics engine (2010)"
 summary: "Based on the Advanced Character Physics paper by Jakobsen. HTML5 and Javascript based, supports only circles."
 thumbnail: "/thumbs/fisica.png"
 aliases: ["/physics_engine_en/"]

@@ -1,5 +1,5 @@
 ---
-title: "Cerradura de combinación digital"
+title: "Cerradura de combinación digital (2012)"
 summary: "Lógica digital que implementa una cerradura de combinación similar a la usada en hoteles."
 thumbnail: "/thumbs/cerradura.png"
 aliases: ["/cerradura/"]
