@@ -9,4 +9,6 @@ Biblioteca liviana para Reconocimiento de Habla en español.
 
 La idea es poder integrar de forma sencilla el reconocimiento de palabras aisladas a una aplicación embebida. Implementando únicamente lo mínimo requerido y de forma optimizada, se obtienen tasas de errores bajas con un consumo bajo de recursos.
 
+Este trabajo fue publicado en el [Congreso Argentino de Sistemas Embebidos, edición 2017 (página 31)](https://drive.google.com/file/d/0B66P5yRqMPOtMDNuS2NmNnpoXzQ/view?resourcekey=0-7ZjvjVjSThMPrzhqmmbE-w). [Ver poster](https://drive.google.com/file/d/0B66P5yRqMPOtSFcxSmhlWDV4V0VON0x5T2Q4QWVtNXRTMUtN/view?usp=sharing&resourcekey=0-mpEP0DHD0aD7W2r1zYoOaw)
+
 **[Acceder al repositorio con código y ejemplos de aplicación](https://github.com/gzalo/bla)**
