@@ -1,7 +1,7 @@
 ---
 title: "Utilities for Digital Systems classes (2015)"
 summary: "Software that help developing FPGA systems with VGA outputs."
-thumbnail: "/thumbs/cordic.png"
+thumbnail: "/thumbs/cordic.jpg"
 date: "2015-01-01"
 ---
 

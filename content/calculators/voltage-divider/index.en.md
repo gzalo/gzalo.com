@@ -1,7 +1,7 @@
 ---
 title: "Resistive divider calculator"
 summary: "Given the value of two series resistors and an input voltage, it calculates the output voltage of a resistive divider."
-thumbnail: "/thumbs/voltage_divider.png"
+thumbnail: "/thumbs/voltage_divider.jpg"
 aliases: ["/resistive_divider_en/"]
 date: "2011-01-01"
 ---

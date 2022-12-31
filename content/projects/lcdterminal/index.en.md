@@ -1,7 +1,7 @@
 ---
 title: "LCDTerminal (2012)"
 summary: "Alphanumeric display controlled via UART. Can also be used in LCD Smartie to monitor the resource usage of a PC."
-thumbnail: "/thumbs/lcdterminal.png"
+thumbnail: "/thumbs/lcdterminal.jpg"
 date: "2012-01-01"
 ---
 

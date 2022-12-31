@@ -1,7 +1,7 @@
 ---
 summary: "Given the number found in a capacitor, this page calculates its value, as well as the tolerance."
 title: "Capacitor value calculator"
-thumbnail: "/thumbs/capacitor_code.png"
+thumbnail: "/thumbs/capacitor_code.jpg"
 aliases: ["/capacitor_code_en/"]
 date: "2011-01-01"
 ---

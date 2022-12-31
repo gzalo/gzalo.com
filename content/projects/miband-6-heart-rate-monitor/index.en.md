@@ -1,7 +1,7 @@
 ---
 title: "Mi Band 6 Heart Rate Monitor (2022)"
 summary: "Display your Mi Band 6's heart rate in the browser."
-thumbnail: "/thumbs/miband-6-heart-rate-monitor.png"
+thumbnail: "/thumbs/miband-6-heart-rate-monitor.jpg"
 date: "2022-01-18"
 ---
 

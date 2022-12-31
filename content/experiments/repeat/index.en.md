@@ -1,7 +1,7 @@
 ---
 title: "Repeat (2008)"
 summary: "Small game whose objective is to keep the train from hitting itself. Inspired by Tron and Snake, but with infinite angles."
-thumbnail: "/thumbs/repeat.png"
+thumbnail: "/thumbs/repeat.jpg"
 date: "2008-01-01"
 ---
 

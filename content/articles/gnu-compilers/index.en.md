@@ -2,7 +2,7 @@
 title: "Compiling programs with GNU compilers"
 tags: ["articles", "programming"]
 summary: "How to use the free GNU compilers to build C/C++ projects."
-thumbnail: "/thumbs/compiladores_gnu.png"
+thumbnail: "/thumbs/compiladores_gnu.jpg"
 aliases: ["/gnu_compilers_en/"]
 date: "2010-01-01"
 ---

@@ -2,7 +2,7 @@
 title: "Modificación de cámara de video para ver luz infrarroja"
 tags: ["articles", "misc"]
 summary: "Cómo modificar una cámara de video estándar para agrandar el espectro de luz que puede observar, permitiendo ver parte del infrarrojo cercano."
-thumbnail: "/thumbs/ircam.png"
+thumbnail: "/thumbs/ircam.jpg"
 aliases: ["/ircam/"]
 date: "2013-01-01"
 ---

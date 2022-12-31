@@ -2,7 +2,7 @@
 title: "Introducción a microcontroladores PIC"
 tags: ["articles", "electronics"]
 summary: "Pequeño resumen introductorio sobre microcontroladores de 8 bit, en particular de la familia Microchip PIC16."
-thumbnail: "/thumbs/pic.png"
+thumbnail: "/thumbs/pic.jpg"
 aliases: ["/intropic/"]
 date: "2010-01-01"
 ---

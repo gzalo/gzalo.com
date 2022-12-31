@@ -1,7 +1,7 @@
 ---
 title: "Visor de mapas de Half-Life (2016)"
 summary: "Este proyecto presenta una forma distinta de explorar el mundo del juego Half-Life. Permite el renderizado en tiempo real de todas las instalaciones de Black Mesa Research Facility."
-thumbnail: "/thumbs/halfmapper.png"
+thumbnail: "/thumbs/halfmapper.jpg"
 aliases: ["/halfmapper_en/"]
 date: "2016-01-01"
 ---

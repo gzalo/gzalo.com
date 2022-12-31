@@ -1,7 +1,7 @@
 ---
 title: "LED matrix with inclination sensors (2013)"
 summary: "This project is based in a 8x8 bicolor LED matrix, controlled by a PC via the parallel port. We also included two homemade orientation sensors, allowing the detection of the matrix angle."
-thumbnail: "/thumbs/ledmatrixintro.png"
+thumbnail: "/thumbs/ledmatrixintro.jpg"
 aliases: ["/tpg_intro_en/"]
 date: "2013-01-01"
 ---

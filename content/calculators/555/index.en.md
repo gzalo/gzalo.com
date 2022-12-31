@@ -1,7 +1,7 @@
 ---
 summary: "Calculates the times when using a 555 IC as a monostable or astable."
 title: "Timers using 555"
-thumbnail: "/thumbs/555.png"
+thumbnail: "/thumbs/555.jpg"
 aliases: ["/555_en/"]
 date: "2011-01-01"
 ---

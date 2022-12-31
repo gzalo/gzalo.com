@@ -1,7 +1,7 @@
 ---
 title: "Calculadora de resistencias para LEDs"
 summary: "Dados el tipo de LED y la tensión de la fuente, calcula la resistencia necesaria para conectarlo."
-thumbnail: "/thumbs/led_resistor.png"
+thumbnail: "/thumbs/led_resistor.jpg"
 aliases: ["/resistencias_led/"]
 date: "2011-01-01"
 ---

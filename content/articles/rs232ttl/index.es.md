@@ -2,7 +2,7 @@
 title: "Uso del MAX232 para conversiones RS232-TTL"
 tags: ["articles", "electronics"]
 summary: "Un circuito muy sencillo, usado en casi cualquier lugar que se necesite conexión entre un microcontrolador y una computadora."
-thumbnail: "/thumbs/rs232ttl.png"
+thumbnail: "/thumbs/rs232ttl.jpg"
 aliases: ["/rs232ttl/"]
 date: "2009-01-01"
 ---

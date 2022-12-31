@@ -2,7 +2,7 @@
 title: "Introducción al protocolo I2C, lectura y escritura en memorias 24LC"
 tags: ["articles", "electronics"]
 summary: "Muy útiles, por ejemplo para guardar datos de configuración o mantener un registro de sensores."
-thumbnail: "/thumbs/i2c.png"
+thumbnail: "/thumbs/i2c.jpg"
 aliases: ["/i2c/"]
 date: "2010-01-01"
 ---

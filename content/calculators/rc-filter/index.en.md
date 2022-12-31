@@ -1,7 +1,7 @@
 ---
 title: "RC filter calculator"
 summary: "Given the values of the resistor and capacitor, calculates the cutoff frequency of an RC series passive filter."
-thumbnail: "/thumbs/rc_filter.png"
+thumbnail: "/thumbs/rc_filter.jpg"
 aliases: ["/rcfilter_en/"]
 date: "2011-01-01"
 ---

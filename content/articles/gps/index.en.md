@@ -2,7 +2,7 @@
 title: "Using GPS modules with microcontrollers"
 tags: ["articles", "electronics"]
 summary: "How to get the position from a GPS module, by parsing the NMEA strings."
-thumbnail: "/thumbs/gps.png"
+thumbnail: "/thumbs/gps.jpg"
 aliases: ["/gps_en/"]
 date: "2010-01-01"
 ---

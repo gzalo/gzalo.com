@@ -1,7 +1,7 @@
 ---
 title: "Digital combination lock (2012)"
 summary: "Digital logic based that implements a combination lock similar to those used in hotel rooms."
-thumbnail: "/thumbs/cerradura.png"
+thumbnail: "/thumbs/cerradura.jpg"
 aliases: ["/lock_en/"]
 date: "2012-01-01"
 ---

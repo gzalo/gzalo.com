@@ -2,7 +2,7 @@
 title: "Utilización de módulos GPS con microcontroladores"
 tags: ["articles", "electronics"]
 summary: "Cómo usar un módulo GPS para obtener la posición, parseando las cadenas NMEA que envía."
-thumbnail: "/thumbs/gps.png"
+thumbnail: "/thumbs/gps.jpg"
 aliases: ["/gps/"]
 date: "2010-01-01"
 ---

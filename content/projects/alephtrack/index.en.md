@@ -1,7 +1,7 @@
 ---
 title: "AlephTrack - Tracker using GPS and GSM/GPRS (2010)"
 summary: "Allows tracking and real-time monitoring via the Internet of the location of a device, which can be installed in a car."
-thumbnail: "/thumbs/alephtrack.png"
+thumbnail: "/thumbs/alephtrack.jpg"
 date: "2010-01-01"
 ---
 

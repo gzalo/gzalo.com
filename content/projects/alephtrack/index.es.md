@@ -1,7 +1,7 @@
 ---
 title: "AlephTrack - Rastreador usando GPS y GSM/GPRS (2010)"
 summary: "Permite el seguimiento y monitoreo a través de Internet un dispositivo, que puede ser instalado facilmente en un auto."
-thumbnail: "/thumbs/alephtrack.png"
+thumbnail: "/thumbs/alephtrack.jpg"
 date: "2010-01-01"
 ---
 

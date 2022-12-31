@@ -1,7 +1,7 @@
 ---
 title: "Calculador de divisor resistivo"
 summary: "Dadas dos resistencias y una tensión de entrada, calcula cual será la tensión de salida del divisor resistivo."
-thumbnail: "/thumbs/voltage_divider.png"
+thumbnail: "/thumbs/voltage_divider.jpg"
 aliases: ["/divisor_resistivo/"]
 date: "2011-01-01"
 ---

@@ -2,7 +2,7 @@
 title: "Alphanumeric LCDs based on HD44780"
 tags: ["articles", "electronics"]
 summary: "How to control an Alphanumeric LCD using a microcontroller. Includes commands and schematics."
-thumbnail: "/thumbs/lcdalfanumerico.png"
+thumbnail: "/thumbs/lcdalfanumerico.jpg"
 aliases: ["/alphanumericlcd_en/"]
 date: "2010-01-01"
 ---

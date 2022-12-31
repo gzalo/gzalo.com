@@ -1,7 +1,7 @@
 ---
 title: "Utilidades para Sistemas Digitales (2015)"
 summary: "Programas desarrollados para TPs de Sistemas Digitales, permiten debuggear a través de simulación sistemas basados en FPGAs que usan salidas de video VGA."
-thumbnail: "/thumbs/cordic.png"
+thumbnail: "/thumbs/cordic.jpg"
 date: "2015-01-01"
 ---
 

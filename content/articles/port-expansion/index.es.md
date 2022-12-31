@@ -2,7 +2,7 @@
 title: "Expandir puertos de entrada y salida de un microcontrolador"
 tags: ["articles", "electronics"]
 summary: "Cómo agregar más entradas o salidas digitales a un controlador, usando registros de desplazamiento (shift registers)."
-thumbnail: "/thumbs/expandir.png"
+thumbnail: "/thumbs/expandir.jpg"
 aliases: ["/expandir/"]
 date: "2010-01-01"
 ---

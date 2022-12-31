@@ -2,7 +2,7 @@
 title: "Desarme de POS de tarjeta Naranja y MercadoPago"
 tags: ["articles", "electronics"]
 summary: "Fotos de alta resolución mostrando el interior de los lectores de tarjeta de Naranja y MercadoPago"
-thumbnail: "/thumbs/pos.png"
+thumbnail: "/thumbs/pos.jpg"
 date: "2021-10-21"
 ---
 

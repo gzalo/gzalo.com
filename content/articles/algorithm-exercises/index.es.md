@@ -2,7 +2,7 @@
 title: "Finales de Algoritmos y Programación I (Kuhn)"
 tags: ["articles", "programming"]
 summary: "Finales de Algoritmos y Programación I (Cátedra: Mónica Kuhn, FIUBA)."
-thumbnail: "/thumbs/algorithm-exercises.png"
+thumbnail: "/thumbs/algorithm-exercises.jpg"
 aliases: ["/algoritmos_kuhn/"]
 date: "2015-01-01"
 ---

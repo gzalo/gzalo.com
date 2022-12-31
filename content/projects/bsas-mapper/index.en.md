@@ -1,7 +1,7 @@
 ---
 title: "Buenos Aires mapper (2014)"
 summary: "3D Map of Buenos Aires using data provided by the government. Uses OpenGL for 3D acceleration, SDL for window and event management."
-thumbnail: "/thumbs/mapabsas.png"
+thumbnail: "/thumbs/mapabsas.jpg"
 date: "2014-01-01"
 ---
 

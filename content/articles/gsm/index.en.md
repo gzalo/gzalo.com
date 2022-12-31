@@ -2,7 +2,7 @@
 title: "Using a cellphone or GSM/GPRS modem with a microcontroller"
 tags: ["articles", "electronics"]
 summary: "How to use a cellphone or a modem to send and receive texts and SMS using a microcontroller."
-thumbnail: "/thumbs/gsm.png"
+thumbnail: "/thumbs/gsm.jpg"
 aliases: ["/gsm_en/"]
 date: "2010-01-01"
 ---

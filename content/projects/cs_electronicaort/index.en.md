@@ -1,6 +1,6 @@
 ---
 title: "Cs_electronicaort (2008)"
-thumbnail: "/thumbs/cs_electronicaort.png"
+thumbnail: "/thumbs/cs_electronicaort.jpg"
 summary: "Counter-Strike 1.6 map, inspired in the Electronics floor of ORT Yatay (Highschool I attended)."
 aliases: ["/cs_electronicaort_en/"]
 date: "2008-01-01"

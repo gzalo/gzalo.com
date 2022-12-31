@@ -2,7 +2,7 @@
 title: "DC motor control with H bridge"
 tags: ["articles", "electronics"]
 summary: "Different ways to control DC motors."
-thumbnail: "/thumbs/puenteh.png"
+thumbnail: "/thumbs/puenteh.jpg"
 aliases: ["/hbridge_en/"]
 date: "2010-01-01"
 ---

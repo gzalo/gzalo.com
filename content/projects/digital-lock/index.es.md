@@ -1,7 +1,7 @@
 ---
 title: "Cerradura de combinación digital (2012)"
 summary: "Lógica digital que implementa una cerradura de combinación similar a la usada en hoteles."
-thumbnail: "/thumbs/cerradura.png"
+thumbnail: "/thumbs/cerradura.jpg"
 aliases: ["/cerradura/"]
 date: "2012-01-01"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "LCDTerminal (2012)"
 summary: "Pantalla alfanumérica controlada via UART. También puede ser usada con LCD Smartie para monitorear el uso de recursos de una PC."
-thumbnail: "/thumbs/lcdterminal.png"
+thumbnail: "/thumbs/lcdterminal.jpg"
 date: "2012-01-01"
 ---
 

@@ -2,7 +2,7 @@
 title: "Introduction to SDL2, developing a pixel font editor"
 tags: ["articles", "programming"]
 summary: "Small tutorial to learn the basics of SDL2, using C++."
-thumbnail: "/thumbs/sdl.png"
+thumbnail: "/thumbs/sdl.jpg"
 aliases: ["/sdl_en/"]
 date: "2010-01-01"
 ---

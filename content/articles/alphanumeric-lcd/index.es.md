@@ -2,7 +2,7 @@
 title: "LCDs alfanuméricos basados en HD44780"
 tags: ["articles", "electronics"]
 summary: "Cómo controlar un LCD alfanumérico inteligente desde un microcontrolador. Incluye Comandos y esquemáticos."
-thumbnail: "/thumbs/lcdalfanumerico.png"
+thumbnail: "/thumbs/lcdalfanumerico.jpg"
 aliases: ["/lcdalfanumerico/"]
 date: "2010-01-01"
 ---

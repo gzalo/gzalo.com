@@ -1,7 +1,7 @@
 ---
 summary: "Dados los números presentes en un capacitor, calcula cual es la capacitancia, y su tolerancia."
 title: "Calculadora de valor de capacitores"
-thumbnail: "/thumbs/capacitor_code.png"
+thumbnail: "/thumbs/capacitor_code.jpg"
 aliases: ["/codigo_capacitores/"]
 date: "2011-01-01"
 ---

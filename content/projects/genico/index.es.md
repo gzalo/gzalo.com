@@ -1,7 +1,7 @@
 ---
 title: "Genico - Generador de íconos numéricos (2019)"
 summary: "Un generador de íconos numéricos, muy útil para trabajar con pantallas HMI tipo DGUS (DWIN) / SGUS / VGUS."
-thumbnail: "/thumbs/genico.png"
+thumbnail: "/thumbs/genico.jpg"
 date: "2019-01-01"
 ---
 

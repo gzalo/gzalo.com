@@ -1,7 +1,7 @@
 ---
 title: "Mini game console with LED matrix (2009)"
 summary: "Simple 8x8 game console based in an 8052 microcontroller, developed in C, compiled with SDCC."
-thumbnail: "/thumbs/miniconsola.png"
+thumbnail: "/thumbs/miniconsola.jpg"
 aliases: ["/miniconsole_en/"]
 date: "2009-01-01"
 ---

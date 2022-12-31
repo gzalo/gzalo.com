@@ -1,7 +1,7 @@
 ---
 title: "Calculadora de filtro RC"
 summary: "Dados el valor de la resistencia y el capacitor, calcula cuanto es la frecuencia de corte en un filtro pasivo RC serie."
-thumbnail: "/thumbs/rc_filter.png"
+thumbnail: "/thumbs/rc_filter.jpg"
 aliases: ["/filtrorc/"]
 date: "2011-01-01"
 ---

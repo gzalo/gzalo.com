@@ -2,7 +2,7 @@
 title: "Graphical LCDs based on KS0108"
 tags: ["articles", "electronics"]
 summary: "How to control a Graphic LCD with a resolution of 128x64 (or 192x64) based in KS0108, using a microcontroller and two 8 bit I/O ports."
-thumbnail: "/thumbs/lcdgrafico.png"
+thumbnail: "/thumbs/lcdgrafico.jpg"
 aliases: ["/graphicallcd_en/"]
 date: "2010-01-01"
 ---

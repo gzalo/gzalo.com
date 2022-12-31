@@ -2,7 +2,7 @@
 title: "Compuertas lógicas en Java y Kotlin"
 tags: ["articles", "programming"]
 summary: "Código en Java y Kotlin para representar compuertas lógicas y recalcular el estado de sus salidas."
-thumbnail: "/thumbs/logicgate.png"
+thumbnail: "/thumbs/logicgate.jpg"
 date: "2021-02-01"
 ---
 

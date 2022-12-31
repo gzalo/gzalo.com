@@ -1,6 +1,6 @@
 ---
 title: "Cs_electronicaort (2008)"
-thumbnail: "/thumbs/cs_electronicaort.png"
+thumbnail: "/thumbs/cs_electronicaort.jpg"
 summary: "Mapa para Counter-Strike 1.6, inspirado en el piso de electrónica de la escuela ORT (sede Yatay)."
 aliases: ["/cs_electronicaort/"]
 date: "2008-01-01"

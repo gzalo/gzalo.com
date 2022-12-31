@@ -2,7 +2,7 @@
 title: "Video camera modification to see IR light"
 tags: ["articles", "misc"]
 summary: "How to modify an ordinary video camera to increase the spectrum of the light it can see, allowing the visualization of near-infrared."
-thumbnail: "/thumbs/ircam.png"
+thumbnail: "/thumbs/ircam.jpg"
 aliases: ["/ircam_en/"]
 date: "2013-01-01"
 ---

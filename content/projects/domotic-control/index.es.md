@@ -1,7 +1,7 @@
 ---
 title: "Control domótico via infrarrojo y PC (2014)"
 summary: "Panel de control domótico para controlar luces de distintas habitaciones, permitiendo al usuario el cambio de intensidad a través de tres interfaces. Realizado para la materia Laboratorio de microcontroladores."
-thumbnail: "/thumbs/controldomotico.png"
+thumbnail: "/thumbs/controldomotico.jpg"
 aliases: ["/tp_labodemicros/"]
 date: "2014-01-01"
 ---

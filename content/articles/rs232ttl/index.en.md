@@ -2,7 +2,7 @@
 title: "Usage of MAX232 for RS232-TTL level shifting"
 tags: ["articles", "electronics"]
 summary: "A simple circuit used in almost every circuit that needs a connection with a PC."
-thumbnail: "/thumbs/rs232ttl.png"
+thumbnail: "/thumbs/rs232ttl.jpg"
 aliases: ["/rs232ttl_en/"]
 date: "2009-01-01"
 ---

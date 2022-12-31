@@ -2,7 +2,7 @@
 title: "External RAM memories in MCS51 architecture (8051/8052)"
 tags: ["articles", "electronics"]
 summary: "How to connect and use an external memory, using data and address multiplexing."
-thumbnail: "/thumbs/ram8052.png"
+thumbnail: "/thumbs/ram8052.jpg"
 aliases: ["/ram8052_en/"]
 date: "2010-01-01"
 ---

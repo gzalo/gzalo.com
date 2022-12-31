@@ -2,7 +2,7 @@
 title: "Tamaños de rulemanes"
 tags: ["articles", "misc"]
 summary: "Tabla con tamaños de diversos rulemanes que se consiguen localmente, muy útil a la hora de hacer un proyecto mecánico."
-thumbnail: "/thumbs/rulemanes.png"
+thumbnail: "/thumbs/rulemanes.jpg"
 aliases: ["/rulemanes/"]
 date: "2016-01-01"
 ---

@@ -2,7 +2,7 @@
 title: "Introducción a PLD (dispositivos lógicos programables)"
 tags: ["articles", "electronics"]
 summary: "Resumen de aplicaciones y programación de PLA, PAL, GAL y PLD."
-thumbnail: "/thumbs/pld.png"
+thumbnail: "/thumbs/pld.jpg"
 aliases: ["/pld/"]
 date: "2009-01-01"
 ---

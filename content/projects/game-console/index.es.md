@@ -1,7 +1,7 @@
 ---
 title: "Mini consola de juegos con matriz de LEDs (2009)"
 summary: "Consola con resolución 8x8, basada en un microcontrolador 8052, desarrollo en C compilado con SDCC."
-thumbnail: "/thumbs/miniconsola.png"
+thumbnail: "/thumbs/miniconsola.jpg"
 aliases: ["/miniconsola/"]
 date: "2009-01-01"
 ---

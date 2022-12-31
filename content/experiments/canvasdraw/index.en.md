@@ -1,7 +1,7 @@
 ---
 title: "CanvasDraw (2012)"
 summary: "Random walk with an random angle change trigger (now converted to canvas!)"
-thumbnail: "/thumbs/canvasdraw.png"
+thumbnail: "/thumbs/canvasdraw.jpg"
 date: "2012-01-01"
 ---
 

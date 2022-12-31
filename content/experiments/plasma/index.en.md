@@ -1,7 +1,7 @@
 ---
 title: "Plasma (2009)"
 summary: "Random plasma effect. Originally used SDL, now converted to HTML5/Canvas. Added extra formulas and palettes."
-thumbnail: "/thumbs/plasma.png"
+thumbnail: "/thumbs/plasma.jpg"
 date: "2009-01-01"
 ---
 

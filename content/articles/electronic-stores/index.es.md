@@ -2,7 +2,7 @@
 title: "Negocios de venta de componentes y módulos electrónicos de CABA"
 tags: ["articles", "electronics"]
 summary: "Listado con muchas casas de componentes y módulos electrónicos en la Ciudad Autónoma de Buenos Aires/Capital Federal en Argentina."
-thumbnail: "/thumbs/casas.png"
+thumbnail: "/thumbs/casas.jpg"
 aliases: ["/casas/"]
 date: "2015-01-01"
 ---

@@ -2,7 +2,7 @@
 title: "Memorias RAM externas en MCS51 (8051/8052)"
 tags: ["articles", "electronics"]
 summary: "Cómo conectar y usar una memoria externa (multiplexado de datos y dirección)."
-thumbnail: "/thumbs/ram8052.png"
+thumbnail: "/thumbs/ram8052.jpg"
 aliases: ["/ram8052/"]
 date: "2010-01-01"
 ---

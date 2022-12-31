@@ -2,7 +2,7 @@
 title: "Input/output port expansion"
 tags: ["articles", "electronics"]
 summary: "How to add more digital inputs or outputs to a microcontroller, using shift registers."
-thumbnail: "/thumbs/expandir.png"
+thumbnail: "/thumbs/expandir.jpg"
 aliases: ["/expansion_en/"]
 date: "2010-01-01"
 ---

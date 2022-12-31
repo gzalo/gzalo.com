@@ -2,7 +2,7 @@
 title: "Comprimiendo imágenes monocromáticas usando RLE (Run-length encoding)"
 tags: ["articles", "programming"]
 summary: "Pequeña explicación y código en Java mostrando cómo funciona este tipo de compresión sin pérdida."
-thumbnail: "/thumbs/rle.png"
+thumbnail: "/thumbs/rle.jpg"
 date: "2021-10-11"
 ---
 

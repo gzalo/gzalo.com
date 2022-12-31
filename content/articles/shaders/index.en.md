@@ -2,7 +2,7 @@
 title: "Introduction to GLSL Shaders"
 tags: ["articles", "programming"]
 summary: "A small article that can help people that want to get into the world of graphic shaders development."
-thumbnail: "/thumbs/shaders.png"
+thumbnail: "/thumbs/shaders.jpg"
 aliases: ["/shaders_en/"]
 date: "2010-01-01"
 ---

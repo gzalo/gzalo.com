@@ -2,7 +2,7 @@
 title: "Introducción a SDL2, desarrollando un editor simple de tipografías pixel"
 tags: ["articles", "programming"]
 summary: "Pequeño tutorial para aprender a usar SDL2, en C++."
-thumbnail: "/thumbs/sdl.png"
+thumbnail: "/thumbs/sdl.jpg"
 aliases: ["/sdl/"]
 date: "2010-01-01"
 ---

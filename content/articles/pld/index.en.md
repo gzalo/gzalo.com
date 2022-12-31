@@ -2,7 +2,7 @@
 title: "Introduction to PLD (Programmable Logic Devices)"
 tags: ["articles", "electronics"]
 summary: "Small summary of applications of PLA, PAL, GAL and PLD based systems."
-thumbnail: "/thumbs/pld.png"
+thumbnail: "/thumbs/pld.jpg"
 aliases: ["/pld_en/"]
 date: "2009-01-01"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Tunnel (2013)"
 summary: "Pruebas de dibujar un efecto tunel hechas mientras estudiaba para un final de algoritmos (convertidas a canvas)."
-thumbnail: "/thumbs/tunnel.png"
+thumbnail: "/thumbs/tunnel.jpg"
 date: "2013-01-01"
 ---
 

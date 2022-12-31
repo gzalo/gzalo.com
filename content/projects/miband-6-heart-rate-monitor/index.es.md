@@ -1,7 +1,7 @@
 ---
 title: "Monitor de pulsaciones con Mi Band 6 (2022)"
 summary: "Muestra las pulsaciones cardíacas en un navegador, leyéndolas de un Mi Band 6 via Bluetooth."
-thumbnail: "/thumbs/miband-6-heart-rate-monitor.png"
+thumbnail: "/thumbs/miband-6-heart-rate-monitor.jpg"
 date: "2022-01-18"
 ---
 

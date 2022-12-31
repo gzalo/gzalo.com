@@ -1,7 +1,7 @@
 ---
 summary: "Calcula cuanto es el tiempo que la señal de salida estará activa, en un circuito integrado 555 configurado como monoestable o astable."
 title: "Calculadora de tiempos con 555"
-thumbnail: "/thumbs/555.png"
+thumbnail: "/thumbs/555.jpg"
 aliases: ["/555/"]
 date: "2011-01-01"
 ---

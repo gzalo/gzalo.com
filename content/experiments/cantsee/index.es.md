@@ -1,7 +1,7 @@
 ---
 title: "Can't see (2016)"
 summary: "Reducir gradualmente el tamaño y peso de la tipografia permite obtener resultados interesantes. Extracto de _Ensayo sobre la ceguera_ de _José Saramago_."
-thumbnail: "/thumbs/cantsee.png"
+thumbnail: "/thumbs/cantsee.jpg"
 date: "2016-01-01"
 ---
 

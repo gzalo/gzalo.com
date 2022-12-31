@@ -1,7 +1,7 @@
 ---
 title: "Tunnel (2013)"
 summary: "Messing around with tunnel draing while studying for an algorithms final (now converted to canvas)."
-thumbnail: "/thumbs/tunnel.png"
+thumbnail: "/thumbs/tunnel.jpg"
 date: "2013-01-01"
 ---
 

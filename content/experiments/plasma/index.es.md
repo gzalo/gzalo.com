@@ -1,7 +1,7 @@
 ---
 title: "Plasma (2009)"
 summary: "Efecto plasma aleatorio. Originalmente usaba SDL, fue convertido a HTML5/Canvas. Se agregaron más fórmulas y paletas de colores."
-thumbnail: "/thumbs/plasma.png"
+thumbnail: "/thumbs/plasma.jpg"
 date: "2009-01-01"
 ---
 

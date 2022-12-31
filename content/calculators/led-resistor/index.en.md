@@ -1,7 +1,7 @@
 ---
 title: "LED resistor calculator"
 summary: "Given the type of LED and the voltage of a power supply, calculates the required resistor to connect it."
-thumbnail: "/thumbs/led_resistor.png"
+thumbnail: "/thumbs/led_resistor.jpg"
 aliases: ["/led_resistor_en/"]
 date: "2011-01-01"
 ---
