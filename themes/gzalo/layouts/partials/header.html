@@ -20,7 +20,7 @@
         <a href="{{ .URL | absLangURL }}">
           <div class="font-mono font-semibold border-2 border-t-4 px-4 h-9 pt-1 pb-2 transition-all duration-100 hover:border-t-2 break-normal {{ .Pre }}">
             {{if eq .Name "SearchIcon"}}
-              <i class="fa fa-search"></i>
+              <img src="/icons/search.svg" class="inline icon" alt="Search icon">
             {{else}}
               {{ .Name }}
             {{end}}
