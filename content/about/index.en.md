@@ -14,7 +14,7 @@ I consider that nowadays we have many _paywalls_ that don't let us access the kn
 
 [I use GitHub Projects to track the progress of most of my projects, you can look at them here](https://github.com/gzalo?tab=projects&type=classic).
 
-Right now I'm working for _Roche_ as a Senior Software Engineer, the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
+Right now I'm working for _Roche_ as a Principal Software Engineer, the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
 
 ## Interests
  

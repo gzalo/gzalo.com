@@ -12,7 +12,7 @@ Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso a
 
 [Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos, podés verlos aquí](https://github.com/gzalo?tab=projects&type=classic).
 
-Actualmente trabajo en _Roche_ como Ingeniero de Software Senior, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
+Actualmente trabajo en _Roche_ como Ingeniero de Software Principal, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
 
 ## Qué me interesa
  
