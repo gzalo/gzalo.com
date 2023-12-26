@@ -8,13 +8,15 @@ date: "2008-01-01"
 
 cs_electronicaort es un mapa para el juego Counter-Strike 1.6, basado en el piso de electrónica de la escuela ORT Yatay.
 
-Fue hecho en diciembre del 2008, diseñado por mí, Gonzalo Avila Alterach y texturado por Gastón Kirsman. El programa usado fue Valve Hammer Editor. Si te interesaría pedir los archivos originales para hacer un mapa derivado, mandame un email y te los puedo enviar.
+Fue hecho en diciembre del 2008, diseñado por mí, Gonzalo Avila Alterach y texturado por Gastón Kirsman. El programa usado fue Valve Hammer Editor. Si te interesaría pedir los archivos originales para hacer un mapa derivado, están disponibles para descargar también.
 
 El mapa posee ciertos túneles secretos que comunican las distintas bases, para hacer el juego más entretenido. En el techo hay una casa con más municiones, para entrar hay que saber el código.
 
 Para instalar, copiar el archivo .bsp a la carpeta cstrike/maps, dentro de la instalación del Counter Strike.
 
 **[Descargar cs_electronicaort haciendo click aqui](/downloads/cs_electronicaort.zip)**
+
+**[Descargar archivos fuente (pueden ser editados con Hammer o J.A.C.K)](/downloads/cs_electronicaort_source.zip)**
 
 ![Cs_electronicaort](/images/cs_electronicaort00.png)
 ![Cs_electronicaort](/images/cs_electronicaort01.png)
