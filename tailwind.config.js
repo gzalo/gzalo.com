@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Roboto', 'Arial', 'sans-serif'],
-      mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular"],
+      mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular", "monospace"],
     },
     borderWidth: {
       DEFAULT: '1px',
