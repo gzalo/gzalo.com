@@ -5,9 +5,9 @@
       <h2 class="text-lg md:text-xl font-mono text-gray-500">> {{ .Site.Params.Description }} <span style="animation: 1.5s blink step-end infinite;">█</span></h2>
     </div>
 
-    <div class="text-blue-400 mt-3 md:pt-0">
+    <div class="text-blue-600 mt-3 md:pt-0">
       {{ range $.Site.Home.AllTranslations }}
-        <a href="{{ .Permalink }}" class="uppercase text-blue-400 tracking-wider font-semibold {{if eq .Lang $.Lang}} border-b-2 border-blue-200 {{end}}" title="{{.Language.LanguageName}}">{{ i18n .Language.LanguageName }}</a>
+        <a href="{{ .Permalink }}" class="uppercase text-blue-600 tracking-wider font-semibold {{if eq .Lang $.Lang}} border-b-2 border-blue-200 {{end}}" title="{{.Language.LanguageName}}">{{ i18n .Language.LanguageName }}</a>
         {{if eq .Lang "es"}} · {{end}}
       {{ end }}
     </div>
@@ -30,6 +30,6 @@
       </div>
   
     </div>
-    <div class="border-sky-400 border-red-500 border-orange-400 border-emerald-500 text-sky-400 text-red-500 text-orange-400 text-emerald-500"></div>
+    <div class="border-sky-700 border-red-600 border-orange-700 border-emerald-700 text-sky-700 text-red-600 text-orange-700 text-emerald-700"></div>
   </nav>
 </header>
