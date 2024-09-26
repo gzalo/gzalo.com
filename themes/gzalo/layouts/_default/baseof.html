@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+{{ if eq .Site.Language.Lang "es" }}
+<html lang="es">
+{{ else }}
+<html lang="en">
+{{ end }}
     {{- partial "head.html" . -}}
     <body class="border-t-4 border-solid border-orange-400 h-screen">
         <div class="container mx-auto px-4 flex flex-col h-full">
