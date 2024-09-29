@@ -4,23 +4,21 @@ date: "2004-01-01"
 noComment: true
 ---
 
-_Gzalo_ (antes _gzaloprgm_) es mi sobrenombre, lo uso en la mayoría de las cuentas de mis redes sociales públicas. Y también es mi sitio web, esta especie de blog que mantengo hace casi 20 años, en el que posteo artículos y proyectos que he construido.
+_Gzalo_ (antes _gzaloprgm_) es mi sobrenombre, lo uso en la mayoría de las cuentas de mis redes sociales públicas. Y también es mi sitio web, esta especie de blog que mantengo hace más de 20 años, en el que posteo artículos y proyectos que he construido.
 
 Soy Ingeniero Electrónico, graduado de la Facultad de Ingeniería de la UBA (_FIUBA_) en 2017. Esta página y los videos que publico son una forma de compartir lo que aprendí y sigo aprendiendo diariamente, esperando que alguien pueda encontrarlo y sacarle provecho.
 
-Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento y dificultan el avance de la humanidad, por lo que la mayoría de mis proyectos están liberados bajo licencias abiertas (en muchos casos incluso para uso comercial). 
-
-[Uso GitHub Projects para seguir el progreso de la mayoría de mis proyectos, podés verlos aquí](https://github.com/gzalo?tab=projects&type=classic).
+Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento, por lo que la mayoría de mis proyectos están liberados bajo licencias abiertas (en muchos casos incluso para uso comercial). 
 
 Actualmente trabajo en _Roche_ como Ingeniero de Software Principal, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
 
+Formo parte de [cybercirujas](https://cybercirujas.rebelion.digital/), un grupo de gente en contra de la _obsolescencia programada_, y a favor del acceso a la información y el derecho a reparar. Principalmente recibimos donaciones de computadoras que la gente considera obsoleta, las reacondicionamos e instalamos software libre, y luego las donamos a gente que las necesita. 
+
 ## Qué me interesa
  
-- Redes de computadoras
-- Sistemas embebidos, tanto de 8 como de 32 bits
-- Robótica, algoritmos y aplicaciones de la misma
-- Procesamiento de señales 
-- Desarrollo de sitios web
+- Sistemas embebidos de cualquier cantidad de bits
+- Reutilización de equipamiento considerado obsoleto, conseguir correr Doom en cualquier equipo
+- Robótica, sistemas distribuidos, procesamiento de señales
 - Fotografía (cámaras analógicas y digitales) y creación de videos
 - Desarrollo de juegos
 - Realidad Virtual
@@ -28,11 +26,11 @@ Actualmente trabajo en _Roche_ como Ingeniero de Software Principal, y las opini
 
 ## Qué tecnologías uso
 
-- Java/Kotlin · JS/TS · C/C++ · PHP · Python · Assembler (de algunas arquitecturas ya obsoletas)
+- Java · TypeScript/JavaScript · C · Python · Assembler de varias arquitecturas
 - Bibliotecas gráficas: OpenGL · SDL2
-- Cloud y más: AWS (EC2, S3, Batch, Lambda, API Gateway), CloudFlare (Pages, Workers, KV), Docker, Nagios
-- Bases de datos: MariaDB · PostgreSQL · MongoDB · InfluxDB
-- Photoshop · Premiere · After Effects · DaVinci Resolve
+- Bases de datos: PostgreSQL · SQLite · MariaDB
+- Varios servicios de AWS y CloudFlare, Docker, K8s
+- DaVinci Resolve · Photoshop
 
 ## Consultas
 

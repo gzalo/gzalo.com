@@ -4,6 +4,9 @@ theme = "gzalo"
 disqusShortname = "gzalo"
 defaultContentLanguage = "es"
 
+[minify]
+  minifyOutput = true
+
 [languages]
   [languages.es]
     languageName = "Español"
