@@ -10,7 +10,9 @@ Soy Ingeniero Electrónico, graduado de la Facultad de Ingeniería de la UBA (_F
 
 Considero que en la actualidad hay demasiadas _paywalls_ que impiden el acceso al conocimiento, por lo que la mayoría de mis proyectos están liberados bajo licencias abiertas (en muchos casos incluso para uso comercial). 
 
-Actualmente trabajo en _Roche_ como Ingeniero de Software Principal, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
+Actualmente trabajo en [Roche](https://sequencing.roche.com) como Arquitecto de Software, y las opiniones expresadas aquí y en mis redes sociales son mías y no representan necesariamente la posición de mi empleador.
+
+Estoy esperando mi licencia de radioaficionado (cursé en Marzo de 2025, en [LU4BB / Buenos Aires Radio Club](https://lu4bb.com/) ), también me interesa todo el tema de [Meshtastic y otras redes descentralizadas experimentales](https://github.com/Meshtastic-Argentina).
 
 Formo parte de [cybercirujas](https://cybercirujas.rebelion.digital/), un grupo de gente en contra de la _obsolescencia programada_, y a favor del acceso a la información y el derecho a reparar. Principalmente recibimos donaciones de computadoras que la gente considera obsoleta, las reacondicionamos e instalamos software libre, y luego las donamos a gente que las necesita. 
 
