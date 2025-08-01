@@ -14,7 +14,7 @@ I consider that nowadays we have many _paywalls_ that don't let us access the kn
 
 Right now I'm working for _Roche_ as a Software Architect, the opinions expressed here and in my social accounds are mine, and may not represent the position of my employer.
 
-I'm waiting for my ham radio operator license (I took the course in March 2025, at [LU4BB / Buenos Aires Radio Club](https://lu4bb.com/) ). I'm also interested in everything related to [Meshtastic and other experimental decentralized networks]((https://github.com/Meshtastic-Argentina).
+My ham radio license is _LU6CGA_ (I took the course in March 2025, at [LU4BB / Buenos Aires Radio Club](https://lu4bb.com/) ). I'm also interested in everything related to [Meshtastic and other experimental decentralized networks]((https://github.com/Meshtastic-Argentina).
 
 I'm part of [cybercirujas](https://cybercirujas.rebelion.digital/), a collective against _planned obsolescense_, and in favour of freedom of information and right to repair. We primarily receive donations of computer parts that are considered obsolete, refurbish them, install open-source software, and donate them to those in need.
 
