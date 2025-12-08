@@ -16,7 +16,7 @@
       {{ $borderColor = "border-b-emerald-500" }}
     {{ end }}
 
-    {{ range .Pages.ByPublishDate.Reverse }}
+    {{ range where .Pages.ByPublishDate.Reverse "Params.hidden" "ne" true}}
       <a href="{{ .RelPermalink }}">
         <div class="flex md:flex-col group border {{ $borderColor }} border-b-3 border-gray-400 h-full">
           <div class="overflow-hidden md:border-b border-gray-400 w-1/4 md:w-auto">
