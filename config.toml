@@ -7,6 +7,9 @@ defaultContentLanguage = "es"
 [minify]
   minifyOutput = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [languages]
   [languages.es]
     languageName = "Español"
