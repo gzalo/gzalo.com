@@ -1,6 +1,5 @@
 ---
 title: "Listado de software utilizados en electrónica"
-tags: ["articles", "electronics"]
 summary: "Análisis de algunos programas de electrónica que utilizé en algún momento."
 thumbnail: "/thumbs/software.jpg"
 aliases: ["/software/"]

@@ -1,6 +1,5 @@
 ---
 title: "Control de motores de continua con puente H"
-tags: ["articles", "electronics"]
 summary: "Distintas formas de controlar motores de CC."
 thumbnail: "/thumbs/puenteh.jpg"
 aliases: ["/puenteh/"]

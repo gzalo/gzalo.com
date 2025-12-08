@@ -1,6 +1,5 @@
 ---
 title: "Futaba M202MD08A display driver"
-tags: ["articles", "electronics", "microcontrollers", "displays"]
 summary: "Driver for Futaba M202MD08A VFD display used in IBM point of sale terminals"
 thumbnail: "/thumbs/lcd-m202md08a.jpg"
 date: "2017-01-01"

@@ -1,6 +1,5 @@
 ---
 title: "Sensores de inclinación caseros"
-tags: ["articles", "misc"]
 summary: "Cómo construir un pequeño sensor de dos estados para sensar la orientación en el espacio de una placa."
 thumbnail: "/thumbs/sensores_inclinacion.jpg"
 aliases: ["/sensores_inclinacion/"]

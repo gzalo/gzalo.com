@@ -1,6 +1,5 @@
 ---
 title: "Matrices de LEDs, formas de manejo"
-tags: ["articles", "electronics"]
 summary: "Cómo controlar una matriz de LEDs desde un microcontrolador."
 thumbnail: "/thumbs/ledmatrix.png"
 aliases: ["/ledmatrix/"]

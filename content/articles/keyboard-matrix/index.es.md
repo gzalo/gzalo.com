@@ -1,6 +1,5 @@
 ---
 title: "Teclados de matriz, interfaz con microcontroladores"
-tags: ["articles", "electronics"]
 summary: "Formas fáciles para routear tact switches en formas de matriz."
 thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/teclado4x4/"]

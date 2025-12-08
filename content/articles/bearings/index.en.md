@@ -1,6 +1,5 @@
 ---
 title: "Ball bearing sizes"
-tags: ["articles", "misc"]
 summary: "Table showing the different sizes of commercially available ball bearings, useful when creating mechanical projects."
 thumbnail: "/thumbs/rulemanes.jpg"
 date: "2016-01-01"

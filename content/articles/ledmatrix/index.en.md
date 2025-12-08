@@ -1,6 +1,5 @@
 ---
 title: "LED Matrix, methods to control"
-tags: ["articles", "electronics"]
 summary: "How to control a LED matrix with a microcontroller."
 thumbnail: "/thumbs/ledmatrix.png"
 aliases: ["/ledmatrix_en/"]

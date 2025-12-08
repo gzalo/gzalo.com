@@ -1,6 +1,5 @@
 ---
 title: "WS2812 Addressable LEDs"
-tags: ["articles", "electronics", "leds", "microcontrollers"]
 summary: "Driver for WS2812 addressable LEDs with light effects and PC control"
 thumbnail: "/thumbs/addressable-leds.jpg"
 date: "2018-01-01"

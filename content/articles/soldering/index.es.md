@@ -1,6 +1,5 @@
 ---
 title: "Taller de soldadura avanzada"
-tags: ["projects", "games"]
 summary: "Taller que dicté en el que soldamos y desoldamos componentes SMD"
 thumbnail: "/thumbs/soldadura.jpg"
 date: "2023-05-06"

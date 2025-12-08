@@ -1,6 +1,5 @@
 ---
 title: "Amateur radio exam practice"
-tags: ["articles", "radio", "amateur-radio"]
 summary: "Site with practice exercises for the Argentine amateur radio exam"
 thumbnail: "/thumbs/rf.jpg"
 date: "2025-01-01"

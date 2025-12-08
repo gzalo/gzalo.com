@@ -1,6 +1,5 @@
 ---
 title: "Base de datos de juegos"
-tags: ["projects", "games"]
 summary: "Recopilación de datos de distintos juegos de mi infancia"
 thumbnail: "/thumbs/games.jpg"
 date: "2023-03-01"

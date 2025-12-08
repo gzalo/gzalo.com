@@ -1,6 +1,5 @@
 ---
 title: "Mini PCs Vortex86"
-tags: ["articles", "hardware", "retrocomputing", "dos"]
 summary: "Recopilación de información sobre Mini PCs con microprocesador Vortex86SX"
 thumbnail: "/thumbs/vortex86.jpg"
 date: "2023-01-01"

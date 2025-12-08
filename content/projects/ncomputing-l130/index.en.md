@@ -1,6 +1,5 @@
 ---
 title: "NComputing L130 Reverse Engineering"
-tags: ["articles", "electronics", "fpga", "reverse-engineering"]
 summary: "Reverse engineering project of the NComputing L130 board to use it as a generic FPGA development board"
 thumbnail: "/thumbs/ncomputing-l130.jpg"
 date: "2024-01-01"

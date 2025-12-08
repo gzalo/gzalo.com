@@ -1,6 +1,5 @@
 ---
 title: "LCDs gráficos basados en KS0108"
-tags: ["articles", "electronics"]
 summary: "Cómo controlar un LCD gráfico de 128x64 (o 192x64) basado en KS0108, usando un microcontrolador y dos puertos de E/S."
 thumbnail: "/thumbs/lcdgrafico.jpg"
 aliases: ["/lcdgrafico/"]

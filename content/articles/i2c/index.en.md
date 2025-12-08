@@ -1,6 +1,5 @@
 ---
 title: "Introduction to I2C protocol, reading and writing in 24LC memories"
-tags: ["articles", "electronics"]
 summary: "Very useful memories, typically used to store configuration data or to keep logs with sensor data."
 thumbnail: "/thumbs/i2c.jpg"
 aliases: ["/i2c_en/"]

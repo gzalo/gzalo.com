@@ -1,6 +1,5 @@
 ---
 title: "Homemade inclination sensors"
-tags: ["articles", "misc"]
 summary: "How to build small sensors with two states, that can sense the rotation of a board in two axes."
 thumbnail: "/thumbs/sensores_inclinacion.jpg"
 aliases: ["/inclination_sensor_en/"]

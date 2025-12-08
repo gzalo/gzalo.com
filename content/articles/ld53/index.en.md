@@ -1,6 +1,5 @@
 ---
 title: "Ludum Dare 53 - Energy delivery"
-tags: ["articles", "games"]
 summary: "Game developed in 48 hs for the Ludum Dare game jam"
 thumbnail: "/thumbs/ld53.jpg"
 date: "2023-05-01"

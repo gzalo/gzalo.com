@@ -1,6 +1,5 @@
 ---
 title: "Utilización de un celular o modem GSM/GPRS con microcontroladores"
-tags: ["articles", "electronics"]
 summary: "Cómo usar un celular o módem para enviar y recibir mensajes de texto y llamadas desde un microcontrolador."
 thumbnail: "/thumbs/gsm.jpg"
 aliases: ["/gsm/"]

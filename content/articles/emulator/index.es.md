@@ -1,6 +1,5 @@
 ---
 title: "Taller de introducción de emuladores"
-tags: ["articles", "emulators", "games"]
 summary: "Taller que dicté en el que desarrollamos emuladores de CHIP-8"
 thumbnail: "/thumbs/emuladores.jpg"
 date: "2023-07-22"

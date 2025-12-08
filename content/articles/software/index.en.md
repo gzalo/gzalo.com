@@ -1,6 +1,5 @@
 ---
 title: "List of software commonly used in electronics"
-tags: ["articles", "electronics"]
 summary: "Analysis of some electronic programs I used or use daily."
 thumbnail: "/thumbs/software.jpg"
 aliases: ["/software_en/"]

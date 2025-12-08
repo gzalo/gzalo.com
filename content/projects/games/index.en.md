@@ -1,6 +1,5 @@
 ---
 title: "Games Database"
-tags: ["projects", "games"]
 summary: "Collection of data from different games from my childhood"
 thumbnail: "/thumbs/games.jpg"
 date: "2023-03-01"

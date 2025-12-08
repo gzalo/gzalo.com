@@ -1,6 +1,5 @@
 ---
 title: "Práctica para examen de radioaficionado"
-tags: ["articles", "radio", "amateur-radio"]
 summary: "Sitio con ejercicios de práctica para el examen de radioaficionado argentino"
 thumbnail: "/thumbs/rf.jpg"
 date: "2025-01-01"

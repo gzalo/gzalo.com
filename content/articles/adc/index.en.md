@@ -1,6 +1,5 @@
 ---
 title: "Analog to digital converter without ADC"
-tags: ["articles", "electronics"]
 summary: "How to easily measure the value of a resistor, using a microcontroller without Analog to Digital converters."
 thumbnail: "/thumbs/adc.jpg"
 aliases: ["/adc_en/"]

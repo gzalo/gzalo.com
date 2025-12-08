@@ -1,6 +1,5 @@
 ---
 title: "Control remoto de 4 canales por RF, mediante HT12D/E"
-tags: ["articles", "electronics"]
 summary: "Cómo controlar cargas a distancias a través de un enlace de radiofrecuencia, usando módulos y ciruitos integrados de bajo costo."
 thumbnail: "/thumbs/rfht12.jpg"
 aliases: ["/rfht12/"]

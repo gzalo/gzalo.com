@@ -1,6 +1,5 @@
 ---
 title: "Matrix keyboards, microcontroller interface"
-tags: ["articles", "electronics"]
 summary: "Easy tips to route multiple tact switches disposed in a matrix configuration."
 thumbnail: "/thumbs/teclado4x4.png"
 aliases: ["/keyboard4x4_en/"]

@@ -1,6 +1,5 @@
 ---
 title: "Emulador de PDC32"
-tags: ["articles", "emulators", "hardware", "retrocomputing"]
 summary: "Emulador a nivel de microinstrucciones para la PDC32, una computadora construida con chips TTL reciclados"
 thumbnail: "/thumbs/pdc32.jpg"
 date: "2024-01-01"

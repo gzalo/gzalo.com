@@ -1,6 +1,5 @@
 ---
 title: "PDC32 Emulator"
-tags: ["articles", "emulators", "hardware", "retrocomputing"]
 summary: "Microinstruction-level emulator for PDC32, a computer built from recycled TTL chips"
 thumbnail: "/thumbs/pdc32.jpg"
 date: "2024-01-01"
