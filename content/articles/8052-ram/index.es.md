@@ -71,7 +71,7 @@ lp4:movx @dptr, a
 
 Esta solución tarda 3076,5 uS (medido con el simulador de Keil uVision). 
 
-Para algunas aplicaciones críticas es demasiado tiempo... por eso necesitamos optmizarlo.
+Para algunas aplicaciones críticas es demasiado tiempo... por eso necesitamos optimizarlo.
 
 La primera optimización que se puede hacer es sacar los 4 loops y reemplazarlos por uno solo: 
 

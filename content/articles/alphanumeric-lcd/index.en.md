@@ -36,7 +36,7 @@ As the image shows, the contrast can be adjusted with a 10K potentiometer, in a 
 
 Sending a command or data to the LCD:
 	
-* Set RS pin to 0 (data) or 1 (command)oner RS en el estado correcto: 0 si se desea escribir un comando, 1 si se desea escribir datos
+* Set RS pin to 0 (command) or 1 (data)
 * Set the data bus to the desired 8-bit value
 * Do a pulse in E pin
 * Wait until the instruction is executed (the time depends on which instruction was executed)

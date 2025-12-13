@@ -6,7 +6,7 @@ aliases: ["/shaders/"]
 date: "2010-01-01"
 ---
 
-Esto no pretender ser un tutorial acerca de shaders si no dar una explicación sencilla de como hacer algunos efectos vistosos generalmente utilizados en juegos.
+Esto no pretende ser un tutorial acerca de shaders si no dar una explicación sencilla de como hacer algunos efectos vistosos generalmente utilizados en juegos.
 
 Un shader es un pequeño programa que se ejecuta directamente en el procesador de la placa de video (GPU). Esto permite hacer efectos gráficos con muy poco impacto en el rendimiento. Las CPUs no están orientadas a gráficos, matemática de vectores, matrices, mientras que las GPUs sí, y además están pensadas para trabajar de forma paralela.
 

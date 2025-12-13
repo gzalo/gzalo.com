@@ -33,7 +33,7 @@ We declare the main function of the program, and try to initialize the library. 
 	int pixels[8][8] = {};
 ```
 
-We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep things simple, every glyph size will be fixed at 8x8. By default all of them will be intialized with the value 0.
+We declare a 2D array of integers, which will contain the values of each cell (1 if cell is black, 0 if cell is white). To keep things simple, every glyph size will be fixed at 8x8. By default all of them will be initialized with the value 0.
 
 
 ```c
@@ -184,7 +184,7 @@ We wait a while and we open the file with notepad. It's not a very elegant solut
 We destroy the created window, and then tell SDL to free every piece of memory it has used, and we tell the operating system that the process finished correctly.
 
 The source code contains a `CMakeLists.txt` file, that can be used by an IDE such as IntelliJ CLion to compile the code using any C++ compiler installed in your system.
-Before actually configuring `cmake`, your enviroment must have the SDL2 library installed (the `-devel` version, which includes the headers and lib files).
+Before actually configuring `cmake`, your environment must have the SDL2 library installed (the `-devel` version, which includes the headers and lib files).
 
 **[Access repository to download source code and executable](https://github.com/gzalo/minifontcreator)**
 

@@ -127,7 +127,7 @@ Some methods to render shadows:
 
 **Pre-baked shadows:** Calculated while doing the map and static objects, they can't be moved, deform or destroy, and the light positions have to remain static to keep the illusion.
 
-**Fake shadows:** Bellow each object that needs a shadow a small sprite is drawn, typically a round black image with blurred borders. It's a very fast way to draw shadows, but not really used due because it's not realis.t
+**Fake shadows:** Below each object that needs a shadow a small sprite is drawn, typically a round black image with blurred borders. It's a very fast way to draw shadows, but not really used because it's not realistic.
 
 **Shadow mapping:** The scene is rendered from the light viewpoint, and then in the eye object the depth that the camera sees gets compared to the depth seen by the light. If one is greater than the other, it's shadowed, otherwise it isn't. It is a relatively fast method, and can be used for point lights with a technique such as *dual paraboloid mapping* and other methods such as *cascaded shadow maps*.
 
