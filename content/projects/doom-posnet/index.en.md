@@ -18,6 +18,6 @@ After searching a bit online, I discovered that someone had already managed to r
 ## [Video showing it in action](https://www.youtube.com/watch?v=WlOgtZLBNoE)
 ## [Source code](https://github.com/gzalo/doomgeneric-vx)
 
-Thanks to [OZKL](https://github.com/ozkl/doomgeneric) for the generic Doom easily ported to any platform,, [Thomas Rinsma](https://th0mas.nl/2022/07/18/porting-doom-to-a-payment-terminal/) for the idea, and to [paymentvillage](https://www.paymentvillage.org/resources), [denisdemaisbr](https://github.com/denisdemaisbr), [Mats Engstrom](https://x.com/matseng) who provided a lot of critical information for the project..
+Thanks to [OZKL](https://github.com/ozkl/doomgeneric) for the generic Doom easily ported to any platform, [Thomas Rinsma](https://th0mas.nl/2022/07/18/porting-doom-to-a-payment-terminal/) for the idea, and to [paymentvillage](https://www.paymentvillage.org/resources), [denisdemaisbr](https://github.com/denisdemaisbr), [Mats Engstrom](https://x.com/matseng) who provided a lot of critical information for the project.
 
 To compile it, you need the official Verix ARM SDK and compiler, and it uses an external microcontroller to detect and send key presses via RS232.

@@ -32,7 +32,7 @@ La conexión básica de un LCD alfanumérico a un microcontrolador sería la sig
 
 ![Conexión LCD alfanumérico HD44780](/images/lcdalfa.png)
 
-Como se puede ver, el control del contraste se hace con un potenciómetro de 10K (puesto como divisor resistivo). El pin de RW se conectó a masa porque no necesitaremos leeremos del LCD. Las lineas de datos deben ser conectadas a un puerto del microcontrolador (preferiblemente mantieniendo el orden) y las de control también.
+Como se puede ver, el control del contraste se hace con un potenciómetro de 10K (puesto como divisor resistivo). El pin de RW se conectó a masa porque no necesitaremos leer del LCD. Las lineas de datos deben ser conectadas a un puerto del microcontrolador (preferiblemente mantieniendo el orden) y las de control también.
 
 Como enviar un comando o dato al LCD:
 	

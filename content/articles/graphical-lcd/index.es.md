@@ -5,7 +5,7 @@ thumbnail: "/thumbs/lcdgrafico.jpg"
 aliases: ["/lcdgrafico/"]
 date: "2010-01-01"
 ---
-La mayoría de los LCDs gráficos usan un controlador como el KS0108 (o compatible). Cada controlador tiene una memoria de 512 bytes interna y por lo tanto permite controlar un display de 64x64 píxeles. El truco que usan los diplays más grandes es usar un controlador por cada fracción de la pantalla, es decir, un display de 128x64 tiene 2 controladores, un display de 196x64 tiene 3 controladores, y uno de 128x128 tiene 4 controladores.
+La mayoría de los LCDs gráficos usan un controlador como el KS0108 (o compatible). Cada controlador tiene una memoria de 512 bytes interna y por lo tanto permite controlar un display de 64x64 píxeles. El truco que usan los displays más grandes es usar un controlador por cada fracción de la pantalla, es decir, un display de 128x64 tiene 2 controladores, un display de 196x64 tiene 3 controladores, y uno de 128x128 tiene 4 controladores.
 
 Cada controlador es independiente, es decir, no transmiten información entre ellos. Para elegir a qué controlador hablarle, se usan dos líneas de control, llamadas CS1 y CS2 (CS = Chip Select). Básicamente actúa como una *dirección* de 2 bits, que elige a cual de los 4 controladores posibles se desea hablar. El controlador no tiene generador interno de fuentes, por lo que si se desea escribir un texto, será necesario almacenar los píxeles de cada caracter en un microcontrolador o memoria externa.
 

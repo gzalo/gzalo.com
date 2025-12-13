@@ -21,7 +21,7 @@ Every character sent will be echoed by the module, so that will have to be handl
 List of main commands:
 
 * `AT`\r\n : used to verify that the modem is connected and to try the link. It should reply OK.
-* `ATE0`\r\n : desables echo
+* `ATE0`\r\n : disables echo
 * `ATE1`\r\n : enables echo
 * `AT+CPIN="1234"`\r\n : if the SIM has PIN protection, sets the PIN to use 
 * `AT+CMGF=1`\r\n : activates the text mode for SMS (makes easier routines software-wise)

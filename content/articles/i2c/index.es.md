@@ -8,7 +8,7 @@ date: "2010-01-01"
 
 I2C (pronunciado I cuadrado C) es un estándar que facilita la comunicación entre distintos dispositivos (microcontroladores, memorias, monitores de computadoras, y muchos otros dispositivos que tengan *inteligencia*).
 
-Solamente requiere dos líneas de señal: Una de datos y una de clock (además de la masa común). Fue diseñado por Philips y la velocidad a la que se lo suele usar es 100 Kbits por segundo, pero hay algunos dispositivos que pueden transmitir más rapido.
+Solamente requiere dos líneas de señal: Una de datos y una de clock (además de la masa común). Fue diseñado por Philips y la velocidad a la que se lo suele usar es 100 Kbits por segundo, pero hay algunos dispositivos que pueden transmitir más rápido.
 
 El bus I2C es serie (todos los datos van por una misma señal *uno atrás del otro*) y síncronico (una de las señales se usa para sincronizar y marcar el tiempo).
 
