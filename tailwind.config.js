@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./themes/gzalo/layouts/**/*.html', './content/**/*.md'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // Respects user's system preference
   theme: {
     fontFamily: {
       sans: ['Roboto', 'Arial', 'sans-serif'],

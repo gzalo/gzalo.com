@@ -1,25 +1,25 @@
-<footer class="my-5 py-5 border-t-2 mt-20">
+<footer class="my-5 py-5 border-t-2 border-gray-200 dark:border-gray-700 mt-20">
     <div class="flex justify-between md:flex-row flex-col-reverse">
         
         <div>
-            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="/icons/creative-commons.svg" class="inline icon" alt="Creative Commons"></a> 2004-{{ now.Format "2006"}} - <em>Gzalo.com</em> by <strong>Gonzalo Avila Alterach</strong>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="/icons/creative-commons.svg" class="inline icon dark:invert" alt="Creative Commons"></a> 2004-{{ now.Format "2006"}} - <em>Gzalo.com</em> by <strong>Gonzalo Avila Alterach</strong>
 
-            <div class="text-xs text-gray-600 pt-2">
+            <div class="text-xs text-gray-600 dark:text-gray-400 pt-2">
                 {{ if eq .Site.Language.Lang "es" }}
-                <p><strong>Licencias:</strong> Textos e imágenes <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3</a></strong> · Códigos fuente <strong>dominio público</strong></p>
-                <p>Usar este sitio implica la aceptación de la <a href="/en/cookies" class="w3-text-blue w3-underline">política de privacidad y de cookies</a>.</p>
+                <p><strong>Licencias:</strong> Textos e imágenes <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" class="text-blue-600 dark:text-blue-400 hover:underline">CC BY-NC-SA 3</a></strong> · Códigos fuente <strong>dominio público</strong></p>
+                <p>Usar este sitio implica la aceptación de la <a href="/en/cookies" class="text-blue-600 dark:text-blue-400 hover:underline">política de privacidad y de cookies</a>.</p>
                 {{ else }}
-                <p>Text and images from this web site are licenced under <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3</a></strong>.</p><p>Source codes are under <strong>public domain</strong>, unless stated otherwise.</p>
-                <p>This site uses cookies for a better experience.<br/> Its usage implies accepting the <a href="/en/cookies" class="w3-text-blue w3-underline">privacy and cookie policy</a>.</p>
+                <p>Text and images from this web site are licenced under <strong><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" class="text-blue-600 dark:text-blue-400 hover:underline">Creative Commons BY-NC-SA 3</a></strong>.</p><p>Source codes are under <strong>public domain</strong>, unless stated otherwise.</p>
+                <p>This site uses cookies for a better experience.<br/> Its usage implies accepting the <a href="/en/cookies" class="text-blue-600 dark:text-blue-400 hover:underline">privacy and cookie policy</a>.</p>
                 {{ end }}
             </div>
         </div>
 
         <div class="text-2xl py-4">
-            <a href="mailto:gonzaloavilaalterach@gmail.com"><img src="/icons/envelope.svg" class="inline icon ml-4" alt="Email"></a>
-            <a href="https://github.com/gzalo"><img src="/icons/github.svg" class="inline icon ml-4" alt="Email"></a>
-            <a href="https://www.youtube.com/c/Gzalo"><img src="/icons/youtube.svg" class="inline icon ml-4" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/"><img src="/icons/linkedin.svg" class="inline icon ml-4" alt="Email"></a>
+            <a href="mailto:gonzaloavilaalterach@gmail.com" aria-label="Send email" class="hover:opacity-70 transition-opacity"><img src="/icons/envelope.svg" class="inline icon ml-4 dark:invert" alt="Email"></a>
+            <a href="https://github.com/gzalo" aria-label="GitHub profile" class="hover:opacity-70 transition-opacity"><img src="/icons/github.svg" class="inline icon ml-4 dark:invert" alt="GitHub"></a>
+            <a href="https://www.youtube.com/c/Gzalo" aria-label="YouTube channel" class="hover:opacity-70 transition-opacity"><img src="/icons/youtube.svg" class="inline icon ml-4 dark:invert" alt="YouTube"></a>
+            <a href="https://www.linkedin.com/in/gonzalo-avila-alterach-21a63626/" aria-label="LinkedIn profile" class="hover:opacity-70 transition-opacity"><img src="/icons/linkedin.svg" class="inline icon ml-4 dark:invert" alt="LinkedIn"></a>
         </div>
     </div>
 </footer>

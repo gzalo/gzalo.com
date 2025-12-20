@@ -1,15 +1,24 @@
 {{ define "main" }}
 <div>
     <div class="w-max">
-        <a href="{{ .Parent.RelPermalink }}" class="group transition duration-300">
-            <img src="/icons/chevron-left.svg" class="inline icon" alt="Left arrow"> {{i18n "back"}}
-            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+        <a href="{{ .Parent.RelPermalink }}" class="group transition duration-300 dark:text-gray-300">
+            <img src="/icons/chevron-left.svg" class="inline icon dark:invert" alt="Left arrow"> {{i18n "back"}}
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
         </a>
     </div>
-    <header class="mb-5 prose prose-sm lg:prose-lg max-w-prose mx-auto">
+    <header class="mb-5 prose prose-sm lg:prose-lg max-w-prose mx-auto dark:prose-invert">
         <h2>{{ .Title }}</h2>
+        <div class="text-sm text-gray-500 dark:text-gray-400 flex flex-wrap gap-4 not-prose">
+            {{ if not .Date.IsZero }}
+            <span>📅 {{ .Date.Format "2006-01" }}</span>
+            {{ end }}
+            <span>⏱️ {{ .ReadingTime }} {{ if eq .Site.Language.Lang "es" }}min de lectura{{ else }}min read{{ end }}</span>
+            {{ with .WordCount }}
+            <span>📝 {{ . }} {{ if eq $.Site.Language.Lang "es" }}palabras{{ else }}words{{ end }}</span>
+            {{ end }}
+        </div>
     </header>
-    <div class="prose prose-sm lg:prose-lg max-w-prose mx-auto">
+    <div class="prose prose-sm lg:prose-lg max-w-prose mx-auto dark:prose-invert">
         {{ .Content }}
         {{ partial "metadata.html" . }}
     </div>

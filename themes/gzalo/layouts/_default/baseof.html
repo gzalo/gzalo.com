@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 {{ if eq .Site.Language.Lang "es" }}
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 {{ else }}
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 {{ end }}
     {{- partial "head.html" . -}}
-    <body class="border-t-4 border-solid border-orange-400 h-screen">
-        <div class="container mx-auto px-4 flex flex-col h-full">
+    <body class="border-t-4 border-solid border-orange-400 min-h-screen bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors">
+        {{/* Skip to content link for accessibility */}}
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-orange-400 focus:text-white">
+            {{ if eq .Site.Language.Lang "es" }}Saltar al contenido{{ else }}Skip to content{{ end }}
+        </a>
+        <div class="container mx-auto px-4 flex flex-col min-h-screen">
             {{- partial "header.html" . -}}
-            <section class="grow">
+            <section class="grow" id="main-content">
                 <article>
                     {{- block "main" . }}
                     {{- end }}
@@ -16,5 +20,28 @@
             </section>
             {{- partial "footer.html" . -}}
         </div>
+        {{/* Back to top button */}}
+        <button id="back-to-top" aria-label="{{ if eq .Site.Language.Lang "es" }}Volver arriba{{ else }}Back to top{{ end }}" class="fixed bottom-6 right-6 p-3 rounded-full bg-orange-400 text-white shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300 z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+        <script>
+            (function() {
+                const btn = document.getElementById('back-to-top');
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        btn.classList.remove('opacity-0', 'invisible');
+                        btn.classList.add('opacity-100', 'visible');
+                    } else {
+                        btn.classList.remove('opacity-100', 'visible');
+                        btn.classList.add('opacity-0', 'invisible');
+                    }
+                });
+                btn.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            })();
+        </script>
     </body>
 </html>

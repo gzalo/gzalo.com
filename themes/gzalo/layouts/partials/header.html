@@ -1,13 +1,13 @@
-<header class="pb-10 bg-white">
+<header class="pb-10 bg-white dark:bg-gray-900">
   <div class="h-40 flex items-end justify-between flex-col-reverse md:flex-row">
     <div class="w-full md:w-auto">
       <h1 class="text-2xl md:text-4xl font-mono font-bold"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
-      <h2 class="text-lg md:text-xl font-mono text-gray-500">> {{ .Site.Params.Description }} <span style="animation: 1.5s blink step-end infinite;">█</span></h2>
+      <h2 class="text-lg md:text-xl font-mono text-gray-500 dark:text-gray-400">> {{ .Site.Params.Description }} <span style="animation: 1.5s blink step-end infinite;">█</span></h2>
     </div>
 
-    <div class="text-blue-600 mt-3 md:pt-0">
+    <div class="text-blue-600 dark:text-blue-400 mt-3 md:pt-0">
       {{ range $.Site.Home.AllTranslations }}
-        <a href="{{ .Permalink }}" class="uppercase text-blue-600 tracking-wider font-semibold {{if eq .Lang $.Lang}} border-b-2 border-blue-200 {{end}}" title="{{.Language.LanguageName}}">{{ i18n .Language.LanguageName }}</a>
+        <a href="{{ .Permalink }}" class="uppercase text-blue-600 dark:text-blue-400 tracking-wider font-semibold {{if eq .Lang $.Lang}} border-b-2 border-blue-200 dark:border-blue-700 {{end}}" title="{{.Language.LanguageName}}">{{ i18n .Language.LanguageName }}</a>
         {{if eq .Lang "es"}} · {{end}}
       {{ end }}
     </div>
@@ -17,10 +17,10 @@
     <div>
       <div class="flex flex-wrap gap-4">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL | absLangURL }}">
-          <div class="font-mono font-semibold border-2 border-t-4 px-4 h-9 pt-1 pb-2 transition-all duration-100 hover:border-t-2 break-normal {{ .Pre }}">
+        <a href="{{ .URL | absLangURL }}"{{ if eq .Name "SearchIcon" }} aria-label="{{ if eq $.Site.Language.Lang "es" }}Buscar{{ else }}Search{{ end }}"{{ end }}>
+          <div class="font-mono font-semibold border-2 border-t-4 px-4 h-9 pt-1 pb-2 transition-all duration-100 hover:border-t-2 break-normal {{ .Pre }} dark:border-gray-600 dark:hover:border-gray-500">
             {{if eq .Name "SearchIcon"}}
-              <img src="/icons/search.svg" class="inline icon" alt="Search icon">
+              <img src="/icons/search.svg" class="inline icon dark:invert" alt="Search icon">
             {{else}}
               {{ .Name }}
             {{end}}

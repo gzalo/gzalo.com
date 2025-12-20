@@ -7,6 +7,6 @@ date: "2016-01-01"
 
 This project was developed in 2016, and supports recognition of multiple phrases using finite-grammar, it leverages the HTK toolkit.
 
-**[Launch the recognition system](https://habla.gzalo.com)**
+The recognition system demo is no longer online.
 
 [Source code of backend and frontend](https://github.com/gzalo/habla.gzalo.com)

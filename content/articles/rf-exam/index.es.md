@@ -12,10 +12,6 @@ Este sitio contiene recursos para practicar para el examen de radioaficionado en
 - **Código Morse (Teoría)**: Fundamentos del código Morse para comunicaciones
 - **Práctica de reglamentación**: Ejercicios sobre las normas y regulaciones de radioaficionados
 - **Práctica teórica, técnica, propagación y antenas**: Ejercicios sobre aspectos técnicos de la radioafición
-
-## Recursos adicionales
-
-- Listado de repetidoras activas en CABA/AMBA
-- SDR online (generalmente en la banda de 2 metros)
+- Listado de **repetidoras activas** en CABA/AMBA
 
 ## [Acceder al sitio de práctica](https://rf.gzalo.com)
