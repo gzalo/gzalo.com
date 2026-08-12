@@ -25,13 +25,42 @@
     <gcse:search></gcse:search>
 </div>
 {{ if not .Params.noComment }}
-<div>
+<div class="mt-12">
     <header class="my-5">
         <h2 class="text-xl font-extrabold">{{i18n "comments"}}</h2>
     </header>
-    <div>
-        {{ template "_internal/disqus.html" . }}
+    <div id="comments-consent">
+        <p class="mb-4 text-gray-600 dark:text-gray-400">{{ if eq .Site.Language.Lang "es" }}Los comentarios se cargan desde Disqus solo si elegís habilitarlos.{{ else }}Comments are loaded from Disqus only when you choose to enable them.{{ end }}</p>
+        <button type="button" id="load-comments" class="border-2 border-black px-4 py-2 font-mono font-semibold transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-gray-900">{{ if eq .Site.Language.Lang "es" }}Cargar comentarios{{ else }}Load comments{{ end }}</button>
     </div>
+    <div id="disqus_thread"></div>
 </div>
+<script>
+(() => {
+    const key = 'gzalo-comments-consent';
+    const button = document.getElementById('load-comments');
+    const consent = document.getElementById('comments-consent');
+    let loaded = false;
+    const loadComments = () => {
+        if (loaded) return;
+        loaded = true;
+        window.disqus_config = function () {
+            this.page.url = {{ .Permalink | jsonify | safeJS }};
+            this.page.identifier = {{ .RelPermalink | jsonify | safeJS }};
+        };
+        const script = document.createElement('script');
+        script.src = 'https://gzalo.disqus.com/embed.js';
+        script.setAttribute('data-timestamp', String(Date.now()));
+        script.async = true;
+        document.body.appendChild(script);
+        if (consent) consent.remove();
+    };
+    if (localStorage.getItem(key) === 'true') loadComments();
+    if (button) button.addEventListener('click', () => {
+        localStorage.setItem(key, 'true');
+        loadComments();
+    });
+})();
+</script>
 {{ end }}
 {{ end }}

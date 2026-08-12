@@ -9,4 +9,4 @@ En 2023 presenté XSO, una demo gráfica de tan solo 256 bytes para MS-DOS. Crea
 
 ## [Video de la Demo corriendo](https://www.youtube.com/watch?v=d1THhUPyueE)
 ## [Demo en POUET](https://www.pouet.net/prod.php?which=95367)
-## [Código fuente](https://github.com/gzalo/fp23-xso/7)
+## [Código fuente](https://github.com/gzalo/fp23-xso/)

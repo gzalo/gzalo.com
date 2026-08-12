@@ -42,39 +42,17 @@
     
     {{- partialCached "styles.html" . -}}
     
-    {{/* JSON-LD Structured Data */}}
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        {{ if .IsHome }}
-        "@type": "WebSite",
-        "name": "{{ .Site.Title }}",
-        "url": "{{ .Site.BaseURL }}",
-        "description": "{{ .Site.Params.description }}",
-        "author": {
-            "@type": "Person",
-            "name": "Gonzalo Avila Alterach"
-        }
-        {{ else if .IsPage }}
-        "@type": "Article",
-        "headline": "{{ .Title }}",
-        "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
-        "url": "{{ .Permalink }}",
-        "datePublished": "{{ .Date.Format "2006-01-02" }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-        "author": {
-            "@type": "Person",
-            "name": "Gonzalo Avila Alterach"
-        },
-        "publisher": {
-            "@type": "Person",
-            "name": "Gonzalo Avila Alterach"
-        }
-        {{ else }}
-        "@type": "WebPage",
-        "name": "{{ .Title }}",
-        "url": "{{ .Permalink }}"
-        {{ end }}
-    }
-    </script>
+    {{/* Build JSON-LD as data so content cannot break the JSON syntax. */}}
+    {{ $person := dict "@type" "Person" "name" "Gonzalo Avila Alterach" }}
+    {{ if .IsHome }}
+        {{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description "author" $person }}
+        <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+    {{ else if .IsPage }}
+        {{ $description := .Description | default .Summary }}
+        {{ $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" $description "url" .Permalink "datePublished" (.Date.Format "2006-01-02") "dateModified" (.Lastmod.Format "2006-01-02") "author" $person "publisher" $person }}
+        <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+    {{ else }}
+        {{ $schema := dict "@context" "https://schema.org" "@type" "WebPage" "name" .Title "url" .Permalink }}
+        <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+    {{ end }}
 </head>

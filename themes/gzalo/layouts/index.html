@@ -1,32 +1,31 @@
 {{ define "main" }}
 
-<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-10 xl:grid-cols-4">	
-	{{ range where .Site.RegularPages.ByPublishDate.Reverse "Params.hidden" "ne" true}}
-		{{ if ne .Type "page" }} 
-				{{ $borderColor := "border-black" }}
+{{ $featuredPaths := slice "projects/doom-posnet" "articles/sunmi-root" "projects/ncomputing-l130" }}
+{{ $featured := slice }}
+{{ range $featuredPaths }}
+  {{ with $.Site.GetPage . }}
+    {{ $featured = $featured | append . }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $featured) 0 }}
+  <section class="mb-14" aria-labelledby="featured-heading">
+    <div class="flex items-baseline justify-between gap-4 mb-5">
+      <h2 id="featured-heading" class="text-2xl font-bold font-mono">{{ if eq .Site.Language.Lang "es" }}Destacados{{ else }}Featured{{ end }}</h2>
+      <a href="#latest" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">{{ if eq .Site.Language.Lang "es" }}Ver lo último{{ else }}See the latest{{ end }}</a>
+    </div>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
+      {{ range $featured }}{{ partial "content-card.html" . }}{{ end }}
+    </div>
+  </section>
+{{ end }}
 
-				{{ if (eq .Parent.Type "calculators") }}
-					{{ $borderColor = "border-b-sky-400" }}
-				{{ else if (eq .Parent.Type "articles") }}
-					{{ $borderColor = "border-b-red-500" }}
-				{{ else if (eq .Parent.Type "projects") }}
-					{{ $borderColor = "border-b-orange-400" }}
-				{{ else if (eq .Parent.Type "experiments") }}
-					{{ $borderColor = "border-b-emerald-500" }}
-				{{ end }}
-				<a href="{{ .RelPermalink }}">
-					<div class="flex md:flex-col group border {{ $borderColor }} border-b-3 border-gray-400 dark:border-gray-600 h-full bg-white dark:bg-gray-800 hover:shadow-lg transition-shadow duration-300">
-						<div class="overflow-hidden md:border-b border-gray-400 dark:border-gray-600 w-1/4 md:w-auto">
-							<img src="{{ .Params.Thumbnail }}" alt="{{.Title}}" width="300" height="300" class="h-full w-full object-cover transition duration-300 group-hover:scale-110" loading="lazy"/>
-						</div>
-						<div class="p-5 w-3/4 md:w-auto">
-							<p class="ml-8 font-mono header-line"><strong>{{.Title}}</strong></p>
-							<p class="mt-3 text-slate-600 dark:text-slate-400">{{ .Summary }}</p>
-						</div>
-					</div>
-				</a>
-		{{ end }}
+<section id="latest" aria-labelledby="latest-heading">
+  <h2 id="latest-heading" class="text-2xl font-bold font-mono mb-5">{{ if eq .Site.Language.Lang "es" }}Últimas publicaciones{{ else }}Latest posts{{ end }}</h2>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-10 xl:grid-cols-4">
+    {{ range where .Site.RegularPages.ByPublishDate.Reverse "Params.hidden" "ne" true }}
+      {{ if ne .Type "page" }}{{ partial "content-card.html" . }}{{ end }}
     {{ end }}
-</div>
+  </div>
+</section>
 
 {{ end }}
