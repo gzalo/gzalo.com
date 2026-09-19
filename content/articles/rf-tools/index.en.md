@@ -71,3 +71,16 @@ They are easy to build:
 - The short is a female SMA connector with a direct solder bridge between the center pin and the body.
 - The load is a female SMA connector with a 50-ohm SMD resistor (49.9 ohms in my case, which does not change much) connected between the center pin and the body.
 - The open is a female SMA connector with the center pin cut.
+
+## RF probe
+
+![RF probe connected to a multimeter](/images/rfprobe2.jpg)
+![Detail of the RF probe's single-sided PCB](/images/rfprobe3.jpg)
+
+I built this RF probe on a **single-sided PCB**, housed inside a small transparent plastic tube with a metal tip (from a BNC connector) and a ground clip. It works up to **VHF** and lets me check RF signal levels using a multimeter set to DC voltage.
+
+![RF probe schematic](/images/rfprobe1.png)
+
+The 10 pF input capacitor couples the RF signal while blocking DC from the circuit under test. The 1N34A/1N60 germanium diode rectifies the signal (with a small forward voltage drop), and the 1 Mohm resistor, together with the multimeter's input capacitance, filters out the RF so the meter reads a DC voltage that varies with the signal amplitude. It is useful for checking whether a stage has an RF signal and comparing levels while making adjustments. 
+
+It's not meant to be used as an absolute measurement tool, but it is very handy for quick checks.

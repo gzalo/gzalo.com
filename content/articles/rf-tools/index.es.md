@@ -71,3 +71,16 @@ Son fáciles de armar:
 - El corto es un SMA hembra con una soldadura directa entre el pin central y el cuerpo.
 - La carga es un SMA hembra con una resistencia de 50 ohms (49.9 en mi caso, pero no cambia mucho) SMD conectada entre el pin central y el cuerpo.
 - El abierto es un SMA hembra con el pin central cortado.
+
+## Sonda de RF
+
+![Sonda de RF conectada a un multímetro](/images/rfprobe2.jpg)
+![Detalle del PCB de una sola cara de la sonda de RF](/images/rfprobe3.jpg)
+
+Hace poco armé esta sonda de RF sobre un **PCB de una sola cara**, dentro de un pequeño tubo de plástico transparente con una punta metálica (de un conector BNC) y un cocodrilo con un cable corto como masa. Funciona hasta **VHF** y permite comprobar niveles de señal de RF con un multímetro en la escala de tensión continua.
+
+![Esquemático de la sonda de RF](/images/rfprobe1.png)
+
+El capacitor de entrada de 10 pF acopla la señal de RF y bloquea la continua del circuito que se está midiendo. El diodo de germanio 1N34A/1N60 rectifica la señal (con una pequeña caída de tensión), y la resistencia de 1 Mohm, junto con la capacidad de entrada del multímetro, filtra la RF para que el instrumento lea una tensión continua que varía con la amplitud de la señal. Es útil para comprobar si hay señal de RF en una etapa y comparar niveles mientras se hacen ajustes.
+
+No sirve como herramienta de medición absoluta, pero es muy útil para chequeos rápidos.
