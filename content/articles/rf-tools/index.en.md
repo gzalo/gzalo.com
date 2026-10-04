@@ -9,7 +9,16 @@ These are some RF tools I put together. They are not calibrated lab instruments,
 
 The general idea was to make small pieces with SMA connectors that are easy to insert into a measurement setup with a VNA, wattmeter, or receiver/analyzer.
 
-## Dummy load
+## Contents
+
+- [Dummy load](#dummy-load)
+- [-40 dB RF tap](#rf-tap)
+- [Mini 7.7 dB attenuator](#mini-attenuator)
+- [Female VNA calibration standards](#vna-calibration-standards)
+- [RF probe](#rf-probe)
+- [RF field meter](#rf-field-meter)
+
+## Dummy load {#dummy-load}
 
 ![Closed dummy load](/images/dummy1.jpg)
 ![Dummy load with the resistor visible](/images/dummy2.jpg)
@@ -22,7 +31,7 @@ The heatsink is not very large, so it is not suitable for dissipating continuous
 
 It has a VSWR less than 1.15 up to 900 MHz. 
 
-## -40 dB RF tap
+## -40 dB RF tap {#rf-tap}
 
 ![Closed RF tap](/images/tap1.jpg)
 ![RF tap feedthrough connector](/images/tap2.jpg)
@@ -41,7 +50,7 @@ It works well up to 1 GHz (as can be seen, it has a VSWR less than 1.5), and the
 ![Graph 1](/images/tap4.png)
 ![Graph 2](/images/tap5.png)
 
-## Mini 7.7 dB attenuator
+## Mini 7.7 dB attenuator {#mini-attenuator}
 
 ![Mini RF attenuator](/images/filter_1.jpg)
 ![Mini attenuator detail](/images/filter_2.jpg)
@@ -59,7 +68,7 @@ The calculations were done with this calculator, trying different combinations o
 
 It can be seen that it has a VSWR less than 1.5 up to 1 GHz, and that the attenuation is more stable than expected across the same range.
 
-## Female VNA calibration standards
+## Female VNA calibration standards {#vna-calibration-standards}
 
 ![Female SMA VNA calibration standards](/images/vna_calibrations.jpg)
 
@@ -72,7 +81,7 @@ They are easy to build:
 - The load is a female SMA connector with a 50-ohm SMD resistor (49.9 ohms in my case, which does not change much) connected between the center pin and the body.
 - The open is a female SMA connector with the center pin cut.
 
-## RF probe
+## RF probe {#rf-probe}
 
 ![RF probe connected to a multimeter](/images/rfprobe2.jpg)
 ![Detail of the RF probe's single-sided PCB](/images/rfprobe3.jpg)
@@ -84,3 +93,11 @@ I built this RF probe on a **single-sided PCB**, housed inside a small transpare
 The 10 pF input capacitor couples the RF signal while blocking DC from the circuit under test. The 1N34A/1N60 germanium diode rectifies the signal (with a small forward voltage drop), and the 1 Mohm resistor, together with the multimeter's input capacitance, filters out the RF so the meter reads a DC voltage that varies with the signal amplitude. It is useful for checking whether a stage has an RF signal and comparing levels while making adjustments. 
 
 It's not meant to be used as an absolute measurement tool, but it is very handy for quick checks.
+
+## RF field meter {#rf-field-meter}
+
+![Homemade RF field meter with a short antenna and analog indicator](/images/fieldmeter.png)
+
+This simple field meter uses a short antenna and an analog indicator to show the relative strength of nearby RF signals. It is useful for comparing signal levels while adjusting an antenna or changing the position of a transmitter. The reading is not calibrated as an absolute field-strength measurement.
+
+For a detailed explanation of how this type of meter works, including the role of the two diodes, see [K6JCA's article on the basic RF field-strength meter](https://k6jca.blogspot.com/2020/11/understanding-basic-rf-field-strength.html?m=1).

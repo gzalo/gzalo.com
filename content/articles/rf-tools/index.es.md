@@ -9,7 +9,16 @@ Estas son algunas herramientas de RF que fui armando. No son instrumentos de lab
 
 La idea general fue hacer piezas chicas, con conectores SMA, fáciles de intercalar en una medición con VNA, vatímetro o algún receptor/analizador.
 
-## Carga fantasma
+## Índice
+
+- [Carga fantasma](#dummy-load)
+- [RF tap de -40 dB](#rf-tap)
+- [Mini atenuador de 7.7 dB](#mini-attenuator)
+- [Calibraciones hembra para VNA](#vna-calibration-standards)
+- [Sonda de RF](#rf-probe)
+- [Medidor de campo de RF](#rf-field-meter)
+
+## Carga fantasma {#dummy-load}
 
 ![Carga fantasma cerrada](/images/dummy1.jpg)
 ![Carga fantasma con la resistencia visible](/images/dummy2.jpg)
@@ -22,7 +31,7 @@ El tamaño del disipador no es tan grande, por lo que no sirve para disipar pote
 
 Se puede observar una ROE menor a 1.15 hasta 900 MHz. 
 
-## RF tap de -40 dB
+## RF tap de -40 dB {#rf-tap}
 
 ![RF tap cerrado](/images/tap1.jpg)
 ![Conector pasante del RF tap](/images/tap2.jpg)
@@ -41,7 +50,7 @@ Funciona bien hasta un GHz (como se observa, tiene una ROE menor a 1.5), y la at
 ![Gráfico 1](/images/tap4.png)
 ![Gráfico 2](/images/tap5.png)
 
-## Mini atenuador de 7.7 dB
+## Mini atenuador de 7.7 dB {#mini-attenuator}
 
 ![Mini atenuador de RF](/images/filter_1.jpg)
 ![Detalle del mini atenuador](/images/filter_2.jpg)
@@ -59,7 +68,7 @@ Los cálculos fueron hechos con esta calculadora, probando distintas opciones de
 
 Se observa que posee una ROE menor a 1.5 hasta 1 GHz, y que la atenuación es más estable de lo esperado en todo el mismo rango.
 
-## Calibraciones hembra para VNA
+## Calibraciones hembra para VNA {#vna-calibration-standards}
 
 ![Calibraciones SMA hembra para VNA](/images/vna_calibrations.jpg)
 
@@ -72,7 +81,7 @@ Son fáciles de armar:
 - La carga es un SMA hembra con una resistencia de 50 ohms (49.9 en mi caso, pero no cambia mucho) SMD conectada entre el pin central y el cuerpo.
 - El abierto es un SMA hembra con el pin central cortado.
 
-## Sonda de RF
+## Sonda de RF {#rf-probe}
 
 ![Sonda de RF conectada a un multímetro](/images/rfprobe2.jpg)
 ![Detalle del PCB de una sola cara de la sonda de RF](/images/rfprobe3.jpg)
@@ -84,3 +93,11 @@ Hace poco armé esta sonda de RF sobre un **PCB de una sola cara**, dentro de un
 El capacitor de entrada de 10 pF acopla la señal de RF y bloquea la continua del circuito que se está midiendo. El diodo de germanio 1N34A/1N60 rectifica la señal (con una pequeña caída de tensión), y la resistencia de 1 Mohm, junto con la capacidad de entrada del multímetro, filtra la RF para que el instrumento lea una tensión continua que varía con la amplitud de la señal. Es útil para comprobar si hay señal de RF en una etapa y comparar niveles mientras se hacen ajustes.
 
 No sirve como herramienta de medición absoluta, pero es muy útil para chequeos rápidos.
+
+## Medidor de campo de RF {#rf-field-meter}
+
+![Medidor de campo de RF casero con una antena corta e indicador analógico](/images/fieldmeter.png)
+
+Este medidor de campo sencillo usa una antena corta y un indicador analógico para mostrar la intensidad relativa de señales de RF cercanas. Sirve para comparar niveles mientras se ajusta una antena o se cambia la posición de un transmisor. La lectura no está calibrada como medida absoluta de intensidad de campo.
+
+Para entender en detalle cómo funciona este tipo de medidor, incluido el papel de los dos diodos, recomiendo [el artículo de K6JCA sobre el medidor básico de campo de RF](https://k6jca.blogspot.com/2020/11/understanding-basic-rf-field-strength.html?m=1).
