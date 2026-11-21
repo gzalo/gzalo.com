@@ -1,0 +1,117 @@
+{{- $es := eq .Lang "es" -}}
+{{- $pieces := slice
+  (dict "id" "doom" "path" "projects/doom-posnet" "label" "DOOM / VX820" "width" 488 "height" 425)
+  (dict "id" "hugo" "path" "projects/hugo-multiverse" "label" "HUGO" "width" 349 "height" 503)
+  (dict "id" "printer" "path" "projects/posnet-image-printer" "label" "VX520" "width" 378 "height" 490)
+  (dict "id" "board" "path" "projects/ncomputing-l130" "label" "L130 FPGA" "width" 456 "height" 400)
+  (dict "id" "console" "path" "projects/game-console" "label" "8052 / 8×8" "width" 650 "height" 700)
+  (dict "id" "rf" "asset" "rf-meter" "path" "articles/rf-tools" "label" (cond $es "MEDIDOR RF" "RF METER") "width" 383 "height" 700
+    "anchor" "#rf-field-meter" "title" (cond $es "Medidor de campo de RF" "RF field meter")
+    "summary" (cond $es "Medidor casero con una antena corta y una aguja para comparar la intensidad de señales de RF cercanas." "A homemade meter with a short antenna and an analog needle for comparing the strength of nearby RF signals."))
+  (dict "id" "pendulum" "path" "projects/cat-random-pendulum" "label" (cond $es "PÉNDULO" "CAT PENDULUM") "width" 449 "height" 445)
+  (dict "id" "microcomputer" "label" "MICROCOMPUTER / 8080" "width" 680 "height" 408
+    "url" "https://github.com/gzalo/microcomputer" "emulator" "https://gzalo.github.io/microcomputer/"
+    "title" (cond $es "Microcomputadora 8080" "8080 Microcomputer")
+    "summary" (cond $es "Microcomputadora tipo Altair e IMSAI basada en una Raspberry Pi Pico, con interruptores, LEDs y un visor de dos líneas." "An Altair- and IMSAI-inspired Raspberry Pi Pico microcomputer with an 8080 instruction set, switches, LEDs, and a two-line display."))
+-}}
+{{- $props := slice
+  (dict "id" "leads" "label" (cond $es "Puntas del multímetro" "Multimeter leads") "width" 443 "height" 404)
+  (dict "id" "usb" "label" (cond $es "Cable USB" "USB cable") "width" 421 "height" 380)
+  (dict "id" "driver" "label" (cond $es "Destornillador" "Screwdriver") "width" 422 "height" 415)
+  (dict "id" "solder" "label" (cond $es "Rollo de estaño" "Spool of solder") "width" 358 "height" 399)
+  (dict "id" "iron" "width" 525 "height" 620 "label" (cond $es "Soldador" "Soldering iron") "tag" (cond $es "SOLDADOR" "SOLDERING IRON"))
+-}}
+<!doctype html>
+<html lang="{{ .Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description }}">
+  <meta name="theme-color" content="#d9c19c">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="stylesheet" href="{{ "desk/desk.css" | relURL }}">
+  <script type="module" src="{{ "desk/desk.js" | relURL }}"></script>
+</head>
+<body>
+  <main class="workbench" data-stage aria-label="{{ .Title }}">
+    <section class="bench-note" aria-labelledby="bench-title">
+      <h1 id="bench-title">{{ .Title }}</h1>
+      <p><span class="mouse-hint">{{ if $es }}Pasá el cursor para activar. Hacé clic para acercar.{{ else }}Hover to activate. Click to bring closer.{{ end }}</span>
+        <span class="touch-hint">{{ if $es }}Tocá para acercar y activar.{{ else }}Tap to bring closer and activate.{{ end }}</span>
+        {{ if $es }}Arrastrá para mover.{{ else }}Drag to move.{{ end }}</p>
+      <span class="visually-hidden" id="bench-keys">{{ if $es }}Usá Intro para acercar y las flechas para mover.{{ else }}Press Enter to bring closer or use arrow keys to move.{{ end }}</span>
+    </section>
+
+    <nav class="bench-tag" aria-label="{{ if $es }}Navegación{{ else }}Navigation{{ end }}">
+      <a href="{{ .Site.Home.RelPermalink }}" aria-label="{{ if $es }}Volver al sitio{{ else }}Back to site{{ end }}">GZALO.COM</a>
+      {{ range .Translations }}
+        <a href="{{ .RelPermalink }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">{{ upper .Lang }}</a>
+      {{ end }}
+    </nav>
+
+    {{ range $pieces }}
+      {{ $piece := . }}
+      {{ $page := $.Site.GetPage ($piece.path | default "/desk") }}
+      {{ $url := $piece.url | default (printf "%s%s" $page.RelPermalink ($piece.anchor | default "")) }}
+      {{ $title := $piece.title | default $page.Title }}
+      {{ $image := printf "desk/photos/%s.webp" ($piece.asset | default $piece.id) | relURL }}
+      <div class="piece piece-{{ $piece.id }}" data-piece="{{ $piece.id }}">
+        <button type="button" class="piece-trigger" data-use aria-label="{{ $title }}" disabled>
+          <span class="hardware">
+            <img src="{{ $image }}" alt="" width="{{ $piece.width }}" height="{{ $piece.height }}" draggable="false">
+            {{ if eq $piece.id "microcomputer" }}
+              <span class="micro-display" aria-hidden="true"></span>
+              <span class="micro-lights" aria-hidden="true">{{ range seq 8 }}<i></i>{{ end }}</span>
+            {{ else if eq $piece.id "printer" }}
+              <span class="receipt" aria-hidden="true"></span>
+            {{ else if eq $piece.id "rf" }}
+              <span class="rf-needle" aria-hidden="true"></span>
+            {{ else if eq $piece.id "pendulum" }}
+              <img class="pendulum-arm" src="{{ $image }}" alt="" draggable="false">
+            {{ else if eq $piece.id "console" }}
+              <canvas class="matrix" width="56" height="56" aria-hidden="true"></canvas>
+            {{ else }}
+              <span class="hardware-light" aria-hidden="true"></span>
+            {{ end }}
+          </span>
+        </button>
+        <a class="piece-label" data-details href="{{ $url }}" aria-label="{{ if $es }}Detalles de {{ else }}About {{ end }}{{ $title }}">{{ $piece.label }}</a>
+      </div>
+      <template data-record="{{ $piece.id }}">
+        <img class="inspection-object" src="{{ $image }}" alt="">
+        <div class="record">
+          <span class="record-label">{{ $piece.label }}</span>
+          <h2 id="record-title">{{ $title }}</h2>
+          <p>{{ $piece.summary | default $page.Summary | plainify }}</p>
+          <a class="record-link" href="{{ $url }}">{{ if $es }}Abrir proyecto{{ else }}Open project{{ end }}</a>
+          {{ with $piece.emulator }}<a class="record-link" href="{{ . }}">{{ if $es }}Usar el emulador{{ else }}Use the emulator{{ end }}</a>{{ end }}
+        </div>
+      </template>
+    {{ end }}
+
+    {{ range $props }}
+      <div class="piece loose-tool piece-{{ .id }}" data-piece="{{ .id }}" hidden>
+        <button type="button" class="piece-trigger" data-use aria-label="{{ .label }}" aria-pressed="{{ eq .id "iron" }}">
+          <span class="hardware">
+            <img src="{{ printf "desk/photos/%s.webp" .id | relURL }}" alt="" width="{{ .width }}" height="{{ .height }}" draggable="false">
+            {{ if eq .id "iron" }}<span data-tip aria-hidden="true"></span>{{ end }}
+          </span>
+        </button>
+        {{ with .tag }}<span class="piece-label tool-tag" aria-hidden="true">{{ . }}</span>{{ end }}
+      </div>
+    {{ end }}
+    <span class="molten-solder" data-molten aria-hidden="true" hidden><i></i></span>
+    <p class="visually-hidden" data-status role="status"></p>
+
+    <dialog class="inspection" data-inspection aria-labelledby="record-title">
+      <div class="inspection-stage">
+        <button type="button" class="put-back" data-close autofocus>{{ if $es }}Dejar en la mesa{{ else }}Put back{{ end }} <span aria-hidden="true">×</span></button>
+        <div class="inspection-content" data-inspection-content></div>
+      </div>
+    </dialog>
+  </main>
+</body>
+</html>

@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/roboto-mono.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --mono: "Roboto Mono", ui-monospace, monospace;
+  --paper: #eddbab;
+  --ink: #292514;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #d9c19c; color: var(--ink); font: 1rem/1.45 system-ui, sans-serif; }
+button { font: inherit; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px dashed #4c3022; outline-offset: 5px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.workbench {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  overflow: clip;
+  background: #a9bc9d url("photos/daylight-bench.webp") center / cover no-repeat;
+  user-select: none;
+}
+
+.bench-note, .bench-tag {
+  position: absolute;
+  z-index: 2000;
+  background: linear-gradient(118deg, #f1e3bb, #d7c293);
+  box-shadow: 4px 7px 13px #48322659;
+}
+.bench-note {
+  top: max(5%, env(safe-area-inset-top));
+  left: max(5%, env(safe-area-inset-left));
+  width: min(235px, 33vw);
+  padding: .85rem 1.05rem;
+  transform: rotate(-4deg);
+}
+.bench-note::before, .bench-tag::before, .record::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 29%;
+  width: 43%;
+  height: 16px;
+  background: #d9bd79ae;
+  transform: rotate(4deg);
+  clip-path: polygon(1% 0, 100% 4%, 98% 44%, 100% 96%, 0 100%, 2% 60%);
+  pointer-events: none;
+}
+.bench-note h1 { margin: 0 0 .35rem; font-size: clamp(1.27rem, 2.8vw, 2.5rem); line-height: .98; letter-spacing: -.065em; }
+.bench-note .touch-hint { display: none; }
+@media (hover: none) {
+  .bench-note .mouse-hint { display: none; }
+  .bench-note .touch-hint { display: inline; }
+}
+.bench-note p { font: .78rem/1.36 var(--mono); margin: 0; }
+
+.bench-tag {
+  top: max(4%, env(safe-area-inset-top));
+  right: max(4%, env(safe-area-inset-right));
+  display: flex;
+  transform: rotate(3deg);
+  padding: 0 .35rem;
+  font: 750 .75rem var(--mono);
+}
+.bench-tag a { display: grid; align-items: center; min-height: 44px; padding-inline: .45rem; color: inherit; text-decoration: none; }
+.bench-tag a + a { border-inline-start: 1px dashed #56492980; }
+.bench-tag a:hover { text-decoration: underline; }
+.bench-tag a:focus-visible, .record-link:focus-visible { outline-color: #42270c; outline-offset: -3px; }
+
+.piece {
+  position: absolute;
+  display: block;
+  width: var(--size);
+  left: var(--x, var(--home-x));
+  top: var(--y, var(--home-y));
+  z-index: var(--depth, 0);
+  transform: translate(-50%, -50%) scale(var(--piece-scale, 1));
+  transition: left .34s cubic-bezier(.18,.74,.18,1), top .34s cubic-bezier(.18,.74,.18,1),
+    transform .34s cubic-bezier(.18,.74,.18,1);
+  touch-action: none;
+  -webkit-user-drag: none;
+  cursor: grab;
+}
+.piece-doom          { --home-x: 7%;  --home-y: 37%; --size: clamp(155px, 48vmin, 470px); --angle: -10deg; }
+.piece-hugo          { --home-x: 94%; --home-y: 29%; --size: clamp(120px, 35vmin, 340px); --angle: 8deg; }
+.piece-printer       { --home-x: 78%; --home-y: 57%; --size: clamp(100px, 23vmin, 230px); --angle: -11deg; }
+.piece-board         { --home-x: 35%; --home-y: 26%; --size: clamp(100px, 24vmin, 255px); --angle: 9deg; }
+.piece-console       { --home-x: 22%; --home-y: 76%; --size: clamp(105px, 26vmin, 255px); --angle: -11deg; }
+.piece-rf            { --home-x: 60%; --home-y: 66%; --size: clamp(81px, 16vmin, 175px); --angle: 12deg; }
+.piece-pendulum      { --home-x: 103%;--home-y: 72%; --size: clamp(111px, 26vmin, 254px); --angle: -8deg; }
+.piece-microcomputer { --home-x: 43%; --home-y: 99%; --size: clamp(165px, 39vmin, 399px); --angle: 4deg; }
+.piece-leads         { --home-x: 2%;  --home-y: 81%; --size: clamp(85px, 23vmin, 200px); --angle: -19deg; }
+.piece-usb           { --home-x: 69%; --home-y: 14%; --size: clamp(62px, 15vmin, 160px); --angle: 12deg; }
+.piece-driver        { --home-x: 65%; --home-y: 95%; --size: clamp(74px, 19vmin, 186px); --angle: -32deg; }
+.piece-solder        { --home-x: 80%; --home-y: 87%; --size: clamp(52px, 13vmin, 135px); --angle: 6deg; }
+.piece-iron          { --home-x: 93%; --home-y: 95%; --size: clamp(71px, 17vmin, 160px); --angle: -8deg; }
+.piece.is-engaged { z-index: 1100; }
+.piece.is-picked { z-index: 1400; --piece-scale: var(--foreground-scale); }
+.piece.is-dragging { z-index: 1500; transition: none; }
+.piece-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: inherit;
+}
+.hardware {
+  display: block;
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  filter: drop-shadow(8px 10px 7px #39291a65) drop-shadow(2px 3px 1px #34241461);
+  transform: rotate(calc(var(--angle) + var(--turn, 0deg)));
+  transition: transform .22s cubic-bezier(.2,.7,.2,1), filter .22s;
+}
+.hardware img { display: block; width: 100%; height: auto; }
+.piece-label {
+  position: absolute;
+  z-index: 1;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  padding: .25rem .45rem;
+  text-decoration: none;
+  white-space: nowrap;
+  background: #efdcad;
+  color: #2e2917;
+  box-shadow: 2px 3px 4px #47352261;
+  font: 750 .69rem/1 var(--mono);
+}
+.piece-label:hover { text-decoration: underline; }
+.tool-tag { pointer-events: none; }
+.piece.is-engaged .hardware {
+  filter: drop-shadow(9px 14px 10px #3b2b1d7a) brightness(1.055);
+  transform: perspective(1100px) translateY(-8px) rotateX(5deg)
+    rotate(calc(var(--angle) + var(--turn, 0deg))) scale(1.11);
+}
+.piece.is-picked .hardware {
+  filter: drop-shadow(17px 25px 15px #38271967);
+  transform: perspective(1100px) rotateX(5deg) rotate(0);
+}
+.piece.is-picked .piece-label { box-shadow: 3px 5px 6px #47352270; }
+.piece.is-dragging { cursor: grabbing; }
+.piece.is-dragging .hardware {
+  filter: drop-shadow(17px 25px 13px #3a2a1e74);
+  transform: translateY(-8px) rotate(calc(var(--angle) + var(--turn, 0deg) + var(--tilt, 0deg))) scale(1.045);
+}
+.loose-tool.is-turned { --turn: 24deg; }
+
+.inspection {
+  width: min(800px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  padding: 0;
+  color: var(--ink);
+  border: 0;
+  background: transparent;
+  overflow: auto;
+}
+.inspection::backdrop { background: #2b322e9e; }
+.inspection-stage { position: relative; padding: 48px 16px 20px; }
+.inspection-content { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; }
+.inspection-object {
+  width: 100%;
+  max-height: min(54vh, 420px);
+  object-fit: contain;
+  filter: drop-shadow(14px 18px 12px #0009);
+}
+.record {
+  position: relative;
+  background: repeating-linear-gradient(0deg, #82785423 0 1px, transparent 1px 25px), linear-gradient(120deg, #f4e6c1, #dacfaa);
+  padding: clamp(16px, 4vw, 33px);
+  box-shadow: 7px 11px 20px #0c0a05b5;
+  transform: rotate(1.4deg);
+}
+.record-label { font: 800 .75rem var(--mono); }
+.record h2 { margin: .5rem 0; font-size: clamp(1.35rem, 3.5vw, 2.65rem); letter-spacing: -.055em; line-height: 1.04; }
+.record p { margin: .6rem 0 1.1rem; }
+.record-link { display: inline-block; margin-inline-end: .85rem; color: #272817; font-weight: 800; text-underline-offset: 4px; }
+.put-back {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  min-height: 44px;
+  padding: .35rem .7rem;
+  border: 1px solid #b89f74;
+  border-radius: .2rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 700 .82rem var(--mono);
+}
+
+@media (max-aspect-ratio: 4/5) {
+  .workbench { background-size: auto 100%; }
+  .bench-note { top: max(4%, env(safe-area-inset-top)); width: 50vw; }
+  .bench-tag { right: max(4%, env(safe-area-inset-right)); }
+  .bench-note { padding: .65rem .78rem; }
+  .piece-doom          { --home-x: 12%; --home-y: 27%; --size: min(57vw, 25vh); }
+  .piece-hugo          { --home-x: 93%; --home-y: 26%; --size: min(43vw, 19vh); }
+  .piece-printer       { --home-x: 81%; --home-y: 50%; --size: min(34vw, 15vh); }
+  .piece-board         { --home-x: 13%; --home-y: 49%; --size: min(40vw, 18vh); }
+  .piece-console       { --home-x: 13%; --home-y: 69%; --size: min(39vw, 18vh); }
+  .piece-rf            { --home-x: 62%; --home-y: 69%; --size: min(24vw, 11vh); }
+  .piece-pendulum      { --home-x: 99%; --home-y: 76%; --size: min(34vw, 15vh); }
+  .piece-microcomputer { --home-x: 29%; --home-y: 97%; --size: min(55vw, 25vh); }
+  .piece-leads         { --home-x: 4%;  --home-y: 86%; --size: min(26vw, 12vh); }
+  .piece-usb           { --home-x: 55%; --home-y: 19%; --size: min(20vw, 10vh); }
+  .piece-driver        { --home-x: 45%; --home-y: 86%; --size: min(19vw, 10vh); }
+  .piece-solder        { --home-x: 68%; --home-y: 91%; --size: min(19vw, 10vh); }
+  .piece-iron          { --home-x: 94%; --home-y: 97%; --size: min(24vw, 11vh); }
+}
+@media (max-width: 560px) {
+  .inspection-content { grid-template-columns: 1fr; gap: 16px; }
+  .inspection-object { max-height: 34vh; }
+}
+@media (max-height: 450px) and (min-aspect-ratio: 4/5) {
+  .bench-note { top: 4%; left: 3%; width: 160px; padding: .5rem; }
+  .bench-note h1 { font-size: 1.25rem; }
+  .bench-note p { font-size: .68rem; }
+  .piece { width: min(var(--size), 35vh); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .piece, .hardware { transition: none; }
+}
+
+/* These overlays share the photograph's coordinate space, including its rotation. */
+.hardware-light, .receipt, .rf-needle, .matrix, .micro-display, .micro-lights, [data-tip] {
+  position: absolute;
+}
+.hardware-light, .receipt, .matrix, .micro-display, .micro-lights { visibility: hidden; }
+.is-active .hardware-light, .is-active .receipt, .is-active .matrix,
+.is-active .micro-display, .is-active .micro-lights { visibility: visible; }
+
+.piece-doom .hardware-light {
+  visibility: visible;
+  inset: 15% 27% 58% 38%;
+  clip-path: polygon(0 17%, 91% 0, 100% 84%, 10% 100%);
+  background: #1b1416d9;
+}
+.piece-doom.is-active .hardware-light {
+  background: repeating-linear-gradient(0deg, #ffbb5338 0 1px, transparent 1px 4px),
+    linear-gradient(15deg, #ff581639, #fdb27224);
+  mix-blend-mode: screen;
+  animation: screen-warm 1.8s ease-in-out infinite alternate;
+}
+.piece-hugo .hardware-light {
+  visibility: visible;
+  width: 44%;
+  height: 24%;
+  left: 30%;
+  top: 27%;
+  clip-path: polygon(12% 0, 100% 19%, 86% 100%, 0 86%);
+  background: #161322db;
+}
+.piece-hugo.is-active .hardware-light {
+  background: radial-gradient(ellipse, #d6cfffbb 4%, #6e47ffaa 46%, #4538e026 70%, transparent 76%);
+  mix-blend-mode: screen;
+  animation: screen-warm 1.35s ease-in-out infinite alternate;
+}
+@keyframes screen-warm {
+  from { opacity: .45; }
+  to { opacity: 1; }
+}
+
+.piece-board .hardware-light {
+  width: 4%;
+  aspect-ratio: 1;
+  left: 32%;
+  top: 86%;
+  border-radius: 50%;
+  background: #afff4a;
+  box-shadow: 0 0 5px 2px #80e52e, 7px -5px 4px #ffba3c;
+  animation: board-led 1.2s steps(2, end) infinite;
+}
+@keyframes board-led {
+  50% { opacity: .35; }
+}
+
+.matrix {
+  top: 15%;
+  left: 49.5%;
+  width: 34%;
+  height: 29%;
+  border-radius: 4%;
+  transform: rotate(1deg);
+  image-rendering: pixelated;
+}
+
+.receipt {
+  bottom: 74%;
+  left: 20%;
+  width: 39%;
+  min-height: 30%;
+  padding: 8% 4% 4%;
+  background: linear-gradient(#fff7e2, #ded3b6);
+  box-shadow: 1px -2px 3px #3d331b40;
+  color: #302920;
+  text-align: center;
+  white-space: pre-line;
+  font: 750 clamp(6px, 1.2vmin, 11px)/1.3 var(--mono);
+  transform: rotate(-9deg);
+}
+
+.piece-pendulum .hardware img:first-child { clip-path: inset(73.5% 0 0); }
+.hardware .pendulum-arm {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(83% 0, 93% 0, 64% 85%, 58% 87%, 57% 81%);
+  transform-origin: 60.5% 82.5%;
+}
+.is-active .pendulum-arm { animation: pendulum-swing 2.3s ease-in-out infinite alternate; }
+@keyframes pendulum-swing {
+  0% { transform: rotate(0); }
+  55% { transform: rotate(-42deg); }
+  100% { transform: rotate(-29deg); }
+}
+
+.rf-needle {
+  width: 33%;
+  height: clamp(1px, .22vmin, 2px);
+  right: 55%;
+  top: 95%;
+  border-radius: 999px;
+  background: #402b24;
+  box-shadow: 1px 1px 1px #5f3e2b5c;
+  transform-origin: center right;
+  transform: rotate(calc(24deg + var(--needle, 0deg)));
+  transition: transform .48s cubic-bezier(.17,.72,.31,1.15);
+}
+.rf-needle::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #51392a;
+}
+
+.micro-display {
+  left: 17%;
+  top: 36%;
+  width: 27%;
+  height: 17%;
+  padding-left: 2%;
+  color: #89f9e8;
+  white-space: pre;
+  text-shadow: 0 0 4px #40ffe3;
+  font: 750 clamp(4px, .9vmin, 10px)/1.12 var(--mono);
+}
+.micro-lights {
+  display: flex;
+  justify-content: space-between;
+  left: 53.1%;
+  top: 36.5%;
+  width: 31.8%;
+}
+.micro-lights i {
+  width: 7%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.micro-lights .lit {
+  background: #ffd2aa;
+  box-shadow: 0 0 3px 1px #ff453d;
+}
+
+[data-tip] {
+  top: 99%;
+  left: .7%;
+  width: 1px;
+  height: 1px;
+}
+.piece-iron.is-active [data-tip] {
+  border-radius: 50%;
+  box-shadow: 0 0 4px 1px #f78a38;
+}
+.piece-iron:not(.is-active) .tool-tag { background: #ded7c3; }
+.is-melting .hardware { filter: drop-shadow(5px 7px 6px #44362680) brightness(1.12); }
+.molten-solder {
+  position: absolute;
+  z-index: 1600;
+  width: clamp(10px, 2.7vmin, 22px);
+  aspect-ratio: 1.45;
+  pointer-events: none;
+  border-radius: 58% 45% 54% 42%;
+  background: radial-gradient(ellipse at 35% 29%, #fff 4%, #dce3e4 27%, #848d91 57%, #415055 83%);
+  box-shadow: 0 0 6px 2px #ffe3a9, 2px 4px 3px #31241765;
+  transform: translate(-30%, -35%);
+}
+.molten-solder i {
+  position: absolute;
+  left: 30%;
+  bottom: 70%;
+  width: 48%;
+  height: 170%;
+  border-left: 2px solid #fff;
+  border-radius: 50%;
+  opacity: .6;
+  filter: blur(1px);
+  animation: solder-fume 1.25s ease-out infinite;
+}
+@keyframes solder-fume {
+  from { transform: translateY(0); opacity: .7; }
+  to { transform: translate(9px, -19px) scale(1.45); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hardware-light, .pendulum-arm, .molten-solder i { animation: none !important; }
+  .is-active .pendulum-arm { transform: rotate(-29deg); }
+  .rf-needle { transition: none; }
+}
